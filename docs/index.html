@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Focos de Calor Manaus</title>
+<meta name="description" content="Focos de calor ativos e das últimas 48 horas em Manaus e mais 10 municípios do Amazonas, com temperatura de superfície quinzenal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="marca">
+    <h1>Focos de calor · Manaus e entorno</h1>
+    <span>11 municípios do Amazonas</span>
+  </div>
+  <div class="atualiz" id="atualiz"><span>Carregando dados…</span></div>
+</header>
+<div class="aviso" id="aviso" hidden></div>
+
+<main class="painel-app">
+  <aside class="lateral">
+    <section class="bloco" aria-labelledby="t-agora">
+      <h2 id="t-agora">Situação na última atualização</h2>
+      <div class="contadores">
+        <div class="contador principal"><b id="n-ativos">–</b><small>focos ativos<br><span id="n-det-ativas">–</span> detecções</small></div>
+        <div class="contador"><b id="n-extintos">–</b><small>extintos (estimado) em 48 h</small></div>
+        <div class="contador"><b id="n-det">–</b><small>detecções em 48 h</small></div>
+      </div>
+      <div class="munis" id="munis"></div>
+    </section>
+
+    <section class="bloco" aria-labelledby="t-linha">
+      <h2 id="t-linha">Últimas 48 horas</h2>
+      <div class="filtros" role="group" aria-label="Filtrar focos">
+        <button type="button" id="f-todos" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button type="button" id="f-ativos" data-filtro="ativo" aria-pressed="false">Ativos</button>
+        <button type="button" id="f-extintos" data-filtro="extinto_estimado" aria-pressed="false">Extintos</button>
+      </div>
+      <p class="nota">Barra cheia: do primeiro ao último registro do foco. Hachura: intervalo em que ele se apagou. Degradê: ainda ativo.</p>
+      <div class="eixo" id="eixo"></div>
+      <div class="eventos" id="eventos"></div>
+    </section>
+
+    <section class="bloco" aria-labelledby="t-pass">
+      <h2 id="t-pass">Passagens dos satélites (48 h)</h2>
+      <div class="tabela-rolagem">
+        <table class="passagens">
+          <thead><tr><th>Horário</th><th>Satélite</th><th>Pixel</th><th>Focos</th></tr></thead>
+          <tbody id="passagens"></tbody>
+        </table>
+      </div>
+      <p class="nota" id="nota-goes"></p>
+    </section>
+
+    <section class="bloco" aria-labelledby="t-lst">
+      <h2 id="t-lst">Temperatura da superfície (quinzenal)</h2>
+      <div class="controle">
+        <label><input type="checkbox" id="lst-ligado"> Mostrar no mapa</label>
+        <label for="lst-opac" class="rotulo">Opacidade</label>
+        <input type="range" id="lst-opac" min="0.2" max="1" step="0.05" value="0.75">
+      </div>
+      <div>
+        <div class="gradiente"></div>
+        <div class="escala" id="lst-escala"><span>20 °C</span><span>33 °C</span><span>46 °C</span></div>
+      </div>
+      <dl class="ficha" id="lst-ficha"><dt>Estado</dt><dd>sem dados ainda</dd></dl>
+    </section>
+
+    <section class="bloco" aria-labelledby="t-sat">
+      <h2 id="t-sat">Satélites e horários</h2>
+      <dl class="ficha" id="sat-ficha"></dl>
+      <p class="nota">Fontes: INPE BDQueimadas e NASA FIRMS. A extinção nunca é observada diretamente pelo satélite: ela é estimada quando as passagens seguintes não registram o foco. Nuvens e fumaça também impedem a detecção.</p>
+    </section>
+  </aside>
+  <div id="mapa" role="region" aria-label="Mapa dos focos"></div>
+</main>
+
+<script src="vendor/leaflet.js"></script>
+<script src="comum.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

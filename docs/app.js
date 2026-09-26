@@ -76,6 +76,18 @@
     onEachFeature: (f, lyr) => lyr.bindTooltip(f.properties.nome, { sticky: true, className: "" }),
   }).addTo(mapa);
 
+  // nomes dos municípios fixos no mapa
+  const nomesCamada = L.layerGroup(limites.features.map(f => {
+    const pt = f.properties.rotulo ? [f.properties.rotulo[1], f.properties.rotulo[0]]
+      : L.geoJSON(f).getBounds().getCenter();
+    return L.marker(pt, {
+      interactive: false, keyboard: false,
+      icon: L.divIcon({ className: "nome-municipio", html: `<span>${esc(f.properties.nome)}</span>`, iconSize: null }),
+    });
+  })).addTo(mapa);
+  const ajustarNomes = () => document.getElementById("mapa").classList.toggle("nomes-pequenos", mapa.getZoom() < 8);
+  mapa.on("zoomend", ajustarNomes); ajustarNomes();
+
   // temperatura de superfície
   let lstCamada = null;
   if (lst) {
@@ -85,7 +97,7 @@
 
   const grupoEventos = L.layerGroup().addTo(mapa);
   L.control.layers({ "Imagem de satélite": img, "Mapa de ruas": osm },
-    Object.assign({ "Limites municipais": limCamada, "Focos": grupoEventos }, lstCamada ? { "Temperatura da superfície": lstCamada } : {}),
+    Object.assign({ "Limites municipais": limCamada, "Nomes dos municípios": nomesCamada, "Focos": grupoEventos }, lstCamada ? { "Temperatura da superfície": lstCamada } : {}),
     { collapsed: true }).addTo(mapa);
 
   function estilo(p) {

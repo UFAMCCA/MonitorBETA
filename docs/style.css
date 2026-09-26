@@ -195,3 +195,12 @@ path.pulso { animation: pulso 2.4s ease-in-out infinite; }
 .grafico text { fill: var(--tinta-3); font: 11px var(--fonte); }
 .grafico .grade-linha { stroke: var(--linha); }
 .cartao .ficha { grid-template-columns: minmax(110px, 44%) 1fr; }
+
+/* nomes dos municípios no mapa (sempre claros com contorno escuro, pois ficam sobre imagem de satélite) */
+.nome-municipio { background: none; border: 0; }
+.nome-municipio span {
+  display: block; transform: translate(-50%, -50%); white-space: nowrap; pointer-events: none;
+  font: 600 13px/1 var(--fonte); letter-spacing: .04em; text-transform: uppercase; color: #fff;
+  text-shadow: 0 0 3px #0b120f, 0 0 3px #0b120f, 0 1px 2px #0b120f;
+}
+.nomes-pequenos .nome-municipio span { font-size: 10px; letter-spacing: .02em; white-space: normal; width: 7.5em; text-align: center; line-height: 1.15; }

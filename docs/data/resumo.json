@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-09-30T01:12:50Z",
+ "gerado_em": "2026-09-30T14:51:57Z",
  "dados_de_teste": false,
- "atualizacao": "18h",
- "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -13,58 +13,35 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-09-28T01:12:50Z",
- "eventos_ativos": 4,
- "eventos_extintos": 45,
- "eventos_total": 49,
- "deteccoes_total": 79,
- "deteccoes_ativas": 8,
+ "janela_inicio": "2026-09-28T14:51:57Z",
+ "eventos_ativos": 3,
+ "eventos_extintos": 44,
+ "eventos_total": 47,
+ "deteccoes_total": 80,
+ "deteccoes_ativas": 3,
  "por_municipio": {
-  "Itacoatiara": 17,
-  "Careiro da Várzea": 7,
+  "Itacoatiara": 16,
+  "Careiro da Várzea": 8,
   "Manacapuru": 6,
   "Manaquiri": 5,
-  "Anori": 4,
+  "Iranduba": 3,
   "Careiro": 3,
-  "Manaus": 3,
-  "Iranduba": 2,
-  "Beruri": 2
+  "Beruri": 2,
+  "Anori": 2,
+  "Manaus": 2
  },
  "ativos_por_municipio": {
-  "Careiro": 2,
-  "Itacoatiara": 2
+  "Itacoatiara": 1,
+  "Careiro da Várzea": 1,
+  "Iranduba": 1
  },
  "por_satelite": {
-  "NOAA-20": 53,
-  "NOAA-21": 17,
+  "NOAA-20": 49,
+  "NOAA-21": 20,
   "AQUA": 6,
-  "GOES-19": 3
+  "GOES-19": 5
  },
  "passagens": [
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-09-28T04:32:00Z",
-   "fim": "2026-09-28T04:34:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 0
-  },
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-09-28T05:27:00Z",
-   "fim": "2026-09-28T05:29:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 4
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-09-28T06:14:00Z",
-   "fim": "2026-09-28T06:14:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
@@ -122,6 +99,14 @@
    "deteccoes_na_area": 0
   },
   {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-09-29T12:59:00Z",
+   "fim": "2026-09-29T13:01:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
    "inicio": "2026-09-29T16:52:00Z",
@@ -152,9 +137,41 @@
    "fim": "2026-09-29T19:30:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 6
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-09-30T01:17:00Z",
+   "fim": "2026-09-30T01:17:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-09-30T04:51:00Z",
+   "fim": "2026-09-30T04:53:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-09-30T05:33:00Z",
+   "fim": "2026-09-30T05:38:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 3
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-09-30T12:00:00Z",
+   "fim": "2026-09-30T12:00:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-09-30T00:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-09-30T14:30:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -237,9 +254,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>",
-  "FIRMS VIIRS_NOAA20_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>",
-  "FIRMS VIIRS_NOAA21_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>"
+  "FIRMS MODIS_NRT": "ok (161 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (997 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (731 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

@@ -10,7 +10,7 @@ FUSO = "America/Manaus"  # UTC-4, sem horário de verão
 MUNICIPIOS = [
     "Manaus", "Iranduba", "Careiro", "Careiro da Várzea", "Manacapuru",
     "Novo Airão", "Anori", "Beruri", "Rio Preto da Eva",
-    "Presidente Figueiredo", "Itacoatiara", "Manaquiri",
+    "Presidente Figueiredo", "Itacoatiara", "Manaquiri", "Autazes",
 ]
 
 # Horários de atualização (hora local de Manaus). A das 08h foi retirada

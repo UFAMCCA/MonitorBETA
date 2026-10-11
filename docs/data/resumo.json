@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-11T20:09:36Z",
+ "gerado_em": "2026-10-11T22:07:20Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -13,12 +13,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-09T20:09:36Z",
+ "janela_inicio": "2026-10-09T22:07:20Z",
  "eventos_ativos": 71,
  "eventos_extintos": 355,
  "eventos_total": 426,
- "deteccoes_total": 3177,
- "deteccoes_ativas": 678,
+ "deteccoes_total": 3127,
+ "deteccoes_ativas": 657,
  "por_municipio": {
   "Autazes": 127,
   "Itacoatiara": 100,
@@ -46,7 +46,7 @@
  "por_satelite": {
   "NOAA-20": 1273,
   "NOAA-21": 850,
-  "GOES-19": 383,
+  "GOES-19": 333,
   "AQUA": 285,
   "METOP-C": 210,
   "METOP-B": 101,

@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-11T16:06:36Z",
+ "gerado_em": "2026-10-11T20:09:36Z",
  "dados_de_teste": false,
- "atualizacao": "12h",
- "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
+ "atualizacao": "18h",
+ "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -13,80 +13,46 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-09T16:06:36Z",
- "eventos_ativos": 1,
- "eventos_extintos": 567,
- "eventos_total": 568,
- "deteccoes_total": 4153,
- "deteccoes_ativas": 61,
+ "janela_inicio": "2026-10-09T20:09:36Z",
+ "eventos_ativos": 71,
+ "eventos_extintos": 355,
+ "eventos_total": 426,
+ "deteccoes_total": 3177,
+ "deteccoes_ativas": 678,
  "por_municipio": {
-  "Autazes": 160,
-  "Itacoatiara": 110,
-  "Careiro": 70,
-  "Careiro da Várzea": 57,
-  "Manacapuru": 53,
-  "Manaquiri": 51,
-  "Beruri": 16,
-  "Rio Preto da Eva": 15,
-  "Presidente Figueiredo": 10,
-  "Iranduba": 10,
-  "Manaus": 9,
-  "Novo Airão": 4,
-  "Anori": 3
+  "Autazes": 127,
+  "Itacoatiara": 100,
+  "Careiro": 49,
+  "Careiro da Várzea": 42,
+  "Manaquiri": 37,
+  "Manacapuru": 35,
+  "Rio Preto da Eva": 9,
+  "Manaus": 7,
+  "Presidente Figueiredo": 6,
+  "Beruri": 5,
+  "Iranduba": 4,
+  "Anori": 3,
+  "Novo Airão": 2
  },
  "ativos_por_municipio": {
+  "Itacoatiara": 29,
+  "Autazes": 26,
+  "Careiro": 7,
+  "Careiro da Várzea": 6,
+  "Manacapuru": 1,
+  "Manaquiri": 1,
   "Manaus": 1
  },
  "por_satelite": {
-  "NOAA-20": 1676,
-  "NOAA-21": 1297,
-  "GOES-19": 494,
-  "AQUA": 300,
+  "NOAA-20": 1273,
+  "NOAA-21": 850,
+  "GOES-19": 383,
+  "AQUA": 285,
   "METOP-C": 210,
   "METOP-B": 101,
   "TERRA": 75
  },
  "passagens": [
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-09T16:22:00Z",
-   "fim": "2026-10-09T16:22:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 0
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-09T17:05:00Z",
-   "fim": "2026-10-09T17:07:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 516
-  },
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-09T18:00:00Z",
-   "fim": "2026-10-09T18:04:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 496
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-09T18:45:00Z",
-   "fim": "2026-10-09T18:45:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 0
-  },
-  {
-   "satelite": "AQUA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-09T19:15:00Z",
-   "fim": "2026-10-09T19:15:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 15
-  },
   {
    "satelite": "METOP-B",
    "sensor": "AVHRR",
@@ -246,6 +212,30 @@
    "fim": "2026-10-11T12:38:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-11T16:26:00Z",
+   "fim": "2026-10-11T16:30:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-11T17:22:00Z",
+   "fim": "2026-10-11T17:26:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 93
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-11T18:09:00Z",
+   "fim": "2026-10-11T18:11:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 69
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-11T15:10:00Z",
@@ -332,8 +322,8 @@
   "INPE_10min": "ok (301 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
   "FIRMS MODIS_NRT": "ok (1140 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (8803 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (6178 detecções)"
+  "FIRMS VIIRS_NOAA20_NRT": "ok (10489 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (6836 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

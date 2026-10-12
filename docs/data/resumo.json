@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-12T08:08:38Z",
+ "gerado_em": "2026-10-12T16:06:33Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -13,17 +13,17 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-10T08:08:38Z",
- "eventos_ativos": 75,
- "eventos_extintos": 390,
- "eventos_total": 465,
- "deteccoes_total": 3043,
- "deteccoes_ativas": 669,
+ "janela_inicio": "2026-10-10T16:06:33Z",
+ "eventos_ativos": 72,
+ "eventos_extintos": 409,
+ "eventos_total": 481,
+ "deteccoes_total": 3069,
+ "deteccoes_ativas": 253,
  "por_municipio": {
-  "Autazes": 151,
-  "Itacoatiara": 103,
-  "Careiro": 52,
-  "Careiro da Várzea": 41,
+  "Autazes": 161,
+  "Itacoatiara": 105,
+  "Careiro": 53,
+  "Careiro da Várzea": 44,
   "Manacapuru": 39,
   "Manaquiri": 36,
   "Rio Preto da Eva": 12,
@@ -35,36 +35,28 @@
   "Novo Airão": 2
  },
  "ativos_por_municipio": {
-  "Autazes": 36,
+  "Autazes": 34,
   "Itacoatiara": 16,
-  "Manaquiri": 4,
-  "Careiro": 4,
-  "Careiro da Várzea": 4,
+  "Careiro da Várzea": 5,
   "Rio Preto da Eva": 4,
+  "Careiro": 4,
+  "Manaquiri": 3,
   "Manaus": 2,
-  "Manacapuru": 2,
   "Beruri": 1,
-  "Novo Airão": 1,
-  "Presidente Figueiredo": 1
+  "Presidente Figueiredo": 1,
+  "Manacapuru": 1,
+  "Novo Airão": 1
  },
  "por_satelite": {
-  "NOAA-20": 1116,
+  "NOAA-20": 1165,
   "NOAA-21": 926,
-  "GOES-19": 302,
   "AQUA": 285,
+  "GOES-19": 280,
   "METOP-C": 209,
   "METOP-B": 123,
-  "TERRA": 82
+  "TERRA": 81
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-10T12:00:00Z",
-   "fim": "2026-10-10T12:00:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -146,14 +138,6 @@
    "deteccoes_na_area": 0
   },
   {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-11T12:36:00Z",
-   "fim": "2026-10-11T12:38:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 1
-  },
-  {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
    "inicio": "2026-10-11T16:26:00Z",
@@ -224,9 +208,17 @@
    "fim": "2026-10-12T05:12:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 192
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-12T06:05:00Z",
+   "fim": "2026-10-12T06:08:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 49
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-12T05:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-12T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -307,11 +299,11 @@
   }
  },
  "fontes_status": {
-  "INPE_10min": "ok (303 arquivos)",
+  "INPE_10min": "ok (304 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (721 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (6563 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (4985 detecções)"
+  "FIRMS MODIS_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>",
+  "FIRMS VIIRS_NOAA20_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>",
+  "FIRMS VIIRS_NOAA21_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

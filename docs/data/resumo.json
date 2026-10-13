@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-13T15:51:34Z",
+ "gerado_em": "2026-10-13T16:06:34Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -13,7 +13,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-11T15:51:34Z",
+ "janela_inicio": "2026-10-11T16:06:34Z",
  "eventos_ativos": 0,
  "eventos_extintos": 189,
  "eventos_total": 189,
@@ -173,7 +173,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-13T15:10:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-13T15:30:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [

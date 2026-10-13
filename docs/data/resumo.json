@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-13T08:08:44Z",
+ "gerado_em": "2026-10-13T15:51:34Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -13,12 +13,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-11T08:08:44Z",
- "eventos_ativos": 2,
- "eventos_extintos": 188,
- "eventos_total": 190,
- "deteccoes_total": 922,
- "deteccoes_ativas": 314,
+ "janela_inicio": "2026-10-11T15:51:34Z",
+ "eventos_ativos": 0,
+ "eventos_extintos": 189,
+ "eventos_total": 189,
+ "deteccoes_total": 921,
+ "deteccoes_ativas": 0,
  "por_municipio": {
   "Autazes": 71,
   "Itacoatiara": 54,
@@ -27,15 +27,13 @@
   "Manacapuru": 12,
   "Presidente Figueiredo": 6,
   "Manaquiri": 5,
-  "Manaus": 4,
   "Rio Preto da Eva": 4,
   "Beruri": 3,
+  "Manaus": 3,
   "Novo Airão": 2,
   "Iranduba": 1
  },
- "ativos_por_municipio": {
-  "Manaquiri": 2
- },
+ "ativos_por_municipio": {},
  "por_satelite": {
   "NOAA-20": 278,
   "GOES-19": 266,
@@ -43,17 +41,9 @@
   "AQUA": 61,
   "METOP-B": 22,
   "METOP-C": 19,
-  "TERRA": 15
+  "TERRA": 14
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-11T12:36:00Z",
-   "fim": "2026-10-11T12:38:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 1
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -173,9 +163,17 @@
    "fim": "2026-10-13T00:45:00Z",
    "resolucao_km": 1.1,
    "deteccoes_na_area": 9
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-13T12:17:00Z",
+   "fim": "2026-10-13T12:19:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-13T06:50:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-13T15:10:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -258,7 +256,7 @@
  "fontes_status": {
   "INPE_10min": "ok (305 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (774 detecções)",
+  "FIRMS MODIS_NRT": "ok (862 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (3470 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (2805 detecções)"
  },

@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-14T13:35:56Z",
+ "gerado_em": "2026-10-14T16:06:40Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -13,21 +13,21 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-12T13:35:56Z",
+ "janela_inicio": "2026-10-12T16:06:40Z",
  "eventos_ativos": 15,
- "eventos_extintos": 99,
- "eventos_total": 114,
- "deteccoes_total": 538,
+ "eventos_extintos": 97,
+ "eventos_total": 112,
+ "deteccoes_total": 532,
  "deteccoes_ativas": 31,
  "por_municipio": {
   "Autazes": 31,
   "Itacoatiara": 30,
   "Manaquiri": 13,
-  "Careiro": 11,
+  "Careiro": 9,
   "Manacapuru": 8,
   "Presidente Figueiredo": 6,
-  "Careiro da Várzea": 5,
   "Beruri": 5,
+  "Careiro da Várzea": 5,
   "Manaus": 3,
   "Iranduba": 1,
   "Novo Airão": 1
@@ -36,15 +36,15 @@
   "Itacoatiara": 5,
   "Autazes": 4,
   "Beruri": 2,
-  "Careiro da Várzea": 1,
   "Careiro": 1,
   "Manaquiri": 1,
+  "Careiro da Várzea": 1,
   "Presidente Figueiredo": 1
  },
  "por_satelite": {
   "GOES-19": 197,
-  "NOAA-20": 182,
-  "NOAA-21": 87,
+  "NOAA-20": 177,
+  "NOAA-21": 86,
   "AQUA": 61,
   "METOP-C": 9,
   "TERRA": 2
@@ -56,7 +56,7 @@
    "inicio": "2026-10-12T17:05:00Z",
    "fim": "2026-10-12T17:07:00Z",
    "resolucao_km": 0.375,
-   "deteccoes_na_area": 140
+   "deteccoes_na_area": 136
   },
   {
    "satelite": "AQUA",
@@ -83,12 +83,20 @@
    "deteccoes_na_area": 9
   },
   {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-13T12:17:00Z",
+   "fim": "2026-10-13T12:19:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
    "inicio": "2026-10-13T16:45:00Z",
    "fim": "2026-10-13T16:48:00Z",
    "resolucao_km": 0.375,
-   "deteccoes_na_area": 8
+   "deteccoes_na_area": 7
   },
   {
    "satelite": "NOAA-21",
@@ -96,7 +104,7 @@
    "inicio": "2026-10-13T17:30:00Z",
    "fim": "2026-10-13T17:32:00Z",
    "resolucao_km": 0.375,
-   "deteccoes_na_area": 87
+   "deteccoes_na_area": 86
   },
   {
    "satelite": "NOAA-20",
@@ -163,7 +171,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-14T09:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-14T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -246,9 +254,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>",
-  "FIRMS VIIRS_NOAA20_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>",
-  "FIRMS VIIRS_NOAA21_NRT": "erro: <urlopen error [Errno 101] Network is unreachable>"
+  "FIRMS MODIS_NRT": "ok (809 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (2050 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (2093 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

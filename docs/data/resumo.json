@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-14T22:07:18Z",
+ "gerado_em": "2026-10-15T00:25:44Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -13,44 +13,37 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-12T22:07:18Z",
- "eventos_ativos": 6,
- "eventos_extintos": 46,
- "eventos_total": 52,
- "deteccoes_total": 345,
- "deteccoes_ativas": 9,
+ "janela_inicio": "2026-10-13T00:25:44Z",
+ "eventos_ativos": 8,
+ "eventos_extintos": 43,
+ "eventos_total": 51,
+ "deteccoes_total": 304,
+ "deteccoes_ativas": 32,
  "por_municipio": {
   "Itacoatiara": 17,
-  "Manaquiri": 9,
-  "Autazes": 8,
+  "Manaquiri": 12,
   "Careiro": 6,
   "Manacapuru": 5,
+  "Autazes": 5,
   "Beruri": 3,
-  "Presidente Figueiredo": 2,
   "Careiro da Várzea": 1,
+  "Presidente Figueiredo": 1,
   "Manaus": 1
  },
  "ativos_por_municipio": {
   "Manacapuru": 3,
+  "Manaquiri": 2,
   "Careiro": 2,
   "Beruri": 1
  },
  "por_satelite": {
-  "GOES-19": 197,
+  "GOES-19": 156,
   "NOAA-21": 87,
   "NOAA-20": 50,
   "METOP-C": 9,
   "TERRA": 2
  },
  "passagens": [
-  {
-   "satelite": "METOP-B",
-   "sensor": "AVHRR",
-   "inicio": "2026-10-13T00:20:00Z",
-   "fim": "2026-10-13T00:20:00Z",
-   "resolucao_km": 1.1,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "METOP-C",
    "sensor": "AVHRR",
@@ -188,7 +181,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-14T20:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-15T00:00:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -271,9 +264,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (862 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (2483 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (2887 detecções)"
+  "FIRMS MODIS_NRT": "ok (161 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (1309 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (1817 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

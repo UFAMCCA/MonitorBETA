@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-17T12:06:53Z",
+ "gerado_em": "2026-10-17T16:06:35Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -13,12 +13,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-15T12:06:53Z",
- "eventos_ativos": 175,
- "eventos_extintos": 188,
+ "janela_inicio": "2026-10-15T16:06:35Z",
+ "eventos_ativos": 8,
+ "eventos_extintos": 355,
  "eventos_total": 363,
- "deteccoes_total": 2901,
- "deteccoes_ativas": 2549,
+ "deteccoes_total": 2902,
+ "deteccoes_ativas": 299,
  "por_municipio": {
   "Itacoatiara": 106,
   "Autazes": 103,
@@ -35,21 +35,16 @@
   "Iranduba": 1
  },
  "ativos_por_municipio": {
-  "Autazes": 61,
-  "Itacoatiara": 54,
-  "Careiro da Várzea": 18,
-  "Manaquiri": 14,
-  "Careiro": 12,
-  "Rio Preto da Eva": 5,
-  "Presidente Figueiredo": 4,
-  "Manacapuru": 3,
-  "Manaus": 3,
-  "Beruri": 1
+  "Manaquiri": 2,
+  "Autazes": 2,
+  "Itacoatiara": 2,
+  "Manaus": 1,
+  "Rio Preto da Eva": 1
  },
  "por_satelite": {
   "NOAA-21": 1204,
   "NOAA-20": 1093,
-  "GOES-19": 408,
+  "GOES-19": 409,
   "TERRA": 124,
   "AQUA": 72
  },
@@ -197,9 +192,17 @@
    "fim": "2026-10-17T06:14:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 82
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-17T13:14:00Z",
+   "fim": "2026-10-17T13:14:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-17T05:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-17T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -282,7 +285,7 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (414 detecções)",
+  "FIRMS MODIS_NRT": "ok (415 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (4935 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (4325 detecções)"
  },

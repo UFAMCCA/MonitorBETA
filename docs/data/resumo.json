@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-18T16:06:33Z",
+ "gerado_em": "2026-10-18T18:34:27Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -13,26 +13,25 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-16T16:06:33Z",
+ "janela_inicio": "2026-10-16T18:34:27Z",
  "eventos_ativos": 12,
- "eventos_extintos": 416,
- "eventos_total": 428,
- "deteccoes_total": 3058,
- "deteccoes_ativas": 793,
+ "eventos_extintos": 304,
+ "eventos_total": 316,
+ "deteccoes_total": 2055,
+ "deteccoes_ativas": 666,
  "por_municipio": {
-  "Autazes": 128,
-  "Itacoatiara": 102,
-  "Careiro da Várzea": 44,
-  "Manaquiri": 42,
-  "Careiro": 31,
-  "Manacapuru": 23,
-  "Beruri": 19,
-  "Presidente Figueiredo": 13,
-  "Rio Preto da Eva": 11,
-  "Manaus": 10,
+  "Autazes": 107,
+  "Itacoatiara": 72,
+  "Manaquiri": 31,
+  "Careiro da Várzea": 26,
+  "Careiro": 24,
+  "Manacapuru": 16,
+  "Beruri": 14,
+  "Rio Preto da Eva": 8,
+  "Presidente Figueiredo": 8,
+  "Manaus": 6,
   "Iranduba": 2,
-  "Novo Airão": 2,
-  "Anori": 1
+  "Novo Airão": 2
  },
  "ativos_por_municipio": {
   "Manacapuru": 4,
@@ -43,37 +42,13 @@
   "Manaus": 1
  },
  "por_satelite": {
-  "NOAA-21": 1364,
-  "NOAA-20": 1015,
+  "NOAA-21": 1134,
   "GOES-19": 594,
+  "NOAA-20": 242,
   "TERRA": 66,
   "AQUA": 19
  },
  "passagens": [
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-16T16:33:00Z",
-   "fim": "2026-10-16T16:37:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 49
-  },
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-16T17:30:00Z",
-   "fim": "2026-10-16T17:32:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 773
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-16T18:13:00Z",
-   "fim": "2026-10-16T18:15:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 181
-  },
   {
    "satelite": "AQUA",
    "sensor": "MODIS",

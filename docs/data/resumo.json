@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-18T12:34:29Z",
+ "gerado_em": "2026-10-18T16:06:33Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -13,15 +13,15 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-16T12:34:29Z",
- "eventos_ativos": 15,
- "eventos_extintos": 413,
+ "janela_inicio": "2026-10-16T16:06:33Z",
+ "eventos_ativos": 12,
+ "eventos_extintos": 416,
  "eventos_total": 428,
- "deteccoes_total": 3112,
- "deteccoes_ativas": 875,
+ "deteccoes_total": 3058,
+ "deteccoes_ativas": 793,
  "por_municipio": {
-  "Autazes": 130,
-  "Itacoatiara": 100,
+  "Autazes": 128,
+  "Itacoatiara": 102,
   "Careiro da Várzea": 44,
   "Manaquiri": 42,
   "Careiro": 31,
@@ -36,29 +36,20 @@
  },
  "ativos_por_municipio": {
   "Manacapuru": 4,
-  "Itacoatiara": 4,
   "Manaquiri": 3,
+  "Itacoatiara": 2,
   "Rio Preto da Eva": 1,
   "Beruri": 1,
-  "Manaus": 1,
-  "Autazes": 1
+  "Manaus": 1
  },
  "por_satelite": {
   "NOAA-21": 1364,
   "NOAA-20": 1015,
-  "GOES-19": 611,
-  "TERRA": 103,
+  "GOES-19": 594,
+  "TERRA": 66,
   "AQUA": 19
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-16T12:36:00Z",
-   "fim": "2026-10-16T12:36:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 37
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -194,6 +185,14 @@
    "fim": "2026-10-18T05:55:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 37
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-18T12:14:00Z",
+   "fim": "2026-10-18T12:17:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-18T05:40:00Z",
@@ -279,7 +278,7 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (402 detecções)",
+  "FIRMS MODIS_NRT": "ok (415 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (4448 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (4946 detecções)"
  },

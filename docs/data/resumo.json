@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-18T08:08:38Z",
+ "gerado_em": "2026-10-18T12:34:29Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -13,7 +13,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-16T08:08:38Z",
+ "janela_inicio": "2026-10-16T12:34:29Z",
  "eventos_ativos": 15,
  "eventos_extintos": 413,
  "eventos_total": 428,
@@ -54,7 +54,7 @@
   {
    "satelite": "TERRA",
    "sensor": "MODIS",
-   "inicio": "2026-10-16T12:34:00Z",
+   "inicio": "2026-10-16T12:36:00Z",
    "fim": "2026-10-16T12:36:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 37

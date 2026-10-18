@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-17T22:07:20Z",
+ "gerado_em": "2026-10-17T23:56:23Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -13,14 +13,14 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-15T22:07:20Z",
- "eventos_ativos": 127,
- "eventos_extintos": 304,
- "eventos_total": 431,
- "deteccoes_total": 3121,
- "deteccoes_ativas": 1600,
+ "janela_inicio": "2026-10-15T23:56:23Z",
+ "eventos_ativos": 123,
+ "eventos_extintos": 311,
+ "eventos_total": 434,
+ "deteccoes_total": 3123,
+ "deteccoes_ativas": 1159,
  "por_municipio": {
-  "Autazes": 131,
+  "Autazes": 133,
   "Itacoatiara": 100,
   "Careiro da Várzea": 45,
   "Manaquiri": 42,
@@ -29,29 +29,29 @@
   "Beruri": 20,
   "Presidente Figueiredo": 13,
   "Rio Preto da Eva": 11,
-  "Manaus": 9,
+  "Manaus": 10,
   "Iranduba": 3,
   "Novo Airão": 3,
   "Anori": 1
  },
  "ativos_por_municipio": {
-  "Autazes": 41,
-  "Manaquiri": 19,
-  "Careiro": 15,
-  "Itacoatiara": 14,
+  "Autazes": 42,
+  "Manaquiri": 17,
+  "Itacoatiara": 13,
+  "Careiro": 13,
   "Beruri": 12,
-  "Manacapuru": 11,
+  "Manacapuru": 10,
   "Careiro da Várzea": 7,
+  "Manaus": 2,
   "Rio Preto da Eva": 2,
   "Iranduba": 2,
   "Presidente Figueiredo": 2,
-  "Manaus": 1,
   "Novo Airão": 1
  },
  "por_satelite": {
   "NOAA-21": 1511,
   "NOAA-20": 1058,
-  "GOES-19": 409,
+  "GOES-19": 411,
   "TERRA": 124,
   "AQUA": 19
  },
@@ -209,7 +209,7 @@
    "deteccoes_na_area": 19
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-17T18:20:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-17T23:30:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [

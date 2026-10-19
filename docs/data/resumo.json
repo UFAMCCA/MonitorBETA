@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-19T20:59:16Z",
+ "gerado_em": "2026-10-19T22:07:21Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -13,7 +13,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-17T20:59:16Z",
+ "janela_inicio": "2026-10-17T22:07:21Z",
  "eventos_ativos": 4,
  "eventos_extintos": 42,
  "eventos_total": 46,

@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-18T22:07:21Z",
+ "gerado_em": "2026-10-19T00:06:26Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -13,15 +13,15 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-16T22:07:21Z",
+ "janela_inicio": "2026-10-17T00:06:26Z",
  "eventos_ativos": 1,
- "eventos_extintos": 316,
- "eventos_total": 317,
- "deteccoes_total": 2056,
+ "eventos_extintos": 321,
+ "eventos_total": 322,
+ "deteccoes_total": 1906,
  "deteccoes_ativas": 1,
  "por_municipio": {
-  "Autazes": 107,
-  "Itacoatiara": 73,
+  "Autazes": 111,
+  "Itacoatiara": 74,
   "Manaquiri": 31,
   "Careiro da Várzea": 26,
   "Careiro": 24,
@@ -38,7 +38,7 @@
  },
  "por_satelite": {
   "NOAA-21": 1134,
-  "GOES-19": 594,
+  "GOES-19": 444,
   "NOAA-20": 242,
   "TERRA": 66,
   "AQUA": 20
@@ -264,9 +264,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (425 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (4533 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (5018 detecções)"
+  "FIRMS MODIS_NRT": "ok (327 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (1604 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (3679 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

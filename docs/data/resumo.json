@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-19T08:08:41Z",
+ "gerado_em": "2026-10-19T15:30:43Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -13,12 +13,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-17T08:08:41Z",
- "eventos_ativos": 8,
- "eventos_extintos": 152,
+ "janela_inicio": "2026-10-17T15:30:43Z",
+ "eventos_ativos": 7,
+ "eventos_extintos": 153,
  "eventos_total": 160,
- "deteccoes_total": 820,
- "deteccoes_ativas": 10,
+ "deteccoes_total": 816,
+ "deteccoes_ativas": 9,
  "por_municipio": {
   "Autazes": 48,
   "Manaquiri": 24,
@@ -35,23 +35,15 @@
  },
  "ativos_por_municipio": {
   "Autazes": 5,
-  "Itacoatiara": 3
+  "Itacoatiara": 2
  },
  "por_satelite": {
   "NOAA-21": 341,
-  "GOES-19": 326,
+  "GOES-19": 322,
   "NOAA-20": 133,
   "AQUA": 20
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-17T13:14:00Z",
-   "fim": "2026-10-17T13:14:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -149,12 +141,28 @@
    "deteccoes_na_area": 1
   },
   {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T04:40:00Z",
+   "fim": "2026-10-19T04:40:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
    "inicio": "2026-10-19T05:33:00Z",
    "fim": "2026-10-19T05:36:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 9
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-19T12:53:00Z",
+   "fim": "2026-10-19T12:55:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-18T05:40:00Z",
@@ -240,9 +248,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (327 detecções)",
+  "FIRMS MODIS_NRT": "ok (331 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (1628 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (3679 detecções)"
+  "FIRMS VIIRS_NOAA21_NRT": "ok (3684 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

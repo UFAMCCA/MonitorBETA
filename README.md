@@ -5,7 +5,7 @@ Site estático com os focos de calor ativos e das últimas 48 horas em seis regi
 | Região | Sensor | Entorno |
 |---|---|---|
 | Manaus | — | Iranduba, Careiro, Careiro da Várzea, Manacapuru, Manaquiri, Autazes, Novo Airão, Anori, Beruri, Rio Preto da Eva, Presidente Figueiredo, Itacoatiara |
-| Itacoatiara | SEMA_DCAM_38 | Autazes, Nova Olinda do Norte, Silves, Urucará, Barreirinha, Parintins, Urucurituba, Maués, Itapiranga, São Sebastião do Uatumã, Boa Vista do Ramos, Presidente Figueiredo, Rio Preto da Eva |
+| Itacoatiara | SEMA_DCAM_36 | Autazes, Nova Olinda do Norte, Silves, Urucará, Barreirinha, Parintins, Urucurituba, Maués, Itapiranga, São Sebastião do Uatumã, Boa Vista do Ramos, Presidente Figueiredo, Rio Preto da Eva |
 | Parintins | SEMA_DCAM_47 | Nhamundá, Oriximiná (PA), Boa Vista do Ramos, Maués, Urucurituba, Barreirinha, Urucará, Itaituba (PA), Santarém (PA), Itapiranga, Presidente Figueiredo, Rio Preto da Eva, São Sebastião do Uatumã, Itacoatiara |
 | Humaitá | SEMA_DCAM_65 | Lábrea, Porto Velho (RO), Apuí, Canutama, Cruzeiro do Sul (AC), Manicoré, Novo Aripuanã, Tapauá, Autazes, Manaquiri |
 | Coari | SEMA_DCAM_27 | Tefé, Canutama, Lábrea, Tapauá, Beruri, Anori, Manacapuru, Manaus, Novo Airão, Anamã, Barcelos, Manicoré |

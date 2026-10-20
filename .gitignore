@@ -1,1 +1,7 @@
-
+# Gerados a cada coleta e publicados direto no GitHub Pages (não vão para o repositório)
+docs/data/*/focos.geojson
+docs/data/*/deteccoes.json
+docs/data/*/resumo.json
+__pycache__/
+docs/data/*/censipam.json
+docs/data/*/nuvens.png

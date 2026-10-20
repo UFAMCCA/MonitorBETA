@@ -43,7 +43,8 @@ const NOME_SAT = {
 function nomeSat(s) { return NOME_SAT[s] || s; }
 
 function textoStatus(p) {
-  return p.status === "ativo" ? "Ativo" : "Extinto (estimado)";
+  if (p.status === "ativo") return "Ativo";
+  return p.extincao_incerta ? "Extinção incerta (nuvens)" : "Extinto (estimado)";
 }
 function textoExtincao(p) {
   if (p.status !== "extinto_estimado") return "—";

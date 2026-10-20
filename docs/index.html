@@ -26,11 +26,13 @@
 
 <main class="painel-app">
   <aside class="lateral">
+    <section class="bloco nuvens" id="nuvens" aria-live="polite" hidden></section>
+
     <section class="bloco" aria-labelledby="t-agora">
       <h2 id="t-agora">Situação na última atualização</h2>
       <div class="contadores">
         <div class="contador principal"><b id="n-ativos">–</b><small>focos ativos<br><span id="n-det-ativas">–</span> detecções</small></div>
-        <div class="contador"><b id="n-extintos">–</b><small>extintos (estimado) em 48 h</small></div>
+        <div class="contador"><b id="n-extintos">–</b><small>extintos (estimado) em 48 h<span class="alerta-nuvem" id="n-extintos-nota"></span></small></div>
         <div class="contador"><b id="n-det">–</b><small>detecções em 48 h</small></div>
       </div>
       <div class="perto" id="perto-sensor" hidden aria-label="Focos ativos perto do sensor"></div>

@@ -36,7 +36,7 @@
   const cor = corIdade(horasDesde(p.ultima_deteccao, agora));
 
   const linhasPass = (p.passagens_sem_deteccao || []).slice(0, 8).map(x =>
-    `<dt>${horaLocal(x.hora)}</dt><dd>${esc(nomeSat(x.satelite))}</dd>`).join("");
+    `<dt>${horaLocal(x.hora)}</dt><dd>${esc(nomeSat(x.satelite))}${x.nuvem === true ? ' · <b class="alerta-nuvem" style="display:inline">☁ local sob nuvens</b>' : x.nuvem === false ? " · céu limpo" : ""}</dd>`).join("");
 
   pag.innerHTML = `
   <div class="cabecalho">
@@ -89,7 +89,8 @@
     <section class="cartao">
       <h2>Passagens sem detecção depois do último registro</h2>
       ${linhasPass ? `<dl class="ficha">${linhasPass}</dl>` : `<p class="nota">Nenhuma passagem polar posterior no período.</p>`}
-      <p class="nota">Nuvem ou fumaça densa também impede a detecção, então uma passagem sem registro não prova que o fogo acabou.</p>
+      ${p.extincao_incerta ? `<p class="aviso" style="border-radius:6px;margin:0">☁ Havia nuvem sobre o local depois do último registro: a extinção é incerta e o fogo pode ter continuado ativo, escondido.</p>` : ""}
+      <p class="nota">Nuvem ou fumaça densa impede a detecção, então uma passagem sem registro não prova que o fogo acabou. A situação do céu em cada passagem vem da máscara de nuvens do GOES-19.</p>
     </section>
   </div>
 

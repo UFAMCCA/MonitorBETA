@@ -31,6 +31,10 @@
   const sensorCamada = L.layerGroup().addTo(mapa);
   let lstCamada = null, controleCamadas = null;
   let censCamadas = {};  // camadas do Painel do Fogo (Censipam) da região atual
+  let nuvensCamada = null;
+  const faixaNuvens = L.control({ position: "topright" });
+  faixaNuvens.onAdd = () => { const d = L.DomUtil.create("div", "faixa-nuvens"); d.hidden = true; L.DomEvent.disableClickPropagation(d); return d; };
+  faixaNuvens.addTo(mapa);
 
   /* Rótulos: em zoom afastado ficam menores e os que se sobrepõem são escondidos,
      mantendo a sede, os municípios maiores e o sensor sempre visíveis. */
@@ -58,6 +62,7 @@
       extras["Sensor de qualidade do ar"] = sensorCamada;
       extras["Raios de 25, 50 e 100 km"] = raiosCamada;
     }
+    if (nuvensCamada) extras["Nuvens na última passagem do VIIRS (GOES-19)"] = nuvensCamada;
     if (lstCamada) extras["Temperatura da superfície"] = lstCamada;
     for (const { grupo, cfg } of Object.values(censCamadas)) extras[`Censipam · ${cfg.nome}`] = grupo;
     controleCamadas = L.control.layers({ "Imagem de satélite": img, "Mapa de ruas": osm }, extras, { collapsed: true }).addTo(mapa);
@@ -74,6 +79,9 @@
       <div class="rotulo" style="margin-top:4px">Contorno</div>
       <div class="linha"><i class="borda"></i>ativo</div>
       <div class="linha"><i class="borda tracejada"></i>extinto (estimado)</div>
+      <div class="linha"><i class="borda pontilhada"></i>extinção incerta (nuvens)</div>
+      <div class="linha"><i class="amostra-nuvem"></i>nuvem na última passagem</div>
+      <div class="linha"><i class="amostra-nuvem cega"></i>nuvem em todas as passagens (48 h)</div>
       <div class="rotulo" style="margin-top:4px">Preenchimento</div>
       <div class="linha">mais opaco = maior confiança</div>
       <div class="linha">área = pixels reais do sensor; círculo maior = mais pixels</div>
@@ -101,7 +109,7 @@
     const cor = corIdade(horasDesde(p.ultima_deteccao, estado.agora));
     return {
       color: cor, fillColor: cor, fillOpacity: opacConf(p.confianca), opacity: 0.95,
-      weight: p.status === "ativo" ? 2 : 1.6, dashArray: p.status === "ativo" ? null : "5 4",
+      weight: p.status === "ativo" ? 2 : 1.6, dashArray: p.status === "ativo" ? null : p.extincao_incerta ? "1 4" : "5 4",
     };
   }
 
@@ -114,7 +122,7 @@
       <dl>
         <dt>Detectado em</dt><dd>${horaLocal(p.primeira_deteccao)}</dd>
         <dt>Última detecção</dt><dd>${horaLocal(p.ultima_deteccao)}</dd>
-        <dt>Extinção</dt><dd>${p.status === "ativo" ? "ainda ativo" : textoExtincao(p)}</dd>
+        <dt>Extinção</dt><dd>${p.status === "ativo" ? "ainda ativo" : textoExtincao(p)}${p.extincao_incerta ? `<br><small class="alerta-nuvem">☁ havia nuvem sobre o local depois do último registro: o fogo pode continuar ativo</small>` : ""}</dd>
         <dt>Duração</dt><dd>${duracao(p.duracao_h)}</dd>
         <dt>Satélite</dt><dd>${esc(nomeSat(p.satelite_primeira))}${outros.length ? `<br><small>também: ${esc(outros.join(", "))}</small>` : ""}</dd>
         ${dist}
@@ -164,7 +172,7 @@
         fim = `<span class="segue" style="left:${b}%;width:${Math.max(2, 100 - b)}%;background:linear-gradient(90deg, ${cor}, transparent)"></span>`;
       }
       return `<button type="button" class="evento${p.id === estado.sel ? " sel" : ""}" data-id="${p.id}" title="${esc(textoStatus(p))} · ${horaLocal(p.primeira_deteccao)} → ${p.status === "ativo" ? "agora" : horaLocal(p.extincao_ate)}">
-        <span class="nome">${esc(p.municipio || "—")}<small>${horaCurta(p.primeira_deteccao)} · ${p.n_pixels} px · ${p.status === "ativo" ? "ativo" : "extinto"}</small></span>
+        <span class="nome">${esc(p.municipio || "—")}<small>${horaCurta(p.primeira_deteccao)} · ${p.n_pixels} px · ${p.status === "ativo" ? "ativo" : p.extincao_incerta ? "extinto? (nuvens)" : "extinto"}</small></span>
         <span class="trilho"><span class="queima" style="left:${a}%;width:${Math.max(0.8, b - a)}%;background:${cor}"></span>${fim}</span>
       </button>`;
     }).join("") + (evs.length > mostrar.length
@@ -251,6 +259,8 @@
     $("n-ativos").textContent = resumo.eventos_ativos;
     $("n-det-ativas").textContent = resumo.deteccoes_ativas;
     $("n-extintos").textContent = resumo.eventos_extintos;
+    const incertos = (resumo.nuvens && resumo.nuvens.extintos_incertos) || 0;
+    $("n-extintos-nota").textContent = incertos ? `${incertos} com extinção incerta por nuvens` : "";
     $("n-det").textContent = resumo.deteccoes_total;
     const perto = resumo.ativos_perto_do_sensor || {};
     $("perto-sensor").hidden = !s || !Object.keys(perto).length;
@@ -315,6 +325,9 @@
             <dt>Origem</dt><dd>${esc(s.fonte || "—")}</dd>
           </dl>${link}</div>`, { maxWidth: 300 }).addTo(sensorCamada);
     }
+
+    /* nuvens */
+    desenharNuvens(id, resumo);
 
     /* temperatura */
     if (lstCamada) mapa.removeLayer(lstCamada);
@@ -393,6 +406,60 @@
     }
 
     carregarCensipam(id, limites, s, carga);
+  }
+
+  /* ---------- nuvens: aviso e camada ---------- */
+  function desenharNuvens(id, resumo) {
+    const n = resumo.nuvens || { disponivel: false };
+    const bloco = $("nuvens"), faixa = faixaNuvens.getContainer();
+    if (nuvensCamada) mapa.removeLayer(nuvensCamada);
+    nuvensCamada = null;
+    bloco.hidden = false;
+    bloco.className = "bloco nuvens " + (n.disponivel ? `nivel-${n.nivel || "baixo"}` : "nivel-sem");
+    if (!n.disponivel) {
+      bloco.innerHTML = `<div class="nuv-cab"><span class="nuv-icone" aria-hidden="true"></span><h2>Nuvens escondem focos</h2></div>
+        <p>Não foi possível medir a cobertura de nuvens nesta coleta. Os satélites não enxergam fogo sob nuvens ou fumaça densa: em dias nublados, o número real de focos pode ser bem maior que o mostrado, e focos marcados como extintos podem continuar ativos.</p>`;
+      faixa.hidden = true;
+      return;
+    }
+    if (n.camada) {
+      const [o, s_, l, nn] = n.camada.bbox;
+      nuvensCamada = L.imageOverlay(`data/${id}/${n.camada.arquivo}?v=${encodeURIComponent(resumo.gerado_em)}`, [[s_, o], [nn, l]], { opacity: 1, interactive: false });
+      if (n.nivel === "alto") nuvensCamada.addTo(mapa);
+    }
+    const ult = (n.passagens_viirs || [])[0];
+    const pct = ult ? Math.round(ult.pct) : null;
+    const titulo = {
+      alto: "Céu encoberto: muitos focos podem estar escondidos",
+      moderado: "Nuvens parciais: parte dos focos pode não aparecer",
+      baixo: "Céu quase limpo na última passagem do VIIRS",
+    }[n.nivel] || "Cobertura de nuvens";
+    const passagens = (n.passagens_viirs || []).slice(0, 4).map(p =>
+      `<li><span>${p.periodo === "dia" ? "Dia" : "Noite"} · ${horaLocal(p.passagem)}</span><b class="num">${Math.round(p.pct)}%</b></li>`).join("");
+    const serie = n.serie || [];
+    const barras = serie.map(x => `<i style="height:${Math.max(2, x.pct)}%" title="${horaLocal(x.hora)}: ${Math.round(x.pct)}% sob nuvens"></i>`).join("");
+    bloco.innerHTML = `
+      <div class="nuv-cab"><span class="nuv-icone" aria-hidden="true"></span><h2>${titulo}</h2></div>
+      ${pct != null ? `<p class="nuv-destaque"><b class="num">${pct}%</b><span>da região estava sob nuvens na passagem do VIIRS de ${horaLocal(ult.passagem)}. Um foco em qualquer ponto da região tinha <b>${pct}% de chance</b> de estar escondido nessa passagem.</span></p>` : ""}
+      ${n.cego_48h_pct != null && n.cego_48h_pct > 0 ? `<p><b>${num(n.cego_48h_pct, 0)}% da área</b> ficou coberta em todas as passagens do VIIRS das últimas 48 h: ali nenhum foco pôde ser visto.</p>` : ""}
+      ${n.extintos_incertos ? `<p><b>${n.extintos_incertos} de ${n.extintos}</b> focos marcados como extintos tinham nuvem sobre o local nas passagens seguintes e podem continuar ativos (contorno pontilhado no mapa).</p>` : ""}
+      <ul class="nuv-passagens">${passagens}</ul>
+      ${serie.length ? `<div class="nuv-serie" role="img" aria-label="Cobertura de nuvens a cada 3 horas nas últimas 48 horas">${barras}</div>
+        <div class="nuv-eixo"><span>${horaLocal(serie[0].hora)}</span><span>% da região sob nuvens, a cada 3 h</span><span>${horaLocal(serie[serie.length - 1].hora)}</span></div>` : ""}
+      ${nuvensCamada ? `<button type="button" class="mais" id="ver-nuvens">${mapa.hasLayer(nuvensCamada) ? "Esconder" : "Mostrar"} nuvens no mapa</button>` : ""}
+      <p class="nota">Máscara de nuvens do GOES-19 (pixel de 2 km). Fogo sob nuvens ou fumaça densa não é detectado por nenhum satélite.</p>`;
+    const bt = $("ver-nuvens");
+    if (bt) bt.addEventListener("click", () => {
+      if (mapa.hasLayer(nuvensCamada)) mapa.removeLayer(nuvensCamada); else nuvensCamada.addTo(mapa);
+      bt.textContent = `${mapa.hasLayer(nuvensCamada) ? "Esconder" : "Mostrar"} nuvens no mapa`;
+    });
+    if (pct != null && (n.nivel === "alto" || n.nivel === "moderado")) {
+      faixa.className = `faixa-nuvens nivel-${n.nivel}`;
+      faixa.innerHTML = `<span class="nuv-icone" aria-hidden="true"></span><span><b>${pct}% da região sob nuvens</b> na última passagem do VIIRS. Focos podem estar escondidos.</span>`;
+      faixa.hidden = false;
+    } else {
+      faixa.hidden = true;
+    }
   }
 
   /* ---------- Painel do Fogo (Censipam) ---------- */

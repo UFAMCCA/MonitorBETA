@@ -133,3 +133,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-19T18:13:00Z,NOAA-20,-8.7863,-67.0895,Lábrea,24.29,nominal,0.42,0.37,dia,FIRMS
 2026-10-19T23:20:00Z,GOES-19,-8.5750,-66.6787,Lábrea,,,2.2,2.2,noite,INPE
 2026-10-19T23:30:00Z,GOES-19,-8.5750,-66.6787,Lábrea,,,2.2,2.2,noite,INPE
+2026-10-20T01:19:00Z,METOP-B,-9.3728,-66.4757,Lábrea,,,1.1,1.1,noite,INPE
+2026-10-20T01:19:00Z,METOP-B,-9.3743,-66.4826,Lábrea,,,1.1,1.1,noite,INPE

@@ -101,8 +101,8 @@
   ],
   "media_48h": 88.8,
   "cego_48h_pct": 90.7,
-  "extintos": 32,
-  "extintos_incertos": 31,
+  "extintos": 30,
+  "extintos_incertos": 30,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -130,9 +130,9 @@
  "ativos_perto_do_sensor": {
   "25": 0,
   "50": 0,
-  "100": 0
+  "100": 1
  },
- "gerado_em": "2026-10-20T03:06:44Z",
+ "gerado_em": "2026-10-20T03:12:00Z",
  "dados_de_teste": false,
  "atualizacao": "04h",
  "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
@@ -146,15 +146,15 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T03:06:44Z",
- "eventos_ativos": 0,
- "eventos_extintos": 32,
- "eventos_total": 32,
- "deteccoes_total": 120,
- "deteccoes_ativas": 0,
+ "janela_inicio": "2026-10-18T03:12:00Z",
+ "eventos_ativos": 1,
+ "eventos_extintos": 30,
+ "eventos_total": 31,
+ "deteccoes_total": 118,
+ "deteccoes_ativas": 3,
  "por_municipio": {
   "Itacoatiara": 8,
-  "Autazes": 7,
+  "Autazes": 6,
   "Nova Olinda do Norte": 4,
   "Boa Vista do Ramos": 3,
   "Parintins": 3,
@@ -164,12 +164,15 @@
   "Silves": 1,
   "São Sebastião do Uatumã": 1
  },
- "ativos_por_municipio": {},
+ "ativos_por_municipio": {
+  "Itacoatiara": 1
+ },
  "por_satelite": {
   "NOAA-20": 47,
   "NOAA-21": 41,
-  "GOES-19": 31,
-  "AQUA": 1
+  "GOES-19": 28,
+  "AQUA": 1,
+  "METOP-C": 1
  },
  "passagens": [
   {
@@ -283,6 +286,14 @@
    "fim": "2026-10-19T19:00:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "METOP-C",
+   "sensor": "AVHRR",
+   "inicio": "2026-10-20T01:40:00Z",
+   "fim": "2026-10-20T01:40:00Z",
+   "resolucao_km": 1.1,
+   "deteccoes_na_area": 1
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-20T02:40:00Z",
@@ -371,7 +382,7 @@
   "FIRMS MODIS_NRT": "ok (324 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
-  "GOES-19 nuvens": "ok (57 imagens)"
+  "GOES-19 nuvens": "ok (59 imagens)"
  },
  "temperatura_superficie": null
 }

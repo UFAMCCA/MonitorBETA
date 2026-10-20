@@ -743,3 +743,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-19T23:10:00Z,GOES-19,-2.8714,-54.1117,Santarém (PA),,,2.2,2.2,noite,INPE
 2026-10-19T23:20:00Z,GOES-19,-2.8714,-54.1117,Santarém (PA),,,2.2,2.2,noite,INPE
 2026-10-19T23:40:00Z,GOES-19,-2.8714,-54.1117,Santarém (PA),,,2.2,2.2,noite,INPE
+2026-10-20T01:40:00Z,METOP-C,-3.1701,-58.6048,Itacoatiara,,,1.1,1.1,noite,INPE

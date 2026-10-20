@@ -143,3 +143,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-19T17:17:00Z,NOAA-21,-3.0174,-57.5245,Boa Vista do Ramos,3.29,nominal,0.38,0.36,dia,FIRMS+INPE
 2026-10-19T18:13:00Z,NOAA-20,-3.1800,-58.6115,Itacoatiara,11.67,nominal,0.57,0.69,dia,FIRMS+INPE
 2026-10-19T22:30:00Z,GOES-19,-3.1698,-58.6051,Itacoatiara,72.0,,2.2,2.2,noite,INPE
+2026-10-20T01:40:00Z,METOP-C,-3.1701,-58.6048,Itacoatiara,,,1.1,1.1,noite,INPE

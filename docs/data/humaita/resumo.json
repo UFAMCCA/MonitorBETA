@@ -132,7 +132,7 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-10-20T03:06:44Z",
+ "gerado_em": "2026-10-20T03:12:00Z",
  "dados_de_teste": false,
  "atualizacao": "04h",
  "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
@@ -146,18 +146,18 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T03:06:44Z",
- "eventos_ativos": 3,
+ "janela_inicio": "2026-10-18T03:12:00Z",
+ "eventos_ativos": 2,
  "eventos_extintos": 66,
- "eventos_total": 69,
- "deteccoes_total": 214,
- "deteccoes_ativas": 8,
+ "eventos_total": 68,
+ "deteccoes_total": 210,
+ "deteccoes_ativas": 11,
  "por_municipio": {
   "Lábrea": 21,
   "Apuí": 11,
-  "Autazes": 7,
   "Novo Aripuanã": 7,
   "Porto Velho (RO)": 6,
+  "Autazes": 6,
   "Manaquiri": 5,
   "Manicoré": 5,
   "Canutama": 3,
@@ -166,15 +166,15 @@
  },
  "ativos_por_municipio": {
   "Manaquiri": 1,
-  "Lábrea": 1,
-  "Cruzeiro do Sul (AC)": 1
+  "Lábrea": 1
  },
  "por_satelite": {
   "NOAA-20": 74,
   "NOAA-21": 73,
-  "GOES-19": 46,
+  "GOES-19": 40,
   "AQUA": 12,
-  "TERRA": 9
+  "TERRA": 9,
+  "METOP-B": 2
  },
  "passagens": [
   {
@@ -336,6 +336,22 @@
    "fim": "2026-10-19T20:36:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "METOP-B",
+   "sensor": "AVHRR",
+   "inicio": "2026-10-20T01:19:00Z",
+   "fim": "2026-10-20T01:19:00Z",
+   "resolucao_km": 1.1,
+   "deteccoes_na_area": 2
+  },
+  {
+   "satelite": "METOP-C",
+   "sensor": "AVHRR",
+   "inicio": "2026-10-20T01:40:00Z",
+   "fim": "2026-10-20T01:40:00Z",
+   "resolucao_km": 1.1,
+   "deteccoes_na_area": 0
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-20T02:20:00Z",
@@ -424,7 +440,7 @@
   "FIRMS MODIS_NRT": "ok (324 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
-  "GOES-19 nuvens": "ok (57 imagens)"
+  "GOES-19 nuvens": "ok (59 imagens)"
  },
  "temperatura_superficie": null
 }

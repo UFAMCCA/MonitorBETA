@@ -101,8 +101,8 @@
   ],
   "media_48h": 78.9,
   "cego_48h_pct": 42.7,
-  "extintos": 14,
-  "extintos_incertos": 14,
+  "extintos": 15,
+  "extintos_incertos": 15,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,7 +132,7 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-10-20T03:06:44Z",
+ "gerado_em": "2026-10-20T03:12:00Z",
  "dados_de_teste": false,
  "atualizacao": "04h",
  "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
@@ -146,12 +146,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T03:06:44Z",
- "eventos_ativos": 1,
- "eventos_extintos": 14,
+ "janela_inicio": "2026-10-18T03:12:00Z",
+ "eventos_ativos": 0,
+ "eventos_extintos": 15,
  "eventos_total": 15,
  "deteccoes_total": 27,
- "deteccoes_ativas": 1,
+ "deteccoes_ativas": 0,
  "por_municipio": {
   "Benjamin Constant": 3,
   "São Paulo de Olivença": 3,
@@ -164,9 +164,7 @@
   "Jutaí": 1,
   "Envira": 1
  },
- "ativos_por_municipio": {
-  "Cruzeiro do Sul (AC)": 1
- },
+ "ativos_por_municipio": {},
  "por_satelite": {
   "NOAA-20": 17,
   "NOAA-21": 10
@@ -259,6 +257,14 @@
    "fim": "2026-10-19T20:40:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "METOP-B",
+   "sensor": "AVHRR",
+   "inicio": "2026-10-20T01:19:00Z",
+   "fim": "2026-10-20T01:19:00Z",
+   "resolucao_km": 1.1,
+   "deteccoes_na_area": 0
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-19T23:30:00Z",
@@ -347,7 +353,7 @@
   "FIRMS MODIS_NRT": "ok (324 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
-  "GOES-19 nuvens": "ok (57 imagens)"
+  "GOES-19 nuvens": "ok (59 imagens)"
  },
  "temperatura_superficie": null
 }

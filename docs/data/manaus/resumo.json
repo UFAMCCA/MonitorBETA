@@ -102,7 +102,7 @@
   "media_48h": 91.7,
   "cego_48h_pct": 88.0,
   "extintos": 26,
-  "extintos_incertos": 25,
+  "extintos_incertos": 26,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -122,7 +122,7 @@
  },
  "sensor": null,
  "ativos_perto_do_sensor": {},
- "gerado_em": "2026-10-20T03:06:44Z",
+ "gerado_em": "2026-10-20T03:12:00Z",
  "dados_de_teste": false,
  "atualizacao": "04h",
  "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
@@ -136,15 +136,15 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T03:06:44Z",
- "eventos_ativos": 3,
+ "janela_inicio": "2026-10-18T03:12:00Z",
+ "eventos_ativos": 2,
  "eventos_extintos": 26,
- "eventos_total": 29,
- "deteccoes_total": 115,
+ "eventos_total": 28,
+ "deteccoes_total": 110,
  "deteccoes_ativas": 8,
  "por_municipio": {
   "Itacoatiara": 8,
-  "Autazes": 7,
+  "Autazes": 6,
   "Manaquiri": 5,
   "Manacapuru": 4,
   "Manaus": 2,
@@ -153,14 +153,15 @@
   "Rio Preto da Eva": 1
  },
  "ativos_por_municipio": {
-  "Manaquiri": 2,
-  "Careiro": 1
+  "Manaquiri": 1,
+  "Itacoatiara": 1
  },
  "por_satelite": {
   "NOAA-20": 54,
-  "GOES-19": 46,
+  "GOES-19": 40,
   "NOAA-21": 14,
-  "AQUA": 1
+  "AQUA": 1,
+  "METOP-C": 1
  },
  "passagens": [
   {
@@ -242,6 +243,14 @@
    "fim": "2026-10-19T19:00:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "METOP-C",
+   "sensor": "AVHRR",
+   "inicio": "2026-10-20T01:40:00Z",
+   "fim": "2026-10-20T01:40:00Z",
+   "resolucao_km": 1.1,
+   "deteccoes_na_area": 1
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-20T02:20:00Z",
@@ -330,7 +339,7 @@
   "FIRMS MODIS_NRT": "ok (324 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
-  "GOES-19 nuvens": "ok (57 imagens)"
+  "GOES-19 nuvens": "ok (59 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

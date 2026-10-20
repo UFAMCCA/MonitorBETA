@@ -1,5 +1,6 @@
-"""Coleta focos de calor (INPE BDQueimadas + NASA FIRMS), agrupa em eventos,
-estima o status (ativo / extinto estimado) e grava os arquivos do site.
+"""Coleta focos de calor (INPE BDQueimadas + NASA FIRMS) uma vez e processa cada
+região de config.REGIOES: agrupa em eventos, estima o status (ativo / extinto
+estimado) e grava os arquivos do site em docs/data/<regiao>/.
 
 Uso normal (GitHub Actions, 04h, 12h e 18h de Manaus):
     FIRMS_MAP_KEY=xxxx python scripts/focos.py
@@ -8,6 +9,7 @@ Teste offline com CSVs locais:
     python scripts/focos.py --inpe-local pasta_inpe --firms-local pasta_firms --agora 2026-09-25T22:00:00Z
 """
 import argparse
+import shutil
 import csv
 import hashlib
 import io
@@ -33,7 +35,7 @@ TZ = ZoneInfo(C.FUSO)
 UTC = timezone.utc
 INPE_BASE = "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv"
 FIRMS_BASE = "https://firms.modaps.eosdis.nasa.gov/api/area/csv"
-MARGEM_PASSAGEM_GRAUS = 3.0  # área ampla usada para saber se um satélite passou
+MARGEM_PASSAGEM_GRAUS = 1.0  # área ampla usada para saber se um satélite passou
 
 INPE_PARA_CHAVE = {n: k for k, v in C.SATELITES.items() for n in v["inpe"]}
 
@@ -199,7 +201,8 @@ def coletar_inpe(agora, local_dir, status):
     return regs
 
 
-def coletar_firms(bbox, local_dir, status):
+def coletar_firms(caixas, local_dir, status):
+    """Consulta o FIRMS para cada caixa (uma por região) e junta tudo."""
     fontes = sorted({v["firms"] for v in C.SATELITES.values() if v["firms"]})
     regs = []
     if local_dir:
@@ -212,17 +215,21 @@ def coletar_firms(bbox, local_dir, status):
     if not chave:
         status["FIRMS"] = "sem FIRMS_MAP_KEY: usando só INPE (sem tamanho real do pixel e confiança)"
         return regs
-    area = ",".join(f"{v:.3f}" for v in bbox)
     for fonte in fontes:
-        try:
-            txt = http_get(f"{FIRMS_BASE}/{chave}/{fonte}/{area}/3")
-            if txt.lstrip().lower().startswith(("invalid", "error")):
-                raise RuntimeError(txt.strip()[:120])
-            r = ler_csv_firms(txt, fonte)
-            regs.extend(r)
-            status[f"FIRMS {fonte}"] = f"ok ({len(r)} detecções)"
-        except Exception as e:
-            status[f"FIRMS {fonte}"] = f"erro: {e}"
+        n, erros = 0, []
+        for caixa in caixas:
+            area = ",".join(f"{v:.3f}" for v in caixa)
+            try:
+                txt = http_get(f"{FIRMS_BASE}/{chave}/{fonte}/{area}/3")
+                if txt.lstrip().lower().startswith(("invalid", "error")):
+                    raise RuntimeError(txt.strip()[:120])
+                r = ler_csv_firms(txt, fonte)
+                regs.extend(r)
+                n += len(r)
+            except Exception as e:
+                erros.append(str(e)[:120])
+        status[f"FIRMS {fonte}"] = (f"ok ({n} detecções)" if not erros
+                                    else f"erro em {len(erros)} de {len(caixas)} consultas: {erros[0]}")
     return regs
 
 
@@ -243,16 +250,23 @@ def deduplicar(regs):
 
     firms = [r for r in regs if "FIRMS" in r["fontes"]]
     inpe = [r for r in regs if r["fontes"] == {"INPE"}]
-    por_sat = defaultdict(list)
+    grade = defaultdict(list)  # (satélite, célula de 0,05°) -> detecções FIRMS
     for f in firms:
-        por_sat[f["sat"]].append(f)
+        grade[(f["sat"], int(f["lat"] // 0.05), int(f["lon"] // 0.05))].append(f)
     restantes = []
     for i in inpe:
         tol_km = max(0.5, C.SATELITES[i["sat"]]["pixel_km"] * 1.2)
         par = None
-        for f in por_sat.get(i["sat"], []):
-            if abs((f["t"] - i["t"]).total_seconds()) <= 20 * 60 and km_entre(i["lat"], i["lon"], f["lat"], f["lon"]) <= tol_km:
-                par = f
+        ci, cj = int(i["lat"] // 0.05), int(i["lon"] // 0.05)
+        for a in (-1, 0, 1):
+            for b in (-1, 0, 1):
+                for f in grade.get((i["sat"], ci + a, cj + b), []):
+                    if abs((f["t"] - i["t"]).total_seconds()) <= 20 * 60 and km_entre(i["lat"], i["lon"], f["lat"], f["lon"]) <= tol_km:
+                        par = f
+                        break
+                if par:
+                    break
+            if par:
                 break
         if par:
             par["fontes"] = par["fontes"] | {"INPE"}
@@ -395,8 +409,8 @@ def amostrar_lst(lat, lon, lst):
     return {"valor_c": round(v, 1), "cena": cenas[k] if k < len(cenas) else None}
 
 
-def carregar_lst():
-    meta_p, grade_p = C.DATA_DIR / "lst.json", C.DATA_DIR / "lst_grade.npz"
+def carregar_lst(pasta):
+    meta_p, grade_p = pasta / "lst.json", pasta / "lst_grade.npz"
     if not (meta_p.exists() and grade_p.exists()):
         return None
     try:
@@ -414,40 +428,97 @@ def janela_da_hora(agora):
     return min(C.ATUALIZACOES, key=lambda k: min(abs(h - int(k[:2])), 24 - abs(h - int(k[:2]))))
 
 
-# ---------------------------------------------------------------------- main
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--inpe-local")
-    ap.add_argument("--firms-local")
-    ap.add_argument("--agora", help="instante de referência em UTC (testes)")
-    ap.add_argument("--janela", choices=list(C.ATUALIZACOES))
-    a = ap.parse_args()
+def carregar_sensores():
+    p = C.DATA_DIR / "sensores.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    except Exception:
+        return {}
 
-    agora = datetime.fromisoformat(a.agora.replace("Z", "+00:00")) if a.agora else datetime.now(UTC)
-    janela = a.janela or janela_da_hora(agora)
-    inicio = agora - timedelta(hours=C.HORAS_HISTORICO)
 
-    lim = json.loads((C.DATA_DIR / "limites.geojson").read_text(encoding="utf-8"))
+def limpar(d):
+    """Remove campos vazios para deixar o JSON das detecções menor."""
+    return {k: v for k, v in d.items() if v not in (None, "")}
+
+
+HIST_CAMPOS = ["hora_utc", "satelite", "lat", "lon", "municipio", "frp_mw", "confianca",
+               "scan_km", "track_km", "periodo", "fontes"]
+
+
+def gravar_historico(rid, dets):
+    """Acrescenta as detecções da região ao arquivo mensal (docs/data/historico/<regiao>/AAAA-MM.csv)."""
+    pasta = C.DATA_DIR / "historico" / rid
+    pasta.mkdir(parents=True, exist_ok=True)
+    por_mes = defaultdict(list)
+    for d in dets:
+        por_mes[d["t"].strftime("%Y-%m")].append(d)
+    for mes, lista in por_mes.items():
+        arq = pasta / f"{mes}.csv"
+        chaves, linhas = set(), []
+        if arq.exists():
+            with open(arq, encoding="utf-8", newline="") as f:
+                for row in csv.DictReader(f):
+                    chaves.add((row["satelite"], row["hora_utc"], row["lat"], row["lon"]))
+                    linhas.append(row)
+        novos = 0
+        for d in lista:
+            row = {"hora_utc": iso(d["t"]), "satelite": d["sat"], "lat": f"{d['lat']:.4f}", "lon": f"{d['lon']:.4f}",
+                   "municipio": d["municipio"] or "", "frp_mw": "" if d["frp"] is None else d["frp"],
+                   "confianca": d["confianca"] or "", "scan_km": round(d["scan_km"], 3), "track_km": round(d["track_km"], 3),
+                   "periodo": d["periodo"] or "", "fontes": "+".join(sorted(d["fontes"]))}
+            k = (row["satelite"], row["hora_utc"], row["lat"], row["lon"])
+            if k not in chaves:
+                chaves.add(k)
+                linhas.append(row)
+                novos += 1
+        if novos:
+            linhas.sort(key=lambda r: (r["hora_utc"], r["satelite"]))
+            with open(arq, "w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=HIST_CAMPOS)
+                w.writeheader()
+                w.writerows(linhas)
+
+
+def migrar_lst_antiga():
+    """A camada de temperatura ficava em docs/data/; agora fica na pasta da região padrão."""
+    destino = C.DATA_DIR / C.REGIAO_PADRAO
+    for nome in ("lst.json", "lst.png", "lst_grade.npz"):
+        antigo, novo = C.DATA_DIR / nome, destino / nome
+        if antigo.exists() and not novo.exists():
+            destino.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(antigo, novo)
+
+
+def processar_regiao(rid, reg, regs, agora, inicio, janela, status, sensores, teste, historico):
+    pasta = C.DATA_DIR / rid
+    lim = json.loads((pasta / "limites.geojson").read_text(encoding="utf-8"))
     municipios = [(f["properties"]["nome"], prep(shape(f["geometry"]))) for f in lim["features"]]
     area = prep(unary_union([shape(f["geometry"]) for f in lim["features"]]))
     o, s, l, n = lim["bbox"]
     m = MARGEM_PASSAGEM_GRAUS
     bbox_amplo = (o - m, s - m, l + m, n + m)
 
-    status = {}
-    regs = coletar_inpe(agora, a.inpe_local, status) + coletar_firms(bbox_amplo, a.firms_local, status)
-    regs = [completar_pixel(r) for r in deduplicar(regs) if inicio - timedelta(hours=24) <= r["t"] <= agora]
-
     amplos = [r for r in regs if bbox_amplo[0] <= r["lon"] <= bbox_amplo[2] and bbox_amplo[1] <= r["lat"] <= bbox_amplo[3]]
     lista_pass = passagens([r for r in amplos if r["t"] >= inicio])
     goes = [r["t"] for r in amplos if r["sat"] == "GOES-19"]
     goes_ultimo = max(goes) if goes else None
 
-    dets = [r for r in regs if r["t"] >= inicio and area.contains(Point(r["lon"], r["lat"]))]
-    for d in dets:
-        d["municipio"] = municipio_de(d["lat"], d["lon"], municipios) or d.get("municipio_inpe")
+    dets = []
+    for r in amplos:
+        if r["t"] >= inicio and o <= r["lon"] <= l and s <= r["lat"] <= n and area.contains(Point(r["lon"], r["lat"])):
+            d = dict(r)
+            d["municipio"] = municipio_de(d["lat"], d["lon"], municipios) or d.get("municipio_inpe")
+            dets.append(d)
 
-    lst = carregar_lst()
+    sensor_nome = reg.get("sensor")
+    sensor = None
+    if sensor_nome:
+        info = sensores.get(sensor_nome) or {}
+        sensor = {"nome": sensor_nome, "lat": info.get("lat"), "lon": info.get("lon"),
+                  "sensor_index": info.get("sensor_index"), "fonte": info.get("fonte", "pendente")}
+    tem_coord = bool(sensor and sensor["lat"] is not None)
+
+    lst = carregar_lst(pasta)
     eventos, detalhes = [], {}
     for ev in agrupar(dets):
         ev.sort(key=lambda d: d["t"])
@@ -479,12 +550,12 @@ def main():
             "confianca": max(confs, key=ordem.get) if confs else None,
             "frp_max": max(frps) if frps else None,
             "lat": round(c.y, 5), "lon": round(c.x, 5),
+            "dist_sensor_km": round(km_entre(c.y, c.x, sensor["lat"], sensor["lon"]), 1) if tem_coord else None,
             "temp_superficie": amostrar_lst(c.y, c.x, lst),
             **st,
         }
-        eventos.append({"type": "Feature", "properties": props,
-                        "geometry": mapping(geom)})
-        detalhes[eid] = [{
+        eventos.append({"type": "Feature", "properties": props, "geometry": mapping(geom)})
+        detalhes[eid] = [limpar({
             "satelite": d["sat"], "nome_fonte": d["sat_nome"], "sensor": d["sensor"],
             "hora": iso(d["t"]), "lat": round(d["lat"], 5), "lon": round(d["lon"], 5),
             "fontes": sorted(d["fontes"]), "municipio": d["municipio"],
@@ -494,14 +565,21 @@ def main():
             "pixel_real": d["pixel_real"], "periodo": d["periodo"],
             "risco_fogo": d["risco_fogo"], "dias_sem_chuva": d["dias_sem_chuva"],
             "precipitacao_mm": d["precipitacao"], "bioma": d["bioma"], "id_inpe": d["id_inpe"],
-        } for d in ev]
+        }) for d in ev]
 
     eventos.sort(key=lambda f: f["properties"]["ultima_deteccao"], reverse=True)
     ativos = [e for e in eventos if e["properties"]["status"] == "ativo"]
+    perto = {}
+    if tem_coord:
+        for raio in (25, 50, 100):
+            perto[str(raio)] = sum(1 for e in ativos if e["properties"]["dist_sensor_km"] <= raio)
 
     resumo = {
+        "regiao": {"id": rid, "nome": reg["nome"], "sede": reg["sede"], "n_municipios": len(municipios)},
+        "sensor": sensor,
+        "ativos_perto_do_sensor": perto,
         "gerado_em": iso(agora),
-        "dados_de_teste": bool(a.inpe_local or a.firms_local),
+        "dados_de_teste": teste,
         "atualizacao": janela,
         "atualizacao_descricao": C.ATUALIZACOES[janela],
         "proximas_atualizacoes": list(C.ATUALIZACOES),
@@ -516,21 +594,65 @@ def main():
         "ativos_por_municipio": dict(Counter(e["properties"]["municipio"] or "—" for e in ativos).most_common()),
         "por_satelite": dict(Counter(d["sat"] for d in dets).most_common()),
         "passagens": [{
-            "satelite": s, "sensor": C.SATELITES[s]["sensor"], "inicio": iso(t0), "fim": iso(t1),
-            "resolucao_km": C.SATELITES[s]["pixel_km"],
-            "deteccoes_na_area": sum(1 for d in dets if d["sat"] == s and t0 - timedelta(minutes=5) <= d["t"] <= t1 + timedelta(minutes=5)),
-        } for s, t0, t1, _ in lista_pass],
+            "satelite": s_, "sensor": C.SATELITES[s_]["sensor"], "inicio": iso(t0), "fim": iso(t1),
+            "resolucao_km": C.SATELITES[s_]["pixel_km"],
+            "deteccoes_na_area": sum(1 for d in dets if d["sat"] == s_ and t0 - timedelta(minutes=5) <= d["t"] <= t1 + timedelta(minutes=5)),
+        } for s_, t0, t1, _ in lista_pass],
         "goes_ultima_deteccao_regional": iso(goes_ultimo),
         "satelites": C.SATELITES,
         "fontes_status": status,
         "temperatura_superficie": lst["meta"] if lst else None,
     }
+    pasta.mkdir(parents=True, exist_ok=True)
+    (pasta / "focos.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": eventos}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (pasta / "deteccoes.json").write_text(json.dumps(detalhes, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (pasta / "resumo.json").write_text(json.dumps(resumo, ensure_ascii=False, indent=1), encoding="utf-8")
+    if historico:
+        gravar_historico(rid, dets)
+    print(f"  {rid:18s} {len(dets):6d} detecções -> {len(eventos):5d} focos ({len(ativos)} ativos)")
 
-    C.DATA_DIR.mkdir(parents=True, exist_ok=True)
-    (C.DATA_DIR / "focos.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": eventos}, ensure_ascii=False), encoding="utf-8")
-    (C.DATA_DIR / "deteccoes.json").write_text(json.dumps(detalhes, ensure_ascii=False), encoding="utf-8")
-    (C.DATA_DIR / "resumo.json").write_text(json.dumps(resumo, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"[{janela}] {len(dets)} detecções -> {len(eventos)} eventos ({len(ativos)} ativos). Fontes: {status}")
+
+# ---------------------------------------------------------------------- main
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--inpe-local")
+    ap.add_argument("--firms-local")
+    ap.add_argument("--agora", help="instante de referência em UTC (testes)")
+    ap.add_argument("--janela", choices=list(C.ATUALIZACOES))
+    ap.add_argument("--regiao", action="append", help="processar só esta região (pode repetir)")
+    ap.add_argument("--sem-historico", action="store_true")
+    a = ap.parse_args()
+
+    agora = datetime.fromisoformat(a.agora.replace("Z", "+00:00")) if a.agora else datetime.now(UTC)
+    janela = a.janela or janela_da_hora(agora)
+    inicio = agora - timedelta(hours=C.HORAS_HISTORICO)
+    teste = bool(a.inpe_local or a.firms_local)
+    regioes = {k: v for k, v in C.REGIOES.items() if not a.regiao or k in a.regiao}
+
+    m = MARGEM_PASSAGEM_GRAUS
+    caixas = []
+    for rid in regioes:
+        o, s, l, n = json.loads((C.DATA_DIR / rid / "limites.geojson").read_text(encoding="utf-8"))["bbox"]
+        caixas.append((o - m, s - m, l + m, n + m))
+
+    def dentro(r):
+        return any(c[0] <= r["lon"] <= c[2] and c[1] <= r["lat"] <= c[3] for c in caixas)
+
+    status = {}
+    brutos = [r for r in coletar_inpe(agora, a.inpe_local, status) if dentro(r)]
+    brutos += [r for r in coletar_firms(caixas, a.firms_local, status) if dentro(r)]
+    regs = [completar_pixel(r) for r in deduplicar(brutos) if inicio - timedelta(hours=24) <= r["t"] <= agora]
+    print(f"[{janela}] {len(regs)} detecções na área das regiões. Fontes: {status}")
+
+    migrar_lst_antiga()
+    sensores = carregar_sensores()
+    for rid, reg in regioes.items():
+        processar_regiao(rid, reg, regs, agora, inicio, janela, status, sensores, teste,
+                         historico=not (teste or a.sem_historico))
+
+    # arquivos da versão de região única, que não são mais usados
+    for antigo in ("focos.geojson", "deteccoes.json", "resumo.json", "limites.geojson"):
+        (C.DATA_DIR / antigo).unlink(missing_ok=True)
 
 
 if __name__ == "__main__":

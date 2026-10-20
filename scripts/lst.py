@@ -5,10 +5,12 @@ Microsoft Planetary Computer (gratuito, sem cadastro), remove nuvens e sombras
 pela banda QA_PIXEL e monta um mosaico com o pixel limpo MAIS RECENTE.
 Cada pixel guarda de qual cena veio, para o site mostrar satélite, data e hora.
 
-Saídas em docs/data/: lst.png (camada colorida), lst_grade.npz (valores em °C
-e índice da cena de origem) e lst.json (metadados).
+Roda para cada região de config.REGIOES. Saídas em docs/data/<regiao>/:
+lst.png (camada colorida), lst_grade.npz (valores em °C e índice da cena de
+origem) e lst.json (metadados). Regiões grandes usam pixel maior para que a
+grade não passe de config.LST_MAX_PIXELS de lado.
 
-Uso:  python scripts/lst.py [--fim 2026-09-30]
+Uso:  python scripts/lst.py [--regiao humaita] [--fim 2026-09-30]
 """
 import argparse
 import json
@@ -26,6 +28,7 @@ TZ = ZoneInfo(C.FUSO)
 STAC = "https://planetarycomputer.microsoft.com/api/stac/v1"
 ESCALA, DESLOC = 0.00341802, 149.0          # ST_B10 -> Kelvin (Coleção 2)
 BITS_NUVEM = (1, 2, 3, 4)                    # nuvem dilatada, cirrus, nuvem, sombra
+SEM_CENA = 65535
 FAIXA_C = (20.0, 46.0)                       # faixa fixa da legenda, comparável entre quinzenas
 
 # Paleta (azul -> amarelo -> vermelho escuro)
@@ -47,32 +50,37 @@ def buscar_cenas(bbox, inicio, fim):
     return sorted(busca.items(), key=lambda it: it.datetime)
 
 
-def carregar(itens, bbox):
-    """Devolve (lst_c[t, y, x], lista de itens na ordem de t, transform)."""
+def resolucao(bbox):
+    lado = max(bbox[2] - bbox[0], bbox[3] - bbox[1])
+    return max(C.LST_RES_GRAUS, lado / C.LST_MAX_PIXELS)
+
+
+def compor(itens, bbox, res):
+    """Mosaico do pixel sem nuvem mais recente, carregando uma cena por vez
+    (mais antiga -> mais recente; a mais recente sobrescreve).
+    Devolve (lst °C, índice da cena de origem, affine, ny, nx)."""
+    from odc.geo.geobox import GeoBox
     from odc.stac import load
-    ds = load(itens, bands=["lwir11", "qa_pixel"], crs="EPSG:4326",
-              resolution=C.LST_RES_GRAUS, bbox=bbox, groupby=None,
-              resampling={"lwir11": "average", "qa_pixel": "nearest"})
-    st = ds["lwir11"].values.astype(np.float32)
-    qa = ds["qa_pixel"].values.astype(np.uint16)
-    lst = st * ESCALA + DESLOC - 273.15
-    ruim = (st == 0) | (qa == 1)  # 0 = sem dado; QA=1 = fill
-    for b in BITS_NUVEM:
-        ruim |= ((qa >> b) & 1).astype(bool)
-    lst[ruim] = np.nan
-    return lst, ds.odc.geobox.affine, ds.sizes["latitude"], ds.sizes["longitude"]
-
-
-def compor(pilha, datas):
-    """Mosaico do pixel válido mais recente. pilha[t, y, x] em °C (NaN = sem dado)."""
-    ordem = np.argsort(datas)
-    lst = np.full(pilha.shape[1:], np.nan, np.float32)
-    origem = np.full(pilha.shape[1:], 255, np.uint8)
-    for k in ordem:  # mais antiga -> mais recente; a mais recente sobrescreve
-        v = ~np.isnan(pilha[k])
-        lst[v] = pilha[k][v]
+    gbox = GeoBox.from_bbox(bbox, crs="EPSG:4326", resolution=res)
+    ny, nx = gbox.shape
+    lst = np.full((ny, nx), np.nan, np.float32)
+    origem = np.full((ny, nx), SEM_CENA, np.uint16)
+    for k, it in enumerate(itens):
+        try:
+            ds = load([it], bands=["lwir11", "qa_pixel"], geobox=gbox, groupby=None,
+                      resampling={"lwir11": "average", "qa_pixel": "nearest"})
+        except Exception as e:
+            print(f"  aviso: cena {it.id} ignorada ({e})")
+            continue
+        st = ds["lwir11"].values[0].astype(np.float32)
+        qa = ds["qa_pixel"].values[0].astype(np.uint16)
+        ruim = (st == 0) | (qa == 1)  # 0 = sem dado; QA=1 = fill
+        for b in BITS_NUVEM:
+            ruim |= ((qa >> b) & 1).astype(bool)
+        v = ~ruim
+        lst[v] = st[v] * ESCALA + DESLOC - 273.15
         origem[v] = k
-    return lst, origem
+    return lst, origem, gbox.affine, ny, nx
 
 
 def mascara_area(forma, transform, geoms):
@@ -105,19 +113,19 @@ def metadados_cena(it):
     }
 
 
-def salvar(lst, origem, cenas, bbox_saida, inicio, fim, cobertura):
-    C.DATA_DIR.mkdir(parents=True, exist_ok=True)
-    colorir(lst).save(C.DATA_DIR / "lst.png", optimize=True)
-    np.savez_compressed(C.DATA_DIR / "lst_grade.npz", lst=lst.astype(np.float16), origem=origem)
+def salvar(pasta, lst, origem, cenas, bbox_saida, inicio, fim, cobertura, res):
+    pasta.mkdir(parents=True, exist_ok=True)
+    colorir(lst).save(pasta / "lst.png", optimize=True)
+    np.savez_compressed(pasta / "lst_grade.npz", lst=lst.astype(np.float16), origem=origem)
     validos = lst[~np.isnan(lst)]
-    usadas = sorted(set(int(x) for x in np.unique(origem) if x != 255))
+    usadas = sorted(set(int(x) for x in np.unique(origem) if x != SEM_CENA))
     meta = {
         "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",
         "observacao": "Temperatura da superfície (pele), não do solo em profundidade. Passagem ~10h local.",
         "periodo_inicio": f"{inicio:%Y-%m-%d}", "periodo_fim": f"{fim:%Y-%m-%d}",
         "gerado_em": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "resolucao_nativa_m": 100, "resolucao_produto_m": 30,
-        "resolucao_exibicao_m": round(C.LST_RES_GRAUS * 111320),
+        "resolucao_exibicao_m": round(res * 111320),
         "composicao": "pixel sem nuvem mais recente do período",
         "cobertura_pct": round(cobertura, 1),
         "bbox": [round(v, 5) for v in bbox_saida],
@@ -128,36 +136,53 @@ def salvar(lst, origem, cenas, bbox_saida, inicio, fim, cobertura):
         "cenas_usadas": [cenas[i] for i in usadas],
         "proxima_atualizacao": "dias 1 e 16 de cada mês",
     }
-    (C.DATA_DIR / "lst.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+    (pasta / "lst.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     return meta
 
 
-def main():
+def processar(rid, inicio, fim):
     from shapely.geometry import shape
+    pasta = C.DATA_DIR / rid
+    lim = json.loads((pasta / "limites.geojson").read_text(encoding="utf-8"))
+    bbox = lim["bbox"]
+    geoms = [shape(f["geometry"]) for f in lim["features"]]
+    res = resolucao(bbox)
+    itens = buscar_cenas(bbox, inicio, fim)
+    if not itens:
+        print(f"{rid}: nenhuma cena Landsat no período; camada anterior mantida.")
+        return False
+    print(f"{rid}: {len(itens)} cenas, pixel de ~{round(res * 111320)} m")
+    lst, origem, transform, ny, nx = compor(itens, bbox, res)
+    dentro = mascara_area((ny, nx), transform, geoms)
+    lst[~dentro] = np.nan
+    origem[~dentro] = SEM_CENA
+    cobertura = 100 * np.count_nonzero(~np.isnan(lst)) / max(1, np.count_nonzero(dentro))
+    oeste, norte = transform.c, transform.f
+    bbox_saida = (oeste, norte + transform.e * ny, oeste + transform.a * nx, norte)
+    meta = salvar(pasta, lst, origem, [metadados_cena(it) for it in itens], bbox_saida, inicio, fim, cobertura, res)
+    print(f"{rid}: cobertura sem nuvem {meta['cobertura_pct']}% | {meta['estatisticas_c']}")
+    return True
+
+
+def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--regiao", action="append", help="região (pode repetir); padrão: todas")
     ap.add_argument("--fim", help="data final (AAAA-MM-DD); padrão: hoje")
     a = ap.parse_args()
     fim = datetime.strptime(a.fim, "%Y-%m-%d") if a.fim else datetime.now(timezone.utc)
     inicio = fim - timedelta(days=C.LST_DIAS)
-
-    lim = json.loads((C.DATA_DIR / "limites.geojson").read_text(encoding="utf-8"))
-    bbox = lim["bbox"]
-    geoms = [shape(f["geometry"]) for f in lim["features"]]
-
-    itens = buscar_cenas(bbox, inicio, fim)
-    if not itens:
-        sys.exit("Nenhuma cena Landsat encontrada no período; camada anterior mantida.")
-    print(f"{len(itens)} cenas encontradas")
-    pilha, transform, ny, nx = carregar(itens, bbox)
-    lst, origem = compor(pilha, [it.datetime.timestamp() for it in itens])
-    dentro = mascara_area((ny, nx), transform, geoms)
-    lst[~dentro] = np.nan
-    origem[~dentro] = 255
-    cobertura = 100 * np.count_nonzero(~np.isnan(lst)) / max(1, np.count_nonzero(dentro))
-    oeste, norte = transform.c, transform.f
-    bbox_saida = (oeste, norte + transform.e * ny, oeste + transform.a * nx, norte)
-    meta = salvar(lst, origem, [metadados_cena(it) for it in itens], bbox_saida, inicio, fim, cobertura)
-    print(f"Cobertura sem nuvem: {meta['cobertura_pct']}% | {meta['estatisticas_c']}")
+    falhas = []
+    for rid in (a.regiao or list(C.REGIOES)):
+        try:
+            processar(rid, inicio, fim)
+        except Exception as e:
+            print(f"{rid}: erro: {e}")
+            falhas.append(rid)
+    # arquivos da versão de região única
+    for antigo in ("lst.json", "lst.png", "lst_grade.npz"):
+        (C.DATA_DIR / antigo).unlink(missing_ok=True)
+    if falhas:
+        sys.exit("Falhou em: " + ", ".join(falhas))
 
 
 if __name__ == "__main__":

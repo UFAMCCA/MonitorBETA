@@ -6,12 +6,71 @@ DATA_DIR = RAIZ / "docs" / "data"
 
 FUSO = "America/Manaus"  # UTC-4, sem horário de verão
 
-# Área de monitoramento (nomes como na malha do IBGE)
-MUNICIPIOS = [
-    "Manaus", "Iranduba", "Careiro", "Careiro da Várzea", "Manacapuru",
-    "Novo Airão", "Anori", "Beruri", "Rio Preto da Eva",
-    "Presidente Figueiredo", "Itacoatiara", "Manaquiri", "Autazes",
-]
+# ------------------------------------------------------------------ regiões
+# Cada região tem um município-sede, os municípios do entorno e, quando houver,
+# o sensor de qualidade do ar (PurpleAir) em que o mapa é centralizado.
+# Municípios são escritos como "Nome" (Amazonas) ou "Nome/UF" (outro estado)
+# ou "Nome/CO" (Colômbia) e "Nome/PE" (Peru). Acentos e maiúsculas não importam.
+REGIAO_PADRAO = "manaus"
+REGIOES = {
+    "manaus": {
+        "nome": "Manaus",
+        "sensor": None,
+        "sede": "Manaus",
+        "entorno": ["Iranduba", "Careiro", "Careiro da Várzea", "Manacapuru", "Novo Airão",
+                    "Anori", "Beruri", "Rio Preto da Eva", "Presidente Figueiredo",
+                    "Itacoatiara", "Manaquiri", "Autazes"],
+    },
+    "itacoatiara": {
+        "nome": "Itacoatiara",
+        "sensor": "SEMA_DCAM_38",
+        "sede": "Itacoatiara",
+        "entorno": ["Autazes", "Nova Olinda do Norte", "Silves", "Urucará", "Barreirinha",
+                    "Parintins", "Urucurituba", "Maués", "Itapiranga",
+                    "São Sebastião do Uatumã", "Boa Vista do Ramos",
+                    "Presidente Figueiredo", "Rio Preto da Eva"],
+    },
+    "parintins": {
+        "nome": "Parintins",
+        "sensor": "SEMA_DCAM_47",
+        "sede": "Parintins",
+        "entorno": ["Nhamundá", "Oriximiná/PA", "Boa Vista do Ramos", "Maués", "Urucurituba",
+                    "Barreirinha", "Urucará", "Itaituba/PA", "Santarém/PA", "Itapiranga",
+                    "Presidente Figueiredo", "Rio Preto da Eva", "São Sebastião do Uatumã",
+                    "Itacoatiara"],
+    },
+    "humaita": {
+        "nome": "Humaitá",
+        "sensor": "SEMA_DCAM_65",
+        "sede": "Humaitá",
+        "entorno": ["Lábrea", "Porto Velho/RO", "Apuí", "Canutama", "Cruzeiro do Sul/AC",
+                    "Manicoré", "Novo Aripuanã", "Tapauá", "Autazes", "Manaquiri"],
+    },
+    "coari": {
+        "nome": "Coari",
+        "sensor": "SEMA_DCAM_27",
+        "sede": "Coari",
+        "entorno": ["Tefé", "Canutama", "Lábrea", "Tapauá", "Beruri", "Anori", "Manacapuru",
+                    "Manaus", "Novo Airão", "Anamã", "Barcelos", "Manicoré"],
+    },
+    "benjamin-constant": {
+        "nome": "Benjamin Constant",
+        "sensor": "SEMA_DCAM_19",
+        "sede": "Benjamin Constant",
+        "entorno": ["Atalaia do Norte", "Letícia/CO", "Tabatinga", "Santo Antônio do Içá",
+                    "Amaturá", "São Gabriel da Cachoeira", "Eirunepé", "Carauari", "Envira",
+                    "Iquitos/PE", "Cruzeiro do Sul/AC", "Mâncio Lima/AC"],
+    },
+}
+
+# Coordenadas dos sensores. Ficam em docs/data/sensores.json, preenchido
+# automaticamente pela API do PurpleAir (segredo PURPLEAIR_API_KEY).
+# Para fixar uma coordenada à mão, preencha aqui: "SEMA_DCAM_38": (-3.14, -58.44)
+SENSORES_MANUAL = {
+}
+
+# Compatibilidade: lista de municípios da região padrão
+MUNICIPIOS = [REGIOES[REGIAO_PADRAO]["sede"], *REGIOES[REGIAO_PADRAO]["entorno"]]
 
 # Horários de atualização (hora local de Manaus). A das 08h foi retirada
 # porque nenhum satélite polar passa entre 04h e 08h.
@@ -78,3 +137,4 @@ ATIVO_HORAS_MIN = 3          # detectado há menos que isso = sempre ativo
 LST_DIAS = 16
 LST_RES_GRAUS = 0.0027       # ~300 m para exibição na web (nativo: 100 m)
 LST_NUVEM_MAX = 80           # % de nuvem máxima por cena na busca
+LST_MAX_PIXELS = 2600        # lado máximo da grade; regiões grandes usam pixel maior

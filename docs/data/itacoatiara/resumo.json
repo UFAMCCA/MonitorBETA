@@ -1,0 +1,263 @@
+{
+ "regiao": {
+  "id": "itacoatiara",
+  "nome": "Itacoatiara",
+  "sede": "Itacoatiara",
+  "n_municipios": 14
+ },
+ "sensor": {
+  "nome": "SEMA_DCAM_38",
+  "lat": -2.747297,
+  "lon": -58.02261,
+  "sensor_index": 205669,
+  "fonte": "API PurpleAir"
+ },
+ "ativos_perto_do_sensor": {
+  "25": 0,
+  "50": 0,
+  "100": 1
+ },
+ "gerado_em": "2026-10-20T02:19:52Z",
+ "dados_de_teste": false,
+ "atualizacao": "18h",
+ "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
+ "proximas_atualizacoes": [
+  "04h",
+  "12h",
+  "18h"
+ ],
+ "atualizacoes": {
+  "04h": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+  "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
+  "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
+ },
+ "janela_inicio": "2026-10-18T02:19:52Z",
+ "eventos_ativos": 1,
+ "eventos_extintos": 31,
+ "eventos_total": 32,
+ "deteccoes_total": 144,
+ "deteccoes_ativas": 2,
+ "por_municipio": {
+  "Itacoatiara": 8,
+  "Autazes": 7,
+  "Nova Olinda do Norte": 4,
+  "Boa Vista do Ramos": 3,
+  "Parintins": 3,
+  "Maués": 2,
+  "Barreirinha": 2,
+  "Rio Preto da Eva": 1,
+  "Silves": 1,
+  "São Sebastião do Uatumã": 1
+ },
+ "ativos_por_municipio": {
+  "Itacoatiara": 1
+ },
+ "por_satelite": {
+  "GOES-19": 55,
+  "NOAA-20": 47,
+  "NOAA-21": 41,
+  "AQUA": 1
+ },
+ "passagens": [
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T04:55:00Z",
+   "fim": "2026-10-18T04:57:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 39
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T05:53:00Z",
+   "fim": "2026-10-18T05:55:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 23
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-18T12:14:00Z",
+   "fim": "2026-10-18T12:17:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T16:52:00Z",
+   "fim": "2026-10-18T16:54:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 3
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T17:37:00Z",
+   "fim": "2026-10-18T17:39:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T18:32:00Z",
+   "fim": "2026-10-18T18:32:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "AQUA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-18T20:00:00Z",
+   "fim": "2026-10-18T20:00:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T04:40:00Z",
+   "fim": "2026-10-19T04:40:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T05:33:00Z",
+   "fim": "2026-10-19T05:36:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 20
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-19T12:55:00Z",
+   "fim": "2026-10-19T12:55:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T16:33:00Z",
+   "fim": "2026-10-19T16:37:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T17:15:00Z",
+   "fim": "2026-10-19T17:17:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T18:13:00Z",
+   "fim": "2026-10-19T18:13:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "AQUA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-19T19:00:00Z",
+   "fim": "2026-10-19T19:00:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  }
+ ],
+ "goes_ultima_deteccao_regional": "2026-10-20T00:10:00Z",
+ "satelites": {
+  "NOAA-20": {
+   "inpe": [
+    "NOAA-20"
+   ],
+   "firms": "VIIRS_NOAA20_NRT",
+   "sensor": "VIIRS",
+   "pixel_km": 0.375,
+   "tipo": "polar",
+   "papel": "principal",
+   "horario": "~01h30 e ~13h30"
+  },
+  "NOAA-21": {
+   "inpe": [
+    "NOAA-21"
+   ],
+   "firms": "VIIRS_NOAA21_NRT",
+   "sensor": "VIIRS",
+   "pixel_km": 0.375,
+   "tipo": "polar",
+   "papel": "principal",
+   "horario": "~01h30 e ~13h30"
+  },
+  "GOES-19": {
+   "inpe": [
+    "GOES-19"
+   ],
+   "firms": null,
+   "sensor": "ABI",
+   "pixel_km": 2.2,
+   "tipo": "geoestacionario",
+   "papel": "principal",
+   "horario": "a cada 10 min"
+  },
+  "TERRA": {
+   "inpe": [
+    "TERRA_M-M"
+   ],
+   "firms": "MODIS_NRT",
+   "sensor": "MODIS",
+   "pixel_km": 1.0,
+   "tipo": "polar",
+   "papel": "apoio (12h)",
+   "horario": "~9h (órbita em deriva)"
+  },
+  "METOP-B": {
+   "inpe": [
+    "METOP-B"
+   ],
+   "firms": null,
+   "sensor": "AVHRR",
+   "pixel_km": 1.1,
+   "tipo": "polar",
+   "papel": "apoio (12h)",
+   "horario": "~9h30"
+  },
+  "METOP-C": {
+   "inpe": [
+    "METOP-C"
+   ],
+   "firms": null,
+   "sensor": "AVHRR",
+   "pixel_km": 1.1,
+   "tipo": "polar",
+   "papel": "apoio (12h)",
+   "horario": "~9h30"
+  },
+  "AQUA": {
+   "inpe": [
+    "AQUA_M-T"
+   ],
+   "firms": "MODIS_NRT",
+   "sensor": "MODIS",
+   "pixel_km": 1.0,
+   "tipo": "polar",
+   "papel": "referência INPE",
+   "horario": "~15h30 (órbita em deriva; fim de missão)"
+  }
+ },
+ "fontes_status": {
+  "INPE_10min": "ok (306 arquivos)",
+  "INPE_diario": "ok (3 arquivos)",
+  "FIRMS MODIS_NRT": "ok (322 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (2010 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)"
+ },
+ "temperatura_superficie": null
+}

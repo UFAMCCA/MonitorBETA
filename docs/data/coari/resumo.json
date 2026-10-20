@@ -1,0 +1,279 @@
+{
+ "regiao": {
+  "id": "coari",
+  "nome": "Coari",
+  "sede": "Coari",
+  "n_municipios": 13
+ },
+ "sensor": {
+  "nome": "SEMA_DCAM_27",
+  "lat": -4.097046,
+  "lon": -63.137592,
+  "sensor_index": 206677,
+  "fonte": "API PurpleAir"
+ },
+ "ativos_perto_do_sensor": {
+  "25": 0,
+  "50": 0,
+  "100": 0
+ },
+ "gerado_em": "2026-10-20T02:19:52Z",
+ "dados_de_teste": false,
+ "atualizacao": "18h",
+ "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
+ "proximas_atualizacoes": [
+  "04h",
+  "12h",
+  "18h"
+ ],
+ "atualizacoes": {
+  "04h": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+  "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
+  "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
+ },
+ "janela_inicio": "2026-10-18T02:19:52Z",
+ "eventos_ativos": 7,
+ "eventos_extintos": 34,
+ "eventos_total": 41,
+ "deteccoes_total": 134,
+ "deteccoes_ativas": 12,
+ "por_municipio": {
+  "Lábrea": 21,
+  "Manicoré": 5,
+  "Manacapuru": 4,
+  "Canutama": 3,
+  "Coari": 3,
+  "Manaus": 2,
+  "Tefé": 1,
+  "Beruri": 1,
+  "Anamã": 1
+ },
+ "ativos_por_municipio": {
+  "Lábrea": 7
+ },
+ "por_satelite": {
+  "NOAA-20": 73,
+  "NOAA-21": 34,
+  "GOES-19": 13,
+  "AQUA": 9,
+  "TERRA": 5
+ },
+ "passagens": [
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T04:55:00Z",
+   "fim": "2026-10-18T04:59:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 8
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T05:53:00Z",
+   "fim": "2026-10-18T05:55:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 34
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-18T12:17:00Z",
+   "fim": "2026-10-18T12:17:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T16:50:00Z",
+   "fim": "2026-10-18T16:56:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T17:34:00Z",
+   "fim": "2026-10-18T17:39:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 9
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-18T18:32:00Z",
+   "fim": "2026-10-18T18:34:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 10
+  },
+  {
+   "satelite": "AQUA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-18T20:00:00Z",
+   "fim": "2026-10-18T20:02:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 9
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-19T00:33:00Z",
+   "fim": "2026-10-19T00:35:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T04:40:00Z",
+   "fim": "2026-10-19T04:40:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T05:33:00Z",
+   "fim": "2026-10-19T05:38:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 19
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T06:22:00Z",
+   "fim": "2026-10-19T06:22:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 17
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-19T12:53:00Z",
+   "fim": "2026-10-19T12:57:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 4
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T16:35:00Z",
+   "fim": "2026-10-19T16:35:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T17:15:00Z",
+   "fim": "2026-10-19T17:20:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T18:11:00Z",
+   "fim": "2026-10-19T18:15:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 10
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-19T18:58:00Z",
+   "fim": "2026-10-19T18:58:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  }
+ ],
+ "goes_ultima_deteccao_regional": "2026-10-20T01:50:00Z",
+ "satelites": {
+  "NOAA-20": {
+   "inpe": [
+    "NOAA-20"
+   ],
+   "firms": "VIIRS_NOAA20_NRT",
+   "sensor": "VIIRS",
+   "pixel_km": 0.375,
+   "tipo": "polar",
+   "papel": "principal",
+   "horario": "~01h30 e ~13h30"
+  },
+  "NOAA-21": {
+   "inpe": [
+    "NOAA-21"
+   ],
+   "firms": "VIIRS_NOAA21_NRT",
+   "sensor": "VIIRS",
+   "pixel_km": 0.375,
+   "tipo": "polar",
+   "papel": "principal",
+   "horario": "~01h30 e ~13h30"
+  },
+  "GOES-19": {
+   "inpe": [
+    "GOES-19"
+   ],
+   "firms": null,
+   "sensor": "ABI",
+   "pixel_km": 2.2,
+   "tipo": "geoestacionario",
+   "papel": "principal",
+   "horario": "a cada 10 min"
+  },
+  "TERRA": {
+   "inpe": [
+    "TERRA_M-M"
+   ],
+   "firms": "MODIS_NRT",
+   "sensor": "MODIS",
+   "pixel_km": 1.0,
+   "tipo": "polar",
+   "papel": "apoio (12h)",
+   "horario": "~9h (órbita em deriva)"
+  },
+  "METOP-B": {
+   "inpe": [
+    "METOP-B"
+   ],
+   "firms": null,
+   "sensor": "AVHRR",
+   "pixel_km": 1.1,
+   "tipo": "polar",
+   "papel": "apoio (12h)",
+   "horario": "~9h30"
+  },
+  "METOP-C": {
+   "inpe": [
+    "METOP-C"
+   ],
+   "firms": null,
+   "sensor": "AVHRR",
+   "pixel_km": 1.1,
+   "tipo": "polar",
+   "papel": "apoio (12h)",
+   "horario": "~9h30"
+  },
+  "AQUA": {
+   "inpe": [
+    "AQUA_M-T"
+   ],
+   "firms": "MODIS_NRT",
+   "sensor": "MODIS",
+   "pixel_km": 1.0,
+   "tipo": "polar",
+   "papel": "referência INPE",
+   "horario": "~15h30 (órbita em deriva; fim de missão)"
+  }
+ },
+ "fontes_status": {
+  "INPE_10min": "ok (306 arquivos)",
+  "INPE_diario": "ok (3 arquivos)",
+  "FIRMS MODIS_NRT": "ok (322 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (2010 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)"
+ },
+ "temperatura_superficie": null
+}

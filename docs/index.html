@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Focos de Calor Manaus</title>
-<meta name="description" content="Focos de calor ativos e das últimas 48 horas em Manaus e mais 12 municípios do Amazonas, com temperatura de superfície quinzenal.">
+<title>Focos de Calor Amazonas</title>
+<meta name="description" content="Focos de calor ativos e das últimas 48 horas em seis regiões do Amazonas, centralizadas nos sensores de qualidade do ar, com temperatura de superfície quinzenal.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -14,8 +14,11 @@
 <body>
 <header class="topo">
   <div class="marca">
-    <h1>Focos de calor · Manaus e entorno</h1>
-    <span>13 municípios do Amazonas</span>
+    <h1><span>Focos de calor ·</span>
+      <label class="vh" for="regiao">Região monitorada</label>
+      <span class="seletor-regiao"><select id="regiao"></select></span>
+    </h1>
+    <span id="sub-regiao"></span>
   </div>
   <div class="atualiz" id="atualiz"><span>Carregando dados…</span></div>
 </header>
@@ -30,6 +33,7 @@
         <div class="contador"><b id="n-extintos">–</b><small>extintos (estimado) em 48 h</small></div>
         <div class="contador"><b id="n-det">–</b><small>detecções em 48 h</small></div>
       </div>
+      <div class="perto" id="perto-sensor" hidden aria-label="Focos ativos perto do sensor"></div>
       <div class="munis" id="munis"></div>
     </section>
 
@@ -43,6 +47,11 @@
       <p class="nota">Barra cheia: do primeiro ao último registro do foco. Hachura: intervalo em que ele se apagou. Degradê: ainda ativo.</p>
       <div class="eixo" id="eixo"></div>
       <div class="eventos" id="eventos"></div>
+    </section>
+
+    <section class="bloco" aria-labelledby="t-cens">
+      <h2 id="t-cens">Painel do Fogo · Censipam</h2>
+      <div id="cens"><p class="nota">Carregando…</p></div>
     </section>
 
     <section class="bloco" aria-labelledby="t-pass">
@@ -68,6 +77,7 @@
         <div class="escala" id="lst-escala"><span>20 °C</span><span>33 °C</span><span>46 °C</span></div>
       </div>
       <dl class="ficha" id="lst-ficha"><dt>Estado</dt><dd>sem dados ainda</dd></dl>
+      <p class="nota" id="lst-nota"></p>
     </section>
 
     <section class="bloco" aria-labelledby="t-sat">
@@ -81,6 +91,7 @@
 
 <script src="vendor/leaflet.js"></script>
 <script src="comum.js"></script>
+<script src="censipam.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

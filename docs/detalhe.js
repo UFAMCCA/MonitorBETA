@@ -1,11 +1,16 @@
 /* Página técnica de um foco: abre em nova aba a partir do popup do mapa (detalhe.html#ID). */
 (async function () {
   const pag = document.getElementById("pagina");
-  const id = decodeURIComponent((location.hash || "").slice(1)) || new URLSearchParams(location.search).get("id");
+  const params = new URLSearchParams(location.search);
+  const id = decodeURIComponent((location.hash || "").slice(1)) || params.get("id");
+  let regiao = params.get("r");
+  if (!regiao) { try { regiao = localStorage.getItem("regiao"); } catch (e) { /* sem armazenamento */ } }
+  regiao = /^[a-z0-9-]+$/.test(regiao || "") ? regiao : "manaus";
+  const base = `data/${regiao}/`;
   let resumo, focos, dets;
   try {
     [resumo, focos, dets] = await Promise.all([
-      carregarJSON("data/resumo.json"), carregarJSON("data/focos.geojson"), carregarJSON("data/deteccoes.json"),
+      carregarJSON(base + "resumo.json"), carregarJSON(base + "focos.geojson"), carregarJSON(base + "deteccoes.json"),
     ]);
   } catch (e) {
     pag.innerHTML = `<p class="vazio">Não foi possível carregar os dados (${esc(e.message)}).</p>`;
@@ -15,7 +20,7 @@
   if (!f) {
     pag.innerHTML = `<div class="cabecalho"><h1>Foco não encontrado</h1>
       <p>O foco <span class="mono">${esc(id || "(sem código)")}</span> não está na atualização de ${horaLocal(resumo.gerado_em)}. Os dados cobrem só as últimas 48 horas.</p>
-      <p><a href="index.html">Voltar ao mapa</a></p></div>`;
+      <p><a href="index.html?r=${encodeURIComponent(regiao)}">Voltar ao mapa</a></p></div>`;
     return;
   }
   const p = f.properties;
@@ -70,6 +75,7 @@
     <section class="cartao">
       <h2>Ambiente</h2>
       <dl class="ficha">
+        ${p.dist_sensor_km != null && resumo.sensor ? `<dt>Distância do sensor</dt><dd>${num(p.dist_sensor_km, 1)} km de ${esc(resumo.sensor.nome)}</dd>` : ""}
         <dt>Temperatura da superfície</dt><dd>${t ? `${num(t.valor_c, 1)} °C` : "sem dado (nuvem ou fora do período)"}</dd>
         ${t && t.cena ? `<dt>Imagem</dt><dd>${esc(t.cena.satelite)} TIRS · ${esc(t.cena.hora_local)} · 100 m</dd>` : ""}
         <dt>Risco de fogo (INPE)</dt><dd>${num(max("risco_fogo"), 2)}</dd>

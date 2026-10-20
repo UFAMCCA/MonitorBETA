@@ -16,6 +16,7 @@
   --aviso-fundo: #fff4d6;
   --aviso-tinta: #6b4a00;
   --mapa-fundo: #dfe5dd;
+  --cens: #6a45c2;
   --sombra: 0 1px 2px rgba(20, 30, 25, .08), 0 4px 14px rgba(20, 30, 25, .08);
   --fonte: "Barlow", "Segoe UI", system-ui, sans-serif;
   --fonte-num: "Barlow Condensed", "Arial Narrow", "Barlow", sans-serif;
@@ -27,7 +28,7 @@
     --chao: #111715; --papel: #19211e; --papel-2: #1f2925; --tinta: #e7ece8; --tinta-2: #a9b5ae;
     --tinta-3: #85918a; --linha: #2e3a35; --acento: #62b8c0; --acento-suave: #1d3538;
     --f0: #ff5a45; --f1: #ff8a4c; --f2: #f5bd5c; --f3: #a89384; --ok: #5cc38a;
-    --aviso-fundo: #3a2f12; --aviso-tinta: #f3d58a; --mapa-fundo: #1c2421;
+    --aviso-fundo: #3a2f12; --aviso-tinta: #f3d58a; --mapa-fundo: #1c2421; --cens: #c3a6ff;
     --sombra: 0 1px 2px rgba(0, 0, 0, .4), 0 6px 18px rgba(0, 0, 0, .35);
   }
 }
@@ -36,7 +37,7 @@
   --chao: #111715; --papel: #19211e; --papel-2: #1f2925; --tinta: #e7ece8; --tinta-2: #a9b5ae;
   --tinta-3: #85918a; --linha: #2e3a35; --acento: #62b8c0; --acento-suave: #1d3538;
   --f0: #ff5a45; --f1: #ff8a4c; --f2: #f5bd5c; --f3: #a89384; --ok: #5cc38a;
-  --aviso-fundo: #3a2f12; --aviso-tinta: #f3d58a; --mapa-fundo: #1c2421;
+  --aviso-fundo: #3a2f12; --aviso-tinta: #f3d58a; --mapa-fundo: #1c2421; --cens: #c3a6ff;
   --sombra: 0 1px 2px rgba(0, 0, 0, .4), 0 6px 18px rgba(0, 0, 0, .35);
 }
 
@@ -60,7 +61,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .marca { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .marca h1 { font-family: var(--fonte-num); font-weight: 700; font-size: 22px; letter-spacing: .01em; }
-.marca span { color: var(--tinta-3); font-size: 13px; }
+.marca > span { color: var(--tinta-3); font-size: 13px; }
 .atualiz { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-left: auto; font-size: 13px; color: var(--tinta-2); }
 .chip { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--linha); background: var(--papel-2); font-size: 12.5px; white-space: nowrap; }
 .chip.atual { background: var(--acento-suave); border-color: var(--acento); color: var(--tinta); font-weight: 600; }
@@ -204,3 +205,62 @@ path.pulso { animation: pulso 2.4s ease-in-out infinite; }
   text-shadow: 0 0 3px #0b120f, 0 0 3px #0b120f, 0 1px 2px #0b120f;
 }
 .nomes-pequenos .nome-municipio span { font-size: 10px; letter-spacing: .02em; white-space: normal; width: 7.5em; text-align: center; line-height: 1.15; }
+
+/* ---------- seletor de região ---------- */
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.marca h1 { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.seletor-regiao { position: relative; display: inline-flex; }
+.seletor-regiao select {
+  appearance: none; -webkit-appearance: none; font: inherit; color: var(--acento); background: transparent;
+  border: 0; border-bottom: 2px dashed var(--acento); padding: 0 26px 0 2px; cursor: pointer; border-radius: 0;
+}
+.seletor-regiao::after { content: ""; position: absolute; right: 6px; top: 50%; width: 8px; height: 8px; margin-top: -6px;
+  border-right: 2px solid var(--acento); border-bottom: 2px solid var(--acento); transform: rotate(45deg); pointer-events: none; }
+.seletor-regiao select:focus-visible { outline: 2px solid var(--acento); outline-offset: 3px; }
+.seletor-regiao select option { color: var(--tinta); background: var(--papel); font: 16px var(--fonte); }
+body.carregando #mapa, body.carregando .lateral { opacity: .55; transition: opacity .2s; }
+
+/* focos perto do sensor */
+.perto { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--linha); border: 1px solid var(--linha); border-radius: 6px; overflow: hidden; }
+.perto div { background: var(--papel-2); padding: 6px 10px; display: flex; flex-direction: column; }
+.perto b { font: 700 22px/1 var(--fonte-num); color: var(--tinta); }
+.perto small { font-size: 12px; color: var(--tinta-2); }
+.perto::before { content: "Focos ativos perto do sensor"; grid-column: 1 / -1; background: var(--papel); font-size: 11.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--tinta-3); font-weight: 600; padding: 0 0 4px; }
+
+/* sensor e raios no mapa */
+.icone-sensor { display: inline-block; width: 16px; height: 16px; border-radius: 50%; background: #1d6a72; border: 3px solid #e9fbfd; box-shadow: 0 0 0 2px #1d6a72, 0 2px 6px rgba(0,0,0,.45); flex: none; }
+.marcador-sensor { background: none; border: 0; display: flex; align-items: center; justify-content: center; }
+.legenda .legenda-sensor .icone-sensor { width: 12px; height: 12px; border-width: 2px; box-shadow: 0 0 0 1.5px #1d6a72; }
+.rotulo-raio { background: none; border: 0; }
+.rotulo-raio span { display: block; transform: translate(-50%, -50%); white-space: nowrap; font: 600 11px var(--fonte); color: #c9f6fa; text-shadow: 0 0 3px #0b120f, 0 0 3px #0b120f; pointer-events: none; }
+.nome-municipio.sede span { font-size: 15px; color: #fff3c4; }
+.nomes-pequenos .nome-municipio.sede span { font-size: 12px; }
+.nome-municipio.oculto span, .rotulo-raio.oculto span { visibility: hidden; }
+.mais { margin-top: 6px; font: 600 13px var(--fonte); padding: 7px 10px; border-radius: 6px; border: 1px solid var(--linha); background: var(--papel-2); color: var(--acento); cursor: pointer; }
+.mais:hover { background: var(--acento-suave); }
+[hidden] { display: none !important; }
+
+/* ---------- Painel do Fogo (Censipam) ---------- */
+.cens-cont { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.cens-cont div { display: flex; flex-direction: column; gap: 2px; }
+.cens-cont b { font: 700 28px/1 var(--fonte-num); color: var(--cens); }
+.cens-cont small { font-size: 12px; color: var(--tinta-2); line-height: 1.25; }
+.cens-lista { display: flex; flex-direction: column; }
+.cens-linha { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; border-top: 1px solid var(--linha); font-size: 13px; }
+.cens-linha > span { display: flex; align-items: center; gap: 8px; }
+.cens-linha b { font: 600 16px var(--fonte-num); }
+.cens-maiores { display: flex; flex-direction: column; }
+.evento-cens { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 5px 4px; border: 0; border-top: 1px solid var(--linha); background: none; color: inherit; font: inherit; font-size: 13px; text-align: left; cursor: pointer; }
+.evento-cens:hover { background: var(--papel-2); }
+.evento-cens small { display: block; color: var(--tinta-3); font-size: 11.5px; }
+.evento-cens b { font: 600 16px var(--fonte-num); color: var(--cens); white-space: nowrap; }
+.amostra-evento { display: inline-block; width: 14px; height: 10px; border: 2px solid #c9a7ff; background: rgba(167,123,255,.25); border-radius: 2px; }
+.marca-cens { background: none; border: 0; }
+.marca-cens > span, i.marca-cens > span { display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 4px;
+  font: 700 11px/1 var(--fonte); color: #1b1030; background: #d9c4ff; border: 1.5px solid #5b3aa8; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.marca-cens.brigada > span, i.marca-cens.brigada > span { background: #bfe7c9; border-color: #1f6b3a; color: #0f2a17; border-radius: 50%; }
+i.marca-cens { display: inline-flex; font-style: normal; }
+.olho-cens { display: block; font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--cens); font-weight: 700; margin-bottom: 2px; }
+.pop details.campos { margin: -4px 0 10px; font-size: 12.5px; }
+.pop details.campos summary { cursor: pointer; color: var(--acento); }
+.pop details.campos dl { margin-top: 6px; max-height: 180px; overflow: auto; }

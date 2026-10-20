@@ -1,13 +1,17 @@
 name: Focos de calor (04h, 12h, 18h de Manaus)
 
+# Disparado pelo Google Apps Script às 04h, 12h e 18h (horário de Manaus),
+# manualmente em Actions, ou ao terminar a atualização da temperatura de superfície.
 on:
-  schedule:
-    # Manaus = UTC-4. 04h05, 12h05 e 18h05 locais.
-    - cron: "5 8,16,22 * * *"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Temperatura da superfície (quinzenal)"]
+    types: [completed]
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: dados
@@ -16,7 +20,10 @@ concurrency:
 jobs:
   coletar:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,15 +31,29 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Coletar e processar focos
+      - name: Coordenadas dos sensores (só consulta o PurpleAir se faltar alguma)
+        env:
+          PURPLEAIR_API_KEY: ${{ secrets.PURPLEAIR_API_KEY }}
+        run: python scripts/sensores.py
+      - name: Coletar e processar focos das seis regiões
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
         run: python scripts/focos.py
-      - name: Publicar dados
+      - name: Painel do Fogo do Censipam (cópia de reserva)
+        continue-on-error: true
+        timeout-minutes: 8
+        run: python scripts/censipam.py
+      - name: Guardar histórico e coordenadas no repositório
         run: |
           git config user.name "monitor-queimadas[bot]"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data
-          git diff --cached --quiet || git commit -m "Focos: atualização $(TZ=America/Manaus date +'%d/%m %Hh')"
-          git pull --rebase --autostash
-          git push
+          git add -A docs/data
+          git diff --cached --quiet || git commit -q -m "Histórico de focos: $(TZ=America/Manaus date +'%d/%m %Hh')"
+          git pull -q --rebase --autostash
+          git push -q
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: publicar
+        uses: actions/deploy-pages@v4

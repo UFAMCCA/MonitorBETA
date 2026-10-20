@@ -1,6 +1,7 @@
-# Monitor de Focos de calor · Manaus e entorno
+# Monitor de Focos de calor · Campus Manaus e entorno
+#V2: Incorpora os municípios onde a UFAM tem Campus
 
-Site estático que mostra focos de calor ativos e das últimas 48 horas em 11 municípios do Amazonas: Manaus, Iranduba, Careiro, Careiro da Várzea, Manacapuru, Novo Airão, Anori, Beruri, Rio Preto da Eva, Presidente Figueiredo e Itacoatiara. Também mostra a temperatura da superfície, atualizada a cada quinzena.
+Site estático que mostra focos de calor ativos e das últimas 48 horas nos municípios vizinhos ao campus. Também mostra a temperatura da superfície, atualizada a cada quinzena.
 
 ## O que roda e quando
 

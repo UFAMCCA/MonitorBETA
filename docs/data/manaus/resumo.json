@@ -5,6 +5,12 @@
   "nivel": "alto",
   "passagens_viirs": [
    {
+    "passagem": "2026-10-20T05:34:00Z",
+    "imagem": "2026-10-20T05:30:21Z",
+    "pct": 51.2,
+    "periodo": "noite"
+   },
+   {
     "passagem": "2026-10-19T17:34:00Z",
     "imagem": "2026-10-19T17:30:20Z",
     "pct": 92.2,
@@ -21,31 +27,9 @@
     "imagem": "2026-10-18T17:30:20Z",
     "pct": 96.4,
     "periodo": "dia"
-   },
-   {
-    "passagem": "2026-10-18T05:34:00Z",
-    "imagem": "2026-10-18T05:30:21Z",
-    "pct": 99.3,
-    "periodo": "noite"
    }
   ],
   "serie": [
-   {
-    "hora": "2026-10-18T02:50:20Z",
-    "pct": 94.4
-   },
-   {
-    "hora": "2026-10-18T05:50:21Z",
-    "pct": 99.5
-   },
-   {
-    "hora": "2026-10-18T08:50:21Z",
-    "pct": 99.6
-   },
-   {
-    "hora": "2026-10-18T11:50:21Z",
-    "pct": 88.9
-   },
    {
     "hora": "2026-10-18T14:50:21Z",
     "pct": 96.4
@@ -97,12 +81,28 @@
    {
     "hora": "2026-10-20T02:50:20Z",
     "pct": 64.8
+   },
+   {
+    "hora": "2026-10-20T05:50:21Z",
+    "pct": 50.3
+   },
+   {
+    "hora": "2026-10-20T08:50:21Z",
+    "pct": 35.7
+   },
+   {
+    "hora": "2026-10-20T11:50:21Z",
+    "pct": 52.9
+   },
+   {
+    "hora": "2026-10-20T14:50:21Z",
+    "pct": 69.0
    }
   ],
-  "media_48h": 91.7,
-  "cego_48h_pct": 88.0,
-  "extintos": 26,
-  "extintos_incertos": 26,
+  "media_48h": 81.4,
+  "cego_48h_pct": 45.8,
+  "extintos": 9,
+  "extintos_incertos": 9,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -111,7 +111,7 @@
     -58.0682,
     0.0386
    ],
-   "passagem": "2026-10-19T17:34:00Z"
+   "passagem": "2026-10-20T05:34:00Z"
   }
  },
  "regiao": {
@@ -122,10 +122,10 @@
  },
  "sensor": null,
  "ativos_perto_do_sensor": {},
- "gerado_em": "2026-10-20T03:12:00Z",
+ "gerado_em": "2026-10-20T16:06:43Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -136,50 +136,33 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T03:12:00Z",
- "eventos_ativos": 2,
- "eventos_extintos": 26,
- "eventos_total": 28,
- "deteccoes_total": 110,
- "deteccoes_ativas": 8,
+ "janela_inicio": "2026-10-18T16:06:43Z",
+ "eventos_ativos": 13,
+ "eventos_extintos": 9,
+ "eventos_total": 22,
+ "deteccoes_total": 61,
+ "deteccoes_ativas": 49,
  "por_municipio": {
-  "Itacoatiara": 8,
-  "Autazes": 6,
-  "Manaquiri": 5,
-  "Manacapuru": 4,
-  "Manaus": 2,
-  "Careiro": 1,
-  "Beruri": 1,
-  "Rio Preto da Eva": 1
+  "Itacoatiara": 10,
+  "Autazes": 8,
+  "Manaquiri": 2,
+  "Manaus": 1,
+  "Careiro": 1
  },
  "ativos_por_municipio": {
-  "Manaquiri": 1,
-  "Itacoatiara": 1
+  "Itacoatiara": 7,
+  "Autazes": 3,
+  "Manaquiri": 2,
+  "Manaus": 1
  },
  "por_satelite": {
-  "NOAA-20": 54,
-  "GOES-19": 40,
-  "NOAA-21": 14,
+  "NOAA-20": 48,
+  "NOAA-21": 9,
+  "GOES-19": 2,
   "AQUA": 1,
   "METOP-C": 1
  },
  "passagens": [
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-18T04:57:00Z",
-   "fim": "2026-10-18T04:57:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 14
-  },
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-18T05:53:00Z",
-   "fim": "2026-10-18T05:55:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 37
-  },
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
@@ -251,6 +234,22 @@
    "fim": "2026-10-20T01:40:00Z",
    "resolucao_km": 1.1,
    "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-20T05:16:00Z",
+   "fim": "2026-10-20T05:18:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 31
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-20T05:59:00Z",
+   "fim": "2026-10-20T05:59:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 9
   }
  ],
  "goes_ultima_deteccao_regional": "2026-10-20T02:20:00Z",
@@ -336,22 +335,22 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (324 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
-  "GOES-19 nuvens": "ok (59 imagens)"
+  "FIRMS MODIS_NRT": "ok (509 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (3430 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (4557 detecções)",
+  "GOES-19 nuvens": "ok (56 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",
   "observacao": "Temperatura da superfície (pele), não do solo em profundidade. Passagem ~10h local.",
-  "periodo_inicio": "2026-09-30",
-  "periodo_fim": "2026-10-16",
-  "gerado_em": "2026-10-16T16:48:21Z",
+  "periodo_inicio": "2026-10-04",
+  "periodo_fim": "2026-10-20",
+  "gerado_em": "2026-10-20T03:10:33Z",
   "resolucao_nativa_m": 100,
   "resolucao_produto_m": 30,
   "resolucao_exibicao_m": 301,
   "composicao": "pixel sem nuvem mais recente do período",
-  "cobertura_pct": 64.2,
+  "cobertura_pct": 43.9,
   "bbox": [
    -63.99,
    -5.4621,
@@ -364,145 +363,10 @@
   ],
   "estatisticas_c": {
    "min": -123.1,
-   "mediana": 33.2,
+   "mediana": 33.8,
    "max": 61.0
   },
   "cenas": [
-   {
-    "id": "LC08_L2SP_001060_20260930_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-09-30T14:30:41Z",
-    "hora_local": "30/09/2026 10:30",
-    "orbita_ponto": "001/060",
-    "nuvem_pct": 68.64
-   },
-   {
-    "id": "LC08_L2SP_001061_20260930_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-09-30T14:31:05Z",
-    "hora_local": "30/09/2026 10:31",
-    "orbita_ponto": "001/061",
-    "nuvem_pct": 56.88
-   },
-   {
-    "id": "LC09_L2SP_233060_20261001_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-01T14:24:35Z",
-    "hora_local": "01/10/2026 10:24",
-    "orbita_ponto": "233/060",
-    "nuvem_pct": 54.3
-   },
-   {
-    "id": "LC09_L2SP_233061_20261001_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-01T14:24:59Z",
-    "hora_local": "01/10/2026 10:24",
-    "orbita_ponto": "233/061",
-    "nuvem_pct": 62.68
-   },
-   {
-    "id": "LC09_L2SP_233062_20261001_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-01T14:25:23Z",
-    "hora_local": "01/10/2026 10:25",
-    "orbita_ponto": "233/062",
-    "nuvem_pct": 78.81
-   },
-   {
-    "id": "LC09_L2SP_233063_20261001_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-01T14:25:47Z",
-    "hora_local": "01/10/2026 10:25",
-    "orbita_ponto": "233/063",
-    "nuvem_pct": 62.01
-   },
-   {
-    "id": "LC09_L2SP_233064_20261001_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-01T14:26:11Z",
-    "hora_local": "01/10/2026 10:26",
-    "orbita_ponto": "233/064",
-    "nuvem_pct": 79.7
-   },
-   {
-    "id": "LC08_L2SP_232060_20261002_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-02T14:18:20Z",
-    "hora_local": "02/10/2026 10:18",
-    "orbita_ponto": "232/060",
-    "nuvem_pct": 67.02
-   },
-   {
-    "id": "LC08_L2SP_232061_20261002_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-02T14:18:44Z",
-    "hora_local": "02/10/2026 10:18",
-    "orbita_ponto": "232/061",
-    "nuvem_pct": 75.44
-   },
-   {
-    "id": "LC08_L2SP_232064_20261002_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-02T14:19:56Z",
-    "hora_local": "02/10/2026 10:19",
-    "orbita_ponto": "232/064",
-    "nuvem_pct": 70.29
-   },
-   {
-    "id": "LC09_L2SP_231060_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:12:15Z",
-    "hora_local": "03/10/2026 10:12",
-    "orbita_ponto": "231/060",
-    "nuvem_pct": 0.62
-   },
-   {
-    "id": "LC09_L2SP_231061_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:12:38Z",
-    "hora_local": "03/10/2026 10:12",
-    "orbita_ponto": "231/061",
-    "nuvem_pct": 27.29
-   },
-   {
-    "id": "LC09_L2SP_231062_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:13:02Z",
-    "hora_local": "03/10/2026 10:13",
-    "orbita_ponto": "231/062",
-    "nuvem_pct": 39.8
-   },
-   {
-    "id": "LC09_L2SP_231063_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:13:26Z",
-    "hora_local": "03/10/2026 10:13",
-    "orbita_ponto": "231/063",
-    "nuvem_pct": 40.3
-   },
-   {
-    "id": "LC09_L2SP_231064_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:13:50Z",
-    "hora_local": "03/10/2026 10:13",
-    "orbita_ponto": "231/064",
-    "nuvem_pct": 44.98
-   },
    {
     "id": "LC08_L2SP_230060_20261004_02_T1",
     "satelite": "Landsat 8",
@@ -721,87 +585,6 @@
    }
   ],
   "cenas_usadas": [
-   {
-    "id": "LC09_L2SP_233062_20261001_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-01T14:25:23Z",
-    "hora_local": "01/10/2026 10:25",
-    "orbita_ponto": "233/062",
-    "nuvem_pct": 78.81
-   },
-   {
-    "id": "LC08_L2SP_232060_20261002_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-02T14:18:20Z",
-    "hora_local": "02/10/2026 10:18",
-    "orbita_ponto": "232/060",
-    "nuvem_pct": 67.02
-   },
-   {
-    "id": "LC08_L2SP_232061_20261002_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-02T14:18:44Z",
-    "hora_local": "02/10/2026 10:18",
-    "orbita_ponto": "232/061",
-    "nuvem_pct": 75.44
-   },
-   {
-    "id": "LC08_L2SP_232064_20261002_02_T1",
-    "satelite": "Landsat 8",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-02T14:19:56Z",
-    "hora_local": "02/10/2026 10:19",
-    "orbita_ponto": "232/064",
-    "nuvem_pct": 70.29
-   },
-   {
-    "id": "LC09_L2SP_231060_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:12:15Z",
-    "hora_local": "03/10/2026 10:12",
-    "orbita_ponto": "231/060",
-    "nuvem_pct": 0.62
-   },
-   {
-    "id": "LC09_L2SP_231061_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:12:38Z",
-    "hora_local": "03/10/2026 10:12",
-    "orbita_ponto": "231/061",
-    "nuvem_pct": 27.29
-   },
-   {
-    "id": "LC09_L2SP_231062_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:13:02Z",
-    "hora_local": "03/10/2026 10:13",
-    "orbita_ponto": "231/062",
-    "nuvem_pct": 39.8
-   },
-   {
-    "id": "LC09_L2SP_231063_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:13:26Z",
-    "hora_local": "03/10/2026 10:13",
-    "orbita_ponto": "231/063",
-    "nuvem_pct": 40.3
-   },
-   {
-    "id": "LC09_L2SP_231064_20261003_02_T1",
-    "satelite": "Landsat 9",
-    "sensor": "TIRS",
-    "data_hora_utc": "2026-10-03T14:13:50Z",
-    "hora_local": "03/10/2026 10:13",
-    "orbita_ponto": "231/064",
-    "nuvem_pct": 44.98
-   },
    {
     "id": "LC08_L2SP_230061_20261004_02_T1",
     "satelite": "Landsat 8",

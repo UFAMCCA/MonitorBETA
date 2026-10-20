@@ -5,13 +5,25 @@ Site estático com os focos de calor ativos e das últimas 48 horas em seis regi
 | Região | Sensor | Entorno |
 |---|---|---|
 | Manaus | — | Iranduba, Careiro, Careiro da Várzea, Manacapuru, Manaquiri, Autazes, Novo Airão, Anori, Beruri, Rio Preto da Eva, Presidente Figueiredo, Itacoatiara |
-| Itacoatiara | SEMA_DCAM_36 | Autazes, Nova Olinda do Norte, Silves, Urucará, Barreirinha, Parintins, Urucurituba, Maués, Itapiranga, São Sebastião do Uatumã, Boa Vista do Ramos, Presidente Figueiredo, Rio Preto da Eva |
+| Itacoatiara | SEMA_DCAM_38 | Autazes, Nova Olinda do Norte, Silves, Urucará, Barreirinha, Parintins, Urucurituba, Maués, Itapiranga, São Sebastião do Uatumã, Boa Vista do Ramos, Presidente Figueiredo, Rio Preto da Eva |
 | Parintins | SEMA_DCAM_47 | Nhamundá, Oriximiná (PA), Boa Vista do Ramos, Maués, Urucurituba, Barreirinha, Urucará, Itaituba (PA), Santarém (PA), Itapiranga, Presidente Figueiredo, Rio Preto da Eva, São Sebastião do Uatumã, Itacoatiara |
 | Humaitá | SEMA_DCAM_65 | Lábrea, Porto Velho (RO), Apuí, Canutama, Cruzeiro do Sul (AC), Manicoré, Novo Aripuanã, Tapauá, Autazes, Manaquiri |
 | Coari | SEMA_DCAM_27 | Tefé, Canutama, Lábrea, Tapauá, Beruri, Anori, Manacapuru, Manaus, Novo Airão, Anamã, Barcelos, Manicoré |
-| Benjamin Constant | SEMA_DCAM_19 | Atalaia do Norte, Letícia (Colômbia), Tabatinga, Santo Antônio do Içá, Amaturá, São Gabriel da Cachoeira, Eirunepé, Carauari, Envira, Iquitos (Peru, distrito), Cruzeiro do Sul (AC), Mâncio Lima (AC) |
+| Benjamin Constant | SEMA_DCAM_19 | Atalaia do Norte, Letícia (Colômbia), Tabatinga, Santo Antônio do Içá, Amaturá, São Gabriel da Cachoeira, Eirunepé, Carauari, Envira, Iquitos (Peru, distrito), Cruzeiro do Sul (AC), Mâncio Lima (AC), Japurá, Tonantins, São Paulo de Olivença, Jutaí, Juruá |
 
 Para mudar regiões ou municípios, edite `REGIOES` em `scripts/config.py` e rode `python scripts/limites.py`. Depois envie a pasta `docs/data` gerada.
+
+## Nuvens
+
+Nenhum satélite enxerga fogo sob nuvens ou fumaça densa. A cada coleta, `scripts/nuvens.py` baixa a máscara de nuvens observada pelo GOES-19 (produto ABI-L2-ACMF, pixel de 2 km, dados públicos da NOAA no AWS). Ela é usada para três coisas:
+
+- **Aviso no topo do painel.** Mostra a % da região sob nuvens nas últimas passagens do VIIRS, que é a chance de um foco qualquer estar escondido. Mostra também a área coberta em todas as passagens das últimas 48 h, onde nenhum foco pôde ser visto, e uma série a cada 3 h. Quando a cobertura é alta, aparece também uma faixa sobre o mapa.
+- **Extinção incerta.** Se havia nuvem sobre o local de um foco nas passagens que deveriam tê-lo visto, ele aparece com contorno pontilhado e marcado como "extinção incerta": pode continuar queimando.
+- **Camada de nuvens no mapa.** Branco suave indica nuvem na última passagem; branco forte, nuvem em todas as passagens das últimas 48 h.
+
+Níveis do aviso:
+- **Alto:** 60% ou mais da região sob nuvens na última passagem, ou 30% ou mais da área sem nenhuma visão em 48 h.
+- **Moderado:** 30% ou mais sob nuvens, ou 10% ou mais sem visão.
 
 ## Painel do Fogo (Censipam)
 

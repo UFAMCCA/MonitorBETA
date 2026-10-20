@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-19T22:07:21Z",
+ "gerado_em": "2026-10-20T01:01:27Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -13,53 +13,35 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-17T22:07:21Z",
+ "janela_inicio": "2026-10-18T01:01:27Z",
  "eventos_ativos": 4,
- "eventos_extintos": 42,
- "eventos_total": 46,
- "deteccoes_total": 459,
- "deteccoes_ativas": 8,
+ "eventos_extintos": 27,
+ "eventos_total": 31,
+ "deteccoes_total": 234,
+ "deteccoes_ativas": 9,
  "por_municipio": {
-  "Autazes": 13,
-  "Itacoatiara": 12,
-  "Manaquiri": 8,
+  "Itacoatiara": 8,
+  "Autazes": 8,
+  "Manaquiri": 5,
   "Manacapuru": 4,
-  "Careiro": 2,
-  "Beruri": 2,
   "Manaus": 2,
-  "Careiro da Várzea": 2,
-  "Rio Preto da Eva": 1
+  "Careiro": 1,
+  "Beruri": 1,
+  "Rio Preto da Eva": 1,
+  "Careiro da Várzea": 1
  },
  "ativos_por_municipio": {
   "Manaquiri": 2,
-  "Careiro": 1,
-  "Itacoatiara": 1
+  "Itacoatiara": 1,
+  "Careiro": 1
  },
  "por_satelite": {
-  "GOES-19": 322,
-  "METOP-B": 58,
+  "GOES-19": 165,
   "NOAA-20": 54,
   "NOAA-21": 14,
-  "METOP-C": 10,
   "AQUA": 1
  },
  "passagens": [
-  {
-   "satelite": "METOP-B",
-   "sensor": "AVHRR",
-   "inicio": "2026-10-18T00:20:00Z",
-   "fim": "2026-10-18T00:20:00Z",
-   "resolucao_km": 1.1,
-   "deteccoes_na_area": 58
-  },
-  {
-   "satelite": "METOP-C",
-   "sensor": "AVHRR",
-   "inicio": "2026-10-18T00:42:00Z",
-   "fim": "2026-10-18T00:42:00Z",
-   "resolucao_km": 1.1,
-   "deteccoes_na_area": 10
-  },
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
@@ -181,7 +163,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-18T05:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-20T00:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -264,9 +246,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (332 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (1681 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (3789 detecções)"
+  "FIRMS MODIS_NRT": "ok (28 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (316 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (517 detecções)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

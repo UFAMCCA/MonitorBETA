@@ -26,3 +26,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-18T18:34:00Z,NOAA-20,-2.4362,-66.6309,Jutaí,9.01,nominal,0.35,0.57,dia,FIRMS
 2026-10-19T18:13:00Z,NOAA-20,-6.5469,-72.6627,Atalaia do Norte,5.9,baixa,0.46,0.39,dia,FIRMS+INPE
 2026-10-19T18:58:00Z,NOAA-21,-7.8085,-72.3878,Cruzeiro do Sul (AC),3.35,nominal,0.41,0.6,dia,FIRMS+INPE
+2026-10-20T17:56:00Z,NOAA-20,-7.3553,-70.1140,Envira,4.86,nominal,0.41,0.45,dia,FIRMS+INPE
+2026-10-20T17:56:00Z,NOAA-20,-7.9654,-72.4497,Cruzeiro do Sul (AC),3.97,nominal,0.6,0.53,dia,FIRMS+INPE
+2026-10-20T18:38:00Z,NOAA-21,-8.0115,-72.4897,Cruzeiro do Sul (AC),5.78,nominal,0.57,0.43,dia,FIRMS
+2026-10-20T18:38:00Z,NOAA-21,-7.9620,-72.4516,Cruzeiro do Sul (AC),4.49,nominal,0.38,0.44,dia,FIRMS
+2026-10-20T18:41:00Z,NOAA-21,-7.3573,-70.1155,Envira,26.27,nominal,0.56,0.51,dia,FIRMS
+2026-10-20T18:41:00Z,NOAA-21,-7.8068,-72.4927,Cruzeiro do Sul (AC),9.58,nominal,0.38,0.44,dia,FIRMS

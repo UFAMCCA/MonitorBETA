@@ -1,0 +1,83 @@
+{
+ "padrao": "manaus",
+ "regioes": [
+  {
+   "id": "manaus",
+   "nome": "Manaus",
+   "sede": "Manaus",
+   "sensor": null,
+   "bbox": [
+    -63.9882,
+    -5.4595,
+    -58.0643,
+    0.0386
+   ],
+   "n_municipios": 13
+  },
+  {
+   "id": "itacoatiara",
+   "nome": "Itacoatiara",
+   "sede": "Itacoatiara",
+   "sensor": "SEMA_DCAM_38",
+   "bbox": [
+    -60.9637,
+    -7.3497,
+    -56.3888,
+    0.2639
+   ],
+   "n_municipios": 14
+  },
+  {
+   "id": "parintins",
+   "nome": "Parintins",
+   "sede": "Parintins",
+   "sensor": "SEMA_DCAM_47",
+   "bbox": [
+    -60.9637,
+    -8.4052,
+    -54.0449,
+    2.5339
+   ],
+   "n_municipios": 15
+  },
+  {
+   "id": "humaita",
+   "nome": "Humaitá",
+   "sede": "Humaitá",
+   "sensor": "SEMA_DCAM_65",
+   "bbox": [
+    -73.6316,
+    -10.0001,
+    -58.1366,
+    -3.2429
+   ],
+   "n_municipios": 11
+  },
+  {
+   "id": "coari",
+   "nome": "Coari",
+   "sede": "Coari",
+   "sensor": "SEMA_DCAM_27",
+   "bbox": [
+    -67.7966,
+    -9.8177,
+    -59.1598,
+    2.2122
+   ],
+   "n_municipios": 13
+  },
+  {
+   "id": "benjamin-constant",
+   "nome": "Benjamin Constant",
+   "sede": "Benjamin Constant",
+   "sensor": "SEMA_DCAM_19",
+   "bbox": [
+    -73.9909,
+    -8.4742,
+    -65.8883,
+    2.2466
+   ],
+   "n_municipios": 13
+  }
+ ]
+}

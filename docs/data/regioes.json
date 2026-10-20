@@ -22,10 +22,10 @@
    "bbox": [
     -60.9637,
     -7.3497,
-    -56.3888,
+    -56.0971,
     0.2639
    ],
-   "n_municipios": 14
+   "n_municipios": 16
   },
   {
    "id": "parintins",
@@ -34,11 +34,11 @@
    "sensor": "SEMA_DCAM_47",
    "bbox": [
     -60.9637,
-    -8.4052,
-    -54.0449,
+    -9.6449,
+    -51.6471,
     2.5339
    ],
-   "n_municipios": 15
+   "n_municipios": 28
   },
   {
    "id": "humaita",
@@ -46,12 +46,12 @@
    "sede": "Humaitá",
    "sensor": "SEMA_DCAM_65",
    "bbox": [
-    -73.6316,
-    -10.0001,
+    -67.7966,
+    -12.2153,
     -58.1366,
-    -3.2429
+    -4.5227
    ],
-   "n_municipios": 11
+   "n_municipios": 14
   },
   {
    "id": "coari",
@@ -59,12 +59,12 @@
    "sede": "Coari",
    "sensor": "SEMA_DCAM_27",
    "bbox": [
-    -67.7966,
+    -69.5368,
     -9.8177,
     -59.1598,
     2.2122
    ],
-   "n_municipios": 13
+   "n_municipios": 22
   },
   {
    "id": "benjamin-constant",

@@ -1,4 +1,119 @@
 {
+ "nuvens": {
+  "disponivel": true,
+  "fonte": "GOES-19 ABI, máscara de nuvens (ABI-L2-ACMF), pixel de 2 km",
+  "nivel": "alto",
+  "passagens_viirs": [
+   {
+    "passagem": "2026-10-19T17:34:00Z",
+    "imagem": "2026-10-19T17:30:20Z",
+    "pct": 92.2,
+    "periodo": "dia"
+   },
+   {
+    "passagem": "2026-10-19T05:34:00Z",
+    "imagem": "2026-10-19T05:30:21Z",
+    "pct": 99.9,
+    "periodo": "noite"
+   },
+   {
+    "passagem": "2026-10-18T17:34:00Z",
+    "imagem": "2026-10-18T17:30:20Z",
+    "pct": 96.4,
+    "periodo": "dia"
+   },
+   {
+    "passagem": "2026-10-18T05:34:00Z",
+    "imagem": "2026-10-18T05:30:21Z",
+    "pct": 99.3,
+    "periodo": "noite"
+   }
+  ],
+  "serie": [
+   {
+    "hora": "2026-10-18T02:50:20Z",
+    "pct": 94.4
+   },
+   {
+    "hora": "2026-10-18T05:50:21Z",
+    "pct": 99.5
+   },
+   {
+    "hora": "2026-10-18T08:50:21Z",
+    "pct": 99.6
+   },
+   {
+    "hora": "2026-10-18T11:50:21Z",
+    "pct": 88.9
+   },
+   {
+    "hora": "2026-10-18T14:50:21Z",
+    "pct": 96.4
+   },
+   {
+    "hora": "2026-10-18T17:50:20Z",
+    "pct": 96.8
+   },
+   {
+    "hora": "2026-10-18T20:50:20Z",
+    "pct": 98.6
+   },
+   {
+    "hora": "2026-10-18T23:50:20Z",
+    "pct": 99.9
+   },
+   {
+    "hora": "2026-10-19T02:50:20Z",
+    "pct": 98.3
+   },
+   {
+    "hora": "2026-10-19T05:50:21Z",
+    "pct": 99.9
+   },
+   {
+    "hora": "2026-10-19T08:50:21Z",
+    "pct": 99.9
+   },
+   {
+    "hora": "2026-10-19T11:50:21Z",
+    "pct": 100.0
+   },
+   {
+    "hora": "2026-10-19T14:50:21Z",
+    "pct": 100.0
+   },
+   {
+    "hora": "2026-10-19T17:50:20Z",
+    "pct": 89.9
+   },
+   {
+    "hora": "2026-10-19T20:50:20Z",
+    "pct": 61.0
+   },
+   {
+    "hora": "2026-10-19T23:50:20Z",
+    "pct": 70.6
+   },
+   {
+    "hora": "2026-10-20T02:50:20Z",
+    "pct": 64.8
+   }
+  ],
+  "media_48h": 91.7,
+  "cego_48h_pct": 88.0,
+  "extintos": 26,
+  "extintos_incertos": 25,
+  "camada": {
+   "arquivo": "nuvens.png",
+   "bbox": [
+    -63.9882,
+    -5.4614,
+    -58.0682,
+    0.0386
+   ],
+   "passagem": "2026-10-19T17:34:00Z"
+  }
+ },
  "regiao": {
   "id": "manaus",
   "nome": "Manaus",
@@ -7,10 +122,10 @@
  },
  "sensor": null,
  "ativos_perto_do_sensor": {},
- "gerado_em": "2026-10-20T02:19:52Z",
+ "gerado_em": "2026-10-20T03:06:44Z",
  "dados_de_teste": false,
- "atualizacao": "18h",
- "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
+ "atualizacao": "04h",
+ "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -21,12 +136,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T02:19:52Z",
- "eventos_ativos": 4,
- "eventos_extintos": 25,
+ "janela_inicio": "2026-10-18T03:06:44Z",
+ "eventos_ativos": 3,
+ "eventos_extintos": 26,
  "eventos_total": 29,
- "deteccoes_total": 158,
- "deteccoes_ativas": 9,
+ "deteccoes_total": 115,
+ "deteccoes_ativas": 8,
  "por_municipio": {
   "Itacoatiara": 8,
   "Autazes": 7,
@@ -39,12 +154,11 @@
  },
  "ativos_por_municipio": {
   "Manaquiri": 2,
-  "Itacoatiara": 1,
   "Careiro": 1
  },
  "por_satelite": {
-  "GOES-19": 89,
   "NOAA-20": 54,
+  "GOES-19": 46,
   "NOAA-21": 14,
   "AQUA": 1
  },
@@ -130,7 +244,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-19T22:30:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-20T02:20:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -213,9 +327,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (322 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (2010 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)"
+  "FIRMS MODIS_NRT": "ok (324 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
+  "GOES-19 nuvens": "ok (57 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

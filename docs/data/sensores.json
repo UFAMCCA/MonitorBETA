@@ -1,27 +1,42 @@
 {
  "SEMA_DCAM_19": {
-  "lat": null,
-  "lon": null,
-  "fonte": "pendente"
+  "lat": -4.389089,
+  "lon": -70.024216,
+  "sensor_index": 205659,
+  "ultimo_sinal": 1792426079,
+  "fonte": "API PurpleAir",
+  "atualizado_em": "2026-10-20T03:06:44Z"
  },
  "SEMA_DCAM_27": {
-  "lat": null,
-  "lon": null,
-  "fonte": "pendente"
+  "lat": -4.097046,
+  "lon": -63.137592,
+  "sensor_index": 206677,
+  "ultimo_sinal": 1792465508,
+  "fonte": "API PurpleAir",
+  "atualizado_em": "2026-10-20T03:06:44Z"
  },
  "SEMA_DCAM_38": {
-  "lat": null,
-  "lon": null,
-  "fonte": "pendente"
+  "lat": -2.747297,
+  "lon": -58.02261,
+  "sensor_index": 205669,
+  "ultimo_sinal": 1792465539,
+  "fonte": "API PurpleAir",
+  "atualizado_em": "2026-10-20T03:06:44Z"
  },
  "SEMA_DCAM_47": {
-  "lat": null,
-  "lon": null,
-  "fonte": "pendente"
+  "lat": -2.627233,
+  "lon": -56.725555,
+  "sensor_index": 205687,
+  "ultimo_sinal": 1792465568,
+  "fonte": "API PurpleAir",
+  "atualizado_em": "2026-10-20T03:06:44Z"
  },
  "SEMA_DCAM_65": {
-  "lat": null,
-  "lon": null,
-  "fonte": "pendente"
+  "lat": -7.512233,
+  "lon": -63.02485,
+  "sensor_index": 205927,
+  "ultimo_sinal": 1792465476,
+  "fonte": "API PurpleAir",
+  "atualizado_em": "2026-10-20T03:06:44Z"
  }
 }

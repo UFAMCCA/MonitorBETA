@@ -1,4 +1,119 @@
 {
+ "nuvens": {
+  "disponivel": true,
+  "fonte": "GOES-19 ABI, máscara de nuvens (ABI-L2-ACMF), pixel de 2 km",
+  "nivel": "alto",
+  "passagens_viirs": [
+   {
+    "passagem": "2026-10-19T17:20:00Z",
+    "imagem": "2026-10-19T17:10:20Z",
+    "pct": 91.2,
+    "periodo": "dia"
+   },
+   {
+    "passagem": "2026-10-19T05:20:00Z",
+    "imagem": "2026-10-19T05:10:21Z",
+    "pct": 98.2,
+    "periodo": "noite"
+   },
+   {
+    "passagem": "2026-10-18T17:20:00Z",
+    "imagem": "2026-10-18T17:10:20Z",
+    "pct": 92.2,
+    "periodo": "dia"
+   },
+   {
+    "passagem": "2026-10-18T05:20:00Z",
+    "imagem": "2026-10-18T05:10:21Z",
+    "pct": 86.2,
+    "periodo": "noite"
+   }
+  ],
+  "serie": [
+   {
+    "hora": "2026-10-18T02:50:20Z",
+    "pct": 78.4
+   },
+   {
+    "hora": "2026-10-18T05:50:21Z",
+    "pct": 85.7
+   },
+   {
+    "hora": "2026-10-18T08:50:21Z",
+    "pct": 87.9
+   },
+   {
+    "hora": "2026-10-18T11:50:21Z",
+    "pct": 83.7
+   },
+   {
+    "hora": "2026-10-18T14:50:21Z",
+    "pct": 94.1
+   },
+   {
+    "hora": "2026-10-18T17:50:20Z",
+    "pct": 92.6
+   },
+   {
+    "hora": "2026-10-18T20:50:20Z",
+    "pct": 96.0
+   },
+   {
+    "hora": "2026-10-18T23:50:20Z",
+    "pct": 97.0
+   },
+   {
+    "hora": "2026-10-19T02:50:20Z",
+    "pct": 96.7
+   },
+   {
+    "hora": "2026-10-19T05:50:21Z",
+    "pct": 97.6
+   },
+   {
+    "hora": "2026-10-19T08:50:21Z",
+    "pct": 93.5
+   },
+   {
+    "hora": "2026-10-19T11:50:21Z",
+    "pct": 90.5
+   },
+   {
+    "hora": "2026-10-19T14:50:21Z",
+    "pct": 89.4
+   },
+   {
+    "hora": "2026-10-19T17:50:20Z",
+    "pct": 88.5
+   },
+   {
+    "hora": "2026-10-19T20:50:20Z",
+    "pct": 63.3
+   },
+   {
+    "hora": "2026-10-19T23:50:20Z",
+    "pct": 65.4
+   },
+   {
+    "hora": "2026-10-20T02:50:20Z",
+    "pct": 61.6
+   }
+  ],
+  "media_48h": 86.0,
+  "cego_48h_pct": 72.6,
+  "extintos": 146,
+  "extintos_incertos": 140,
+  "camada": {
+   "arquivo": "nuvens.png",
+   "bbox": [
+    -60.9637,
+    -8.4061,
+    -54.0437,
+    2.5339
+   ],
+   "passagem": "2026-10-19T17:20:00Z"
+  }
+ },
  "regiao": {
   "id": "parintins",
   "nome": "Parintins",
@@ -17,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-10-20T02:19:52Z",
+ "gerado_em": "2026-10-20T03:06:44Z",
  "dados_de_teste": false,
- "atualizacao": "18h",
- "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
+ "atualizacao": "04h",
+ "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -31,12 +146,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-18T02:19:52Z",
- "eventos_ativos": 4,
- "eventos_extintos": 144,
+ "janela_inicio": "2026-10-18T03:06:44Z",
+ "eventos_ativos": 2,
+ "eventos_extintos": 146,
  "eventos_total": 148,
- "deteccoes_total": 744,
- "deteccoes_ativas": 19,
+ "deteccoes_total": 729,
+ "deteccoes_ativas": 6,
  "por_municipio": {
   "Santarém (PA)": 97,
   "Itaituba (PA)": 13,
@@ -51,12 +166,12 @@
   "São Sebastião do Uatumã": 1
  },
  "ativos_por_municipio": {
-  "Santarém (PA)": 4
+  "Santarém (PA)": 2
  },
  "por_satelite": {
   "NOAA-21": 507,
   "NOAA-20": 134,
-  "GOES-19": 86,
+  "GOES-19": 71,
   "TERRA": 13,
   "AQUA": 4
  },
@@ -206,7 +321,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-20T01:50:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-20T02:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -289,9 +404,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (322 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (2010 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)"
+  "FIRMS MODIS_NRT": "ok (324 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (2030 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (3285 detecções)",
+  "GOES-19 nuvens": "ok (57 imagens)"
  },
  "temperatura_superficie": null
 }

@@ -6,6 +6,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-18T17:39:00Z,NOAA-21,-3.3603,-68.3962,Amaturá,4.39,baixa,0.45,0.47,dia,FIRMS
 2026-10-18T17:39:00Z,NOAA-21,-3.3446,-68.3498,Amaturá,7.79,baixa,0.44,0.46,dia,FIRMS
 2026-10-18T17:39:00Z,NOAA-21,-3.3440,-68.3458,Amaturá,6.73,baixa,0.44,0.46,dia,FIRMS
+2026-10-18T17:39:00Z,NOAA-21,-3.4414,-68.9625,São Paulo de Olivença,6.34,nominal,0.49,0.48,dia,FIRMS
+2026-10-18T17:39:00Z,NOAA-21,-3.4407,-68.9581,São Paulo de Olivença,8.39,baixa,0.49,0.48,dia,FIRMS
 2026-10-18T18:34:00Z,NOAA-20,-4.3567,-69.6760,Benjamin Constant,13.6,nominal,0.41,0.45,dia,FIRMS+INPE
 2026-10-18T18:34:00Z,NOAA-20,-4.3566,-69.8311,Benjamin Constant,7.58,baixa,0.4,0.44,dia,FIRMS
 2026-10-18T18:34:00Z,NOAA-20,-4.3537,-69.6839,Benjamin Constant,4.67,baixa,0.4,0.45,dia,FIRMS+INPE
@@ -14,5 +16,13 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-18T18:34:00Z,NOAA-20,-4.2441,-69.8827,Tabatinga,5.2,nominal,0.39,0.44,dia,FIRMS+INPE
 2026-10-18T18:34:00Z,NOAA-20,-4.0463,-70.1264,Letícia (Colômbia),10.73,baixa,0.38,0.43,dia,FIRMS+INPE
 2026-10-18T18:34:00Z,NOAA-20,-4.0389,-70.1311,Letícia (Colômbia),5.78,baixa,0.38,0.43,dia,FIRMS+INPE
+2026-10-18T18:34:00Z,NOAA-20,-4.0678,-69.5171,São Paulo de Olivença,4.9,nominal,0.42,0.45,dia,FIRMS
+2026-10-18T18:34:00Z,NOAA-20,-4.0671,-69.5133,São Paulo de Olivença,4.9,nominal,0.42,0.45,dia,FIRMS
+2026-10-18T18:34:00Z,NOAA-20,-4.0630,-69.5140,São Paulo de Olivença,4.9,nominal,0.42,0.45,dia,FIRMS
+2026-10-18T18:34:00Z,NOAA-20,-3.5914,-69.4129,São Paulo de Olivença,4.31,nominal,0.43,0.46,dia,FIRMS+INPE
+2026-10-18T18:34:00Z,NOAA-20,-3.5913,-69.4132,São Paulo de Olivença,3.95,nominal,0.43,0.46,dia,FIRMS
+2026-10-18T18:34:00Z,NOAA-20,-3.5294,-66.0474,Juruá,7.87,nominal,0.37,0.58,dia,FIRMS+INPE
+2026-10-18T18:34:00Z,NOAA-20,-3.5289,-66.0441,Juruá,8.51,nominal,0.37,0.58,dia,FIRMS
+2026-10-18T18:34:00Z,NOAA-20,-2.4362,-66.6309,Jutaí,9.01,nominal,0.35,0.57,dia,FIRMS
 2026-10-19T18:13:00Z,NOAA-20,-6.5469,-72.6627,Atalaia do Norte,5.9,baixa,0.46,0.39,dia,FIRMS+INPE
 2026-10-19T18:58:00Z,NOAA-21,-7.8085,-72.3878,Cruzeiro do Sul (AC),3.35,nominal,0.41,0.6,dia,FIRMS+INPE

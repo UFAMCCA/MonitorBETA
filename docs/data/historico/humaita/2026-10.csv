@@ -243,3 +243,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-19T18:58:00Z,NOAA-21,-7.8085,-72.3878,Cruzeiro do Sul (AC),3.35,nominal,0.41,0.6,dia,FIRMS+INPE
 2026-10-19T23:20:00Z,GOES-19,-8.5750,-66.6787,Lábrea,,,2.2,2.2,noite,INPE
 2026-10-19T23:30:00Z,GOES-19,-8.5750,-66.6787,Lábrea,,,2.2,2.2,noite,INPE
+2026-10-20T02:20:00Z,GOES-19,-3.8035,-60.8659,Manaquiri,45.8,,2.2,2.2,noite,INPE

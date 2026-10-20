@@ -1,55 +1,80 @@
-# Monitor de Focos de calor · Campus Manaus e entorno
-#V2: Incorpora os municípios onde a UFAM tem Campus
+# Focos de calor · Amazonas
 
-Site estático que mostra focos de calor ativos e das últimas 48 horas nos municípios vizinhos ao campus. Também mostra a temperatura da superfície, atualizada a cada quinzena.
+Site estático com os focos de calor ativos e das últimas 48 horas em seis regiões do Amazonas. Cada região tem um município-sede e o seu entorno. Nas regiões com sensor de qualidade do ar (PurpleAir, rede SEMA-AM), o mapa é centralizado na coordenada exata do sensor e mostra a distância de cada foco até ele. O site também mostra a temperatura da superfície, atualizada a cada quinzena.
+
+| Região | Sensor | Entorno |
+|---|---|---|
+| Manaus | — | Iranduba, Careiro, Careiro da Várzea, Manacapuru, Manaquiri, Autazes, Novo Airão, Anori, Beruri, Rio Preto da Eva, Presidente Figueiredo, Itacoatiara |
+| Itacoatiara | SEMA_DCAM_38 | Autazes, Nova Olinda do Norte, Silves, Urucará, Barreirinha, Parintins, Urucurituba, Maués, Itapiranga, São Sebastião do Uatumã, Boa Vista do Ramos, Presidente Figueiredo, Rio Preto da Eva |
+| Parintins | SEMA_DCAM_47 | Nhamundá, Oriximiná (PA), Boa Vista do Ramos, Maués, Urucurituba, Barreirinha, Urucará, Itaituba (PA), Santarém (PA), Itapiranga, Presidente Figueiredo, Rio Preto da Eva, São Sebastião do Uatumã, Itacoatiara |
+| Humaitá | SEMA_DCAM_65 | Lábrea, Porto Velho (RO), Apuí, Canutama, Cruzeiro do Sul (AC), Manicoré, Novo Aripuanã, Tapauá, Autazes, Manaquiri |
+| Coari | SEMA_DCAM_27 | Tefé, Canutama, Lábrea, Tapauá, Beruri, Anori, Manacapuru, Manaus, Novo Airão, Anamã, Barcelos, Manicoré |
+| Benjamin Constant | SEMA_DCAM_19 | Atalaia do Norte, Letícia (Colômbia), Tabatinga, Santo Antônio do Içá, Amaturá, São Gabriel da Cachoeira, Eirunepé, Carauari, Envira, Iquitos (Peru, distrito), Cruzeiro do Sul (AC), Mâncio Lima (AC) |
+
+Para mudar regiões ou municípios, edite `REGIOES` em `scripts/config.py` e rode `python scripts/limites.py`. Depois envie a pasta `docs/data` gerada.
+
+## Painel do Fogo (Censipam)
+
+O site também mostra, em lilás, os dados do [Painel do Fogo](https://panorama.sipam.gov.br/painel-do-fogo/) do Censipam, lidos do GeoServer público (`painel_do_fogo`, WFS):
+
+| Camada | Conteúdo |
+|---|---|
+| `mv_evento_filtro` | eventos de fogo (área, persistência, detecções, potência, situação) |
+| `mv_alertas_goes_novos_eventos` | alertas GOES de novo evento |
+| `mv_alertas_goes_atividade_eventos` | alertas GOES de evento em atividade |
+| `mv_alertas_estradas` | fogo perto de estrada (rodovia e km) |
+| `mv_alertas_areas_urbanizadas` | fogo perto de área urbana |
+| `tb_brigada_pto` | brigadas de incêndio |
+
+A consulta é feita ao vivo no navegador de quem abre o site. Se falhar, o site usa a cópia gravada na última coleta (`scripts/censipam.py`). O servidor do Censipam pode recusar acessos de fora do Brasil, e os servidores do GitHub ficam nos EUA. Nesse caso a cópia não é gerada e vale só a consulta ao vivo.
 
 ## O que roda e quando
 
-| Tarefa | Horário (Manaus) | Fonte | Satélites |
-|---|---|---|---|
-| Focos | 04h | INPE BDQueimadas + NASA FIRMS | NOAA-20 e NOAA-21 (VIIRS noturno, ~01h30), GOES-19 |
-| Focos | 12h | idem | Terra (~9h), MetOp-B/C (~9h30), GOES-19 |
-| Focos | 18h | idem | NOAA-20 e NOAA-21 (VIIRS, ~13h30), GOES-19, Aqua (referência INPE, enquanto operar) |
-| Temperatura da superfície | dias 1 e 16 | Landsat 8/9 TIRS via Microsoft Planetary Computer | Landsat 8 e 9 (~10h, 100 m) |
+| Tarefa | Quando (Manaus) | Fonte |
+|---|---|---|
+| Focos das seis regiões | 04h, 12h e 18h, disparados pelo Google Apps Script | INPE BDQueimadas + NASA FIRMS |
+| Temperatura da superfície | dias 1 e 16, disparada pelo Google Apps Script | Landsat 8/9 TIRS (Microsoft Planetary Computer) |
 
+A coleta de focos publica o site direto no GitHub Pages, e os arquivos de 48 h não vão para o repositório. Assim ele não cresce a cada atualização. No repositório ficam só:
+- o histórico compacto, em `docs/data/historico/<regiao>/AAAA-MM.csv`, uma linha por detecção, útil para balanços mensais;
+- as coordenadas dos sensores;
+- as camadas de temperatura.
 
-## Publicar no GitHub Pages (uma vez)
+## Configuração (uma vez)
 
-1. Crie um repositório no GitHub e envie esta pasta para ele (branch `main`).
-2. Peça uma chave gratuita do FIRMS em https://firms.modaps.eosdis.nasa.gov/api/map_key/ e cadastre-a em **Settings → Secrets and variables → Actions → New repository secret** com o nome `FIRMS_MAP_KEY`. Sem a chave o site funciona só com o INPE, sem o tamanho real do pixel e sem a confiança da detecção.
-3. Em **Settings → Pages**, escolha *Deploy from a branch*, branch `main`, pasta `/docs`.
-4. Em **Actions**, rode manualmente *Focos de calor* e *Temperatura da superfície* (botão *Run workflow*) para gerar os primeiros dados. Depois disso, os horários acima rodam sozinhos.
-
+1. **Segredos** (Settings → Secrets and variables → Actions):
+   - `FIRMS_MAP_KEY`: chave gratuita do FIRMS, já cadastrada.
+   - `PURPLEAIR_API_KEY`: chave de leitura gratuita do PurpleAir (develop.purpleair.com). É usada só para buscar a coordenada exata dos sensores, uma única vez. Os sensores não mudam de lugar, então o gasto de pontos é mínimo.
+   - Também é possível fixar a coordenada à mão em `SENSORES_MANUAL`, em `scripts/config.py`.
+2. **Pages** (Settings → Pages → Build and deployment → Source): escolha **GitHub Actions**.
+3. **Apps Script**: continua igual, disparando `focos.yml` e `lst.yml`.
 
 ## Como os dados são tratados
 
+- **Coleta única para todas as regiões.** INPE e FIRMS são consultados uma vez, só na área das regiões, e cada região é processada em separado. Um mesmo município pode estar em mais de uma região.
 - **Agrupamento.** Detecções cujos pixels se tocam (com 500 m de folga) e que estão a até 12 h uma da outra formam um único foco.
-- **Área desenhada (buffer C).** É a união dos pixels reais do sensor mais fino que viu o foco, com o tamanho *scan × track* informado pelo FIRMS. Quando só o INPE tem a detecção, usa-se o tamanho nominal do sensor. A cor indica a idade da última detecção, a opacidade indica a confiança e o contorno tracejado indica extinção estimada. O círculo cresce com o número de pixels.
-- **Extinção estimada.** O satélite não observa a extinção. O foco é marcado como extinto quando uma destas condições se cumpre:
+- **Área desenhada.** É a união dos pixels reais do sensor mais fino que viu o foco. A cor indica a idade, a opacidade indica a confiança e o contorno tracejado indica extinção estimada.
+- **Extinção estimada.** O foco é marcado como extinto quando uma destas condições se cumpre:
   - duas passagens polares seguidas não o registram;
   - ele tinha detecções do GOES-19 e o GOES passa 3 h sem registrá-lo.
 
-  O site mostra o intervalo entre a última detecção e a primeira observação sem registro. Nuvem e fumaça podem produzir falsas extinções.
-- **Horário das passagens.** É inferido pelas próprias detecções numa faixa de 3° ao redor da área.
-- **Temperatura da superfície.** Cada pixel vem da imagem Landsat sem nuvem mais recente da quinzena (nuvem, sombra e cirrus removidos pela banda QA_PIXEL). O arquivo guarda de qual cena veio cada pixel, e o popup técnico mostra satélite, data e hora. É temperatura da superfície, não do solo em profundidade.
-
-Todos os limiares ficam em `scripts/config.py`.
+  Nuvem e fumaça podem produzir falsas extinções.
+- **Distância ao sensor.** É medida do centro do foco até o sensor. O painel conta os focos ativos a até 25, 50 e 100 km.
+- **Temperatura da superfície.** É o pixel Landsat sem nuvem mais recente da quinzena. Regiões grandes usam pixel maior na exibição: de ~300 m em Manaus a ~660 m em Humaitá.
 
 ## Rodar localmente
 
 ```bash
 pip install -r requirements.txt
-python scripts/focos.py                 # usa FIRMS_MAP_KEY do ambiente, se existir
-pip install -r requirements-lst.txt
-python scripts/lst.py
-cd docs && python -m http.server 8000   # abrir http://localhost:8000
+python scripts/limites.py
+PURPLEAIR_API_KEY=... python scripts/sensores.py
+FIRMS_MAP_KEY=... python scripts/focos.py
+pip install -r requirements-lst.txt && python scripts/lst.py --regiao manaus
+cd docs && python -m http.server 8000
 ```
 
-É possível realizar teste offline com CSVs próprios: `python scripts/focos.py --inpe-local pasta --firms-local pasta --agora 2026-09-25T22:00:00Z`. Nesse modo o site exibe o aviso de dados de teste.
+## Fontes dos limites
 
-## Limitações conhecidas
-
-- O Aqua e o Terra estão no fim da missão. Quando pararem, as linhas deles somem sem quebrar nada. O Suomi-NPP não foi incluído porque a NASA encerra seus dados em 1º/11/2026.
-- A reserva com VIIRS para a temperatura da superfície, para quando a quinzena estiver muito nublada, é o próximo passo de implementação: exige conta no NASA Earthdata. Na versão beta atual as áreas cobertas por nuvem durante toda a quinzena ficam sem cor, e a porcentagem de cobertura aparece no painel.
-- O formato dos CSVs do INPE pode mudar. O leitor aceita as variações de nome de coluna conhecidas, e o status de cada fonte aparece em `docs/data/resumo.json` e no aviso do topo do site.
-- Os limites municipais vêm da malha do IBGE, via github.com/tbrugz/geodata-br. A malha tem anéis de polígono mal marcados, que o script corrige. Para trocar os municípios, edite `MUNICIPIOS` em `scripts/config.py` e rode `python scripts/limites.py`.
+- **Brasil:** IBGE, via github.com/tbrugz/geodata-br.
+- **Colômbia:** DANE, MGN 2018.
+- **Peru:** INEI, distritos.

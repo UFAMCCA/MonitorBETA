@@ -30,6 +30,7 @@ from shapely.prepared import prep
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config as C  # noqa: E402
+import nuvens as nuvens_mod  # noqa: E402
 
 TZ = ZoneInfo(C.FUSO)
 UTC = timezone.utc
@@ -489,19 +490,111 @@ def migrar_lst_antiga():
             shutil.copy2(antigo, novo)
 
 
-def processar_regiao(rid, reg, regs, agora, inicio, janela, status, sensores, teste, historico):
+def checar_nuvens(nuv, rid, st, ev, c_lat, c_lon, serie):
+    """Para focos dados como extintos: o local estava sob nuvens nas observações
+    que deveriam tê-lo visto? Se sim, a extinção é incerta."""
+    out = {"extincao_incerta": False, "nuvem_nas_passagens": None}
+    if st["status"] != "extinto_estimado":
+        return out
+    t_ult = max(d["t"] for d in ev)
+    marcas = []
+    for p in st["passagens_sem_deteccao"]:
+        t = datetime.fromisoformat(p["hora"].replace("Z", "+00:00"))
+        p["nuvem"] = nuv.nublado(rid, t, c_lat, c_lon)
+    usadas = st["passagens_sem_deteccao"][:max(C.EXT_PASSAGENS_POLARES, 1)]
+    marcas = [p["nuvem"] for p in usadas if p.get("nuvem") is not None]
+    # extinção decidida pelo GOES: olha a série de 3 em 3 h logo depois do último registro
+    if not marcas:
+        janela = [t for t in serie if t_ult < t <= t_ult + timedelta(hours=6)]
+        marcas = [x for x in (nuv.nublado(rid, t, c_lat, c_lon) for t in janela) if x is not None]
+    if marcas:
+        nubladas = sum(1 for x in marcas if x)
+        out["nuvem_nas_passagens"] = {"nubladas": nubladas, "observadas": len(marcas)}
+        if nubladas:
+            out["extincao_incerta"] = True
+            st["criterio"] = (st["criterio"] or "") + f"; ATENÇÃO: havia nuvem sobre o local em {nubladas} de {len(marcas)} observações seguintes, o fogo pode ter continuado escondido"
+    return out
+
+
+def resumo_nuvens(nuv, rid, ctx, eventos, agora, pasta):
+    """Cobertura de nuvens da região: série de 48 h, passagens do VIIRS, área cega."""
+    viirs = ctx["viirs"]
+    serie = []
+    for t in sorted(ctx["serie"]):
+        f = nuv.fracao(rid, t)
+        if f:
+            serie.append({"hora": iso(f["imagem"]), "pct": f["pct"]})
+    passagens_v = []
+    for t in viirs:
+        f = nuv.fracao(rid, t)
+        if f:
+            h_local = t.astimezone(TZ).hour
+            passagens_v.append({"passagem": iso(t), "imagem": iso(f["imagem"]), "pct": f["pct"],
+                                "periodo": "dia" if 6 <= h_local < 18 else "noite"})
+    if not passagens_v and not serie:
+        return {"disponivel": False, "motivo": "; ".join(nuv.erros[:3]) or "sem imagens do GOES-19 para a região"}
+    cego = nuv.fracao_cega(rid, viirs)
+    camada = None
+    if viirs:
+        bbox = nuv.png(rid, viirs[0], viirs, pasta / "nuvens.png")
+        if bbox:
+            camada = {"arquivo": "nuvens.png", "bbox": bbox, "passagem": iso(viirs[0])}
+    ultimas = passagens_v[:2]
+    ref = max((p["pct"] for p in ultimas), default=None)
+    nivel = None if ref is None else ("alto" if ref >= 60 or (cego or 0) >= 30 else "moderado" if ref >= 30 or (cego or 0) >= 10 else "baixo")
+    extintos = [e for e in eventos if e["properties"]["status"] == "extinto_estimado"]
+    return {
+        "disponivel": True,
+        "fonte": "GOES-19 ABI, máscara de nuvens (ABI-L2-ACMF), pixel de 2 km",
+        "nivel": nivel,
+        "passagens_viirs": passagens_v,
+        "serie": serie,
+        "media_48h": round(sum(x["pct"] for x in serie) / len(serie), 1) if serie else None,
+        "cego_48h_pct": cego,
+        "extintos": len(extintos),
+        "extintos_incertos": sum(1 for e in extintos if e["properties"].get("extincao_incerta")),
+        "camada": camada,
+    }
+
+
+def contexto_regiao(rid, regs, inicio):
+    """Limites, detecções da área ampla e passagens inferidas de uma região."""
     pasta = C.DATA_DIR / rid
     lim = json.loads((pasta / "limites.geojson").read_text(encoding="utf-8"))
-    municipios = [(f["properties"]["nome"], prep(shape(f["geometry"]))) for f in lim["features"]]
-    area = prep(unary_union([shape(f["geometry"]) for f in lim["features"]]))
+    geom = unary_union([shape(f["geometry"]) for f in lim["features"]])
     o, s, l, n = lim["bbox"]
     m = MARGEM_PASSAGEM_GRAUS
     bbox_amplo = (o - m, s - m, l + m, n + m)
-
     amplos = [r for r in regs if bbox_amplo[0] <= r["lon"] <= bbox_amplo[2] and bbox_amplo[1] <= r["lat"] <= bbox_amplo[3]]
-    lista_pass = passagens([r for r in amplos if r["t"] >= inicio])
     goes = [r["t"] for r in amplos if r["sat"] == "GOES-19"]
-    goes_ultimo = max(goes) if goes else None
+    return {"pasta": pasta, "lim": lim, "geom": geom, "amplos": amplos,
+            "lista_pass": passagens([r for r in amplos if r["t"] >= inicio]),
+            "goes_ultimo": max(goes) if goes else None}
+
+
+def tempos_viirs(agora, lon):
+    """Passagens nominais do VIIRS nas últimas 48 h (≈13h30 e ≈01h30 hora solar)."""
+    out = []
+    for d in range(0, 3):
+        for hs in (13.5, 1.5):
+            t = nuvens_mod.hora_solar_utc(agora - timedelta(days=d), hs, lon).replace(second=0, microsecond=0)
+            if agora - timedelta(hours=C.HORAS_HISTORICO) <= t <= agora - timedelta(minutes=20):
+                out.append(t)
+    return sorted(out, reverse=True)
+
+
+def tempos_serie(agora):
+    base = agora.replace(minute=0, second=0, microsecond=0)
+    base -= timedelta(hours=base.hour % 3)
+    return [base - timedelta(hours=3 * k) for k in range(0, C.HORAS_HISTORICO // 3 + 1)]
+
+
+def processar_regiao(rid, reg, ctx, agora, inicio, janela, status, sensores, teste, historico, nuv=None):
+    pasta, lim, amplos = ctx["pasta"], ctx["lim"], ctx["amplos"]
+    lista_pass, goes_ultimo = ctx["lista_pass"], ctx["goes_ultimo"]
+    municipios = [(f["properties"]["nome"], prep(shape(f["geometry"]))) for f in lim["features"]]
+    area = prep(ctx["geom"])
+    o, s, l, n = lim["bbox"]
 
     dets = []
     for r in amplos:
@@ -534,6 +627,9 @@ def processar_regiao(rid, reg, regs, agora, inicio, janela, status, sensores, te
         confs = [d["confianca"] for d in ev if d["confianca"]]
         ordem = {"baixa": 0, "nominal": 1, "alta": 2}
         st = status_evento(ev, agora, lista_pass, goes_ultimo)
+        if nuv is not None:
+            st.update(checar_nuvens(nuv, rid, st, ev, c_lat=sum(d["lat"] for d in ev) / len(ev),
+                                    c_lon=sum(d["lon"] for d in ev) / len(ev), serie=ctx.get("serie", [])))
         frps = [d["frp"] for d in ev if d["frp"] is not None]
         mun = Counter(d["municipio"] for d in ev if d["municipio"]).most_common(1)
         props = {
@@ -574,7 +670,11 @@ def processar_regiao(rid, reg, regs, agora, inicio, janela, status, sensores, te
         for raio in (25, 50, 100):
             perto[str(raio)] = sum(1 for e in ativos if e["properties"]["dist_sensor_km"] <= raio)
 
+    nuvens_info = resumo_nuvens(nuv, rid, ctx, eventos, agora, pasta) if nuv is not None else {
+        "disponivel": False, "motivo": "máscara de nuvens do GOES-19 não obtida nesta coleta"}
+
     resumo = {
+        "nuvens": nuvens_info,
         "regiao": {"id": rid, "nome": reg["nome"], "sede": reg["sede"], "n_municipios": len(municipios)},
         "sensor": sensor,
         "ativos_perto_do_sensor": perto,
@@ -621,6 +721,8 @@ def main():
     ap.add_argument("--janela", choices=list(C.ATUALIZACOES))
     ap.add_argument("--regiao", action="append", help="processar só esta região (pode repetir)")
     ap.add_argument("--sem-historico", action="store_true")
+    ap.add_argument("--sem-nuvens", action="store_true", help="não baixar a máscara de nuvens do GOES-19")
+    ap.add_argument("--goes-local", help="pasta com máscaras ACM do GOES (testes)")
     a = ap.parse_args()
 
     agora = datetime.fromisoformat(a.agora.replace("Z", "+00:00")) if a.agora else datetime.now(UTC)
@@ -646,9 +748,33 @@ def main():
 
     migrar_lst_antiga()
     sensores = carregar_sensores()
+    contextos = {rid: contexto_regiao(rid, regs, inicio) for rid in regioes}
+
+    # Nuvens (GOES-19): passagens polares inferidas + passagens nominais do VIIRS + série de 3 h
+    nuv = None
+    if not a.sem_nuvens:
+        try:
+            serie = tempos_serie(agora)
+            instantes = set(serie)
+            for rid, ctx in contextos.items():
+                o, s_, l, n = ctx["lim"]["bbox"]
+                ctx["viirs"] = tempos_viirs(agora, (o + l) / 2)
+                ctx["serie"] = serie
+                instantes.update(ctx["viirs"])
+                instantes.update(t0 for _s, t0, _t1, _n in ctx["lista_pass"])
+            nuv = nuvens_mod.Nuvens({rid: {"bbox": ctx["lim"]["bbox"], "geom": ctx["geom"]} for rid, ctx in contextos.items()},
+                                    local_dir=a.goes_local)
+            n_arq = nuv.preparar(sorted(instantes))
+            status["GOES-19 nuvens"] = f"ok ({n_arq} imagens)" if n_arq else "erro: nenhuma imagem obtida"
+            if not n_arq:
+                nuv = None
+        except Exception as e:
+            status["GOES-19 nuvens"] = f"erro: {str(e)[:150]}"
+            nuv = None
+
     for rid, reg in regioes.items():
-        processar_regiao(rid, reg, regs, agora, inicio, janela, status, sensores, teste,
-                         historico=not (teste or a.sem_historico))
+        processar_regiao(rid, reg, contextos[rid], agora, inicio, janela, status, sensores, teste,
+                         historico=not (teste or a.sem_historico), nuv=nuv)
 
     # arquivos da versão de região única, que não são mais usados
     for antigo in ("focos.geojson", "deteccoes.json", "resumo.json", "limites.geojson"):

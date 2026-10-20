@@ -59,7 +59,8 @@ REGIOES = {
         "sede": "Benjamin Constant",
         "entorno": ["Atalaia do Norte", "Letícia/CO", "Tabatinga", "Santo Antônio do Içá",
                     "Amaturá", "São Gabriel da Cachoeira", "Eirunepé", "Carauari", "Envira",
-                    "Iquitos/PE", "Cruzeiro do Sul/AC", "Mâncio Lima/AC"],
+                    "Iquitos/PE", "Cruzeiro do Sul/AC", "Mâncio Lima/AC",
+                    "Japurá", "Tonantins", "São Paulo de Olivença", "Jutaí", "Juruá"],
     },
 }
 

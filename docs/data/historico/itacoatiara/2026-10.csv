@@ -256,3 +256,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-21T04:57:00Z,NOAA-20,-2.6271,-56.5337,Parintins,1.3,nominal,0.56,0.43,noite,FIRMS
 2026-10-21T04:57:00Z,NOAA-20,-2.6237,-56.5322,Parintins,0.44,nominal,0.56,0.43,noite,FIRMS
 2026-10-21T04:57:00Z,NOAA-20,-2.6232,-56.5331,Parintins,1.3,nominal,0.56,0.43,noite,FIRMS
+2026-10-21T05:42:00Z,NOAA-21,-2.6332,-56.5311,Parintins,0.81,nominal,0.32,0.55,noite,FIRMS+INPE
+2026-10-21T05:42:00Z,NOAA-21,-2.6282,-56.5304,Parintins,1.06,nominal,0.32,0.55,noite,FIRMS+INPE
+2026-10-21T12:34:00Z,TERRA,-2.6380,-56.5278,Parintins,22.06,nominal,1.37,1.16,dia,FIRMS
+2026-10-21T12:34:00Z,TERRA,-2.6364,-56.5397,Parintins,8.32,nominal,1.36,1.16,dia,FIRMS

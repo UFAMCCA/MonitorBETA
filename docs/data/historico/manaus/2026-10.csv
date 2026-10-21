@@ -252,3 +252,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-21T00:40:00Z,GOES-19,-3.1698,-58.6051,Itacoatiara,53.8,,2.2,2.2,noite,INPE
 2026-10-21T00:40:00Z,GOES-19,-3.1881,-58.6048,Itacoatiara,51.3,,2.2,2.2,noite,INPE
 2026-10-21T00:50:00Z,GOES-19,-3.1698,-58.6051,Itacoatiara,55.7,,2.2,2.2,noite,INPE
+2026-10-21T05:42:00Z,NOAA-21,-3.1776,-60.9812,Manacapuru,1.05,nominal,0.5,0.41,noite,FIRMS+INPE

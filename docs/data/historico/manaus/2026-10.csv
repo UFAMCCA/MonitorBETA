@@ -253,3 +253,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-21T00:40:00Z,GOES-19,-3.1881,-58.6048,Itacoatiara,51.3,,2.2,2.2,noite,INPE
 2026-10-21T00:50:00Z,GOES-19,-3.1698,-58.6051,Itacoatiara,55.7,,2.2,2.2,noite,INPE
 2026-10-21T05:42:00Z,NOAA-21,-3.1776,-60.9812,Manacapuru,1.05,nominal,0.5,0.41,noite,FIRMS+INPE
+2026-10-21T17:37:00Z,NOAA-20,-3.5239,-59.5999,Careiro da Várzea,2.87,nominal,0.4,0.37,dia,FIRMS
+2026-10-21T17:37:00Z,NOAA-20,-3.5206,-59.6004,Careiro da Várzea,2.89,nominal,0.4,0.37,dia,FIRMS+INPE
+2026-10-21T17:37:00Z,NOAA-20,-3.3933,-60.4078,Manaquiri,13.62,nominal,0.39,0.36,dia,FIRMS+INPE
+2026-10-21T17:37:00Z,NOAA-20,-3.0675,-59.2473,Itacoatiara,2.68,nominal,0.41,0.37,dia,FIRMS+INPE

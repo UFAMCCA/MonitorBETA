@@ -265,3 +265,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-20T18:41:00Z,NOAA-21,-2.9539,-65.1993,Uarini,20.38,nominal,0.72,0.76,dia,FIRMS
 2026-10-20T19:36:00Z,AQUA,-7.7711,-61.1276,Novo Aripuanã,12.6,baixa,1.56,1.23,dia,FIRMS
 2026-10-20T19:38:00Z,AQUA,-3.3167,-61.3153,Caapiranga,10.04,nominal,1.38,1.16,dia,FIRMS
+2026-10-21T01:00:00Z,GOES-19,-8.7973,-66.5799,Lábrea,61.0,,2.2,2.2,noite,INPE

@@ -461,3 +461,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-21T21:40:00Z,GOES-19,-9.6486,-66.8532,Lábrea,114.3,,2.2,2.2,dia,INPE
 2026-10-21T21:50:00Z,GOES-19,-9.6672,-66.8527,Lábrea,100.8,,2.2,2.2,dia,INPE
 2026-10-22T05:23:00Z,NOAA-21,-2.9408,-60.0740,Manaus,0.4,nominal,0.38,0.36,noite,FIRMS
+2026-10-22T18:02:00Z,NOAA-21,-3.1196,-59.4184,Manaus,2.58,nominal,0.4,0.6,dia,FIRMS+INPE

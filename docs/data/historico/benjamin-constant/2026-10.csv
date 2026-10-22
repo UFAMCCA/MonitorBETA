@@ -54,3 +54,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-21T18:19:00Z,NOAA-21,-7.4901,-72.8961,Mâncio Lima (AC),7.97,nominal,0.38,0.36,dia,FIRMS
 2026-10-21T18:21:00Z,NOAA-21,-3.5533,-69.3905,São Paulo de Olivença,9.14,nominal,0.53,0.42,dia,FIRMS+INPE
 2026-10-21T18:21:00Z,NOAA-21,-3.1373,-68.0305,Santo Antônio do Içá,3.46,nominal,0.43,0.46,dia,FIRMS+INPE
+2026-10-21T20:14:00Z,AQUA,-8.0379,-72.2987,Cruzeiro do Sul (AC),20.58,nominal,2.14,1.42,dia,FIRMS+INPE
+2026-10-21T20:14:00Z,AQUA,-8.0206,-72.3587,Cruzeiro do Sul (AC),34.71,nominal,2.16,1.43,dia,FIRMS+INPE

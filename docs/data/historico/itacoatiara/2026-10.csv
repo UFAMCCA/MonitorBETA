@@ -327,3 +327,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-22T05:23:00Z,NOAA-21,-2.6301,-56.5371,Parintins,2.18,nominal,0.48,0.4,noite,FIRMS
 2026-10-22T05:23:00Z,NOAA-21,-2.6271,-56.5323,Parintins,1.42,nominal,0.48,0.4,noite,FIRMS
 2026-10-22T05:23:00Z,NOAA-21,-2.0595,-56.8090,Nhamundá,3.09,nominal,0.46,0.39,noite,FIRMS
+2026-10-22T14:40:00Z,GOES-19,-3.1881,-58.6048,Itacoatiara,94.7,,2.2,2.2,dia,INPE

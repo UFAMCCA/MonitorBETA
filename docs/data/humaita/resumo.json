@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-20T05:50:21Z",
-    "pct": 95.0
-   },
-   {
-    "hora": "2026-10-20T08:50:21Z",
-    "pct": 82.2
-   },
-   {
-    "hora": "2026-10-20T11:50:21Z",
-    "pct": 53.7
-   },
-   {
     "hora": "2026-10-20T14:50:21Z",
     "pct": 37.8
    },
@@ -97,9 +85,21 @@
    {
     "hora": "2026-10-22T05:50:21Z",
     "pct": 99.9
+   },
+   {
+    "hora": "2026-10-22T08:50:21Z",
+    "pct": 99.8
+   },
+   {
+    "hora": "2026-10-22T11:50:21Z",
+    "pct": 93.7
+   },
+   {
+    "hora": "2026-10-22T14:50:21Z",
+    "pct": 87.5
    }
   ],
-  "media_48h": 82.5,
+  "media_48h": 85.4,
   "cego_48h_pct": 44.1,
   "extintos": 102,
   "extintos_incertos": 97,
@@ -132,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-10-22T08:08:41Z",
+ "gerado_em": "2026-10-22T16:06:41Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,7 +146,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-20T08:08:41Z",
+ "janela_inicio": "2026-10-20T16:06:41Z",
  "eventos_ativos": 0,
  "eventos_extintos": 102,
  "eventos_total": 102,
@@ -395,9 +395,9 @@
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
   "FIRMS MODIS_NRT": "ok (487 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (4260 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (4263 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (3906 detecções)",
-  "GOES-19 nuvens": "ok (56 imagens)"
+  "GOES-19 nuvens": "ok (57 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

@@ -598,3 +598,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-22T18:00:00Z,NOAA-21,-10.8390,-64.9206,Guajará-Mirim (RO),12.47,nominal,0.42,0.38,dia,FIRMS+INPE
 2026-10-22T18:00:00Z,NOAA-21,-9.9491,-64.8881,Porto Velho (RO),4.06,nominal,0.43,0.38,dia,FIRMS+INPE
 2026-10-22T18:02:00Z,NOAA-21,-6.9221,-59.8727,Apuí,4.18,alta,0.32,0.54,dia,FIRMS+INPE
+2026-10-23T05:06:00Z,NOAA-21,-7.9276,-61.5554,Manicoré,0.85,nominal,0.4,0.44,noite,FIRMS
+2026-10-23T05:06:00Z,NOAA-21,-7.8591,-61.6867,Manicoré,0.5,nominal,0.41,0.45,noite,FIRMS+INPE
+2026-10-23T05:06:00Z,NOAA-21,-7.8550,-61.6860,Manicoré,0.59,nominal,0.41,0.45,noite,FIRMS
+2026-10-23T05:06:00Z,NOAA-21,-6.9506,-59.3662,Apuí,0.92,nominal,0.47,0.4,noite,FIRMS+INPE

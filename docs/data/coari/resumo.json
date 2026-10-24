@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-22T05:50:21Z",
-    "pct": 99.6
-   },
-   {
-    "hora": "2026-10-22T08:50:21Z",
-    "pct": 97.9
-   },
-   {
-    "hora": "2026-10-22T11:50:21Z",
-    "pct": 95.0
-   },
-   {
     "hora": "2026-10-22T14:50:21Z",
     "pct": 94.7
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-10-24T05:50:21Z",
     "pct": 9.6
+   },
+   {
+    "hora": "2026-10-24T08:50:21Z",
+    "pct": 12.6
+   },
+   {
+    "hora": "2026-10-24T11:50:21Z",
+    "pct": 7.8
+   },
+   {
+    "hora": "2026-10-24T14:50:21Z",
+    "pct": 12.8
    }
   ],
-  "media_48h": 59.7,
+  "media_48h": 44.4,
   "cego_48h_pct": 1.8,
-  "extintos": 24,
-  "extintos_incertos": 17,
+  "extintos": 34,
+  "extintos_incertos": 20,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-10-24T08:08:43Z",
+ "gerado_em": "2026-10-24T16:06:42Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,38 +146,38 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-22T08:08:43Z",
- "eventos_ativos": 11,
- "eventos_extintos": 24,
- "eventos_total": 35,
- "deteccoes_total": 86,
- "deteccoes_ativas": 17,
+ "janela_inicio": "2026-10-22T16:06:42Z",
+ "eventos_ativos": 5,
+ "eventos_extintos": 34,
+ "eventos_total": 39,
+ "deteccoes_total": 91,
+ "deteccoes_ativas": 7,
  "por_municipio": {
   "Manicoré": 13,
   "Novo Aripuanã": 7,
+  "Lábrea": 4,
   "Canutama": 4,
-  "Lábrea": 3,
-  "Humaitá": 2,
-  "Manaus": 2,
+  "Humaitá": 3,
+  "Manaus": 3,
+  "Tapauá": 1,
   "Coari": 1,
   "Alvarães": 1,
   "Novo Airão": 1,
   "Barcelos": 1
  },
  "ativos_por_municipio": {
-  "Manicoré": 4,
-  "Novo Aripuanã": 2,
-  "Canutama": 2,
+  "Tapauá": 1,
+  "Manicoré": 1,
+  "Lábrea": 1,
   "Humaitá": 1,
-  "Manaus": 1,
-  "Coari": 1
+  "Manaus": 1
  },
  "por_satelite": {
   "NOAA-21": 32,
   "NOAA-20": 31,
   "GOES-19": 16,
-  "AQUA": 5,
-  "TERRA": 2
+  "TERRA": 7,
+  "AQUA": 5
  },
  "passagens": [
   {
@@ -299,9 +299,25 @@
    "fim": "2026-10-24T05:44:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 13
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-24T06:27:00Z",
+   "fim": "2026-10-24T06:27:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-24T12:51:00Z",
+   "fim": "2026-10-24T12:55:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 5
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-24T01:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-24T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -384,10 +400,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1531 detecções)",
+  "FIRMS MODIS_NRT": "ok (1632 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (8189 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (9559 detecções)",
-  "GOES-19 nuvens": "ok (61 imagens)"
+  "FIRMS VIIRS_NOAA21_NRT": "ok (9598 detecções)",
+  "GOES-19 nuvens": "ok (63 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

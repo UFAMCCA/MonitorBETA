@@ -728,3 +728,10 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-24T05:44:00Z,NOAA-20,-8.6070,-63.3322,Candeias do Jamari (RO),0.55,nominal,0.39,0.36,noite,FIRMS
 2026-10-24T05:44:00Z,NOAA-20,-8.5313,-64.0100,Canutama,1.04,nominal,0.38,0.36,noite,FIRMS
 2026-10-24T05:44:00Z,NOAA-20,-7.0859,-63.1343,Humaitá,0.75,nominal,0.39,0.36,noite,FIRMS
+2026-10-24T06:27:00Z,NOAA-21,-9.5076,-65.5788,Porto Velho (RO),2.36,nominal,0.56,0.69,noite,FIRMS+INPE
+2026-10-24T12:53:00Z,TERRA,-5.6260,-63.1825,Tapauá,5.26,nominal,1.15,1.07,dia,FIRMS
+2026-10-24T12:53:00Z,TERRA,-7.5047,-61.4791,Manicoré,7.77,nominal,1.56,1.23,dia,FIRMS
+2026-10-24T12:53:00Z,TERRA,-7.2629,-64.7931,Lábrea,6.05,nominal,1.03,1.01,dia,FIRMS
+2026-10-24T12:53:00Z,TERRA,-7.0413,-62.7241,Humaitá,12.16,baixa,1.26,1.12,dia,FIRMS
+2026-10-24T12:55:00Z,TERRA,-9.0961,-64.1464,Porto Velho (RO),19.66,alta,1.12,1.05,dia,FIRMS
+2026-10-24T12:55:00Z,TERRA,-9.0948,-64.1562,Porto Velho (RO),9.56,nominal,1.12,1.05,dia,FIRMS

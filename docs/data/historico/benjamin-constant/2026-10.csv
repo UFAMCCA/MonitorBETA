@@ -56,3 +56,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-21T18:21:00Z,NOAA-21,-3.1373,-68.0305,Santo Antônio do Içá,3.46,nominal,0.43,0.46,dia,FIRMS+INPE
 2026-10-21T20:14:00Z,AQUA,-8.0379,-72.2987,Cruzeiro do Sul (AC),20.58,nominal,2.14,1.42,dia,FIRMS+INPE
 2026-10-21T20:14:00Z,AQUA,-8.0206,-72.3587,Cruzeiro do Sul (AC),34.71,nominal,2.16,1.43,dia,FIRMS+INPE
+2026-10-23T17:43:00Z,NOAA-21,-0.0105,-67.1747,São Gabriel da Cachoeira,9.64,nominal,0.43,0.38,dia,FIRMS+INPE

@@ -5,6 +5,12 @@
   "nivel": "baixo",
   "passagens_viirs": [
    {
+    "passagem": "2026-10-25T17:41:00Z",
+    "imagem": "2026-10-25T17:40:21Z",
+    "pct": 22.7,
+    "periodo": "dia"
+   },
+   {
     "passagem": "2026-10-25T05:41:00Z",
     "imagem": "2026-10-25T05:40:21Z",
     "pct": 1.0,
@@ -21,23 +27,9 @@
     "imagem": "2026-10-24T05:40:21Z",
     "pct": 5.6,
     "periodo": "noite"
-   },
-   {
-    "passagem": "2026-10-23T17:41:00Z",
-    "imagem": "2026-10-23T17:40:21Z",
-    "pct": 48.1,
-    "periodo": "dia"
    }
   ],
   "serie": [
-   {
-    "hora": "2026-10-23T14:50:21Z",
-    "pct": 31.5
-   },
-   {
-    "hora": "2026-10-23T17:50:21Z",
-    "pct": 48.2
-   },
    {
     "hora": "2026-10-23T20:50:21Z",
     "pct": 49.5
@@ -97,12 +89,20 @@
    {
     "hora": "2026-10-25T14:50:21Z",
     "pct": 5.3
+   },
+   {
+    "hora": "2026-10-25T17:50:21Z",
+    "pct": 22.8
+   },
+   {
+    "hora": "2026-10-25T20:50:21Z",
+    "pct": 29.0
    }
   ],
-  "media_48h": 15.0,
+  "media_48h": 13.3,
   "cego_48h_pct": 0.0,
-  "extintos": 140,
-  "extintos_incertos": 54,
+  "extintos": 226,
+  "extintos_incertos": 114,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -111,7 +111,7 @@
     -58.1366,
     -4.5227
    ],
-   "passagem": "2026-10-25T05:41:00Z"
+   "passagem": "2026-10-25T17:41:00Z"
   }
  },
  "regiao": {
@@ -130,12 +130,12 @@
  "ativos_perto_do_sensor": {
   "25": 0,
   "50": 0,
-  "100": 0
+  "100": 4
  },
- "gerado_em": "2026-10-25T16:06:45Z",
+ "gerado_em": "2026-10-25T22:07:26Z",
  "dados_de_teste": false,
- "atualizacao": "12h",
- "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
+ "atualizacao": "18h",
+ "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,76 +146,48 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-23T16:06:45Z",
- "eventos_ativos": 7,
- "eventos_extintos": 140,
- "eventos_total": 147,
- "deteccoes_total": 573,
- "deteccoes_ativas": 30,
+ "janela_inicio": "2026-10-23T22:07:26Z",
+ "eventos_ativos": 20,
+ "eventos_extintos": 226,
+ "eventos_total": 246,
+ "deteccoes_total": 973,
+ "deteccoes_ativas": 344,
  "por_municipio": {
-  "Porto Velho (RO)": 33,
-  "Lábrea": 22,
-  "Manicoré": 21,
-  "Novo Aripuanã": 19,
-  "Humaitá": 14,
-  "Candeias do Jamari (RO)": 11,
-  "Canutama": 8,
-  "Guajará-Mirim (RO)": 6,
-  "Tapauá": 4,
-  "Nova Mamoré (RO)": 3,
-  "Apuí": 2,
-  "Buritis (RO)": 2,
-  "Alto Paraíso (RO)": 1,
+  "Porto Velho (RO)": 65,
+  "Lábrea": 39,
+  "Manicoré": 28,
+  "Humaitá": 26,
+  "Novo Aripuanã": 25,
+  "Candeias do Jamari (RO)": 18,
+  "Canutama": 12,
+  "Guajará-Mirim (RO)": 9,
+  "Tapauá": 8,
+  "Apuí": 5,
+  "Buritis (RO)": 4,
+  "Nova Mamoré (RO)": 4,
+  "Alto Paraíso (RO)": 2,
   "Itapuã do Oeste (RO)": 1
  },
  "ativos_por_municipio": {
-  "Lábrea": 3,
-  "Porto Velho (RO)": 2,
-  "Novo Aripuanã": 1,
-  "Canutama": 1
+  "Porto Velho (RO)": 9,
+  "Guajará-Mirim (RO)": 2,
+  "Lábrea": 2,
+  "Novo Aripuanã": 2,
+  "Humaitá": 2,
+  "Tapauá": 1,
+  "Itapuã do Oeste (RO)": 1,
+  "Candeias do Jamari (RO)": 1
  },
  "por_satelite": {
-  "NOAA-20": 224,
-  "NOAA-21": 147,
-  "GOES-19": 140,
+  "NOAA-20": 385,
+  "GOES-19": 277,
+  "NOAA-21": 252,
   "TERRA": 17,
-  "AQUA": 17,
   "METOP-B": 15,
+  "AQUA": 14,
   "METOP-C": 13
  },
  "passagens": [
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-23T16:58:00Z",
-   "fim": "2026-10-23T17:00:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 3
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-23T17:39:00Z",
-   "fim": "2026-10-23T17:43:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 33
-  },
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-23T18:38:00Z",
-   "fim": "2026-10-23T18:38:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 28
-  },
-  {
-   "satelite": "AQUA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-23T19:51:00Z",
-   "fim": "2026-10-23T19:53:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 14
-  },
   {
    "satelite": "TERRA",
    "sensor": "MODIS",
@@ -351,9 +323,49 @@
    "fim": "2026-10-25T13:36:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-25T17:02:00Z",
+   "fim": "2026-10-25T17:07:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 117
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-25T18:00:00Z",
+   "fim": "2026-10-25T18:02:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 192
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-10-25T18:43:00Z",
+   "fim": "2026-10-25T18:45:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 21
+  },
+  {
+   "satelite": "AQUA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-25T19:30:00Z",
+   "fim": "2026-10-25T19:32:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 11
+  },
+  {
+   "satelite": "AQUA",
+   "sensor": "MODIS",
+   "inicio": "2026-10-25T21:06:00Z",
+   "fim": "2026-10-25T21:06:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-25T15:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-25T21:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -436,10 +448,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1249 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (12857 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (15261 detecções)",
-  "GOES-19 nuvens": "ok (62 imagens)"
+  "FIRMS MODIS_NRT": "ok (2559 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (16350 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (20273 detecções)",
+  "GOES-19 nuvens": "ok (64 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

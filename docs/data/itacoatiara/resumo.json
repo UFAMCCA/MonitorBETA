@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-23T05:50:21Z",
-    "pct": 37.2
-   },
-   {
-    "hora": "2026-10-23T08:50:21Z",
-    "pct": 34.9
-   },
-   {
-    "hora": "2026-10-23T11:50:21Z",
-    "pct": 30.0
-   },
-   {
     "hora": "2026-10-23T14:50:21Z",
     "pct": 38.0
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-10-25T05:50:21Z",
     "pct": 21.5
+   },
+   {
+    "hora": "2026-10-25T08:50:21Z",
+    "pct": 27.8
+   },
+   {
+    "hora": "2026-10-25T11:50:21Z",
+    "pct": 45.2
+   },
+   {
+    "hora": "2026-10-25T14:50:21Z",
+    "pct": 31.8
    }
   ],
-  "media_48h": 19.3,
+  "media_48h": 19.4,
   "cego_48h_pct": 0.1,
-  "extintos": 322,
-  "extintos_incertos": 140,
+  "extintos": 344,
+  "extintos_incertos": 142,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -128,14 +128,14 @@
   "fonte": "API PurpleAir"
  },
  "ativos_perto_do_sensor": {
-  "25": 2,
-  "50": 11,
-  "100": 27
+  "25": 1,
+  "50": 10,
+  "100": 22
  },
- "gerado_em": "2026-10-25T08:08:41Z",
+ "gerado_em": "2026-10-25T16:06:45Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,18 +146,18 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-23T08:08:41Z",
- "eventos_ativos": 78,
- "eventos_extintos": 322,
- "eventos_total": 400,
- "deteccoes_total": 1772,
- "deteccoes_ativas": 1018,
+ "janela_inicio": "2026-10-23T16:06:45Z",
+ "eventos_ativos": 61,
+ "eventos_extintos": 344,
+ "eventos_total": 405,
+ "deteccoes_total": 1734,
+ "deteccoes_ativas": 273,
  "por_municipio": {
-  "Parintins": 66,
+  "Parintins": 69,
   "Autazes": 59,
   "Maués": 53,
   "Itacoatiara": 47,
-  "Nhamundá": 40,
+  "Nhamundá": 42,
   "Barreirinha": 31,
   "Nova Olinda do Norte": 25,
   "Boa Vista do Ramos": 16,
@@ -171,40 +171,32 @@
   "Rio Preto da Eva": 2
  },
  "ativos_por_municipio": {
-  "Autazes": 24,
-  "Itacoatiara": 10,
-  "Parintins": 10,
-  "Nova Olinda do Norte": 6,
+  "Autazes": 19,
+  "Parintins": 9,
+  "Itacoatiara": 7,
   "São Sebastião do Uatumã": 6,
-  "Nhamundá": 4,
   "Boa Vista do Ramos": 4,
-  "Maués": 3,
+  "Nova Olinda do Norte": 4,
   "Urucurituba": 3,
-  "Barreirinha": 2,
-  "Itapiranga": 2,
+  "Maués": 2,
   "Presidente Figueiredo": 1,
   "Manaus": 1,
+  "Barreirinha": 1,
   "Silves": 1,
-  "Urucará": 1
+  "Urucará": 1,
+  "Itapiranga": 1,
+  "Nhamundá": 1
  },
  "por_satelite": {
   "NOAA-21": 606,
-  "GOES-19": 545,
   "NOAA-20": 527,
-  "TERRA": 35,
+  "GOES-19": 514,
   "AQUA": 30,
+  "TERRA": 28,
   "METOP-C": 22,
   "METOP-B": 7
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-23T12:14:00Z",
-   "fim": "2026-10-23T12:14:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 7
-  },
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
@@ -358,7 +350,7 @@
    "deteccoes_na_area": 21
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-25T06:10:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-25T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -441,10 +433,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1130 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (12855 detecções)",
+  "FIRMS MODIS_NRT": "ok (1249 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (12857 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (15261 detecções)",
-  "GOES-19 nuvens": "ok (63 imagens)"
+  "GOES-19 nuvens": "ok (62 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

@@ -1284,3 +1284,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-25T06:08:00Z,NOAA-21,-3.5477,-59.3249,Autazes,4.13,nominal,0.59,0.7,noite,FIRMS
 2026-10-25T06:08:00Z,NOAA-21,-3.5413,-59.3239,Autazes,4.13,nominal,0.59,0.7,noite,FIRMS
 2026-10-25T06:08:00Z,NOAA-21,-3.2155,-58.7221,Itacoatiara,3.5,nominal,0.64,0.72,noite,FIRMS
+2026-10-25T15:10:00Z,GOES-19,-3.5666,-60.5861,Manaquiri,49.0,,2.2,2.2,dia,INPE
+2026-10-25T15:20:00Z,GOES-19,-3.5666,-60.6050,Manaquiri,44.0,,2.2,2.2,dia,INPE
+2026-10-25T15:30:00Z,GOES-19,-3.5666,-60.6050,Manaquiri,50.3,,2.2,2.2,dia,INPE
+2026-10-25T15:40:00Z,GOES-19,-3.5666,-60.6050,Manaquiri,53.1,,2.2,2.2,dia,INPE
+2026-10-25T15:40:00Z,GOES-19,-3.0402,-59.1842,Itacoatiara,48.1,,2.2,2.2,dia,INPE

@@ -2897,3 +2897,14 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-25T06:08:00Z,NOAA-21,-3.5477,-59.3249,Autazes,4.13,nominal,0.59,0.7,noite,FIRMS
 2026-10-25T06:08:00Z,NOAA-21,-3.5413,-59.3239,Autazes,4.13,nominal,0.59,0.7,noite,FIRMS
 2026-10-25T06:08:00Z,NOAA-21,-3.2155,-58.7221,Itacoatiara,3.5,nominal,0.64,0.72,noite,FIRMS
+2026-10-25T14:00:00Z,GOES-19,-2.8246,-57.6643,Urucurituba,72.3,,2.2,2.2,dia,INPE
+2026-10-25T14:40:00Z,GOES-19,-2.4945,-57.9414,São Sebastião do Uatumã,50.6,,2.2,2.2,dia,INPE
+2026-10-25T14:50:00Z,GOES-19,-2.8429,-57.6445,Urucurituba,50.2,,2.2,2.2,dia,INPE
+2026-10-25T14:50:00Z,GOES-19,-2.8246,-57.6643,Urucurituba,63.3,,2.2,2.2,dia,INPE
+2026-10-25T15:00:00Z,GOES-19,-2.4945,-57.9414,São Sebastião do Uatumã,49.2,,2.2,2.2,dia,INPE
+2026-10-25T15:00:00Z,GOES-19,-2.8429,-57.6445,Urucurituba,58.9,,2.2,2.2,dia,INPE
+2026-10-25T15:10:00Z,GOES-19,-2.9181,-56.9419,Parintins,46.4,,2.2,2.2,dia,INPE
+2026-10-25T15:20:00Z,GOES-19,-2.4945,-57.9414,São Sebastião do Uatumã,54.9,,2.2,2.2,dia,INPE
+2026-10-25T15:20:00Z,GOES-19,-2.9181,-56.9419,Parintins,51.1,,2.2,2.2,dia,INPE
+2026-10-25T15:40:00Z,GOES-19,-3.1177,-57.6002,Boa Vista do Ramos,77.2,,2.2,2.2,dia,INPE
+2026-10-25T15:40:00Z,GOES-19,-3.0402,-59.1842,Itacoatiara,48.1,,2.2,2.2,dia,INPE

@@ -127,3 +127,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-24T20:32:00Z,AQUA,-3.4048,-68.3472,Amaturá,11.96,nominal,1.21,1.09,dia,FIRMS
 2026-10-24T20:32:00Z,AQUA,-7.5963,-73.0006,Mâncio Lima (AC),7.47,nominal,1.25,1.11,dia,FIRMS
 2026-10-24T20:32:00Z,AQUA,-7.5744,-73.0104,Mâncio Lima (AC),4.38,nominal,1.25,1.11,dia,FIRMS
+2026-10-25T06:08:00Z,NOAA-21,-7.7575,-72.3787,Cruzeiro do Sul (AC),0.58,nominal,0.38,0.36,noite,FIRMS

@@ -1326,3 +1326,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-26T05:50:00Z,NOAA-21,-6.5922,-62.9582,Tapauá,2.95,nominal,0.53,0.42,noite,FIRMS
 2026-10-26T05:50:00Z,NOAA-21,-6.5915,-62.9630,Tapauá,2.75,nominal,0.52,0.42,noite,FIRMS
 2026-10-26T05:50:00Z,NOAA-21,-6.5908,-62.9677,Tapauá,2.75,nominal,0.52,0.42,noite,FIRMS
+2026-10-26T12:34:00Z,TERRA,-6.9139,-63.0077,Humaitá,10.11,nominal,1.16,1.07,dia,FIRMS

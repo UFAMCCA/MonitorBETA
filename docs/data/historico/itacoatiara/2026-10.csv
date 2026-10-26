@@ -3294,3 +3294,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-26T01:16:00Z,METOP-C,-2.4666,-58.0224,São Sebastião do Uatumã,,,1.1,1.1,noite,INPE
 2026-10-26T05:04:00Z,NOAA-20,-3.2155,-58.7236,Itacoatiara,1.72,nominal,0.4,0.44,noite,FIRMS
 2026-10-26T05:48:00Z,NOAA-21,-2.8591,-59.2103,Itacoatiara,0.7,nominal,0.54,0.51,noite,FIRMS
+2026-10-26T16:45:00Z,NOAA-21,-2.2668,-56.9719,Nhamundá,6.74,nominal,0.52,0.5,dia,FIRMS+INPE
+2026-10-26T17:43:00Z,NOAA-20,-3.3806,-56.9350,Barreirinha,7.16,nominal,0.42,0.45,dia,FIRMS+INPE
+2026-10-26T17:43:00Z,NOAA-20,-3.3800,-56.9312,Barreirinha,7.16,nominal,0.42,0.45,dia,FIRMS
+2026-10-26T17:43:00Z,NOAA-20,-2.8518,-56.7169,Parintins,3.84,nominal,0.44,0.46,dia,FIRMS+INPE
+2026-10-26T17:43:00Z,NOAA-20,-2.5050,-56.6584,Parintins,3.6,nominal,0.45,0.47,dia,FIRMS+INPE

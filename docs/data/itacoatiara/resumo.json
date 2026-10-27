@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-25T05:50:21Z",
-    "pct": 21.5
-   },
-   {
-    "hora": "2026-10-25T08:50:21Z",
-    "pct": 27.8
-   },
-   {
-    "hora": "2026-10-25T11:50:21Z",
-    "pct": 45.2
-   },
-   {
     "hora": "2026-10-25T14:50:21Z",
     "pct": 31.8
    },
@@ -97,11 +85,23 @@
    {
     "hora": "2026-10-27T05:50:20Z",
     "pct": 79.3
+   },
+   {
+    "hora": "2026-10-27T08:50:20Z",
+    "pct": 73.4
+   },
+   {
+    "hora": "2026-10-27T11:50:20Z",
+    "pct": 82.8
+   },
+   {
+    "hora": "2026-10-27T14:50:20Z",
+    "pct": 57.4
    }
   ],
-  "media_48h": 71.1,
+  "media_48h": 78.1,
   "cego_48h_pct": 33.7,
-  "extintos": 105,
+  "extintos": 104,
   "extintos_incertos": 94,
   "camada": {
    "arquivo": "nuvens.png",
@@ -132,10 +132,10 @@
   "50": 1,
   "100": 3
  },
- "gerado_em": "2026-10-27T08:08:53Z",
+ "gerado_em": "2026-10-27T16:06:48Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,19 +146,19 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-25T08:08:53Z",
- "eventos_ativos": 6,
- "eventos_extintos": 105,
- "eventos_total": 111,
- "deteccoes_total": 512,
- "deteccoes_ativas": 110,
+ "janela_inicio": "2026-10-25T16:06:48Z",
+ "eventos_ativos": 5,
+ "eventos_extintos": 104,
+ "eventos_total": 109,
+ "deteccoes_total": 483,
+ "deteccoes_ativas": 6,
  "por_municipio": {
   "Parintins": 15,
   "Itacoatiara": 14,
   "Barreirinha": 12,
-  "Nhamundá": 11,
   "Autazes": 11,
-  "Boa Vista do Ramos": 10,
+  "Nhamundá": 10,
+  "Boa Vista do Ramos": 9,
   "São Sebastião do Uatumã": 6,
   "Presidente Figueiredo": 6,
   "Urucurituba": 5,
@@ -171,12 +171,12 @@
   "Rio Preto da Eva": 1
  },
  "ativos_por_municipio": {
-  "Parintins": 4,
+  "Parintins": 3,
   "Boa Vista do Ramos": 1,
   "Silves": 1
  },
  "por_satelite": {
-  "GOES-19": 199,
+  "GOES-19": 170,
   "NOAA-20": 146,
   "NOAA-21": 95,
   "AQUA": 49,
@@ -338,7 +338,7 @@
    "deteccoes_na_area": 15
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-27T06:20:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-27T15:20:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -421,10 +421,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1713 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (12224 detecções)",
+  "FIRMS MODIS_NRT": "ok (1723 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (12258 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (10310 detecções)",
-  "GOES-19 nuvens": "ok (64 imagens)"
+  "GOES-19 nuvens": "ok (65 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

@@ -312,5 +312,10 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-27T05:31:00Z,NOAA-21,-7.9512,-72.9491,Cruzeiro do Sul (AC),7.92,alta,0.44,0.62,noite,FIRMS
 2026-10-27T05:31:00Z,NOAA-21,-7.9505,-72.9531,Cruzeiro do Sul (AC),7.92,nominal,0.44,0.62,noite,FIRMS
 2026-10-27T05:31:00Z,NOAA-21,-7.9498,-72.9570,Cruzeiro do Sul (AC),2.31,nominal,0.44,0.62,noite,FIRMS
+2026-10-27T06:29:00Z,NOAA-20,-7.9592,-72.9904,Cruzeiro do Sul (AC),1.7,nominal,0.43,0.38,noite,FIRMS+INPE
+2026-10-27T06:29:00Z,NOAA-20,-7.9557,-72.9899,Cruzeiro do Sul (AC),2.14,nominal,0.43,0.38,noite,FIRMS
+2026-10-27T06:29:00Z,NOAA-20,-7.9373,-72.6325,Cruzeiro do Sul (AC),0.9,nominal,0.44,0.38,noite,FIRMS+INPE
+2026-10-27T06:29:00Z,NOAA-20,-7.9283,-72.3557,Cruzeiro do Sul (AC),0.78,nominal,0.45,0.39,noite,FIRMS+INPE
+2026-10-27T06:29:00Z,NOAA-20,-7.9276,-72.3598,Cruzeiro do Sul (AC),0.78,nominal,0.45,0.39,noite,FIRMS
 2026-10-27T06:40:00Z,GOES-19,-7.9519,-72.9504,Cruzeiro do Sul (AC),68.7,,2.2,2.2,noite,INPE
 2026-10-27T06:50:00Z,GOES-19,-7.9519,-72.9504,Cruzeiro do Sul (AC),65.4,,2.2,2.2,noite,INPE

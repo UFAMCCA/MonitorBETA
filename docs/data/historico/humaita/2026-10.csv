@@ -2039,3 +2039,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-26T20:08:00Z,AQUA,-7.2781,-64.6654,Lábrea,9.08,nominal,1.0,1.0,dia,FIRMS+INPE
 2026-10-26T20:08:00Z,AQUA,-7.2768,-64.6566,Lábrea,8.56,baixa,1.0,1.0,dia,FIRMS
 2026-10-26T20:08:00Z,AQUA,-7.1910,-64.5764,Lábrea,7.79,nominal,1.0,1.0,dia,FIRMS+INPE
+2026-10-27T23:30:00Z,GOES-19,-7.8875,-63.4315,Humaitá,71.5,,2.2,2.2,noite,INPE
+2026-10-27T23:50:00Z,GOES-19,-7.8875,-63.4315,Humaitá,56.8,,2.2,2.2,noite,INPE

@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-26T05:50:21Z",
-    "pct": 100.0
-   },
-   {
-    "hora": "2026-10-26T08:50:21Z",
-    "pct": 100.0
-   },
-   {
-    "hora": "2026-10-26T11:50:22Z",
-    "pct": 100.0
-   },
-   {
     "hora": "2026-10-26T14:50:20Z",
     "pct": 98.3
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-10-28T05:50:20Z",
     "pct": 19.4
+   },
+   {
+    "hora": "2026-10-28T08:50:20Z",
+    "pct": 34.3
+   },
+   {
+    "hora": "2026-10-28T11:50:20Z",
+    "pct": 40.4
+   },
+   {
+    "hora": "2026-10-28T14:50:20Z",
+    "pct": 46.3
    }
   ],
-  "media_48h": 67.0,
+  "media_48h": 56.5,
   "cego_48h_pct": 6.1,
-  "extintos": 18,
-  "extintos_incertos": 16,
+  "extintos": 19,
+  "extintos_incertos": 17,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -129,13 +129,13 @@
  },
  "ativos_perto_do_sensor": {
   "25": 0,
-  "50": 0,
-  "100": 0
+  "50": 1,
+  "100": 1
  },
- "gerado_em": "2026-10-28T08:08:42Z",
+ "gerado_em": "2026-10-28T16:06:45Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,25 +146,26 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-26T08:08:42Z",
- "eventos_ativos": 1,
- "eventos_extintos": 18,
- "eventos_total": 19,
- "deteccoes_total": 159,
- "deteccoes_ativas": 26,
+ "janela_inicio": "2026-10-26T16:06:45Z",
+ "eventos_ativos": 2,
+ "eventos_extintos": 19,
+ "eventos_total": 21,
+ "deteccoes_total": 161,
+ "deteccoes_ativas": 2,
  "por_municipio": {
-  "Parintins": 7,
+  "Parintins": 8,
   "Nhamundá": 5,
   "Barreirinha": 3,
+  "Urucurituba": 2,
   "Boa Vista do Ramos": 2,
-  "Urucurituba": 1,
   "Silves": 1
  },
  "ativos_por_municipio": {
-  "Nhamundá": 1
+  "Parintins": 1,
+  "Urucurituba": 1
  },
  "por_satelite": {
-  "GOES-19": 105,
+  "GOES-19": 107,
   "NOAA-21": 22,
   "NOAA-20": 16,
   "METOP-B": 7,
@@ -173,14 +174,6 @@
   "TERRA": 2
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-26T12:32:00Z",
-   "fim": "2026-10-26T12:32:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -286,7 +279,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-10-28T01:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-10-28T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -372,7 +365,7 @@
   "FIRMS MODIS_NRT": "ok (768 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (5051 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (4183 detecções)",
-  "GOES-19 nuvens": "ok (56 imagens)"
+  "GOES-19 nuvens": "ok (54 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

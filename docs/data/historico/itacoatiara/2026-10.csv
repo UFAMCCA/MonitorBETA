@@ -3453,3 +3453,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-27T22:20:00Z,GOES-19,-2.0210,-56.8791,Nhamundá,77.3,,2.2,2.2,noite,INPE
 2026-10-27T22:30:00Z,GOES-19,-2.0210,-56.8791,Nhamundá,65.1,,2.2,2.2,noite,INPE
 2026-10-28T00:13:00Z,METOP-B,-2.0223,-56.8546,Nhamundá,,,1.1,1.1,noite,INPE
+2026-10-28T15:30:00Z,GOES-19,-2.7359,-56.5542,Parintins,49.8,,2.2,2.2,dia,INPE
+2026-10-28T15:30:00Z,GOES-19,-2.8429,-57.6639,Urucurituba,48.8,,2.2,2.2,dia,INPE

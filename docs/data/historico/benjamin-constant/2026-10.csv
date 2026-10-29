@@ -343,6 +343,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-28T17:49:00Z,NOAA-21,0.4470,-69.3146,São Gabriel da Cachoeira,11.69,nominal,0.44,0.39,dia,FIRMS+INPE
 2026-10-28T17:49:00Z,NOAA-21,0.8151,-67.2632,São Gabriel da Cachoeira,13.9,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-10-28T17:49:00Z,NOAA-21,-7.4606,-73.4581,Mâncio Lima (AC),1.02,nominal,0.34,0.56,dia,FIRMS+INPE
+2026-10-28T18:10:00Z,GOES-19,-7.9336,-72.8411,Cruzeiro do Sul (AC),115.2,,2.2,2.2,dia,INPE
 2026-10-28T18:45:00Z,NOAA-20,-3.5263,-66.3089,Juruá,5.66,nominal,0.58,0.69,dia,FIRMS
 2026-10-28T18:45:00Z,NOAA-20,-7.7770,-69.9929,Envira,16.72,nominal,0.55,0.51,dia,FIRMS
 2026-10-28T18:45:00Z,NOAA-20,-7.7747,-69.9951,Envira,7.96,nominal,0.55,0.51,dia,FIRMS

@@ -465,3 +465,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T20:25:00Z,AQUA,-4.0520,-69.5499,Tabatinga,20.36,nominal,1.01,1.0,dia,FIRMS+INPE
 2026-10-29T20:25:00Z,AQUA,-3.2802,-68.3396,Amaturá,17.31,baixa,1.02,1.01,dia,FIRMS+INPE
 2026-10-29T20:25:00Z,AQUA,-3.0929,-68.2618,Santo Antônio do Içá,26.0,nominal,1.02,1.01,dia,FIRMS+INPE
+2026-10-30T18:09:00Z,NOAA-20,-3.1849,-67.1326,Jutaí,76.97,nominal,0.41,0.37,dia,FIRMS+INPE
+2026-10-30T18:11:00Z,NOAA-20,0.5817,-69.8132,São Gabriel da Cachoeira,2.46,nominal,0.38,0.36,dia,FIRMS+INPE

@@ -1694,6 +1694,10 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T17:32:00Z,NOAA-21,-1.7221,-60.1393,Presidente Figueiredo,12.6,baixa,0.4,0.37,dia,FIRMS+INPE
 2026-10-29T17:32:00Z,NOAA-21,-1.5634,-60.3227,Presidente Figueiredo,5.27,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-10-29T17:32:00Z,NOAA-21,-1.5629,-60.3192,Presidente Figueiredo,5.79,nominal,0.39,0.36,dia,FIRMS
+2026-10-29T18:00:00Z,GOES-19,-1.4679,-60.1402,Presidente Figueiredo,84.4,,2.2,2.2,dia,INPE
+2026-10-29T18:00:00Z,GOES-19,-1.4861,-60.1401,Presidente Figueiredo,93.6,,2.2,2.2,dia,INPE
+2026-10-29T18:10:00Z,GOES-19,-1.4679,-60.1402,Presidente Figueiredo,90.5,,2.2,2.2,dia,INPE
+2026-10-29T18:10:00Z,GOES-19,-1.4861,-60.1401,Presidente Figueiredo,90.8,,2.2,2.2,dia,INPE
 2026-10-29T18:28:00Z,NOAA-20,-4.1589,-59.9396,Autazes,7.65,nominal,0.72,0.76,dia,FIRMS+INPE
 2026-10-29T18:28:00Z,NOAA-20,-3.8450,-61.1094,Beruri,12.98,nominal,0.61,0.71,dia,FIRMS+INPE
 2026-10-29T18:28:00Z,NOAA-20,-3.8010,-60.8558,Manaquiri,5.81,nominal,0.63,0.72,dia,FIRMS+INPE
@@ -1702,3 +1706,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T18:28:00Z,NOAA-20,-3.1724,-60.6332,Manacapuru,4.64,nominal,0.67,0.74,dia,FIRMS
 2026-10-29T18:28:00Z,NOAA-20,-1.8083,-60.2204,Presidente Figueiredo,11.65,nominal,0.76,0.77,dia,FIRMS+INPE
 2026-10-29T18:28:00Z,NOAA-20,-1.8054,-60.2207,Presidente Figueiredo,14.23,nominal,0.75,0.77,dia,FIRMS
+2026-10-30T05:27:00Z,NOAA-20,-1.3885,-60.3069,Presidente Figueiredo,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-10-30T05:27:00Z,NOAA-20,-1.3852,-60.3064,Presidente Figueiredo,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-3.7981,-60.8618,Manaquiri,0.83,nominal,0.39,0.36,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-3.3528,-59.8790,Careiro,0.24,nominal,0.38,0.36,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-3.2056,-58.9416,Itacoatiara,1.28,nominal,0.39,0.36,noite,FIRMS

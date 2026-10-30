@@ -1697,3 +1697,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T18:28:00Z,NOAA-20,-3.1741,-60.6319,Manacapuru,4.96,nominal,0.67,0.74,dia,FIRMS+INPE
 2026-10-29T18:28:00Z,NOAA-20,-3.1724,-60.6332,Manacapuru,4.64,nominal,0.67,0.74,dia,FIRMS
 2026-10-29T18:28:00Z,NOAA-20,-4.9089,-66.9284,Carauari,4.23,nominal,0.47,0.48,dia,FIRMS+INPE
+2026-10-29T20:23:00Z,AQUA,-6.6813,-64.3848,Canutama,10.46,nominal,1.47,1.2,dia,FIRMS+INPE
+2026-10-30T05:29:00Z,NOAA-20,-7.2764,-64.6589,Lábrea,4.39,nominal,0.5,0.41,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-3.0111,-65.4515,Uarini,0.57,nominal,0.42,0.46,noite,FIRMS
+2026-10-30T05:31:00Z,NOAA-20,-8.5585,-64.1559,Canutama,0.63,nominal,0.45,0.39,noite,FIRMS
+2026-10-30T06:14:00Z,NOAA-21,-7.2762,-64.6573,Lábrea,4.22,nominal,0.36,0.58,noite,FIRMS
+2026-10-30T06:14:00Z,NOAA-21,-7.2760,-64.6579,Lábrea,3.63,nominal,0.36,0.58,noite,FIRMS

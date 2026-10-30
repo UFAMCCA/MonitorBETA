@@ -3794,6 +3794,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T05:48:00Z,NOAA-20,-2.3204,-57.1486,Nhamundá,2.73,nominal,0.56,0.52,noite,FIRMS
 2026-10-29T05:48:00Z,NOAA-20,-2.3196,-57.1535,Nhamundá,1.9,nominal,0.56,0.52,noite,FIRMS
 2026-10-29T05:48:00Z,NOAA-20,-2.6675,-56.5323,Parintins,2.23,nominal,0.63,0.54,noite,FIRMS
+2026-10-29T16:20:00Z,GOES-19,-3.1729,-57.5019,Boa Vista do Ramos,48.5,,2.2,2.2,dia,INPE
 2026-10-29T16:45:00Z,NOAA-20,-3.5351,-57.6004,Maués,10.55,nominal,0.4,0.6,dia,FIRMS+INPE
 2026-10-29T16:45:00Z,NOAA-20,-3.5346,-57.5969,Maués,10.55,nominal,0.4,0.6,dia,FIRMS
 2026-10-29T16:45:00Z,NOAA-20,-3.5140,-57.6470,Maués,5.31,nominal,0.4,0.6,dia,FIRMS+INPE
@@ -3842,6 +3843,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T16:48:00Z,NOAA-20,-2.1726,-56.2478,Nhamundá,7.98,nominal,0.61,0.53,dia,FIRMS+INPE
 2026-10-29T16:48:00Z,NOAA-20,-2.0822,-56.9268,Nhamundá,9.09,alta,0.34,0.56,dia,FIRMS+INPE
 2026-10-29T16:48:00Z,NOAA-20,-2.0795,-56.9258,Nhamundá,11.03,alta,0.34,0.56,dia,FIRMS
+2026-10-29T17:10:00Z,GOES-19,-3.1729,-57.5019,Boa Vista do Ramos,92.3,,2.2,2.2,dia,INPE
+2026-10-29T17:30:00Z,GOES-19,-3.1729,-57.5019,Boa Vista do Ramos,86.9,,2.2,2.2,dia,INPE
+2026-10-29T17:30:00Z,GOES-19,-2.2226,-56.7784,Nhamundá,102.4,,2.2,2.2,dia,INPE
 2026-10-29T17:30:00Z,NOAA-21,-4.1590,-59.9409,Autazes,4.8,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-10-29T17:30:00Z,NOAA-21,-4.1585,-59.9374,Autazes,4.8,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-10-29T17:30:00Z,NOAA-21,-4.1557,-59.9414,Autazes,4.15,nominal,0.39,0.36,dia,FIRMS
@@ -3933,7 +3937,27 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-29T17:32:00Z,NOAA-21,-1.5629,-60.3192,Presidente Figueiredo,5.79,nominal,0.39,0.36,dia,FIRMS
 2026-10-29T17:32:00Z,NOAA-21,-1.4330,-57.8449,Nhamundá,2.54,nominal,0.49,0.4,dia,FIRMS+INPE
 2026-10-29T17:32:00Z,NOAA-21,-1.4324,-57.8462,Nhamundá,2.95,nominal,0.48,0.4,dia,FIRMS
+2026-10-29T17:50:00Z,GOES-19,-2.2408,-56.8173,Nhamundá,68.0,,2.2,2.2,dia,INPE
+2026-10-29T17:50:00Z,GOES-19,-2.2226,-56.7784,Nhamundá,97.2,,2.2,2.2,dia,INPE
+2026-10-29T18:00:00Z,GOES-19,-1.4679,-60.1402,Presidente Figueiredo,84.4,,2.2,2.2,dia,INPE
+2026-10-29T18:00:00Z,GOES-19,-1.4861,-60.1401,Presidente Figueiredo,93.6,,2.2,2.2,dia,INPE
+2026-10-29T18:00:00Z,GOES-19,-3.1729,-57.5019,Boa Vista do Ramos,81.9,,2.2,2.2,dia,INPE
+2026-10-29T18:00:00Z,GOES-19,-2.2226,-56.7784,Nhamundá,74.4,,2.2,2.2,dia,INPE
+2026-10-29T18:10:00Z,GOES-19,-1.4679,-60.1402,Presidente Figueiredo,90.5,,2.2,2.2,dia,INPE
+2026-10-29T18:10:00Z,GOES-19,-1.4861,-60.1401,Presidente Figueiredo,90.8,,2.2,2.2,dia,INPE
+2026-10-29T18:10:00Z,GOES-19,-2.2772,-56.9339,Nhamundá,84.8,,2.2,2.2,dia,INPE
+2026-10-29T18:20:00Z,GOES-19,-2.2772,-56.9339,Nhamundá,84.6,,2.2,2.2,dia,INPE
 2026-10-29T18:28:00Z,NOAA-20,-4.1589,-59.9396,Autazes,7.65,nominal,0.72,0.76,dia,FIRMS+INPE
 2026-10-29T18:28:00Z,NOAA-20,-1.8083,-60.2204,Presidente Figueiredo,11.65,nominal,0.76,0.77,dia,FIRMS+INPE
 2026-10-29T18:28:00Z,NOAA-20,-1.8054,-60.2207,Presidente Figueiredo,14.23,nominal,0.75,0.77,dia,FIRMS
 2026-10-29T20:20:00Z,GOES-19,-3.4129,-56.9311,Barreirinha,95.9,,2.2,2.2,dia,INPE
+2026-10-30T04:32:00Z,NOAA-21,-2.7526,-56.5548,Parintins,1.58,nominal,0.39,0.59,noite,FIRMS+INPE
+2026-10-30T04:32:00Z,NOAA-21,-2.7520,-56.5583,Parintins,1.58,nominal,0.39,0.59,noite,FIRMS
+2026-10-30T05:27:00Z,NOAA-20,-1.3885,-60.3069,Presidente Figueiredo,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-10-30T05:27:00Z,NOAA-20,-1.3852,-60.3064,Presidente Figueiredo,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-3.2056,-58.9416,Itacoatiara,1.28,nominal,0.39,0.36,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-2.8443,-57.6782,Urucurituba,0.5,nominal,0.42,0.38,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-2.8408,-57.6777,Urucurituba,0.5,nominal,0.42,0.38,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-2.3676,-57.5179,Urucará,1.07,nominal,0.42,0.38,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-2.3641,-57.5174,Urucará,0.59,nominal,0.42,0.38,noite,FIRMS
+2026-10-30T05:29:00Z,NOAA-20,-2.7515,-56.5567,Parintins,2.69,nominal,0.47,0.4,noite,FIRMS

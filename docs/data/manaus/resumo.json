@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-28T05:50:20Z",
-    "pct": 22.1
-   },
-   {
-    "hora": "2026-10-28T08:50:20Z",
-    "pct": 26.8
-   },
-   {
-    "hora": "2026-10-28T11:50:20Z",
-    "pct": 39.8
-   },
-   {
     "hora": "2026-10-28T14:50:20Z",
     "pct": 61.2
    },
@@ -97,9 +85,21 @@
    {
     "hora": "2026-10-30T05:50:20Z",
     "pct": 88.8
+   },
+   {
+    "hora": "2026-10-30T08:50:20Z",
+    "pct": 74.8
+   },
+   {
+    "hora": "2026-10-30T11:50:20Z",
+    "pct": 73.6
+   },
+   {
+    "hora": "2026-10-30T14:50:20Z",
+    "pct": 91.5
    }
   ],
-  "media_48h": 60.6,
+  "media_48h": 69.5,
   "cego_48h_pct": 28.5,
   "extintos": 51,
   "extintos_incertos": 49,
@@ -122,10 +122,10 @@
  },
  "sensor": null,
  "ativos_perto_do_sensor": {},
- "gerado_em": "2026-10-30T08:08:40Z",
+ "gerado_em": "2026-10-30T16:06:45Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -136,7 +136,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-28T08:08:40Z",
+ "janela_inicio": "2026-10-28T16:06:45Z",
  "eventos_ativos": 4,
  "eventos_extintos": 51,
  "eventos_total": 55,
@@ -389,10 +389,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1039 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (9284 detecções)",
+  "FIRMS MODIS_NRT": "ok (1071 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (9282 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (12473 detecções)",
-  "GOES-19 nuvens": "ok (63 imagens)"
+  "GOES-19 nuvens": "ok (62 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

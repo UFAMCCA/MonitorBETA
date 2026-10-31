@@ -1711,3 +1711,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-30T05:29:00Z,NOAA-20,-3.7981,-60.8618,Manaquiri,0.83,nominal,0.39,0.36,noite,FIRMS
 2026-10-30T05:29:00Z,NOAA-20,-3.3528,-59.8790,Careiro,0.24,nominal,0.38,0.36,noite,FIRMS
 2026-10-30T05:29:00Z,NOAA-20,-3.2056,-58.9416,Itacoatiara,1.28,nominal,0.39,0.36,noite,FIRMS
+2026-10-31T16:52:00Z,NOAA-21,-3.5072,-58.3742,Itacoatiara,14.03,nominal,0.53,0.5,dia,FIRMS+INPE
+2026-10-31T17:49:00Z,NOAA-20,-3.5350,-58.5819,Itacoatiara,22.07,nominal,0.41,0.45,dia,FIRMS+INPE
+2026-10-31T17:49:00Z,NOAA-20,-3.5308,-58.5826,Itacoatiara,22.07,nominal,0.41,0.45,dia,FIRMS
+2026-10-31T17:49:00Z,NOAA-20,-3.5039,-58.4948,Itacoatiara,8.25,nominal,0.42,0.45,dia,FIRMS+INPE
+2026-10-31T17:49:00Z,NOAA-20,-2.7135,-59.6238,Rio Preto da Eva,2.96,nominal,0.55,0.43,dia,FIRMS+INPE

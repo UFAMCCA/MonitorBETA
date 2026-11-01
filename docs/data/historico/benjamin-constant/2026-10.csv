@@ -489,3 +489,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-10-31T18:34:00Z,NOAA-21,-1.6145,-67.8434,Japurá,33.18,nominal,0.39,0.59,dia,FIRMS+INPE
 2026-10-31T18:34:00Z,NOAA-21,-1.6139,-67.8399,Japurá,33.18,nominal,0.39,0.59,dia,FIRMS
 2026-10-31T18:34:00Z,NOAA-21,0.5432,-69.4661,São Gabriel da Cachoeira,3.79,nominal,0.32,0.55,dia,FIRMS+INPE
+2026-10-31T20:04:00Z,AQUA,0.0199,-67.3004,São Gabriel da Cachoeira,7.46,nominal,1.29,1.13,dia,FIRMS+INPE

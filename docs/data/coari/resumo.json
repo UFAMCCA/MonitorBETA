@@ -5,6 +5,12 @@
   "nivel": "alto",
   "passagens_viirs": [
    {
+    "passagem": "2026-11-01T17:47:00Z",
+    "imagem": "2026-11-01T17:40:20Z",
+    "pct": 70.8,
+    "periodo": "dia"
+   },
+   {
     "passagem": "2026-11-01T05:47:00Z",
     "imagem": "2026-11-01T05:40:21Z",
     "pct": 90.8,
@@ -21,19 +27,9 @@
     "imagem": "2026-10-31T05:40:20Z",
     "pct": 98.7,
     "periodo": "noite"
-   },
-   {
-    "passagem": "2026-10-30T17:47:00Z",
-    "imagem": "2026-10-30T17:40:20Z",
-    "pct": 88.9,
-    "periodo": "dia"
    }
   ],
   "serie": [
-   {
-    "hora": "2026-10-30T14:50:20Z",
-    "pct": 81.2
-   },
    {
     "hora": "2026-10-30T17:50:20Z",
     "pct": 87.7
@@ -97,12 +93,16 @@
    {
     "hora": "2026-11-01T14:50:21Z",
     "pct": 67.0
+   },
+   {
+    "hora": "2026-11-01T17:50:20Z",
+    "pct": 71.2
    }
   ],
-  "media_48h": 82.6,
-  "cego_48h_pct": 59.8,
-  "extintos": 68,
-  "extintos_incertos": 63,
+  "media_48h": 82.0,
+  "cego_48h_pct": 45.2,
+  "extintos": 63,
+  "extintos_incertos": 58,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -111,7 +111,7 @@
     -59.1568,
     2.2122
    ],
-   "passagem": "2026-11-01T05:47:00Z"
+   "passagem": "2026-11-01T17:47:00Z"
   }
  },
  "regiao": {
@@ -132,7 +132,7 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-01T16:06:41Z",
+ "gerado_em": "2026-11-01T18:07:20Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -146,20 +146,20 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-30T16:06:41Z",
+ "janela_inicio": "2026-10-30T18:07:20Z",
  "eventos_ativos": 2,
- "eventos_extintos": 68,
- "eventos_total": 70,
- "deteccoes_total": 221,
+ "eventos_extintos": 63,
+ "eventos_total": 65,
+ "deteccoes_total": 205,
  "deteccoes_ativas": 3,
  "por_municipio": {
   "Lábrea": 20,
-  "Uarini": 11,
-  "Alvarães": 10,
-  "Humaitá": 7,
-  "Tefé": 6,
+  "Uarini": 10,
+  "Alvarães": 9,
+  "Humaitá": 6,
   "Canutama": 6,
   "Carauari": 4,
+  "Tefé": 4,
   "Manicoré": 3,
   "Coari": 2,
   "Novo Aripuanã": 1
@@ -168,7 +168,7 @@
   "Lábrea": 2
  },
  "por_satelite": {
-  "NOAA-21": 94,
+  "NOAA-21": 78,
   "NOAA-20": 69,
   "GOES-19": 41,
   "AQUA": 9,
@@ -177,17 +177,9 @@
  },
  "passagens": [
   {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-10-30T17:09:00Z",
-   "fim": "2026-10-30T17:13:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 16
-  },
-  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
-   "inicio": "2026-10-30T18:06:00Z",
+   "inicio": "2026-10-30T18:09:00Z",
    "fim": "2026-10-30T18:11:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 45
@@ -327,9 +319,17 @@
    "fim": "2026-11-01T13:12:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 2
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-01T16:35:00Z",
+   "fim": "2026-11-01T16:36:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-01T15:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-01T16:20:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -414,8 +414,8 @@
   "INPE_diario": "ok (3 arquivos)",
   "FIRMS MODIS_NRT": "ok (1108 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (6538 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (6434 detecções)",
-  "GOES-19 nuvens": "ok (68 imagens)"
+  "FIRMS VIIRS_NOAA21_NRT": "ok (6493 detecções)",
+  "GOES-19 nuvens": "ok (67 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

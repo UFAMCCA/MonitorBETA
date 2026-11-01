@@ -1,0 +1,4 @@
+hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fontes
+2026-11-01T17:32:00Z,NOAA-20,-0.2156,-66.8521,São Gabriel da Cachoeira,5.09,nominal,0.52,0.5,dia,FIRMS+INPE
+2026-11-01T18:15:00Z,NOAA-21,-0.2031,-66.8018,São Gabriel da Cachoeira,3.04,nominal,0.45,0.47,dia,FIRMS+INPE
+2026-11-01T18:15:00Z,NOAA-21,-0.0623,-67.1269,São Gabriel da Cachoeira,3.35,nominal,0.43,0.46,dia,FIRMS+INPE

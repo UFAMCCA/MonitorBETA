@@ -31,10 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-30T11:50:20Z",
-    "pct": 57.5
-   },
-   {
     "hora": "2026-10-30T14:50:20Z",
     "pct": 72.5
    },
@@ -97,12 +93,16 @@
    {
     "hora": "2026-11-01T11:50:21Z",
     "pct": 53.7
+   },
+   {
+    "hora": "2026-11-01T14:50:21Z",
+    "pct": 57.4
    }
   ],
   "media_48h": 82.4,
   "cego_48h_pct": 54.7,
-  "extintos": 54,
-  "extintos_incertos": 52,
+  "extintos": 62,
+  "extintos_incertos": 60,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,7 +132,7 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-01T12:32:12Z",
+ "gerado_em": "2026-11-01T16:06:41Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -146,36 +146,35 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-30T12:32:12Z",
- "eventos_ativos": 9,
- "eventos_extintos": 54,
- "eventos_total": 63,
- "deteccoes_total": 265,
- "deteccoes_ativas": 119,
+ "janela_inicio": "2026-10-30T16:06:41Z",
+ "eventos_ativos": 3,
+ "eventos_extintos": 62,
+ "eventos_total": 65,
+ "deteccoes_total": 269,
+ "deteccoes_ativas": 5,
  "por_municipio": {
-  "Lábrea": 19,
+  "Lábrea": 20,
   "Porto Velho (RO)": 12,
   "Humaitá": 7,
   "Guajará-Mirim (RO)": 6,
   "Canutama": 6,
   "Candeias do Jamari (RO)": 5,
+  "Buritis (RO)": 3,
   "Manicoré": 3,
-  "Buritis (RO)": 2,
   "Novo Aripuanã": 1,
   "Itapuã do Oeste (RO)": 1,
   "Apuí": 1
  },
  "ativos_por_municipio": {
-  "Lábrea": 6,
-  "Guajará-Mirim (RO)": 2,
-  "Porto Velho (RO)": 1
+  "Lábrea": 2,
+  "Buritis (RO)": 1
  },
  "por_satelite": {
   "NOAA-21": 98,
   "NOAA-20": 89,
   "GOES-19": 46,
   "AQUA": 23,
-  "TERRA": 7,
+  "TERRA": 11,
   "METOP-B": 2
  },
  "passagens": [
@@ -330,9 +329,17 @@
    "fim": "2026-11-01T06:35:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-01T13:12:00Z",
+   "fim": "2026-11-01T13:14:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 4
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-01T08:30:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-01T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -415,10 +422,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1085 detecções)",
+  "FIRMS MODIS_NRT": "ok (1108 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (6538 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (6434 detecções)",
-  "GOES-19 nuvens": "ok (65 imagens)"
+  "GOES-19 nuvens": "ok (68 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

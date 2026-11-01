@@ -31,10 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-30T11:50:20Z",
-    "pct": 63.2
-   },
-   {
     "hora": "2026-10-30T14:50:20Z",
     "pct": 62.0
    },
@@ -97,12 +93,16 @@
    {
     "hora": "2026-11-01T11:50:21Z",
     "pct": 33.8
+   },
+   {
+    "hora": "2026-11-01T14:50:21Z",
+    "pct": 29.4
    }
   ],
-  "media_48h": 73.9,
+  "media_48h": 71.9,
   "cego_48h_pct": 40.1,
-  "extintos": 544,
-  "extintos_incertos": 488,
+  "extintos": 583,
+  "extintos_incertos": 519,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -130,9 +130,9 @@
  "ativos_perto_do_sensor": {
   "25": 0,
   "50": 0,
-  "100": 8
+  "100": 2
  },
- "gerado_em": "2026-11-01T12:32:12Z",
+ "gerado_em": "2026-11-01T16:06:41Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -146,33 +146,33 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-30T12:32:12Z",
- "eventos_ativos": 44,
- "eventos_extintos": 544,
- "eventos_total": 588,
- "deteccoes_total": 4932,
- "deteccoes_ativas": 2518,
+ "janela_inicio": "2026-10-30T16:06:41Z",
+ "eventos_ativos": 18,
+ "eventos_extintos": 583,
+ "eventos_total": 601,
+ "deteccoes_total": 4727,
+ "deteccoes_ativas": 1697,
  "por_municipio": {
   "Santarém (PA)": 98,
   "Uruará (PA)": 74,
+  "Alenquer (PA)": 51,
   "Juruti (PA)": 47,
-  "Alenquer (PA)": 46,
+  "Oriximiná (PA)": 45,
+  "Monte Alegre (PA)": 44,
   "Placas (PA)": 41,
-  "Oriximiná (PA)": 41,
-  "Monte Alegre (PA)": 41,
-  "Altamira (PA)": 33,
+  "Altamira (PA)": 32,
   "Nhamundá": 25,
   "Aveiro (PA)": 22,
   "Rurópolis (PA)": 21,
   "Itaituba (PA)": 19,
   "Trairão (PA)": 11,
+  "Faro (PA)": 10,
   "Barreirinha": 10,
-  "Faro (PA)": 9,
   "Parintins": 8,
   "Terra Santa (PA)": 7,
+  "Urucará": 6,
   "Silves": 6,
   "Urucurituba": 6,
-  "Urucará": 5,
   "Maués": 5,
   "Belterra (PA)": 4,
   "Itacoatiara": 3,
@@ -181,24 +181,17 @@
   "Rio Preto da Eva": 1
  },
  "ativos_por_municipio": {
-  "Uruará (PA)": 6,
   "Oriximiná (PA)": 6,
-  "Juruti (PA)": 5,
-  "Santarém (PA)": 5,
-  "Monte Alegre (PA)": 4,
   "Alenquer (PA)": 4,
-  "Rurópolis (PA)": 3,
-  "Aveiro (PA)": 3,
-  "Placas (PA)": 2,
-  "Terra Santa (PA)": 2,
-  "São Sebastião do Uatumã": 1,
-  "Nhamundá": 1,
-  "Faro (PA)": 1,
-  "Urucará": 1
+  "Monte Alegre (PA)": 3,
+  "Santarém (PA)": 2,
+  "Juruti (PA)": 1,
+  "Urucará": 1,
+  "Faro (PA)": 1
  },
  "por_satelite": {
-  "GOES-19": 1492,
   "NOAA-20": 1400,
+  "GOES-19": 1287,
   "NOAA-21": 1142,
   "METOP-B": 280,
   "AQUA": 275,
@@ -381,9 +374,25 @@
    "fim": "2026-11-01T06:29:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-01T11:29:00Z",
+   "fim": "2026-11-01T11:29:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-01T13:10:00Z",
+   "fim": "2026-11-01T13:10:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-01T06:50:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-01T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -466,10 +475,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1085 detecções)",
+  "FIRMS MODIS_NRT": "ok (1108 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (6538 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (6434 detecções)",
-  "GOES-19 nuvens": "ok (65 imagens)"
+  "GOES-19 nuvens": "ok (68 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

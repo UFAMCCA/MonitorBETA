@@ -31,10 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-30T11:50:20Z",
-    "pct": 96.8
-   },
-   {
     "hora": "2026-10-30T14:50:20Z",
     "pct": 98.4
    },
@@ -97,9 +93,13 @@
    {
     "hora": "2026-11-01T11:50:21Z",
     "pct": 22.4
+   },
+   {
+    "hora": "2026-11-01T14:50:21Z",
+    "pct": 8.8
    }
   ],
-  "media_48h": 86.8,
+  "media_48h": 81.6,
   "cego_48h_pct": 72.7,
   "extintos": 71,
   "extintos_incertos": 71,
@@ -129,10 +129,10 @@
  },
  "ativos_perto_do_sensor": {
   "25": 0,
-  "50": 1,
-  "100": 2
+  "50": 2,
+  "100": 3
  },
- "gerado_em": "2026-11-01T12:32:12Z",
+ "gerado_em": "2026-11-01T16:06:41Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -146,19 +146,19 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-30T12:32:12Z",
- "eventos_ativos": 3,
+ "janela_inicio": "2026-10-30T16:06:41Z",
+ "eventos_ativos": 4,
  "eventos_extintos": 71,
- "eventos_total": 74,
- "deteccoes_total": 163,
- "deteccoes_ativas": 7,
+ "eventos_total": 75,
+ "deteccoes_total": 164,
+ "deteccoes_ativas": 8,
  "por_municipio": {
   "Nhamundá": 25,
   "Barreirinha": 10,
   "Parintins": 8,
+  "Urucará": 6,
   "Silves": 6,
   "Urucurituba": 6,
-  "Urucará": 5,
   "Maués": 5,
   "Itacoatiara": 3,
   "Itapiranga": 3,
@@ -166,15 +166,15 @@
   "Rio Preto da Eva": 1
  },
  "ativos_por_municipio": {
+  "Urucará": 2,
   "São Sebastião do Uatumã": 1,
-  "Nhamundá": 1,
-  "Urucará": 1
+  "Nhamundá": 1
  },
  "por_satelite": {
   "NOAA-20": 70,
   "NOAA-21": 53,
+  "GOES-19": 20,
   "AQUA": 19,
-  "GOES-19": 19,
   "METOP-B": 2
  },
  "passagens": [
@@ -323,7 +323,7 @@
    "deteccoes_na_area": 5
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-01T06:50:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-01T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -406,10 +406,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1085 detecções)",
+  "FIRMS MODIS_NRT": "ok (1108 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (6538 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (6434 detecções)",
-  "GOES-19 nuvens": "ok (65 imagens)"
+  "GOES-19 nuvens": "ok (68 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

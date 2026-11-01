@@ -75,3 +75,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-01T05:37:00Z,NOAA-21,-8.9710,-66.1110,Lábrea,0.99,nominal,0.4,0.37,noite,FIRMS
 2026-11-01T05:37:00Z,NOAA-21,-8.7255,-66.5471,Lábrea,0.83,nominal,0.42,0.38,noite,FIRMS
 2026-11-01T05:37:00Z,NOAA-21,-8.6562,-66.6954,Lábrea,0.9,nominal,0.42,0.38,noite,FIRMS
+2026-11-01T13:12:00Z,TERRA,-9.3089,-65.6503,Lábrea,28.15,nominal,1.77,1.3,dia,FIRMS
+2026-11-01T13:12:00Z,TERRA,-8.5701,-67.0073,Lábrea,32.2,nominal,1.37,1.16,dia,FIRMS

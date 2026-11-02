@@ -184,3 +184,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-01T18:13:00Z,NOAA-21,-8.5211,-67.0281,Lábrea,5.44,nominal,0.5,0.41,dia,FIRMS+INPE
 2026-11-01T18:13:00Z,NOAA-21,-8.4773,-62.6668,Porto Velho (RO),44.37,nominal,0.64,0.54,dia,FIRMS+INPE
 2026-11-01T18:13:00Z,NOAA-21,-8.3344,-62.8244,Porto Velho (RO),23.35,nominal,0.62,0.54,dia,FIRMS+INPE
+2026-11-01T19:40:00Z,GOES-19,-11.9942,-64.9272,Guajará-Mirim (RO),96.4,,2.2,2.2,dia,INPE
+2026-11-02T05:18:00Z,NOAA-21,-8.0361,-61.2539,Manicoré,0.51,nominal,0.41,0.37,noite,FIRMS+INPE
+2026-11-02T05:18:00Z,NOAA-21,-9.9239,-64.0536,Buritis (RO),0.52,nominal,0.52,0.41,noite,FIRMS+INPE
+2026-11-02T05:18:00Z,NOAA-21,-9.9231,-64.0582,Buritis (RO),0.52,nominal,0.52,0.41,noite,FIRMS+INPE

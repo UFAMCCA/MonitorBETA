@@ -44,3 +44,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-01T18:13:00Z,NOAA-21,-3.2827,-58.2615,Itacoatiara,13.06,nominal,0.78,0.78,dia,FIRMS
 2026-11-01T18:13:00Z,NOAA-21,-3.1041,-58.6995,Itacoatiara,8.85,nominal,0.73,0.76,dia,FIRMS
 2026-11-01T18:13:00Z,NOAA-21,-3.1040,-58.7035,Itacoatiara,13.4,nominal,0.73,0.76,dia,FIRMS+INPE
+2026-11-02T05:16:00Z,NOAA-21,-3.6481,-58.4104,Itacoatiara,0.94,nominal,0.38,0.36,noite,FIRMS

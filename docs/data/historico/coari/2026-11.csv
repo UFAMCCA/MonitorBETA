@@ -154,3 +154,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-01T18:13:00Z,NOAA-21,-8.9723,-66.1127,Lábrea,5.88,nominal,0.56,0.43,dia,FIRMS
 2026-11-01T18:13:00Z,NOAA-21,-8.5697,-67.0130,Lábrea,4.59,nominal,0.5,0.41,dia,FIRMS+INPE
 2026-11-01T18:13:00Z,NOAA-21,-8.5211,-67.0281,Lábrea,5.44,nominal,0.5,0.41,dia,FIRMS+INPE
+2026-11-02T05:18:00Z,NOAA-21,-8.0361,-61.2539,Manicoré,0.51,nominal,0.41,0.37,noite,FIRMS+INPE

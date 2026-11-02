@@ -252,3 +252,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-02T06:30:00Z,GOES-19,-2.4397,-57.9229,São Sebastião do Uatumã,53.8,,2.2,2.2,noite,INPE
 2026-11-02T06:40:00Z,GOES-19,-2.4397,-57.9229,São Sebastião do Uatumã,56.0,,2.2,2.2,noite,INPE
 2026-11-02T06:40:00Z,GOES-19,-2.4580,-57.9226,São Sebastião do Uatumã,43.2,,2.2,2.2,noite,INPE
+2026-11-02T12:12:00Z,TERRA,-2.4499,-57.9306,São Sebastião do Uatumã,7.2,nominal,1.36,1.15,dia,FIRMS

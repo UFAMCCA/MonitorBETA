@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-10-31T05:50:20Z",
-    "pct": 100.0
-   },
-   {
-    "hora": "2026-10-31T08:50:20Z",
-    "pct": 98.5
-   },
-   {
-    "hora": "2026-10-31T11:50:20Z",
-    "pct": 95.2
-   },
-   {
     "hora": "2026-10-31T14:50:21Z",
     "pct": 87.2
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-02T05:50:21Z",
     "pct": 82.8
+   },
+   {
+    "hora": "2026-11-02T08:50:21Z",
+    "pct": 96.8
+   },
+   {
+    "hora": "2026-11-02T11:50:21Z",
+    "pct": 89.0
+   },
+   {
+    "hora": "2026-11-02T14:50:21Z",
+    "pct": 78.6
    }
   ],
-  "media_48h": 65.4,
+  "media_48h": 63.7,
   "cego_48h_pct": 14.5,
-  "extintos": 130,
-  "extintos_incertos": 75,
+  "extintos": 150,
+  "extintos_incertos": 93,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -128,14 +128,14 @@
   "fonte": "API PurpleAir"
  },
  "ativos_perto_do_sensor": {
-  "25": 1,
-  "50": 7,
-  "100": 13
+  "25": 0,
+  "50": 0,
+  "100": 0
  },
- "gerado_em": "2026-11-02T08:08:52Z",
+ "gerado_em": "2026-11-02T16:06:42Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,12 +146,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-10-31T08:08:52Z",
- "eventos_ativos": 20,
- "eventos_extintos": 130,
+ "janela_inicio": "2026-10-31T16:06:42Z",
+ "eventos_ativos": 0,
+ "eventos_extintos": 150,
  "eventos_total": 150,
- "deteccoes_total": 313,
- "deteccoes_ativas": 92,
+ "deteccoes_total": 314,
+ "deteccoes_ativas": 0,
  "por_municipio": {
   "Barreirinha": 26,
   "Nhamundá": 23,
@@ -170,32 +170,15 @@
   "Manaus": 1,
   "Presidente Figueiredo": 1
  },
- "ativos_por_municipio": {
-  "Parintins": 6,
-  "Barreirinha": 4,
-  "Urucurituba": 3,
-  "Boa Vista do Ramos": 2,
-  "São Sebastião do Uatumã": 1,
-  "Silves": 1,
-  "Urucará": 1,
-  "Itacoatiara": 1,
-  "Nhamundá": 1
- },
+ "ativos_por_municipio": {},
  "por_satelite": {
   "NOAA-20": 179,
   "NOAA-21": 121,
   "GOES-19": 10,
-  "METOP-B": 3
+  "METOP-B": 3,
+  "TERRA": 1
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-10-31T12:29:00Z",
-   "fim": "2026-10-31T12:32:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -323,9 +306,25 @@
    "fim": "2026-11-02T05:18:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 34
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-02T06:12:00Z",
+   "fim": "2026-11-02T06:12:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-02T12:10:00Z",
+   "fim": "2026-11-02T12:12:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 1
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-02T07:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-02T15:30:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -408,10 +407,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (728 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (8153 detecções)",
+  "FIRMS MODIS_NRT": "ok (940 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (8275 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (7626 detecções)",
-  "GOES-19 nuvens": "ok (65 imagens)"
+  "GOES-19 nuvens": "ok (66 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

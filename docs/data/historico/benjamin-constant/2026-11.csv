@@ -19,3 +19,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-02T17:56:00Z,NOAA-21,0.1624,-66.8026,São Gabriel da Cachoeira,3.98,nominal,0.4,0.37,dia,FIRMS+INPE
 2026-11-02T17:56:00Z,NOAA-21,-8.0794,-72.6137,Cruzeiro do Sul (AC),9.85,nominal,0.48,0.48,dia,FIRMS+INPE
 2026-11-02T18:51:00Z,NOAA-20,-3.5964,-69.4165,São Paulo de Olivença,7.01,nominal,0.45,0.63,dia,FIRMS
+2026-11-02T19:40:00Z,AQUA,-5.2224,-67.5396,Carauari,30.77,baixa,4.64,1.97,dia,FIRMS+INPE
+2026-11-03T05:57:00Z,NOAA-20,-6.0155,-73.1856,Atalaia do Norte,1.29,nominal,0.47,0.48,noite,FIRMS

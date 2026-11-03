@@ -21,3 +21,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-02T18:51:00Z,NOAA-20,-3.5964,-69.4165,São Paulo de Olivença,7.01,nominal,0.45,0.63,dia,FIRMS
 2026-11-02T19:40:00Z,AQUA,-5.2224,-67.5396,Carauari,30.77,baixa,4.64,1.97,dia,FIRMS+INPE
 2026-11-03T05:57:00Z,NOAA-20,-6.0155,-73.1856,Atalaia do Norte,1.29,nominal,0.47,0.48,noite,FIRMS
+2026-11-03T18:34:00Z,NOAA-20,-2.6280,-66.4028,Jutaí,3.26,nominal,0.35,0.57,dia,FIRMS+INPE
+2026-11-03T18:34:00Z,NOAA-20,-7.4325,-73.0913,Mâncio Lima (AC),4.68,baixa,0.39,0.36,dia,FIRMS+INPE

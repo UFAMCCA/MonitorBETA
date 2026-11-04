@@ -84,3 +84,10 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-02T19:40:00Z,AQUA,-2.6826,-60.0568,Manaus,17.57,nominal,1.14,1.06,dia,FIRMS+INPE
 2026-11-03T00:28:00Z,TERRA,-3.6026,-58.6737,Itacoatiara,14.6,,1.0,1.0,noite,INPE
 2026-11-03T00:28:00Z,TERRA,-3.6014,-58.6648,Itacoatiara,6.6,,1.0,1.0,noite,INPE
+2026-11-04T18:15:00Z,NOAA-20,-3.4519,-59.1761,Autazes,3.79,nominal,0.51,0.66,dia,FIRMS
+2026-11-04T18:15:00Z,NOAA-20,-3.3479,-59.2747,Careiro da Várzea,4.87,nominal,0.5,0.66,dia,FIRMS
+2026-11-04T18:15:00Z,NOAA-20,-3.3436,-59.2773,Careiro da Várzea,7.23,nominal,0.5,0.66,dia,FIRMS
+2026-11-04T18:15:00Z,NOAA-20,-3.2202,-58.9256,Itacoatiara,5.19,nominal,0.53,0.67,dia,FIRMS
+2026-11-04T18:15:00Z,NOAA-20,-3.2140,-58.9266,Itacoatiara,11.1,nominal,0.53,0.67,dia,FIRMS
+2026-11-04T18:15:00Z,NOAA-20,-3.2102,-58.9421,Itacoatiara,7.37,nominal,0.53,0.67,dia,FIRMS
+2026-11-04T18:15:00Z,NOAA-20,-3.2094,-58.9372,Itacoatiara,7.37,nominal,0.53,0.67,dia,FIRMS

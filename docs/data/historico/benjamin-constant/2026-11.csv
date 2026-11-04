@@ -23,3 +23,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-03T05:57:00Z,NOAA-20,-6.0155,-73.1856,Atalaia do Norte,1.29,nominal,0.47,0.48,noite,FIRMS
 2026-11-03T18:34:00Z,NOAA-20,-2.6280,-66.4028,Jutaí,3.26,nominal,0.35,0.57,dia,FIRMS+INPE
 2026-11-03T18:34:00Z,NOAA-20,-7.4325,-73.0913,Mâncio Lima (AC),4.68,baixa,0.39,0.36,dia,FIRMS+INPE
+2026-11-03T20:16:00Z,AQUA,-7.7482,-70.0787,Envira,27.43,nominal,1.43,1.18,dia,FIRMS+INPE
+2026-11-03T20:16:00Z,AQUA,-7.7465,-70.0662,Envira,25.32,nominal,1.43,1.18,dia,FIRMS+INPE
+2026-11-03T20:18:00Z,AQUA,-2.6358,-66.3947,Jutaí,6.85,nominal,1.03,1.01,dia,FIRMS+INPE
+2026-11-04T01:06:00Z,TERRA,-7.7383,-70.0747,Envira,11.2,,1.0,1.0,noite,INPE

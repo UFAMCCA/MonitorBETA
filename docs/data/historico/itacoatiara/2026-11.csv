@@ -628,3 +628,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-03T17:38:00Z,NOAA-21,-2.2243,-56.8455,Nhamundá,3.94,nominal,0.45,0.47,dia,FIRMS+INPE
 2026-11-03T17:38:00Z,NOAA-21,-2.1135,-56.8292,Nhamundá,5.36,nominal,0.45,0.47,dia,FIRMS+INPE
 2026-11-03T17:38:00Z,NOAA-21,-2.1092,-56.8299,Nhamundá,5.36,nominal,0.45,0.47,dia,FIRMS
+2026-11-03T22:50:00Z,GOES-19,-2.2015,-58.1199,São Sebastião do Uatumã,48.0,,2.2,2.2,noite,INPE
+2026-11-04T01:09:00Z,METOP-B,-2.1802,-58.1015,Urucará,,,1.1,1.1,noite,INPE
+2026-11-04T01:30:00Z,METOP-C,-2.1887,-58.0990,Urucará,,,1.1,1.1,noite,INPE
+2026-11-04T01:30:00Z,METOP-C,-2.1910,-58.1086,Urucará,,,1.1,1.1,noite,INPE

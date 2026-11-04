@@ -27,3 +27,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-03T20:16:00Z,AQUA,-7.7465,-70.0662,Envira,25.32,nominal,1.43,1.18,dia,FIRMS+INPE
 2026-11-03T20:18:00Z,AQUA,-2.6358,-66.3947,Jutaí,6.85,nominal,1.03,1.01,dia,FIRMS+INPE
 2026-11-04T01:06:00Z,TERRA,-7.7383,-70.0747,Envira,11.2,,1.0,1.0,noite,INPE
+2026-11-04T06:22:00Z,NOAA-21,-7.7404,-70.0650,Envira,0.8,nominal,0.41,0.45,noite,FIRMS+INPE
+2026-11-04T06:22:00Z,NOAA-21,-7.7399,-70.0687,Envira,0.8,nominal,0.41,0.45,noite,FIRMS+INPE
+2026-11-04T06:22:00Z,NOAA-21,-7.7393,-70.0723,Envira,1.68,nominal,0.41,0.45,noite,FIRMS+INPE
+2026-11-04T06:22:00Z,NOAA-21,-7.7388,-70.0760,Envira,1.68,nominal,0.41,0.45,noite,FIRMS

@@ -91,3 +91,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-04T18:15:00Z,NOAA-20,-3.2140,-58.9266,Itacoatiara,11.1,nominal,0.53,0.67,dia,FIRMS
 2026-11-04T18:15:00Z,NOAA-20,-3.2102,-58.9421,Itacoatiara,7.37,nominal,0.53,0.67,dia,FIRMS
 2026-11-04T18:15:00Z,NOAA-20,-3.2094,-58.9372,Itacoatiara,7.37,nominal,0.53,0.67,dia,FIRMS
+2026-11-05T05:16:00Z,NOAA-20,-3.1931,-59.0437,Itacoatiara,1.01,nominal,0.43,0.38,noite,FIRMS
+2026-11-05T05:16:00Z,NOAA-20,-2.8590,-59.2698,Itacoatiara,0.69,nominal,0.44,0.38,noite,FIRMS
+2026-11-05T05:16:00Z,NOAA-20,-1.7875,-60.3361,Presidente Figueiredo,1.75,nominal,0.51,0.41,noite,FIRMS
+2026-11-05T05:16:00Z,NOAA-20,-1.7837,-60.3355,Presidente Figueiredo,0.54,nominal,0.51,0.41,noite,FIRMS
+2026-11-05T05:16:00Z,NOAA-20,-1.3846,-60.3086,Presidente Figueiredo,1.94,nominal,0.51,0.41,noite,FIRMS

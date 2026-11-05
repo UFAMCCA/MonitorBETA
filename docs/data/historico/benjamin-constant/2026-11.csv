@@ -45,3 +45,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-04T18:57:00Z,NOAA-21,-7.4209,-73.2054,Mâncio Lima (AC),6.4,nominal,0.36,0.58,dia,FIRMS+INPE
 2026-11-04T18:57:00Z,NOAA-21,-6.9152,-71.7506,Atalaia do Norte,9.73,nominal,0.47,0.64,dia,FIRMS+INPE
 2026-11-04T18:57:00Z,NOAA-21,-6.9144,-71.7483,Atalaia do Norte,7.61,nominal,0.46,0.64,dia,FIRMS
+2026-11-05T06:01:00Z,NOAA-21,-7.7881,-70.0636,Envira,1.45,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-05T06:01:00Z,NOAA-21,-7.7424,-70.0743,Envira,0.97,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-05T06:01:00Z,NOAA-21,-6.9143,-71.7462,Atalaia do Norte,0.61,nominal,0.4,0.37,noite,FIRMS+INPE
+2026-11-05T06:01:00Z,NOAA-21,-6.9138,-71.7497,Atalaia do Norte,0.61,nominal,0.4,0.37,noite,FIRMS

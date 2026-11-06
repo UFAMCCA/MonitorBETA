@@ -410,3 +410,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-06T00:47:00Z,TERRA,-6.7434,-62.8651,Humaitá,5.0,,1.0,1.0,noite,INPE
 2026-11-06T00:47:00Z,TERRA,-6.7268,-62.8766,Humaitá,11.9,,1.0,1.0,noite,INPE
 2026-11-06T00:47:00Z,TERRA,-6.7256,-62.8676,Humaitá,11.2,,1.0,1.0,noite,INPE
+2026-11-06T05:42:00Z,NOAA-21,-6.2418,-60.0116,Novo Aripuanã,1.13,nominal,0.42,0.45,noite,FIRMS+INPE
+2026-11-06T05:44:00Z,NOAA-21,-7.9320,-61.5577,Manicoré,2.19,nominal,0.53,0.42,noite,FIRMS
+2026-11-06T05:44:00Z,NOAA-21,-7.9299,-61.5555,Manicoré,1.59,nominal,0.53,0.42,noite,FIRMS

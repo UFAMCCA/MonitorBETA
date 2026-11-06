@@ -105,3 +105,14 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-06T00:27:00Z,METOP-B,-3.4613,-59.3163,Autazes,,,1.1,1.1,noite,INPE
 2026-11-06T00:47:00Z,TERRA,-3.4663,-59.3233,Autazes,6.3,,1.0,1.0,noite,INPE
 2026-11-06T00:47:00Z,TERRA,-3.4646,-59.3111,Autazes,7.3,,1.0,1.0,noite,INPE
+2026-11-06T04:57:00Z,NOAA-20,-3.4600,-59.3166,Autazes,2.57,nominal,0.55,0.51,noite,FIRMS+INPE
+2026-11-06T04:57:00Z,NOAA-20,-3.2137,-58.8681,Itacoatiara,1.58,nominal,0.52,0.5,noite,FIRMS+INPE
+2026-11-06T04:57:00Z,NOAA-20,-3.0780,-59.0969,Itacoatiara,0.94,nominal,0.54,0.51,noite,FIRMS+INPE
+2026-11-06T04:57:00Z,NOAA-20,-1.3870,-60.3074,Presidente Figueiredo,3.12,nominal,0.35,0.57,noite,FIRMS+INPE
+2026-11-06T04:57:00Z,NOAA-20,-1.3865,-60.3105,Presidente Figueiredo,3.46,nominal,0.35,0.57,noite,FIRMS
+2026-11-06T05:42:00Z,NOAA-21,-3.4652,-59.3126,Autazes,1.16,nominal,0.43,0.46,noite,FIRMS+INPE
+2026-11-06T05:42:00Z,NOAA-21,-3.4646,-59.3164,Autazes,1.16,nominal,0.42,0.46,noite,FIRMS
+2026-11-06T05:42:00Z,NOAA-21,-1.3904,-60.3062,Presidente Figueiredo,2.86,nominal,0.52,0.42,noite,FIRMS+INPE
+2026-11-06T05:42:00Z,NOAA-21,-1.3900,-60.3089,Presidente Figueiredo,3.34,nominal,0.52,0.41,noite,FIRMS+INPE
+2026-11-06T05:42:00Z,NOAA-21,-1.3866,-60.3056,Presidente Figueiredo,3.58,nominal,0.52,0.42,noite,FIRMS
+2026-11-06T05:42:00Z,NOAA-21,-1.3862,-60.3083,Presidente Figueiredo,4.71,nominal,0.52,0.41,noite,FIRMS

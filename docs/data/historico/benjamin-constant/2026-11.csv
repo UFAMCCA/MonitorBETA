@@ -49,3 +49,14 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-05T06:01:00Z,NOAA-21,-7.7424,-70.0743,Envira,0.97,nominal,0.39,0.36,noite,FIRMS+INPE
 2026-11-05T06:01:00Z,NOAA-21,-6.9143,-71.7462,Atalaia do Norte,0.61,nominal,0.4,0.37,noite,FIRMS+INPE
 2026-11-05T06:01:00Z,NOAA-21,-6.9138,-71.7497,Atalaia do Norte,0.61,nominal,0.4,0.37,noite,FIRMS
+2026-11-06T17:38:00Z,NOAA-20,-0.1823,-67.0425,São Gabriel da Cachoeira,4.93,nominal,0.42,0.45,dia,FIRMS+INPE
+2026-11-06T17:38:00Z,NOAA-20,-0.1817,-67.0387,São Gabriel da Cachoeira,4.93,nominal,0.42,0.45,dia,FIRMS
+2026-11-06T17:38:00Z,NOAA-20,0.0267,-67.2584,São Gabriel da Cachoeira,3.1,nominal,0.43,0.46,dia,FIRMS+INPE
+2026-11-06T17:38:00Z,NOAA-20,0.3371,-69.9659,São Gabriel da Cachoeira,2.94,nominal,0.33,0.55,dia,FIRMS+INPE
+2026-11-06T18:19:00Z,NOAA-21,-7.7091,-69.9307,Envira,4.62,nominal,0.44,0.39,dia,FIRMS+INPE
+2026-11-06T18:19:00Z,NOAA-21,-7.3485,-70.0358,Envira,4.87,nominal,0.44,0.38,dia,FIRMS+INPE
+2026-11-06T18:19:00Z,NOAA-21,-4.3568,-69.6780,Benjamin Constant,18.98,nominal,0.5,0.41,dia,FIRMS+INPE
+2026-11-06T18:19:00Z,NOAA-21,-4.3561,-69.6736,Benjamin Constant,17.35,nominal,0.5,0.41,dia,FIRMS
+2026-11-06T18:19:00Z,NOAA-21,-4.3531,-69.6786,Benjamin Constant,11.36,baixa,0.5,0.41,dia,FIRMS
+2026-11-06T18:19:00Z,NOAA-21,-8.0021,-72.3111,Cruzeiro do Sul (AC),2.24,nominal,0.38,0.36,dia,FIRMS+INPE
+2026-11-06T18:21:00Z,NOAA-21,0.6410,-69.6407,São Gabriel da Cachoeira,5.16,nominal,0.39,0.44,dia,FIRMS+INPE

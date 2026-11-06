@@ -99,3 +99,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-05T05:59:00Z,NOAA-21,-1.7868,-60.3347,Presidente Figueiredo,1.01,nominal,0.36,0.58,noite,FIRMS+INPE
 2026-11-05T05:59:00Z,NOAA-21,-1.7863,-60.3379,Presidente Figueiredo,1.01,nominal,0.36,0.58,noite,FIRMS
 2026-11-05T16:58:00Z,NOAA-21,-3.8205,-61.1308,Beruri,3.23,nominal,0.32,0.55,dia,FIRMS+INPE
+2026-11-05T22:30:00Z,GOES-19,-3.4605,-59.3102,Autazes,54.3,,2.2,2.2,noite,INPE
+2026-11-05T22:40:00Z,GOES-19,-3.4605,-59.3102,Autazes,54.6,,2.2,2.2,noite,INPE
+2026-11-05T22:50:00Z,GOES-19,-3.4605,-59.3102,Autazes,51.4,,2.2,2.2,noite,INPE
+2026-11-06T00:27:00Z,METOP-B,-3.4613,-59.3163,Autazes,,,1.1,1.1,noite,INPE
+2026-11-06T00:47:00Z,TERRA,-3.4663,-59.3233,Autazes,6.3,,1.0,1.0,noite,INPE
+2026-11-06T00:47:00Z,TERRA,-3.4646,-59.3111,Autazes,7.3,,1.0,1.0,noite,INPE

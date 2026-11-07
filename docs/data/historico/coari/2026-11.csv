@@ -550,3 +550,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-07T05:22:00Z,NOAA-21,-9.3116,-65.9231,Lábrea,1.96,nominal,0.55,0.42,noite,FIRMS
 2026-11-07T05:22:00Z,NOAA-21,-7.2619,-64.6781,Lábrea,0.42,nominal,0.5,0.41,noite,FIRMS
 2026-11-07T05:25:00Z,NOAA-21,-3.5553,-65.0181,Alvarães,1.55,nominal,0.39,0.44,noite,FIRMS
+2026-11-07T06:22:00Z,NOAA-20,-9.3516,-65.7689,Lábrea,0.54,nominal,0.32,0.55,noite,FIRMS+INPE
+2026-11-07T06:22:00Z,NOAA-20,-9.3512,-65.7719,Lábrea,0.79,nominal,0.32,0.54,noite,FIRMS

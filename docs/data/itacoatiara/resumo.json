@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-05T05:50:21Z",
-    "pct": 51.2
-   },
-   {
-    "hora": "2026-11-05T08:50:21Z",
-    "pct": 62.4
-   },
-   {
-    "hora": "2026-11-05T11:50:21Z",
-    "pct": 71.1
-   },
-   {
     "hora": "2026-11-05T14:50:21Z",
     "pct": 86.9
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-07T05:50:21Z",
     "pct": 72.1
+   },
+   {
+    "hora": "2026-11-07T08:50:21Z",
+    "pct": 83.0
+   },
+   {
+    "hora": "2026-11-07T11:50:21Z",
+    "pct": 42.6
+   },
+   {
+    "hora": "2026-11-07T14:50:21Z",
+    "pct": 30.6
    }
   ],
-  "media_48h": 74.5,
+  "media_48h": 72.8,
   "cego_48h_pct": 42.3,
-  "extintos": 70,
-  "extintos_incertos": 48,
+  "extintos": 75,
+  "extintos_incertos": 50,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -129,13 +129,13 @@
  },
  "ativos_perto_do_sensor": {
   "25": 3,
-  "50": 7,
-  "100": 15
+  "50": 6,
+  "100": 14
  },
- "gerado_em": "2026-11-07T08:08:41Z",
+ "gerado_em": "2026-11-07T16:06:40Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,61 +146,52 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-05T08:08:41Z",
- "eventos_ativos": 41,
- "eventos_extintos": 70,
- "eventos_total": 111,
- "deteccoes_total": 415,
- "deteccoes_ativas": 221,
+ "janela_inicio": "2026-11-05T16:06:40Z",
+ "eventos_ativos": 38,
+ "eventos_extintos": 75,
+ "eventos_total": 113,
+ "deteccoes_total": 427,
+ "deteccoes_ativas": 98,
  "por_municipio": {
-  "Parintins": 35,
-  "Nhamundá": 19,
+  "Parintins": 36,
+  "Nhamundá": 20,
   "Barreirinha": 13,
   "Urucará": 8,
   "Maués": 8,
   "Autazes": 6,
   "Itacoatiara": 5,
+  "São Sebastião do Uatumã": 3,
   "Urucurituba": 3,
   "Presidente Figueiredo": 3,
   "Nova Olinda do Norte": 3,
-  "São Sebastião do Uatumã": 3,
   "Itapiranga": 2,
   "Boa Vista do Ramos": 2,
   "Silves": 1
  },
  "ativos_por_municipio": {
   "Parintins": 12,
-  "Nhamundá": 6,
+  "Nhamundá": 7,
   "Urucará": 5,
-  "Barreirinha": 4,
-  "Autazes": 3,
-  "Urucurituba": 2,
-  "Itapiranga": 2,
+  "Barreirinha": 3,
   "São Sebastião do Uatumã": 2,
+  "Autazes": 2,
+  "Itapiranga": 2,
   "Itacoatiara": 1,
-  "Presidente Figueiredo": 1,
   "Nova Olinda do Norte": 1,
   "Maués": 1,
-  "Silves": 1
+  "Silves": 1,
+  "Urucurituba": 1
  },
  "por_satelite": {
-  "NOAA-21": 144,
+  "NOAA-21": 142,
   "NOAA-20": 117,
-  "GOES-19": 102,
+  "GOES-19": 116,
   "METOP-B": 33,
   "AQUA": 8,
   "METOP-C": 7,
   "TERRA": 4
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-05T12:29:00Z",
-   "fim": "2026-11-05T12:29:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 2
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -311,10 +302,18 @@
    "inicio": "2026-11-07T05:22:00Z",
    "fim": "2026-11-07T05:25:00Z",
    "resolucao_km": 0.375,
-   "deteccoes_na_area": 86
+   "deteccoes_na_area": 84
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-07T12:08:00Z",
+   "fim": "2026-11-07T12:08:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 2
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-07T05:30:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-07T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -397,10 +396,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (639 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (8412 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (7730 detecções)",
-  "GOES-19 nuvens": "ok (57 imagens)"
+  "FIRMS MODIS_NRT": "ok (871 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (8471 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (7724 detecções)",
+  "GOES-19 nuvens": "ok (58 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

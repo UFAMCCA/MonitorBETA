@@ -1066,3 +1066,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-07T05:25:00Z,NOAA-21,-11.9421,-64.9747,Guajará-Mirim (RO),1.04,nominal,0.45,0.39,noite,FIRMS
 2026-11-07T05:25:00Z,NOAA-21,-11.9413,-64.9576,Guajará-Mirim (RO),0.95,nominal,0.45,0.39,noite,FIRMS
 2026-11-07T05:25:00Z,NOAA-21,-11.7400,-64.9671,Guajará-Mirim (RO),0.86,nominal,0.45,0.39,noite,FIRMS
+2026-11-07T06:22:00Z,NOAA-20,-11.9949,-64.9257,Guajará-Mirim (RO),1.29,nominal,0.4,0.6,noite,FIRMS+INPE
+2026-11-07T06:22:00Z,NOAA-20,-11.9946,-64.9236,Guajará-Mirim (RO),1.44,nominal,0.4,0.6,noite,FIRMS
+2026-11-07T06:22:00Z,NOAA-20,-9.3516,-65.7689,Lábrea,0.54,nominal,0.32,0.55,noite,FIRMS+INPE
+2026-11-07T06:22:00Z,NOAA-20,-9.3512,-65.7719,Lábrea,0.79,nominal,0.32,0.54,noite,FIRMS
+2026-11-07T06:22:00Z,NOAA-20,-8.5968,-62.6561,Porto Velho (RO),0.68,nominal,0.51,0.66,noite,FIRMS+INPE
+2026-11-07T06:22:00Z,NOAA-20,-8.5907,-62.6553,Porto Velho (RO),0.76,nominal,0.51,0.66,noite,FIRMS+INPE

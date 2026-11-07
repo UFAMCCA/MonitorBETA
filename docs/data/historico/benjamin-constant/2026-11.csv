@@ -66,3 +66,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-07T05:25:00Z,NOAA-21,-3.0664,-69.0395,Santo Antônio do Içá,0.87,nominal,0.37,0.58,noite,FIRMS
 2026-11-07T06:20:00Z,NOAA-20,-3.0714,-69.0409,Santo Antônio do Içá,0.9,nominal,0.5,0.4,noite,FIRMS
 2026-11-07T06:20:00Z,NOAA-20,-3.0677,-69.0403,Santo Antônio do Içá,0.9,nominal,0.5,0.4,noite,FIRMS
+2026-11-07T06:20:00Z,NOAA-20,-3.0718,-69.0414,Santo Antônio do Içá,0.91,nominal,0.48,0.4,noite,FIRMS+INPE
+2026-11-07T06:20:00Z,NOAA-20,-3.0681,-69.0409,Santo Antônio do Içá,0.91,nominal,0.48,0.4,noite,FIRMS

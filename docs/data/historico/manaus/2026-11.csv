@@ -116,6 +116,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-06T05:42:00Z,NOAA-21,-1.3900,-60.3089,Presidente Figueiredo,3.34,nominal,0.52,0.41,noite,FIRMS+INPE
 2026-11-06T05:42:00Z,NOAA-21,-1.3866,-60.3056,Presidente Figueiredo,3.58,nominal,0.52,0.42,noite,FIRMS
 2026-11-06T05:42:00Z,NOAA-21,-1.3862,-60.3083,Presidente Figueiredo,4.71,nominal,0.52,0.41,noite,FIRMS
+2026-11-06T16:20:00Z,GOES-19,-0.4466,-60.3356,Presidente Figueiredo,90.7,,2.2,2.2,dia,INPE
 2026-11-06T17:38:00Z,NOAA-20,-3.7646,-59.1887,Autazes,10.75,nominal,0.4,0.37,dia,FIRMS+INPE
 2026-11-06T17:38:00Z,NOAA-20,-3.7030,-61.2880,Beruri,1.4,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-11-06T17:38:00Z,NOAA-20,-3.6735,-59.5695,Autazes,1.44,nominal,0.39,0.37,dia,FIRMS+INPE
@@ -145,3 +146,12 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-06T17:38:00Z,NOAA-20,-0.4465,-60.3406,Presidente Figueiredo,11.91,alta,0.39,0.36,dia,FIRMS+INPE
 2026-11-06T17:38:00Z,NOAA-20,-0.4437,-60.3446,Presidente Figueiredo,11.22,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-11-06T17:38:00Z,NOAA-20,-0.4431,-60.3411,Presidente Figueiredo,56.57,nominal,0.39,0.36,dia,FIRMS
+2026-11-07T04:40:00Z,NOAA-20,-3.4556,-59.3206,Autazes,2.29,nominal,0.58,0.7,noite,FIRMS+INPE
+2026-11-07T05:22:00Z,NOAA-21,-3.9665,-59.6166,Autazes,1.65,nominal,0.39,0.36,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-3.7611,-59.1868,Autazes,1.1,nominal,0.39,0.36,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-3.7578,-59.1863,Autazes,1.1,nominal,0.39,0.36,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-3.4622,-59.3151,Autazes,1.96,nominal,0.39,0.36,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-3.4583,-59.3181,Autazes,1.96,nominal,0.39,0.36,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-3.4578,-59.3216,Autazes,1.03,nominal,0.39,0.36,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-3.2390,-58.8908,Itacoatiara,1.15,nominal,0.39,0.37,noite,FIRMS
+2026-11-07T05:22:00Z,NOAA-21,-0.4435,-60.3396,Presidente Figueiredo,1.1,nominal,0.39,0.36,noite,FIRMS

@@ -60,3 +60,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-06T18:19:00Z,NOAA-21,-4.3531,-69.6786,Benjamin Constant,11.36,baixa,0.5,0.41,dia,FIRMS
 2026-11-06T18:19:00Z,NOAA-21,-8.0021,-72.3111,Cruzeiro do Sul (AC),2.24,nominal,0.38,0.36,dia,FIRMS+INPE
 2026-11-06T18:21:00Z,NOAA-21,0.6410,-69.6407,São Gabriel da Cachoeira,5.16,nominal,0.39,0.44,dia,FIRMS+INPE
+2026-11-06T20:31:00Z,AQUA,-7.8955,-72.4552,Cruzeiro do Sul (AC),11.22,nominal,1.17,1.08,dia,FIRMS+INPE
+2026-11-06T20:31:00Z,AQUA,-7.7295,-72.4496,Cruzeiro do Sul (AC),5.78,nominal,1.17,1.08,dia,FIRMS+INPE
+2026-11-07T05:25:00Z,NOAA-21,-3.0717,-69.0404,Santo Antônio do Içá,1.07,nominal,0.37,0.58,noite,FIRMS
+2026-11-07T05:25:00Z,NOAA-21,-3.0664,-69.0395,Santo Antônio do Içá,0.87,nominal,0.37,0.58,noite,FIRMS
+2026-11-07T06:20:00Z,NOAA-20,-3.0714,-69.0409,Santo Antônio do Içá,0.9,nominal,0.5,0.4,noite,FIRMS
+2026-11-07T06:20:00Z,NOAA-20,-3.0677,-69.0403,Santo Antônio do Içá,0.9,nominal,0.5,0.4,noite,FIRMS

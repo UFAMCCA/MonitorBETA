@@ -138,3 +138,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-08T06:01:00Z,NOAA-20,-3.4794,-68.2024,Amaturá,0.25,nominal,0.4,0.4,noite,FIRMS
 2026-11-08T06:01:00Z,NOAA-20,-3.0679,-69.0399,Santo Antônio do Içá,1.38,nominal,0.4,0.4,noite,FIRMS
 2026-11-08T06:01:00Z,NOAA-20,-3.0674,-69.0434,Santo Antônio do Içá,0.91,nominal,0.4,0.4,noite,FIRMS
+2026-11-08T06:01:00Z,NOAA-20,-7.6270,-69.9437,Envira,0.41,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-08T06:01:00Z,NOAA-20,-7.6236,-69.9432,Envira,1.09,nominal,0.39,0.36,noite,FIRMS
+2026-11-08T06:01:00Z,NOAA-20,-3.4798,-68.2028,Amaturá,0.25,nominal,0.38,0.36,noite,FIRMS+INPE
+2026-11-08T06:01:00Z,NOAA-20,-3.0683,-69.0403,Santo Antônio do Içá,1.42,nominal,0.4,0.37,noite,FIRMS+INPE
+2026-11-08T06:01:00Z,NOAA-20,-3.0678,-69.0439,Santo Antônio do Içá,0.88,nominal,0.4,0.37,noite,FIRMS

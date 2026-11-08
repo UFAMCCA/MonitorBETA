@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-06T05:50:21Z",
-    "pct": 91.7
-   },
-   {
-    "hora": "2026-11-06T08:50:21Z",
-    "pct": 92.1
-   },
-   {
-    "hora": "2026-11-06T11:50:21Z",
-    "pct": 78.7
-   },
-   {
     "hora": "2026-11-06T14:50:21Z",
     "pct": 79.6
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-08T05:50:21Z",
     "pct": 89.4
+   },
+   {
+    "hora": "2026-11-08T08:50:21Z",
+    "pct": 91.9
+   },
+   {
+    "hora": "2026-11-08T11:50:21Z",
+    "pct": 42.4
+   },
+   {
+    "hora": "2026-11-08T14:50:21Z",
+    "pct": 45.5
    }
   ],
-  "media_48h": 72.0,
+  "media_48h": 67.1,
   "cego_48h_pct": 32.4,
-  "extintos": 66,
-  "extintos_incertos": 51,
+  "extintos": 69,
+  "extintos_incertos": 54,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -122,10 +122,10 @@
  },
  "sensor": null,
  "ativos_perto_do_sensor": {},
- "gerado_em": "2026-11-08T08:08:41Z",
+ "gerado_em": "2026-11-08T16:06:37Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -136,16 +136,16 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-06T08:08:41Z",
- "eventos_ativos": 4,
- "eventos_extintos": 66,
- "eventos_total": 70,
- "deteccoes_total": 183,
- "deteccoes_ativas": 15,
+ "janela_inicio": "2026-11-06T16:06:37Z",
+ "eventos_ativos": 2,
+ "eventos_extintos": 69,
+ "eventos_total": 71,
+ "deteccoes_total": 184,
+ "deteccoes_ativas": 8,
  "por_municipio": {
   "Itacoatiara": 23,
+  "Presidente Figueiredo": 13,
   "Autazes": 12,
-  "Presidente Figueiredo": 12,
   "Manacapuru": 7,
   "Careiro": 4,
   "Manaus": 3,
@@ -156,16 +156,15 @@
   "Careiro da Várzea": 1
  },
  "ativos_por_municipio": {
-  "Presidente Figueiredo": 2,
-  "Autazes": 1,
-  "Manaquiri": 1
+  "Presidente Figueiredo": 1,
+  "Autazes": 1
  },
  "por_satelite": {
   "NOAA-20": 51,
   "NOAA-21": 50,
   "AQUA": 45,
   "GOES-19": 26,
-  "TERRA": 11
+  "TERRA": 12
  },
  "passagens": [
   {
@@ -291,13 +290,21 @@
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
-   "inicio": "2026-11-08T06:00:00Z",
+   "inicio": "2026-11-08T05:59:00Z",
    "fim": "2026-11-08T06:01:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 2
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-08T12:48:00Z",
+   "fim": "2026-11-08T12:48:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 1
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-08T06:50:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-08T15:20:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -380,9 +387,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (2093 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (11271 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (11217 detecções)",
+  "FIRMS MODIS_NRT": "ok (2228 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (11373 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (11216 detecções)",
   "GOES-19 nuvens": "ok (63 imagens)"
  },
  "temperatura_superficie": {

@@ -187,3 +187,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-08T18:42:00Z,NOAA-20,-0.1638,-67.0833,São Gabriel da Cachoeira,4.7,nominal,0.45,0.63,dia,FIRMS
 2026-11-08T18:42:00Z,NOAA-20,-0.1432,-67.1029,São Gabriel da Cachoeira,5.35,nominal,0.45,0.63,dia,FIRMS
 2026-11-08T19:40:00Z,GOES-19,-7.6253,-69.9403,Envira,93.0,,2.2,2.2,dia,INPE
+2026-11-08T20:10:00Z,AQUA,-7.6350,-69.9399,Envira,38.16,nominal,1.94,1.36,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-3.4882,-68.2043,Amaturá,11.16,nominal,1.25,1.11,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-3.0769,-69.0417,Santo Antônio do Içá,52.74,alta,1.4,1.17,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-3.0751,-69.0294,Santo Antônio do Içá,8.8,nominal,1.4,1.17,dia,FIRMS+INPE

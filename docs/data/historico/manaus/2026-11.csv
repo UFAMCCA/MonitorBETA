@@ -302,6 +302,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-08T06:01:00Z,NOAA-20,-3.4659,-59.1947,Autazes,0.54,nominal,0.35,0.57,noite,FIRMS+INPE
 2026-11-08T06:01:00Z,NOAA-20,-3.4654,-59.1978,Autazes,0.54,nominal,0.35,0.57,noite,FIRMS
 2026-11-08T12:48:00Z,TERRA,-1.9164,-60.1021,Presidente Figueiredo,7.54,nominal,1.44,1.19,dia,FIRMS
+2026-11-08T15:20:00Z,GOES-19,-1.2852,-60.4834,Presidente Figueiredo,99.1,,2.2,2.2,dia,INPE
+2026-11-08T15:30:00Z,GOES-19,-1.2852,-60.4834,Presidente Figueiredo,82.5,,2.2,2.2,dia,INPE
+2026-11-08T16:40:00Z,GOES-19,-0.9386,-60.6371,Presidente Figueiredo,65.0,,2.2,2.2,dia,INPE
 2026-11-08T17:00:00Z,NOAA-20,-3.8426,-59.0872,Autazes,7.72,nominal,0.61,0.54,dia,FIRMS+INPE
 2026-11-08T17:00:00Z,NOAA-20,-3.7184,-59.2480,Autazes,9.38,nominal,0.63,0.54,dia,FIRMS+INPE
 2026-11-08T17:00:00Z,NOAA-20,-3.7181,-60.2376,Careiro,1.53,nominal,0.37,0.58,dia,FIRMS+INPE
@@ -465,5 +468,25 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-08T17:43:00Z,NOAA-21,-0.9727,-60.5966,Presidente Figueiredo,22.94,nominal,0.52,0.41,dia,FIRMS+INPE
 2026-11-08T17:43:00Z,NOAA-21,-0.9689,-60.5972,Presidente Figueiredo,22.94,nominal,0.52,0.41,dia,FIRMS
 2026-11-08T17:43:00Z,NOAA-21,-0.9443,-60.6387,Presidente Figueiredo,4.09,nominal,0.52,0.41,dia,FIRMS+INPE
+2026-11-08T18:20:00Z,GOES-19,-1.5771,-60.3672,Presidente Figueiredo,62.8,,2.2,2.2,dia,INPE
+2026-11-08T18:30:00Z,GOES-19,-1.5771,-60.3672,Presidente Figueiredo,64.9,,2.2,2.2,dia,INPE
 2026-11-08T20:00:00Z,GOES-19,-3.2585,-59.6013,Careiro da Várzea,112.0,,2.2,2.2,dia,INPE
+2026-11-08T20:12:00Z,AQUA,-4.0186,-59.8371,Autazes,69.72,nominal,1.86,1.33,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-4.0161,-59.8208,Autazes,43.36,nominal,1.87,1.34,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-3.5334,-59.6033,Autazes,17.5,nominal,1.98,1.37,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-3.1004,-58.9944,Itacoatiara,21.57,nominal,2.26,1.46,dia,FIRMS+INPE
+2026-11-08T20:12:00Z,AQUA,-3.0996,-59.0018,Itacoatiara,26.74,nominal,2.26,1.46,dia,FIRMS
+2026-11-08T20:12:00Z,AQUA,-3.0755,-59.1828,Itacoatiara,19.57,nominal,2.19,1.43,dia,FIRMS+INPE
 2026-11-08T20:40:00Z,GOES-19,-3.4418,-59.4447,Careiro da Várzea,92.6,,2.2,2.2,dia,INPE
+2026-11-09T01:05:00Z,METOP-B,-4.0072,-59.8212,Autazes,,,1.1,1.1,noite,INPE
+2026-11-09T01:26:00Z,METOP-C,-4.0170,-59.8230,Autazes,,,1.1,1.1,noite,INPE
+2026-11-09T01:26:00Z,METOP-C,-4.0186,-59.8301,Autazes,,,1.1,1.1,noite,INPE
+2026-11-09T01:26:00Z,METOP-C,-3.4303,-60.5435,Manaquiri,,,1.1,1.1,noite,INPE
+2026-11-09T01:26:00Z,METOP-C,-3.0750,-59.1855,Itacoatiara,,,1.1,1.1,noite,INPE
+2026-11-09T01:26:00Z,METOP-C,-1.5759,-60.3731,Presidente Figueiredo,,,1.1,1.1,noite,INPE
+2026-11-09T04:44:00Z,NOAA-21,-1.5773,-60.3699,Presidente Figueiredo,1.45,nominal,0.45,0.63,noite,FIRMS+INPE
+2026-11-09T04:44:00Z,NOAA-21,-1.5766,-60.3739,Presidente Figueiredo,1.59,nominal,0.45,0.63,noite,FIRMS+INPE
+2026-11-09T04:44:00Z,NOAA-21,-1.5757,-60.3702,Presidente Figueiredo,1.46,nominal,0.45,0.63,noite,FIRMS
+2026-11-09T04:44:00Z,NOAA-21,-1.5751,-60.3742,Presidente Figueiredo,1.38,nominal,0.45,0.63,noite,FIRMS
+2026-11-09T04:46:00Z,NOAA-21,-4.0145,-59.8273,Autazes,3.02,nominal,0.37,0.58,noite,FIRMS+INPE
+2026-11-09T04:46:00Z,NOAA-21,-4.0140,-59.8306,Autazes,2.72,nominal,0.37,0.58,noite,FIRMS

@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-07T05:50:21Z",
-    "pct": 56.4
-   },
-   {
-    "hora": "2026-11-07T08:50:21Z",
-    "pct": 64.1
-   },
-   {
-    "hora": "2026-11-07T11:50:21Z",
-    "pct": 60.2
-   },
-   {
     "hora": "2026-11-07T14:50:21Z",
     "pct": 64.3
    },
@@ -97,9 +85,21 @@
    {
     "hora": "2026-11-09T05:50:21Z",
     "pct": 98.8
+   },
+   {
+    "hora": "2026-11-09T08:50:21Z",
+    "pct": 94.7
+   },
+   {
+    "hora": "2026-11-09T11:50:22Z",
+    "pct": 87.9
+   },
+   {
+    "hora": "2026-11-09T14:50:20Z",
+    "pct": 69.0
    }
   ],
-  "media_48h": 71.2,
+  "media_48h": 75.4,
   "cego_48h_pct": 17.0,
   "extintos": 46,
   "extintos_incertos": 41,
@@ -132,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-09T08:08:41Z",
+ "gerado_em": "2026-11-09T16:06:43Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,7 +146,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-07T08:08:41Z",
+ "janela_inicio": "2026-11-07T16:06:43Z",
  "eventos_ativos": 16,
  "eventos_extintos": 46,
  "eventos_total": 62,
@@ -350,9 +350,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (2088 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (9759 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (13404 detecções)",
+  "FIRMS MODIS_NRT": "ok (2128 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (10367 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (13420 detecções)",
   "GOES-19 nuvens": "ok (62 imagens)"
  },
  "temperatura_superficie": {

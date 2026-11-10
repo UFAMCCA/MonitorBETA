@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-08T05:50:21Z",
-    "pct": 56.1
-   },
-   {
-    "hora": "2026-11-08T08:50:21Z",
-    "pct": 54.7
-   },
-   {
-    "hora": "2026-11-08T11:50:21Z",
-    "pct": 42.0
-   },
-   {
     "hora": "2026-11-08T14:50:21Z",
     "pct": 50.6
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-10T05:50:20Z",
     "pct": 77.6
+   },
+   {
+    "hora": "2026-11-10T08:50:20Z",
+    "pct": 76.2
+   },
+   {
+    "hora": "2026-11-10T11:50:20Z",
+    "pct": 83.0
+   },
+   {
+    "hora": "2026-11-10T14:50:20Z",
+    "pct": 76.5
    }
   ],
-  "media_48h": 67.9,
+  "media_48h": 72.8,
   "cego_48h_pct": 35.8,
-  "extintos": 452,
-  "extintos_incertos": 399,
+  "extintos": 727,
+  "extintos_incertos": 647,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -130,12 +130,12 @@
  "ativos_perto_do_sensor": {
   "25": 0,
   "50": 0,
-  "100": 8
+  "100": 0
  },
- "gerado_em": "2026-11-10T08:08:44Z",
+ "gerado_em": "2026-11-10T16:06:39Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,89 +146,59 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-08T08:08:44Z",
- "eventos_ativos": 123,
- "eventos_extintos": 452,
- "eventos_total": 575,
- "deteccoes_total": 4754,
- "deteccoes_ativas": 2369,
+ "janela_inicio": "2026-11-08T16:06:39Z",
+ "eventos_ativos": 5,
+ "eventos_extintos": 727,
+ "eventos_total": 732,
+ "deteccoes_total": 5035,
+ "deteccoes_ativas": 21,
  "por_municipio": {
-  "Santarém (PA)": 73,
-  "Uruará (PA)": 64,
-  "Oriximiná (PA)": 62,
-  "Itacoatiara": 41,
-  "Monte Alegre (PA)": 40,
-  "Alenquer (PA)": 37,
-  "Placas (PA)": 32,
-  "Aveiro (PA)": 29,
-  "Juruti (PA)": 27,
-  "Presidente Figueiredo": 25,
-  "Parintins": 17,
-  "Altamira (PA)": 14,
-  "Itaituba (PA)": 13,
-  "Rurópolis (PA)": 12,
-  "Urucurituba": 11,
+  "Santarém (PA)": 94,
+  "Uruará (PA)": 83,
+  "Oriximiná (PA)": 71,
+  "Itacoatiara": 59,
+  "Monte Alegre (PA)": 44,
+  "Alenquer (PA)": 42,
+  "Placas (PA)": 41,
+  "Juruti (PA)": 33,
+  "Aveiro (PA)": 32,
+  "Presidente Figueiredo": 27,
+  "Parintins": 23,
+  "Boa Vista do Ramos": 18,
+  "Maués": 17,
+  "Itaituba (PA)": 17,
+  "Rurópolis (PA)": 17,
+  "Altamira (PA)": 16,
+  "Urucurituba": 15,
+  "Terra Santa (PA)": 14,
   "Nhamundá": 11,
-  "Maués": 9,
-  "Boa Vista do Ramos": 9,
-  "Faro (PA)": 9,
-  "Barreirinha": 9,
-  "São Sebastião do Uatumã": 6,
-  "Terra Santa (PA)": 6,
-  "Urucará": 5,
-  "Belterra (PA)": 4,
-  "Silves": 3,
-  "Rio Preto da Eva": 3,
-  "Trairão (PA)": 2,
+  "Barreirinha": 11,
+  "Faro (PA)": 10,
+  "São Sebastião do Uatumã": 8,
+  "Urucará": 8,
+  "Belterra (PA)": 8,
+  "Silves": 4,
+  "Rio Preto da Eva": 4,
+  "Trairão (PA)": 3,
   "Itapiranga": 2
  },
  "ativos_por_municipio": {
-  "Santarém (PA)": 26,
-  "Oriximiná (PA)": 20,
-  "Uruará (PA)": 15,
-  "Alenquer (PA)": 15,
-  "Monte Alegre (PA)": 11,
-  "Itacoatiara": 6,
-  "Placas (PA)": 6,
-  "Juruti (PA)": 6,
-  "São Sebastião do Uatumã": 3,
-  "Maués": 2,
-  "Boa Vista do Ramos": 2,
-  "Itaituba (PA)": 2,
-  "Altamira (PA)": 2,
-  "Urucurituba": 2,
-  "Silves": 1,
-  "Urucará": 1,
-  "Faro (PA)": 1,
-  "Nhamundá": 1,
-  "Rurópolis (PA)": 1
+  "Santarém (PA)": 1,
+  "Altamira (PA)": 1,
+  "Oriximiná (PA)": 1,
+  "Monte Alegre (PA)": 1,
+  "Itacoatiara": 1
  },
  "por_satelite": {
-  "GOES-19": 2318,
-  "NOAA-20": 1242,
-  "NOAA-21": 764,
-  "TERRA": 148,
+  "GOES-19": 1903,
+  "NOAA-21": 1476,
+  "NOAA-20": 1237,
   "METOP-C": 145,
+  "TERRA": 137,
   "AQUA": 108,
   "METOP-B": 29
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-08T12:46:00Z",
-   "fim": "2026-11-08T12:50:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 31
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-11-08T16:02:00Z",
-   "fim": "2026-11-08T16:05:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
@@ -342,6 +312,14 @@
    "deteccoes_na_area": 245
   },
   {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-09T17:21:00Z",
+   "fim": "2026-11-09T17:26:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 585
+  },
+  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
    "inicio": "2026-11-09T18:19:00Z",
@@ -382,15 +360,39 @@
    "deteccoes_na_area": 81
   },
   {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-10T04:23:00Z",
+   "fim": "2026-11-10T04:27:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 126
+  },
+  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
    "inicio": "2026-11-10T05:22:00Z",
    "fim": "2026-11-10T05:27:00Z",
    "resolucao_km": 0.375,
-   "deteccoes_na_area": 365
+   "deteccoes_na_area": 360
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-10T06:03:00Z",
+   "fim": "2026-11-10T06:07:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 1
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-10T12:27:00Z",
+   "fim": "2026-11-10T12:29:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 20
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-10T07:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-10T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -473,9 +475,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1064 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (7761 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (8789 detecções)",
+  "FIRMS MODIS_NRT": "ok (1178 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (7748 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (11865 detecções)",
   "GOES-19 nuvens": "ok (61 imagens)"
  },
  "temperatura_superficie": {

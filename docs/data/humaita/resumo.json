@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-08T05:50:21Z",
-    "pct": 97.1
-   },
-   {
-    "hora": "2026-11-08T08:50:21Z",
-    "pct": 87.0
-   },
-   {
-    "hora": "2026-11-08T11:50:21Z",
-    "pct": 59.4
-   },
-   {
     "hora": "2026-11-08T14:50:21Z",
     "pct": 48.8
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-10T05:50:20Z",
     "pct": 56.9
+   },
+   {
+    "hora": "2026-11-10T08:50:20Z",
+    "pct": 54.1
+   },
+   {
+    "hora": "2026-11-10T11:50:20Z",
+    "pct": 37.3
+   },
+   {
+    "hora": "2026-11-10T14:50:20Z",
+    "pct": 30.2
    }
   ],
-  "media_48h": 74.9,
+  "media_48h": 67.7,
   "cego_48h_pct": 22.6,
-  "extintos": 73,
-  "extintos_incertos": 70,
+  "extintos": 88,
+  "extintos_incertos": 79,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-10T08:08:44Z",
+ "gerado_em": "2026-11-10T16:06:39Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,17 +146,17 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-08T08:08:44Z",
- "eventos_ativos": 13,
- "eventos_extintos": 73,
- "eventos_total": 86,
- "deteccoes_total": 197,
- "deteccoes_ativas": 17,
+ "janela_inicio": "2026-11-08T16:06:39Z",
+ "eventos_ativos": 4,
+ "eventos_extintos": 88,
+ "eventos_total": 92,
+ "deteccoes_total": 210,
+ "deteccoes_ativas": 16,
  "por_municipio": {
-  "Manicoré": 17,
-  "Humaitá": 16,
-  "Porto Velho (RO)": 14,
-  "Novo Aripuanã": 11,
+  "Manicoré": 19,
+  "Humaitá": 17,
+  "Novo Aripuanã": 15,
+  "Porto Velho (RO)": 13,
   "Tapauá": 8,
   "Lábrea": 8,
   "Canutama": 6,
@@ -164,28 +164,18 @@
   "Candeias do Jamari (RO)": 1
  },
  "ativos_por_municipio": {
-  "Manicoré": 5,
-  "Porto Velho (RO)": 4,
-  "Novo Aripuanã": 2,
-  "Candeias do Jamari (RO)": 1,
-  "Apuí": 1
+  "Porto Velho (RO)": 2,
+  "Apuí": 1,
+  "Novo Aripuanã": 1
  },
  "por_satelite": {
   "NOAA-20": 90,
-  "NOAA-21": 69,
-  "GOES-19": 18,
+  "NOAA-21": 89,
   "AQUA": 17,
-  "TERRA": 3
+  "GOES-19": 13,
+  "TERRA": 1
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-08T12:48:00Z",
-   "fim": "2026-11-08T12:50:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 3
-  },
   {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
@@ -275,6 +265,14 @@
    "deteccoes_na_area": 0
   },
   {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-09T17:21:00Z",
+   "fim": "2026-11-09T17:24:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 11
+  },
+  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
    "inicio": "2026-11-09T18:17:00Z",
@@ -331,15 +329,39 @@
    "deteccoes_na_area": 0
   },
   {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-10T04:25:00Z",
+   "fim": "2026-11-10T04:27:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 0
+  },
+  {
    "satelite": "NOAA-20",
    "sensor": "VIIRS",
    "inicio": "2026-11-10T05:25:00Z",
    "fim": "2026-11-10T05:27:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 17
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-10T06:07:00Z",
+   "fim": "2026-11-10T06:09:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 9
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-10T12:29:00Z",
+   "fim": "2026-11-10T12:31:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 1
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-10T02:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-10T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -422,9 +444,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1064 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (7761 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (8789 detecções)",
+  "FIRMS MODIS_NRT": "ok (1178 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (7748 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (11865 detecções)",
   "GOES-19 nuvens": "ok (61 imagens)"
  },
  "temperatura_superficie": {

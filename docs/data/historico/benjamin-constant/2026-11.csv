@@ -191,6 +191,12 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-08T20:12:00Z,AQUA,-3.4882,-68.2043,Amaturá,11.16,nominal,1.25,1.11,dia,FIRMS+INPE
 2026-11-08T20:12:00Z,AQUA,-3.0769,-69.0417,Santo Antônio do Içá,52.74,alta,1.4,1.17,dia,FIRMS+INPE
 2026-11-08T20:12:00Z,AQUA,-3.0751,-69.0294,Santo Antônio do Içá,8.8,nominal,1.4,1.17,dia,FIRMS+INPE
+2026-11-09T17:24:00Z,NOAA-21,-4.3556,-69.6790,Benjamin Constant,13.15,nominal,0.47,0.64,dia,FIRMS+INPE
+2026-11-09T17:26:00Z,NOAA-21,0.2795,-69.8269,São Gabriel da Cachoeira,3.7,nominal,0.41,0.61,dia,FIRMS+INPE
+2026-11-09T17:26:00Z,NOAA-21,0.2798,-69.8249,São Gabriel da Cachoeira,5.95,nominal,0.41,0.61,dia,FIRMS
+2026-11-09T17:26:00Z,NOAA-21,0.4699,-69.3600,São Gabriel da Cachoeira,7.77,nominal,0.38,0.58,dia,FIRMS+INPE
+2026-11-09T17:26:00Z,NOAA-21,0.4734,-69.3605,São Gabriel da Cachoeira,7.84,nominal,0.38,0.58,dia,FIRMS
+2026-11-09T17:26:00Z,NOAA-21,0.5117,-67.3994,São Gabriel da Cachoeira,9.86,nominal,0.55,0.51,dia,FIRMS+INPE
 2026-11-09T18:21:00Z,NOAA-20,-4.3574,-69.6738,Benjamin Constant,5.03,baixa,0.42,0.37,dia,FIRMS
 2026-11-09T18:21:00Z,NOAA-20,-4.3544,-69.8338,Benjamin Constant,4.97,baixa,0.41,0.37,dia,FIRMS
 2026-11-09T18:21:00Z,NOAA-20,-4.0670,-69.5143,São Paulo de Olivença,7.1,baixa,0.42,0.38,dia,FIRMS

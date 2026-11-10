@@ -1335,3 +1335,20 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-09T18:19:00Z,NOAA-20,-6.5959,-62.9730,Tapauá,8.17,nominal,0.63,0.54,dia,FIRMS
 2026-11-09T18:19:00Z,NOAA-20,-6.5917,-62.9764,Tapauá,3.83,nominal,0.63,0.54,dia,FIRMS
 2026-11-09T18:19:00Z,NOAA-20,-6.5909,-62.9738,Tapauá,8.17,nominal,0.63,0.54,dia,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.9301,-61.5562,Manicoré,1.65,nominal,0.42,0.38,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.9266,-61.5557,Manicoré,1.29,nominal,0.42,0.38,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.9216,-61.5431,Manicoré,1.25,nominal,0.42,0.38,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.9157,-61.5577,Manicoré,0.66,nominal,0.42,0.38,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.8999,-61.5240,Manicoré,0.9,nominal,0.42,0.38,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.8160,-61.4803,Manicoré,0.69,nominal,0.42,0.38,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.6596,-61.1901,Novo Aripuanã,1.0,nominal,0.41,0.37,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.6589,-61.1938,Novo Aripuanã,1.0,nominal,0.41,0.37,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.6549,-61.1970,Novo Aripuanã,1.24,nominal,0.41,0.37,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.6329,-61.0531,Novo Aripuanã,1.32,nominal,0.41,0.37,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-7.6295,-61.0525,Novo Aripuanã,1.32,nominal,0.41,0.37,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-6.9050,-59.4288,Apuí,3.96,nominal,0.38,0.36,noite,FIRMS
+2026-11-10T05:27:00Z,NOAA-20,-9.8201,-63.8312,Porto Velho (RO),0.95,nominal,0.51,0.41,noite,FIRMS
+2026-11-10T05:27:00Z,NOAA-20,-9.7600,-63.9555,Porto Velho (RO),0.92,nominal,0.52,0.41,noite,FIRMS
+2026-11-10T05:27:00Z,NOAA-20,-9.6763,-66.1730,Porto Velho (RO),1.16,nominal,0.47,0.48,noite,FIRMS
+2026-11-10T05:27:00Z,NOAA-20,-8.9530,-63.6762,Candeias do Jamari (RO),0.79,nominal,0.51,0.41,noite,FIRMS
+2026-11-10T05:27:00Z,NOAA-20,-8.5807,-63.4885,Porto Velho (RO),0.71,nominal,0.51,0.41,noite,FIRMS

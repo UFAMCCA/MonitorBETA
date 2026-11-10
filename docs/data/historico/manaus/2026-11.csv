@@ -523,3 +523,16 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-09T18:21:00Z,NOAA-20,-2.8566,-59.2079,Itacoatiara,12.74,nominal,0.66,0.73,dia,FIRMS
 2026-11-09T18:21:00Z,NOAA-20,-2.8517,-59.2057,Itacoatiara,5.05,nominal,0.66,0.73,dia,FIRMS
 2026-11-09T18:21:00Z,NOAA-20,-1.6793,-59.9870,Presidente Figueiredo,11.71,nominal,0.61,0.71,dia,FIRMS
+2026-11-10T00:44:00Z,METOP-B,-3.1543,-59.0737,Itacoatiara,,,1.1,1.1,noite,INPE
+2026-11-10T05:25:00Z,NOAA-20,-3.7260,-58.4741,Itacoatiara,0.52,nominal,0.38,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.7254,-58.4775,Itacoatiara,0.52,nominal,0.38,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.7226,-58.4736,Itacoatiara,0.51,nominal,0.38,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.5310,-58.7390,Itacoatiara,0.81,nominal,0.38,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.2573,-59.6005,Careiro da Várzea,0.8,nominal,0.4,0.37,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.2178,-58.7215,Itacoatiara,0.53,nominal,0.39,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.2172,-58.7250,Itacoatiara,0.53,nominal,0.39,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.1984,-58.6514,Itacoatiara,0.8,nominal,0.38,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.1572,-59.0807,Itacoatiara,2.36,nominal,0.39,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.0765,-59.1819,Itacoatiara,0.64,nominal,0.39,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-3.0760,-59.1853,Itacoatiara,0.64,nominal,0.39,0.36,noite,FIRMS
+2026-11-10T05:25:00Z,NOAA-20,-2.9542,-60.0173,Manaus,0.3,nominal,0.41,0.37,noite,FIRMS

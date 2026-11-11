@@ -598,3 +598,18 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-10T18:02:00Z,NOAA-20,-3.0033,-60.9321,Iranduba,5.31,nominal,0.47,0.48,dia,FIRMS
 2026-11-10T18:02:00Z,NOAA-20,-1.7352,-60.0339,Presidente Figueiredo,2.78,nominal,0.57,0.52,dia,FIRMS
 2026-11-10T18:04:00Z,NOAA-20,-1.3337,-60.2226,Presidente Figueiredo,103.07,nominal,0.56,0.52,dia,FIRMS
+2026-11-10T19:49:00Z,AQUA,-3.4442,-59.6136,Careiro da Várzea,18.62,alta,1.0,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-3.4192,-60.3117,Manaquiri,4.7,nominal,1.02,1.01,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-3.3830,-59.6227,Careiro da Várzea,18.79,alta,1.0,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-3.1969,-60.2397,Iranduba,6.27,nominal,1.01,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-1.8397,-60.3176,Presidente Figueiredo,4.63,nominal,1.0,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-1.8384,-60.3089,Presidente Figueiredo,5.27,nominal,1.0,1.0,dia,FIRMS
+2026-11-10T19:49:00Z,AQUA,-1.3378,-60.2262,Presidente Figueiredo,13.75,nominal,1.0,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-1.3366,-60.2175,Presidente Figueiredo,7.38,nominal,1.0,1.0,dia,FIRMS
+2026-11-11T00:47:00Z,TERRA,-3.4388,-59.6170,Careiro da Várzea,6.7,,1.0,1.0,noite,INPE
+2026-11-11T00:47:00Z,TERRA,-3.4107,-60.3096,Manaquiri,4.2,,1.0,1.0,noite,INPE
+2026-11-11T05:03:00Z,NOAA-20,-3.4419,-59.6133,Careiro da Várzea,1.35,nominal,0.45,0.47,noite,FIRMS
+2026-11-11T05:03:00Z,NOAA-20,-3.4376,-59.6126,Careiro da Várzea,0.67,nominal,0.45,0.47,noite,FIRMS
+2026-11-11T05:48:00Z,NOAA-21,-3.4437,-59.6118,Careiro da Várzea,1.31,nominal,0.52,0.5,noite,FIRMS
+2026-11-11T05:48:00Z,NOAA-21,-3.4400,-59.6131,Careiro da Várzea,2.48,nominal,0.52,0.5,noite,FIRMS
+2026-11-11T05:48:00Z,NOAA-21,-3.4392,-59.6110,Careiro da Várzea,1.09,nominal,0.52,0.5,noite,FIRMS

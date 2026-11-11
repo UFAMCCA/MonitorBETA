@@ -2617,3 +2617,15 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-10T18:02:00Z,NOAA-20,-1.7352,-60.0339,Presidente Figueiredo,2.78,nominal,0.57,0.52,dia,FIRMS
 2026-11-10T18:02:00Z,NOAA-20,-6.5499,-58.3495,Maués,4.6,nominal,0.62,0.54,dia,FIRMS
 2026-11-10T18:04:00Z,NOAA-20,-1.3337,-60.2226,Presidente Figueiredo,103.07,nominal,0.56,0.52,dia,FIRMS
+2026-11-10T19:49:00Z,AQUA,-1.8397,-60.3176,Presidente Figueiredo,4.63,nominal,1.0,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-1.8384,-60.3089,Presidente Figueiredo,5.27,nominal,1.0,1.0,dia,FIRMS
+2026-11-10T19:49:00Z,AQUA,-1.3378,-60.2262,Presidente Figueiredo,13.75,nominal,1.0,1.0,dia,FIRMS+INPE
+2026-11-10T19:49:00Z,AQUA,-1.3366,-60.2175,Presidente Figueiredo,7.38,nominal,1.0,1.0,dia,FIRMS
+2026-11-11T00:24:00Z,METOP-B,-1.4395,-57.9157,Nhamundá,,,1.1,1.1,noite,INPE
+2026-11-11T05:03:00Z,NOAA-20,-2.4167,-57.9007,São Sebastião do Uatumã,0.87,nominal,0.55,0.43,noite,FIRMS
+2026-11-11T05:03:00Z,NOAA-20,-1.4442,-57.9256,Nhamundá,1.14,nominal,0.57,0.43,noite,FIRMS
+2026-11-11T05:03:00Z,NOAA-20,-1.4410,-57.9200,Nhamundá,1.14,nominal,0.57,0.43,noite,FIRMS
+2026-11-11T05:03:00Z,NOAA-20,-1.4402,-57.9250,Nhamundá,1.14,nominal,0.57,0.43,noite,FIRMS
+2026-11-11T05:48:00Z,NOAA-21,-1.4461,-57.9223,Nhamundá,4.06,nominal,0.63,0.54,noite,FIRMS
+2026-11-11T05:48:00Z,NOAA-21,-1.4427,-57.9218,Nhamundá,4.86,nominal,0.63,0.54,noite,FIRMS
+2026-11-11T05:48:00Z,NOAA-21,-1.4411,-57.9215,Nhamundá,3.19,nominal,0.63,0.54,noite,FIRMS

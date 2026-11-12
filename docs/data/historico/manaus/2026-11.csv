@@ -639,3 +639,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-12T05:29:00Z,NOAA-21,-2.1547,-60.0022,Manaus,0.54,nominal,0.4,0.37,noite,FIRMS
 2026-11-12T05:31:00Z,NOAA-21,-3.6233,-60.5360,Manaquiri,0.86,nominal,0.39,0.37,noite,FIRMS
 2026-11-12T05:31:00Z,NOAA-21,-3.4398,-59.6128,Careiro da Várzea,1.87,nominal,0.42,0.37,noite,FIRMS
+2026-11-12T15:10:00Z,GOES-19,-3.4212,-60.3038,Manaquiri,74.9,,2.2,2.2,dia,INPE
+2026-11-12T15:10:00Z,GOES-19,-3.4029,-60.3041,Manaquiri,64.4,,2.2,2.2,dia,INPE
+2026-11-12T15:20:00Z,GOES-19,-3.4212,-60.3038,Manaquiri,74.8,,2.2,2.2,dia,INPE
+2026-11-12T15:40:00Z,GOES-19,-3.4212,-60.3038,Manaquiri,74.1,,2.2,2.2,dia,INPE

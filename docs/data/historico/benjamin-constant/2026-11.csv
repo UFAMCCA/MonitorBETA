@@ -268,3 +268,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-11T18:25:00Z,NOAA-21,-7.5415,-72.8478,Cruzeiro do Sul (AC),1.89,nominal,0.4,0.37,dia,FIRMS+INPE
 2026-11-11T18:28:00Z,NOAA-21,-3.8034,-69.4572,Tabatinga,11.85,nominal,0.43,0.46,dia,FIRMS+INPE
 2026-11-11T18:28:00Z,NOAA-21,-2.7512,-67.5502,Tonantins,19.32,nominal,0.6,0.53,dia,FIRMS+INPE
+2026-11-11T20:27:00Z,AQUA,-3.1680,-68.0685,Amaturá,6.52,nominal,1.03,1.02,dia,FIRMS+INPE

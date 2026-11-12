@@ -634,3 +634,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-11T17:43:00Z,NOAA-20,-1.7172,-60.1345,Presidente Figueiredo,5.54,nominal,0.44,0.38,dia,FIRMS+INPE
 2026-11-11T17:43:00Z,NOAA-20,-1.6925,-59.9963,Presidente Figueiredo,9.32,nominal,0.44,0.39,dia,FIRMS+INPE
 2026-11-11T17:43:00Z,NOAA-20,-1.6694,-59.9876,Presidente Figueiredo,5.84,nominal,0.45,0.39,dia,FIRMS+INPE
+2026-11-12T05:29:00Z,NOAA-21,-3.0812,-59.0946,Itacoatiara,0.45,nominal,0.43,0.38,noite,FIRMS
+2026-11-12T05:29:00Z,NOAA-21,-2.3283,-60.0655,Manaus,2.91,nominal,0.4,0.37,noite,FIRMS
+2026-11-12T05:29:00Z,NOAA-21,-2.1547,-60.0022,Manaus,0.54,nominal,0.4,0.37,noite,FIRMS
+2026-11-12T05:31:00Z,NOAA-21,-3.6233,-60.5360,Manaquiri,0.86,nominal,0.39,0.37,noite,FIRMS
+2026-11-12T05:31:00Z,NOAA-21,-3.4398,-59.6128,Careiro da Várzea,1.87,nominal,0.42,0.37,noite,FIRMS

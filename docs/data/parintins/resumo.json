@@ -2,8 +2,14 @@
  "nuvens": {
   "disponivel": true,
   "fonte": "GOES-19 ABI, máscara de nuvens (ABI-L2-ACMF), pixel de 2 km",
-  "nivel": "moderado",
+  "nivel": "alto",
   "passagens_viirs": [
+   {
+    "passagem": "2026-11-12T17:15:00Z",
+    "imagem": "2026-11-12T17:10:20Z",
+    "pct": 68.8,
+    "periodo": "dia"
+   },
    {
     "passagem": "2026-11-12T05:15:00Z",
     "imagem": "2026-11-12T05:10:20Z",
@@ -21,23 +27,9 @@
     "imagem": "2026-11-11T05:10:20Z",
     "pct": 45.8,
     "periodo": "noite"
-   },
-   {
-    "passagem": "2026-11-10T17:15:00Z",
-    "imagem": "2026-11-10T17:10:20Z",
-    "pct": 66.8,
-    "periodo": "dia"
    }
   ],
   "serie": [
-   {
-    "hora": "2026-11-10T14:50:20Z",
-    "pct": 76.5
-   },
-   {
-    "hora": "2026-11-10T17:50:20Z",
-    "pct": 65.8
-   },
    {
     "hora": "2026-11-10T20:50:20Z",
     "pct": 60.0
@@ -97,12 +89,20 @@
    {
     "hora": "2026-11-12T14:50:20Z",
     "pct": 60.4
+   },
+   {
+    "hora": "2026-11-12T17:50:20Z",
+    "pct": 64.1
+   },
+   {
+    "hora": "2026-11-12T20:50:20Z",
+    "pct": 51.2
    }
   ],
-  "media_48h": 47.6,
-  "cego_48h_pct": 8.8,
-  "extintos": 351,
-  "extintos_incertos": 245,
+  "media_48h": 46.0,
+  "cego_48h_pct": 10.5,
+  "extintos": 408,
+  "extintos_incertos": 276,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -111,7 +111,7 @@
     -51.6437,
     2.5339
    ],
-   "passagem": "2026-11-12T05:15:00Z"
+   "passagem": "2026-11-12T17:15:00Z"
   }
  },
  "regiao": {
@@ -128,14 +128,14 @@
   "fonte": "API PurpleAir"
  },
  "ativos_perto_do_sensor": {
-  "25": 0,
-  "50": 0,
-  "100": 2
+  "25": 1,
+  "50": 7,
+  "100": 26
  },
- "gerado_em": "2026-11-12T16:06:44Z",
+ "gerado_em": "2026-11-12T22:07:23Z",
  "dados_de_teste": false,
- "atualizacao": "12h",
- "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
+ "atualizacao": "18h",
+ "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,90 +146,78 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-10T16:06:44Z",
- "eventos_ativos": 20,
- "eventos_extintos": 351,
- "eventos_total": 371,
- "deteccoes_total": 1787,
- "deteccoes_ativas": 508,
+ "janela_inicio": "2026-11-10T22:07:23Z",
+ "eventos_ativos": 129,
+ "eventos_extintos": 408,
+ "eventos_total": 537,
+ "deteccoes_total": 2514,
+ "deteccoes_ativas": 1207,
  "por_municipio": {
-  "Uruará (PA)": 65,
-  "Santarém (PA)": 54,
-  "Oriximiná (PA)": 44,
-  "Monte Alegre (PA)": 39,
-  "Alenquer (PA)": 35,
-  "Altamira (PA)": 30,
-  "Juruti (PA)": 26,
-  "Placas (PA)": 13,
-  "Maués": 13,
-  "Itaituba (PA)": 12,
-  "Parintins": 8,
-  "Nhamundá": 6,
-  "Presidente Figueiredo": 6,
-  "Terra Santa (PA)": 4,
-  "Itacoatiara": 3,
-  "Urucurituba": 3,
-  "Faro (PA)": 3,
-  "Belterra (PA)": 1,
-  "Urucará": 1,
-  "Aveiro (PA)": 1,
-  "Barreirinha": 1,
-  "São Sebastião do Uatumã": 1,
-  "Trairão (PA)": 1,
-  "Rurópolis (PA)": 1
+  "Santarém (PA)": 87,
+  "Uruará (PA)": 82,
+  "Oriximiná (PA)": 49,
+  "Juruti (PA)": 43,
+  "Alenquer (PA)": 36,
+  "Monte Alegre (PA)": 35,
+  "Maués": 30,
+  "Altamira (PA)": 25,
+  "Itacoatiara": 21,
+  "Itaituba (PA)": 19,
+  "Parintins": 18,
+  "Placas (PA)": 16,
+  "Nhamundá": 14,
+  "Aveiro (PA)": 14,
+  "Presidente Figueiredo": 10,
+  "Terra Santa (PA)": 8,
+  "Barreirinha": 6,
+  "Urucurituba": 4,
+  "Faro (PA)": 4,
+  "São Sebastião do Uatumã": 3,
+  "Rurópolis (PA)": 3,
+  "Urucará": 2,
+  "Belterra (PA)": 2,
+  "Trairão (PA)": 2,
+  "Itapiranga": 1,
+  "Boa Vista do Ramos": 1,
+  "Silves": 1,
+  "Rio Preto da Eva": 1
  },
  "ativos_por_municipio": {
-  "Alenquer (PA)": 6,
-  "Oriximiná (PA)": 5,
-  "Monte Alegre (PA)": 3,
-  "Juruti (PA)": 2,
+  "Santarém (PA)": 28,
+  "Oriximiná (PA)": 15,
+  "Juruti (PA)": 12,
+  "Uruará (PA)": 12,
+  "Itacoatiara": 8,
+  "Monte Alegre (PA)": 7,
+  "Maués": 6,
+  "Alenquer (PA)": 5,
+  "Nhamundá": 5,
+  "Presidente Figueiredo": 5,
+  "Aveiro (PA)": 5,
+  "Terra Santa (PA)": 5,
+  "Parintins": 3,
+  "Barreirinha": 2,
+  "Itaituba (PA)": 2,
+  "Itapiranga": 1,
+  "Boa Vista do Ramos": 1,
+  "Urucurituba": 1,
+  "Urucará": 1,
+  "São Sebastião do Uatumã": 1,
+  "Rurópolis (PA)": 1,
   "Altamira (PA)": 1,
-  "Uruará (PA)": 1,
-  "Placas (PA)": 1,
-  "Santarém (PA)": 1
+  "Belterra (PA)": 1,
+  "Silves": 1
  },
  "por_satelite": {
-  "NOAA-20": 845,
-  "NOAA-21": 595,
-  "GOES-19": 146,
+  "NOAA-20": 1217,
+  "NOAA-21": 563,
+  "GOES-19": 350,
+  "AQUA": 201,
   "METOP-B": 99,
   "METOP-C": 46,
-  "TERRA": 38,
-  "AQUA": 18
+  "TERRA": 38
  },
  "passagens": [
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-11-10T16:20:00Z",
-   "fim": "2026-11-10T16:24:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 25
-  },
-  {
-   "satelite": "NOAA-21",
-   "sensor": "VIIRS",
-   "inicio": "2026-11-10T17:04:00Z",
-   "fim": "2026-11-10T17:09:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 185
-  },
-  {
-   "satelite": "NOAA-20",
-   "sensor": "VIIRS",
-   "inicio": "2026-11-10T18:00:00Z",
-   "fim": "2026-11-10T18:04:00Z",
-   "resolucao_km": 0.375,
-   "deteccoes_na_area": 64
-  },
-  {
-   "satelite": "AQUA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-10T19:46:00Z",
-   "fim": "2026-11-10T19:51:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 15
-  },
   {
    "satelite": "METOP-B",
    "sensor": "AVHRR",
@@ -381,9 +369,41 @@
    "fim": "2026-11-12T12:08:00Z",
    "resolucao_km": 1.0,
    "deteccoes_na_area": 32
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-12T16:26:00Z",
+   "fim": "2026-11-12T16:30:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 130
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-12T17:21:00Z",
+   "fim": "2026-11-12T17:26:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 461
+  },
+  {
+   "satelite": "NOAA-21",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-12T18:06:00Z",
+   "fim": "2026-11-12T18:10:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 23
+  },
+  {
+   "satelite": "AQUA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-12T19:25:00Z",
+   "fim": "2026-11-12T19:29:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 198
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-12T15:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-12T21:30:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -466,10 +486,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (737 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (7724 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (5770 detecções)",
-  "GOES-19 nuvens": "ok (61 imagens)"
+  "FIRMS MODIS_NRT": "ok (1508 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (10054 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (7127 detecções)",
+  "GOES-19 nuvens": "ok (59 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

@@ -282,3 +282,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-12T18:08:00Z,NOAA-21,-7.9995,-72.4110,Cruzeiro do Sul (AC),6.23,nominal,0.45,0.39,dia,FIRMS+INPE
 2026-11-12T18:08:00Z,NOAA-21,-7.6639,-72.3167,Cruzeiro do Sul (AC),8.64,nominal,0.45,0.39,dia,FIRMS+INPE
 2026-11-12T19:04:00Z,NOAA-20,-7.9122,-72.4243,Cruzeiro do Sul (AC),3.75,nominal,0.39,0.59,dia,FIRMS
+2026-11-13T17:47:00Z,NOAA-21,-6.5828,-69.8099,Eirunepé,4.05,nominal,0.57,0.43,dia,FIRMS+INPE

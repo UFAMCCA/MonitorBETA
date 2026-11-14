@@ -284,3 +284,8 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-12T19:04:00Z,NOAA-20,-7.9122,-72.4243,Cruzeiro do Sul (AC),3.75,nominal,0.39,0.59,dia,FIRMS
 2026-11-13T17:47:00Z,NOAA-21,-6.5828,-69.8099,Eirunepé,4.05,nominal,0.57,0.43,dia,FIRMS+INPE
 2026-11-13T20:06:00Z,AQUA,0.7594,-68.7770,São Gabriel da Cachoeira,5.17,baixa,1.62,1.25,dia,FIRMS+INPE
+2026-11-14T17:32:00Z,NOAA-21,-0.1928,-66.9785,São Gabriel da Cachoeira,5.63,nominal,0.41,0.45,dia,FIRMS+INPE
+2026-11-14T18:28:00Z,NOAA-20,-2.4321,-66.4719,Jutaí,3.9,nominal,0.55,0.51,dia,FIRMS
+2026-11-14T18:28:00Z,NOAA-20,0.3842,-69.1303,São Gabriel da Cachoeira,4.03,nominal,0.4,0.44,dia,FIRMS
+2026-11-14T18:28:00Z,NOAA-20,0.3845,-69.1302,São Gabriel da Cachoeira,3.97,nominal,0.4,0.44,dia,FIRMS
+2026-11-14T18:28:00Z,NOAA-20,0.3888,-69.1273,São Gabriel da Cachoeira,4.57,nominal,0.4,0.44,dia,FIRMS

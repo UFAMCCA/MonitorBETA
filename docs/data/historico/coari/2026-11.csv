@@ -1391,3 +1391,11 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-15T05:29:00Z,NOAA-20,-3.0798,-59.4105,Manaus,1.05,nominal,0.4,0.4,noite,FIRMS
 2026-11-15T05:29:00Z,NOAA-20,-2.3273,-60.0625,Manaus,2.2,nominal,0.4,0.4,noite,FIRMS
 2026-11-15T05:29:00Z,NOAA-20,-2.3240,-60.0620,Manaus,2.2,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.7122,-61.2537,Beruri,0.82,nominal,0.4,0.37,noite,FIRMS+INPE
+2026-11-15T05:29:00Z,NOAA-20,-3.1759,-60.9478,Manacapuru,0.63,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-15T05:29:00Z,NOAA-20,-3.1731,-60.9438,Manacapuru,2.19,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-15T05:29:00Z,NOAA-20,-3.1698,-60.9432,Manacapuru,2.19,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-15T05:29:00Z,NOAA-20,-3.1692,-60.9468,Manacapuru,2.19,nominal,0.39,0.36,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.0802,-59.4110,Manaus,1.06,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-15T05:29:00Z,NOAA-20,-2.3277,-60.0630,Manaus,2.2,nominal,0.39,0.36,noite,FIRMS+INPE
+2026-11-15T05:29:00Z,NOAA-20,-2.3244,-60.0624,Manaus,2.2,nominal,0.39,0.36,noite,FIRMS

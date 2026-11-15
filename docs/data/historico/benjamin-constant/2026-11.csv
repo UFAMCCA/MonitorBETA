@@ -289,3 +289,4 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-14T18:28:00Z,NOAA-20,0.3842,-69.1303,São Gabriel da Cachoeira,4.03,nominal,0.4,0.44,dia,FIRMS
 2026-11-14T18:28:00Z,NOAA-20,0.3845,-69.1302,São Gabriel da Cachoeira,3.97,nominal,0.4,0.44,dia,FIRMS
 2026-11-14T18:28:00Z,NOAA-20,0.3888,-69.1273,São Gabriel da Cachoeira,4.57,nominal,0.4,0.44,dia,FIRMS
+2026-11-15T06:14:00Z,NOAA-21,-7.5544,-72.7231,Cruzeiro do Sul (AC),0.75,nominal,0.39,0.36,noite,FIRMS+INPE

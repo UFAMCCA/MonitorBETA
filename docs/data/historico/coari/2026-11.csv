@@ -1384,3 +1384,10 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-14T18:25:00Z,NOAA-20,-9.4599,-67.0601,Lábrea,23.63,nominal,0.39,0.44,dia,FIRMS
 2026-11-14T18:28:00Z,NOAA-20,-3.7130,-61.2528,Beruri,18.39,nominal,0.59,0.7,dia,FIRMS
 2026-11-14T18:28:00Z,NOAA-20,-3.7120,-61.2473,Beruri,27.82,baixa,0.59,0.7,dia,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.1755,-60.9473,Manacapuru,0.63,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.1727,-60.9433,Manacapuru,2.19,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.1694,-60.9427,Manacapuru,2.19,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.1688,-60.9463,Manacapuru,2.19,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-3.0798,-59.4105,Manaus,1.05,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-2.3273,-60.0625,Manaus,2.2,nominal,0.4,0.4,noite,FIRMS
+2026-11-15T05:29:00Z,NOAA-20,-2.3240,-60.0620,Manaus,2.2,nominal,0.4,0.4,noite,FIRMS

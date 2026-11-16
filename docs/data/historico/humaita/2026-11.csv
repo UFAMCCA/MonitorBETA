@@ -2078,3 +2078,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-15T18:08:00Z,NOAA-20,-8.6509,-66.5769,Lábrea,2.24,nominal,0.39,0.36,dia,FIRMS
 2026-11-15T18:08:00Z,NOAA-20,-6.6159,-62.4065,Humaitá,1.0,nominal,0.42,0.45,dia,FIRMS+INPE
 2026-11-15T18:49:00Z,NOAA-21,-8.6416,-66.5916,Lábrea,6.4,nominal,0.75,0.77,dia,FIRMS+INPE
+2026-11-16T00:43:00Z,TERRA,-9.6706,-63.5866,Alto Paraíso (RO),11.2,,1.0,1.0,noite,INPE
+2026-11-16T05:14:00Z,NOAA-20,-9.6470,-64.3380,Porto Velho (RO),1.02,nominal,0.58,0.52,noite,FIRMS
+2026-11-16T05:14:00Z,NOAA-20,-9.6432,-64.3317,Porto Velho (RO),2.44,nominal,0.58,0.52,noite,FIRMS
+2026-11-16T05:14:00Z,NOAA-20,-9.6422,-64.3371,Porto Velho (RO),4.14,nominal,0.58,0.52,noite,FIRMS
+2026-11-16T05:57:00Z,NOAA-21,-9.6459,-64.3315,Porto Velho (RO),2.44,nominal,0.39,0.44,noite,FIRMS
+2026-11-16T05:57:00Z,NOAA-21,-9.6454,-64.3350,Porto Velho (RO),2.44,nominal,0.39,0.44,noite,FIRMS

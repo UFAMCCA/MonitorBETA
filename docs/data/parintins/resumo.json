@@ -101,8 +101,8 @@
   ],
   "media_48h": 83.4,
   "cego_48h_pct": 62.2,
-  "extintos": 492,
-  "extintos_incertos": 450,
+  "extintos": 496,
+  "extintos_incertos": 453,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,7 +132,7 @@
   "50": 8,
   "100": 23
  },
- "gerado_em": "2026-11-16T22:07:22Z",
+ "gerado_em": "2026-11-16T22:27:28Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -146,14 +146,14 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-14T22:07:22Z",
- "eventos_ativos": 113,
- "eventos_extintos": 492,
- "eventos_total": 605,
- "deteccoes_total": 4397,
- "deteccoes_ativas": 728,
+ "janela_inicio": "2026-11-14T22:27:28Z",
+ "eventos_ativos": 110,
+ "eventos_extintos": 496,
+ "eventos_total": 606,
+ "deteccoes_total": 4369,
+ "deteccoes_ativas": 247,
  "por_municipio": {
-  "Santarém (PA)": 100,
+  "Santarém (PA)": 101,
   "Uruará (PA)": 100,
   "Alenquer (PA)": 52,
   "Oriximiná (PA)": 49,
@@ -183,18 +183,18 @@
  "ativos_por_municipio": {
   "Aveiro (PA)": 15,
   "Oriximiná (PA)": 10,
-  "Monte Alegre (PA)": 9,
-  "Santarém (PA)": 7,
+  "Monte Alegre (PA)": 8,
   "Maués": 7,
   "Parintins": 7,
   "Rurópolis (PA)": 7,
   "Juruti (PA)": 7,
-  "Uruará (PA)": 5,
+  "Santarém (PA)": 6,
   "Nhamundá": 5,
   "Itacoatiara": 4,
   "Barreirinha": 4,
   "Altamira (PA)": 4,
   "Placas (PA)": 4,
+  "Uruará (PA)": 4,
   "Alenquer (PA)": 4,
   "Boa Vista do Ramos": 3,
   "Itaituba (PA)": 3,
@@ -209,7 +209,7 @@
  "por_satelite": {
   "NOAA-20": 1468,
   "NOAA-21": 1031,
-  "GOES-19": 743,
+  "GOES-19": 715,
   "METOP-B": 412,
   "METOP-C": 354,
   "TERRA": 262,
@@ -393,7 +393,7 @@
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-16T19:00:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-16T22:00:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -477,9 +477,9 @@
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
   "FIRMS MODIS_NRT": "ok (960 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (8451 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (8459 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (9221 detecções)",
-  "GOES-19 nuvens": "ok (59 imagens)"
+  "GOES-19 nuvens": "ok (60 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

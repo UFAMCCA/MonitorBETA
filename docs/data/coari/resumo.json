@@ -132,7 +132,7 @@
   "50": 6,
   "100": 13
  },
- "gerado_em": "2026-11-16T22:07:22Z",
+ "gerado_em": "2026-11-16T22:27:28Z",
  "dados_de_teste": false,
  "atualizacao": "18h",
  "atualizacao_descricao": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)",
@@ -146,7 +146,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-14T22:07:22Z",
+ "janela_inicio": "2026-11-14T22:27:28Z",
  "eventos_ativos": 60,
  "eventos_extintos": 24,
  "eventos_total": 84,
@@ -439,9 +439,9 @@
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
   "FIRMS MODIS_NRT": "ok (960 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (8451 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (8459 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (9221 detecções)",
-  "GOES-19 nuvens": "ok (59 imagens)"
+  "GOES-19 nuvens": "ok (60 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

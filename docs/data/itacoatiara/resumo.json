@@ -31,10 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-14T11:50:21Z",
-    "pct": 97.1
-   },
-   {
     "hora": "2026-11-14T14:50:21Z",
     "pct": 96.9
    },
@@ -97,12 +93,16 @@
    {
     "hora": "2026-11-16T11:50:21Z",
     "pct": 71.1
+   },
+   {
+    "hora": "2026-11-16T14:50:21Z",
+    "pct": 67.0
    }
   ],
-  "media_48h": 88.7,
+  "media_48h": 86.9,
   "cego_48h_pct": 75.3,
-  "extintos": 103,
-  "extintos_incertos": 100,
+  "extintos": 106,
+  "extintos_incertos": 103,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,7 +132,7 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-16T12:31:33Z",
+ "gerado_em": "2026-11-16T16:06:43Z",
  "dados_de_teste": false,
  "atualizacao": "12h",
  "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
@@ -146,12 +146,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-14T12:31:33Z",
- "eventos_ativos": 5,
- "eventos_extintos": 103,
+ "janela_inicio": "2026-11-14T16:06:43Z",
+ "eventos_ativos": 2,
+ "eventos_extintos": 106,
  "eventos_total": 108,
  "deteccoes_total": 359,
- "deteccoes_ativas": 30,
+ "deteccoes_ativas": 23,
  "por_municipio": {
   "Itacoatiara": 20,
   "Parintins": 19,
@@ -169,9 +169,7 @@
   "Itapiranga": 1
  },
  "ativos_por_municipio": {
-  "Autazes": 3,
-  "Nhamundá": 1,
-  "Rio Preto da Eva": 1
+  "Autazes": 2
  },
  "por_satelite": {
   "NOAA-21": 140,
@@ -342,9 +340,17 @@
    "fim": "2026-11-16T05:54:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 8
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-16T13:03:00Z",
+   "fim": "2026-11-16T13:03:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-16T02:10:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-16T15:00:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -427,7 +433,7 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (936 detecções)",
+  "FIRMS MODIS_NRT": "ok (946 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (6665 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (7180 detecções)",
   "GOES-19 nuvens": "ok (58 imagens)"

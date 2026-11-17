@@ -2320,3 +2320,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-17T05:37:00Z,NOAA-21,-8.5863,-66.6829,Lábrea,0.84,nominal,0.43,0.38,noite,FIRMS
 2026-11-17T05:37:00Z,NOAA-21,-8.5738,-66.7163,Lábrea,1.85,nominal,0.43,0.38,noite,FIRMS
 2026-11-17T05:37:00Z,NOAA-21,-8.5732,-66.7201,Lábrea,0.91,nominal,0.43,0.38,noite,FIRMS
+2026-11-17T14:40:00Z,GOES-19,-11.9562,-64.9858,Guajará-Mirim (RO),55.0,,2.2,2.2,dia,INPE
+2026-11-17T15:00:00Z,GOES-19,-11.9562,-64.9858,Guajará-Mirim (RO),54.4,,2.2,2.2,dia,INPE
+2026-11-17T15:10:00Z,GOES-19,-11.9562,-64.9858,Guajará-Mirim (RO),56.8,,2.2,2.2,dia,INPE

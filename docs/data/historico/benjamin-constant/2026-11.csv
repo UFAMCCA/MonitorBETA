@@ -338,3 +338,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-16T18:34:00Z,NOAA-21,-3.7648,-73.4363,Iquitos (Peru),7.06,nominal,0.47,0.4,dia,FIRMS+INPE
 2026-11-16T18:34:00Z,NOAA-21,-3.7635,-73.4349,Iquitos (Peru),8.91,nominal,0.47,0.4,dia,FIRMS
 2026-11-16T20:50:00Z,GOES-19,-8.2097,-72.9853,Cruzeiro do Sul (AC),84.0,,2.2,2.2,dia,INPE
+2026-11-17T13:44:00Z,TERRA,1.7721,-67.8834,São Gabriel da Cachoeira,19.97,baixa,4.17,1.89,dia,FIRMS
+2026-11-17T13:44:00Z,TERRA,1.7829,-67.8893,São Gabriel da Cachoeira,21.2,baixa,4.17,1.89,dia,FIRMS
+2026-11-17T13:44:00Z,TERRA,-5.3089,-71.4339,Atalaia do Norte,14.0,nominal,2.8,1.6,dia,FIRMS
+2026-11-17T13:44:00Z,TERRA,-5.3041,-71.4277,Atalaia do Norte,12.37,nominal,2.8,1.6,dia,FIRMS

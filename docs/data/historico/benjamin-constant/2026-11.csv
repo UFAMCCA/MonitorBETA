@@ -342,6 +342,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-17T13:44:00Z,TERRA,1.7829,-67.8893,São Gabriel da Cachoeira,21.2,baixa,4.17,1.89,dia,FIRMS
 2026-11-17T13:44:00Z,TERRA,-5.3089,-71.4339,Atalaia do Norte,14.0,nominal,2.8,1.6,dia,FIRMS
 2026-11-17T13:44:00Z,TERRA,-5.3041,-71.4277,Atalaia do Norte,12.37,nominal,2.8,1.6,dia,FIRMS
+2026-11-17T17:20:00Z,GOES-19,-7.6397,-72.4603,Cruzeiro do Sul (AC),75.1,,2.2,2.2,dia,INPE
 2026-11-17T17:32:00Z,NOAA-20,-3.2535,-66.0060,Juruá,14.86,nominal,0.52,0.5,dia,FIRMS+INPE
 2026-11-17T17:32:00Z,NOAA-20,-2.6326,-66.3725,Jutaí,5.64,nominal,0.54,0.5,dia,FIRMS
 2026-11-17T17:32:00Z,NOAA-20,0.5309,-67.4180,São Gabriel da Cachoeira,13.16,nominal,0.56,0.52,dia,FIRMS+INPE
@@ -389,3 +390,10 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-17T18:15:00Z,NOAA-21,1.6477,-69.3729,São Gabriel da Cachoeira,7.11,nominal,0.5,0.41,dia,FIRMS+INPE
 2026-11-17T18:15:00Z,NOAA-21,1.6937,-69.3831,São Gabriel da Cachoeira,5.87,nominal,0.5,0.41,dia,FIRMS+INPE
 2026-11-17T18:15:00Z,NOAA-21,1.6974,-69.3837,São Gabriel da Cachoeira,7.72,nominal,0.5,0.41,dia,FIRMS
+2026-11-17T19:10:00Z,NOAA-20,-7.6871,-72.3683,Cruzeiro do Sul (AC),14.35,nominal,0.5,0.66,dia,FIRMS
+2026-11-17T19:10:00Z,NOAA-20,-7.6863,-72.3637,Cruzeiro do Sul (AC),14.31,nominal,0.5,0.66,dia,FIRMS
+2026-11-17T19:10:00Z,NOAA-20,-7.6639,-72.3441,Cruzeiro do Sul (AC),9.92,nominal,0.51,0.66,dia,FIRMS
+2026-11-17T19:10:00Z,NOAA-20,-7.6234,-73.0992,Mâncio Lima (AC),4.19,nominal,0.45,0.63,dia,FIRMS
+2026-11-17T19:10:00Z,NOAA-20,-7.4455,-73.5988,Mâncio Lima (AC),3.24,nominal,0.42,0.61,dia,FIRMS
+2026-11-17T19:10:00Z,NOAA-20,-7.4351,-73.2817,Mâncio Lima (AC),4.2,nominal,0.44,0.62,dia,FIRMS
+2026-11-18T05:16:00Z,NOAA-21,-2.6282,-66.3797,Jutaí,2.15,nominal,0.63,0.54,noite,FIRMS

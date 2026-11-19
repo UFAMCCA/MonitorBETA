@@ -1637,3 +1637,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T04:57:00Z,NOAA-21,-2.3274,-60.0626,Manaus,3.1,nominal,0.5,0.49,noite,FIRMS
 2026-11-19T04:57:00Z,NOAA-21,-1.9618,-59.9449,Presidente Figueiredo,2.01,nominal,0.5,0.49,noite,FIRMS
 2026-11-19T04:57:00Z,NOAA-21,-1.9586,-59.9461,Presidente Figueiredo,1.84,nominal,0.5,0.49,noite,FIRMS
+2026-11-19T05:54:00Z,NOAA-20,-2.3270,-60.0652,Manaus,2.45,nominal,0.45,0.47,noite,FIRMS+INPE
+2026-11-19T05:54:00Z,NOAA-20,-2.3260,-60.0644,Manaus,1.74,nominal,0.45,0.47,noite,FIRMS
+2026-11-19T14:20:00Z,GOES-19,-3.4427,-59.1572,Autazes,77.5,,2.2,2.2,dia,INPE

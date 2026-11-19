@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-17T05:50:21Z",
-    "pct": 60.1
-   },
-   {
-    "hora": "2026-11-17T08:50:21Z",
-    "pct": 76.2
-   },
-   {
-    "hora": "2026-11-17T11:50:21Z",
-    "pct": 60.4
-   },
-   {
     "hora": "2026-11-17T14:50:21Z",
     "pct": 37.0
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-19T05:50:21Z",
     "pct": 86.8
+   },
+   {
+    "hora": "2026-11-19T08:50:21Z",
+    "pct": 70.2
+   },
+   {
+    "hora": "2026-11-19T11:50:21Z",
+    "pct": 20.6
+   },
+   {
+    "hora": "2026-11-19T14:50:21Z",
+    "pct": 42.5
    }
   ],
-  "media_48h": 55.5,
+  "media_48h": 51.7,
   "cego_48h_pct": 16.7,
-  "extintos": 281,
-  "extintos_incertos": 175,
+  "extintos": 284,
+  "extintos_incertos": 177,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -130,12 +130,12 @@
  "ativos_perto_do_sensor": {
   "25": 0,
   "50": 0,
-  "100": 3
+  "100": 2
  },
- "gerado_em": "2026-11-19T08:08:47Z",
+ "gerado_em": "2026-11-19T16:06:40Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,56 +146,49 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-17T08:08:47Z",
+ "janela_inicio": "2026-11-17T16:06:40Z",
  "eventos_ativos": 8,
- "eventos_extintos": 281,
- "eventos_total": 289,
- "deteccoes_total": 1165,
- "deteccoes_ativas": 298,
+ "eventos_extintos": 284,
+ "eventos_total": 292,
+ "deteccoes_total": 1064,
+ "deteccoes_ativas": 280,
  "por_municipio": {
   "Itacoatiara": 44,
   "Parintins": 40,
   "Nhamundá": 27,
-  "Nova Olinda do Norte": 23,
+  "Nova Olinda do Norte": 24,
+  "Autazes": 21,
   "Maués": 20,
-  "Autazes": 20,
   "Presidente Figueiredo": 19,
   "Boa Vista do Ramos": 19,
+  "Urucurituba": 18,
   "Barreirinha": 18,
-  "Urucurituba": 17,
   "Urucará": 11,
   "São Sebastião do Uatumã": 8,
-  "Manaus": 7,
   "Itapiranga": 7,
+  "Manaus": 7,
   "Rio Preto da Eva": 5,
   "Silves": 4
  },
  "ativos_por_municipio": {
   "Urucará": 2,
-  "Urucurituba": 2,
-  "Presidente Figueiredo": 1,
-  "Nhamundá": 1,
+  "Nova Olinda do Norte": 1,
+  "Itapiranga": 1,
+  "Autazes": 1,
+  "Urucurituba": 1,
   "Manaus": 1,
-  "Itapiranga": 1
+  "Nhamundá": 1
  },
  "por_satelite": {
-  "NOAA-20": 479,
-  "GOES-19": 370,
+  "NOAA-20": 481,
+  "GOES-19": 270,
   "NOAA-21": 221,
   "AQUA": 48,
-  "TERRA": 27,
+  "TERRA": 24,
   "METOP-C": 13,
   "METOP-B": 7
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-17T12:06:00Z",
-   "fim": "2026-11-17T12:06:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 3
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -347,9 +340,17 @@
    "fim": "2026-11-19T04:57:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 9
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-19T05:54:00Z",
+   "fim": "2026-11-19T05:57:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 2
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-19T01:30:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-19T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -432,10 +433,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1745 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (9762 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (8902 detecções)",
-  "GOES-19 nuvens": "ok (60 imagens)"
+  "FIRMS MODIS_NRT": "ok (1776 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (10186 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (8906 detecções)",
+  "GOES-19 nuvens": "ok (61 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

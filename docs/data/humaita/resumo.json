@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-17T05:50:21Z",
-    "pct": 72.3
-   },
-   {
-    "hora": "2026-11-17T08:50:21Z",
-    "pct": 56.6
-   },
-   {
-    "hora": "2026-11-17T11:50:21Z",
-    "pct": 31.7
-   },
-   {
     "hora": "2026-11-17T14:50:21Z",
     "pct": 42.5
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-19T05:50:21Z",
     "pct": 86.4
+   },
+   {
+    "hora": "2026-11-19T08:50:21Z",
+    "pct": 71.4
+   },
+   {
+    "hora": "2026-11-19T11:50:21Z",
+    "pct": 70.5
+   },
+   {
+    "hora": "2026-11-19T14:50:21Z",
+    "pct": 90.7
    }
   ],
-  "media_48h": 61.8,
+  "media_48h": 66.0,
   "cego_48h_pct": 25.5,
-  "extintos": 162,
-  "extintos_incertos": 142,
+  "extintos": 161,
+  "extintos_incertos": 140,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -132,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-19T08:08:47Z",
+ "gerado_em": "2026-11-19T16:06:40Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,15 +146,15 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-17T08:08:47Z",
- "eventos_ativos": 4,
- "eventos_extintos": 162,
- "eventos_total": 166,
- "deteccoes_total": 990,
- "deteccoes_ativas": 320,
+ "janela_inicio": "2026-11-17T16:06:40Z",
+ "eventos_ativos": 9,
+ "eventos_extintos": 161,
+ "eventos_total": 170,
+ "deteccoes_total": 1041,
+ "deteccoes_ativas": 353,
  "por_municipio": {
-  "Lábrea": 66,
-  "Porto Velho (RO)": 38,
+  "Lábrea": 67,
+  "Porto Velho (RO)": 40,
   "Canutama": 12,
   "Guajará-Mirim (RO)": 9,
   "Manicoré": 9,
@@ -163,32 +163,25 @@
   "Tapauá": 5,
   "Novo Aripuanã": 5,
   "Alto Paraíso (RO)": 3,
-  "Itapuã do Oeste (RO)": 2,
-  "Nova Mamoré (RO)": 1
+  "Nova Mamoré (RO)": 2,
+  "Itapuã do Oeste (RO)": 2
  },
  "ativos_por_municipio": {
-  "Porto Velho (RO)": 2,
+  "Porto Velho (RO)": 4,
+  "Lábrea": 3,
   "Guajará-Mirim (RO)": 1,
-  "Lábrea": 1
+  "Nova Mamoré (RO)": 1
  },
  "por_satelite": {
-  "GOES-19": 415,
+  "GOES-19": 423,
   "NOAA-21": 337,
-  "NOAA-20": 167,
-  "TERRA": 21,
+  "NOAA-20": 206,
+  "TERRA": 25,
   "METOP-B": 20,
   "AQUA": 18,
   "METOP-C": 12
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-17T12:08:00Z",
-   "fim": "2026-11-17T12:08:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -348,9 +341,25 @@
    "fim": "2026-11-19T04:59:00Z",
    "resolucao_km": 0.375,
    "deteccoes_na_area": 26
+  },
+  {
+   "satelite": "NOAA-20",
+   "sensor": "VIIRS",
+   "inicio": "2026-11-19T05:57:00Z",
+   "fim": "2026-11-19T05:59:00Z",
+   "resolucao_km": 0.375,
+   "deteccoes_na_area": 39
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-19T13:25:00Z",
+   "fim": "2026-11-19T13:27:00Z",
+   "resolucao_km": 1.0,
+   "deteccoes_na_area": 4
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-19T04:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-19T15:40:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -433,10 +442,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (1745 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (9762 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (8902 detecções)",
-  "GOES-19 nuvens": "ok (60 imagens)"
+  "FIRMS MODIS_NRT": "ok (1776 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (10186 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (8906 detecções)",
+  "GOES-19 nuvens": "ok (61 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

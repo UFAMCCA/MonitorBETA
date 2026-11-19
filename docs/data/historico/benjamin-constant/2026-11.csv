@@ -397,6 +397,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-17T19:10:00Z,NOAA-20,-7.4455,-73.5988,Mâncio Lima (AC),3.24,nominal,0.42,0.61,dia,FIRMS
 2026-11-17T19:10:00Z,NOAA-20,-7.4351,-73.2817,Mâncio Lima (AC),4.2,nominal,0.44,0.62,dia,FIRMS
 2026-11-18T05:16:00Z,NOAA-21,-2.6282,-66.3797,Jutaí,2.15,nominal,0.63,0.54,noite,FIRMS
+2026-11-18T17:10:00Z,GOES-19,-0.2815,-66.1497,São Gabriel da Cachoeira,90.8,,2.2,2.2,dia,INPE
 2026-11-18T17:11:00Z,NOAA-20,-3.4363,-66.0259,Juruá,4.0,nominal,0.56,0.69,dia,FIRMS+INPE
 2026-11-18T17:11:00Z,NOAA-20,-2.8054,-66.8315,Jutaí,6.62,nominal,0.62,0.71,dia,FIRMS+INPE
 2026-11-18T17:11:00Z,NOAA-20,-2.8046,-66.8311,Jutaí,9.67,nominal,0.62,0.71,dia,FIRMS
@@ -506,6 +507,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-18T17:58:00Z,NOAA-21,1.7095,-69.1236,São Gabriel da Cachoeira,4.91,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-11-18T17:58:00Z,NOAA-21,1.7587,-67.3951,São Gabriel da Cachoeira,3.86,nominal,0.39,0.36,dia,FIRMS+INPE
 2026-11-18T17:58:00Z,NOAA-21,1.8197,-67.3506,São Gabriel da Cachoeira,28.58,nominal,0.39,0.36,dia,FIRMS+INPE
+2026-11-18T18:30:00Z,GOES-19,-1.9163,-66.6024,Japurá,90.2,,2.2,2.2,dia,INPE
 2026-11-18T18:51:00Z,NOAA-20,-3.6429,-68.9089,São Paulo de Olivença,5.27,nominal,0.48,0.65,dia,FIRMS
 2026-11-18T18:51:00Z,NOAA-20,-3.5406,-68.9381,São Paulo de Olivença,3.43,nominal,0.48,0.65,dia,FIRMS
 2026-11-18T18:51:00Z,NOAA-20,-3.4572,-66.0372,Juruá,6.8,nominal,0.76,0.77,dia,FIRMS
@@ -517,3 +519,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-18T18:53:00Z,NOAA-20,-2.6309,-66.3778,Jutaí,9.73,nominal,0.74,0.76,dia,FIRMS
 2026-11-18T18:53:00Z,NOAA-20,-1.9201,-66.5965,Japurá,8.16,nominal,0.74,0.76,dia,FIRMS
 2026-11-18T18:53:00Z,NOAA-20,0.2406,-69.8044,São Gabriel da Cachoeira,5.57,nominal,0.48,0.65,dia,FIRMS
+2026-11-18T19:57:00Z,AQUA,-3.5669,-67.7070,Jutaí,7.65,baixa,2.24,1.45,dia,FIRMS+INPE
+2026-11-18T19:57:00Z,AQUA,-2.6308,-66.3791,Jutaí,11.56,nominal,1.69,1.28,dia,FIRMS+INPE

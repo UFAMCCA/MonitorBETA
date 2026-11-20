@@ -5268,6 +5268,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T14:40:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,87.0,,2.2,2.2,dia,INPE
 2026-11-19T14:50:00Z,GOES-19,-3.7001,-58.7865,Nova Olinda do Norte,126.7,,2.2,2.2,dia,INPE
 2026-11-19T16:10:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,81.8,,2.2,2.2,dia,INPE
+2026-11-19T16:50:00Z,GOES-19,-2.2523,-60.2651,Manaus,62.3,,2.2,2.2,dia,INPE
 2026-11-19T16:54:00Z,NOAA-20,-3.8440,-59.0924,Autazes,4.6,nominal,0.4,0.6,dia,FIRMS+INPE
 2026-11-19T16:54:00Z,NOAA-20,-3.8137,-59.2324,Autazes,2.69,nominal,0.41,0.61,dia,FIRMS+INPE
 2026-11-19T16:54:00Z,NOAA-20,-3.8132,-59.2333,Autazes,2.84,nominal,0.41,0.61,dia,FIRMS
@@ -5343,6 +5344,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T16:54:00Z,NOAA-20,-2.2915,-56.8878,Nhamundá,63.07,nominal,0.53,0.5,dia,FIRMS+INPE
 2026-11-19T16:54:00Z,NOAA-20,-2.2778,-56.8536,Nhamundá,8.38,nominal,0.53,0.5,dia,FIRMS+INPE
 2026-11-19T16:54:00Z,NOAA-20,-2.2767,-56.8510,Nhamundá,4.72,nominal,0.53,0.5,dia,FIRMS
+2026-11-19T17:30:00Z,GOES-19,-2.6603,-57.4730,Urucurituba,77.9,,2.2,2.2,dia,INPE
 2026-11-19T17:36:00Z,NOAA-21,-3.9506,-58.5016,Nova Olinda do Norte,5.2,nominal,0.51,0.41,dia,FIRMS+INPE
 2026-11-19T17:36:00Z,NOAA-21,-3.8750,-58.5159,Nova Olinda do Norte,8.88,nominal,0.51,0.41,dia,FIRMS+INPE
 2026-11-19T17:36:00Z,NOAA-21,-3.8731,-58.6266,Nova Olinda do Norte,15.86,nominal,0.5,0.41,dia,FIRMS+INPE
@@ -5444,5 +5446,16 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T18:50:00Z,GOES-19,-2.7156,-57.3358,Barreirinha,91.2,,2.2,2.2,dia,INPE
 2026-11-19T18:50:00Z,GOES-19,-2.6973,-57.3362,Barreirinha,84.8,,2.2,2.2,dia,INPE
 2026-11-19T18:50:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,125.3,,2.2,2.2,dia,INPE
+2026-11-19T18:50:00Z,GOES-19,-2.7155,-57.3553,Barreirinha,94.4,,2.2,2.2,dia,INPE
 2026-11-19T19:00:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,141.2,,2.2,2.2,dia,INPE
 2026-11-19T19:00:00Z,GOES-19,-2.6973,-57.3362,Barreirinha,85.0,,2.2,2.2,dia,INPE
+2026-11-19T22:30:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,81.1,,2.2,2.2,noite,INPE
+2026-11-19T22:40:00Z,GOES-19,-2.2732,-58.8703,Itapiranga,56.5,,2.2,2.2,noite,INPE
+2026-11-19T22:40:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,67.9,,2.2,2.2,noite,INPE
+2026-11-20T00:05:00Z,TERRA,-2.0250,-57.1198,Nhamundá,17.5,,1.0,1.0,noite,INPE
+2026-11-20T00:38:00Z,METOP-B,-2.0191,-57.1192,Nhamundá,,,1.1,1.1,noite,INPE
+2026-11-20T05:35:00Z,NOAA-20,-2.7288,-57.8210,Urucará,1.8,nominal,0.48,0.4,noite,FIRMS
+2026-11-20T05:35:00Z,NOAA-20,-2.5815,-57.5145,Urucurituba,1.62,nominal,0.5,0.4,noite,FIRMS
+2026-11-20T05:35:00Z,NOAA-20,-2.5777,-57.5139,Urucurituba,1.62,nominal,0.5,0.4,noite,FIRMS
+2026-11-20T05:35:00Z,NOAA-20,-2.5770,-57.5184,Urucurituba,1.62,nominal,0.5,0.4,noite,FIRMS
+2026-11-20T05:35:00Z,NOAA-20,-2.5740,-57.5134,Urucurituba,3.31,nominal,0.5,0.4,noite,FIRMS

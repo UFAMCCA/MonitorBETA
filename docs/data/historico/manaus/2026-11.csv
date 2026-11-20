@@ -1640,6 +1640,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T05:54:00Z,NOAA-20,-2.3270,-60.0652,Manaus,2.45,nominal,0.45,0.47,noite,FIRMS+INPE
 2026-11-19T05:54:00Z,NOAA-20,-2.3260,-60.0644,Manaus,1.74,nominal,0.45,0.47,noite,FIRMS
 2026-11-19T14:20:00Z,GOES-19,-3.4427,-59.1572,Autazes,77.5,,2.2,2.2,dia,INPE
+2026-11-19T16:50:00Z,GOES-19,-2.2523,-60.2651,Manaus,62.3,,2.2,2.2,dia,INPE
 2026-11-19T16:54:00Z,NOAA-20,-3.8440,-59.0924,Autazes,4.6,nominal,0.4,0.6,dia,FIRMS+INPE
 2026-11-19T16:54:00Z,NOAA-20,-3.8137,-59.2324,Autazes,2.69,nominal,0.41,0.61,dia,FIRMS+INPE
 2026-11-19T16:54:00Z,NOAA-20,-3.8132,-59.2333,Autazes,2.84,nominal,0.41,0.61,dia,FIRMS

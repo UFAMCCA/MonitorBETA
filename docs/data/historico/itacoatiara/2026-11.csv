@@ -5459,3 +5459,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-20T05:35:00Z,NOAA-20,-2.5777,-57.5139,Urucurituba,1.62,nominal,0.5,0.4,noite,FIRMS
 2026-11-20T05:35:00Z,NOAA-20,-2.5770,-57.5184,Urucurituba,1.62,nominal,0.5,0.4,noite,FIRMS
 2026-11-20T05:35:00Z,NOAA-20,-2.5740,-57.5134,Urucurituba,3.31,nominal,0.5,0.4,noite,FIRMS
+2026-11-20T05:35:00Z,NOAA-20,-2.5818,-57.5151,Urucurituba,1.63,nominal,0.5,0.41,noite,FIRMS+INPE
+2026-11-20T05:35:00Z,NOAA-20,-2.5781,-57.5145,Urucurituba,1.63,nominal,0.5,0.41,noite,FIRMS+INPE
+2026-11-20T05:35:00Z,NOAA-20,-2.5774,-57.5190,Urucurituba,1.63,nominal,0.5,0.41,noite,FIRMS+INPE
+2026-11-20T05:35:00Z,NOAA-20,-2.5744,-57.5140,Urucurituba,3.31,nominal,0.5,0.41,noite,FIRMS

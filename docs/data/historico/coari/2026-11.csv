@@ -2462,3 +2462,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T20:33:00Z,AQUA,-9.4988,-67.0970,Lábrea,16.5,nominal,1.17,1.08,dia,FIRMS
 2026-11-19T20:36:00Z,AQUA,-3.0042,-65.4522,Uarini,21.76,nominal,1.94,1.36,dia,FIRMS
 2026-11-20T05:35:00Z,NOAA-20,-3.8832,-62.6675,Coari,0.94,nominal,0.39,0.36,noite,FIRMS
+2026-11-20T16:00:00Z,GOES-19,-9.2829,-65.6339,Lábrea,143.9,,2.2,2.2,dia,INPE
+2026-11-20T19:00:00Z,GOES-19,-9.4991,-67.0992,Lábrea,82.3,,2.2,2.2,dia,INPE
+2026-11-20T19:34:00Z,AQUA,-7.3280,-64.6507,Lábrea,108.77,nominal,4.25,1.91,dia,FIRMS

@@ -1,1 +1,1 @@
-{}
+{"E2dbaae805c":[{"satelite":"NOAA-20","nome_fonte":"NOAA-20","sensor":"VIIRS","hora":"2026-11-22T06:39:00Z","lat":-3.55913,"lon":-70.31585,"fontes":["FIRMS"],"municipio":"Letícia (Colômbia)","confianca":"nominal","confianca_bruta":"n","frp_mw":1.35,"brilho_k":297.77,"brilho2_k":268.47,"scan_km":0.5,"track_km":0.5,"pixel_real":true,"periodo":"noite"}]}

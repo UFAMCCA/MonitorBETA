@@ -2481,3 +2481,11 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-21T20:12:00Z,AQUA,-8.8918,-64.2863,Canutama,5.53,nominal,1.0,1.0,dia,FIRMS
 2026-11-21T20:12:00Z,AQUA,-8.8905,-64.2775,Canutama,8.98,nominal,1.0,1.0,dia,FIRMS
 2026-11-21T20:14:00Z,AQUA,-3.0746,-61.2088,Manacapuru,9.03,nominal,1.49,1.21,dia,FIRMS
+2026-11-22T01:19:00Z,TERRA,-9.2320,-65.4545,Lábrea,10.7,,1.0,1.0,noite,INPE
+2026-11-22T05:44:00Z,NOAA-21,-9.2340,-65.4569,Lábrea,0.66,nominal,0.39,0.36,noite,FIRMS
+2026-11-22T05:44:00Z,NOAA-21,-9.2317,-65.4493,Lábrea,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-11-22T05:44:00Z,NOAA-21,-9.2312,-65.4528,Lábrea,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-11-22T05:44:00Z,NOAA-21,-9.2307,-65.4563,Lábrea,2.66,nominal,0.39,0.36,noite,FIRMS
+2026-11-22T05:44:00Z,NOAA-21,-9.2279,-65.4523,Lábrea,0.84,nominal,0.39,0.36,noite,FIRMS
+2026-11-22T05:44:00Z,NOAA-21,-9.2273,-65.4558,Lábrea,2.66,nominal,0.39,0.36,noite,FIRMS
+2026-11-22T05:44:00Z,NOAA-21,-9.2240,-65.4553,Lábrea,0.67,nominal,0.39,0.36,noite,FIRMS

@@ -558,3 +558,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-22T06:39:00Z,NOAA-20,-3.5591,-70.3158,Letícia (Colômbia),1.35,nominal,0.5,0.5,noite,FIRMS
 2026-11-22T13:42:00Z,TERRA,-2.2280,-68.3242,Japurá,19.05,baixa,4.25,1.91,dia,FIRMS
 2026-11-22T13:42:00Z,TERRA,-2.2113,-68.3220,Japurá,16.03,baixa,4.25,1.91,dia,FIRMS
+2026-11-22T17:38:00Z,NOAA-20,-4.0613,-69.5146,São Paulo de Olivença,7.17,nominal,0.36,0.58,dia,FIRMS
+2026-11-22T17:38:00Z,NOAA-20,-4.0608,-69.5113,São Paulo de Olivença,6.25,nominal,0.36,0.58,dia,FIRMS
+2026-11-22T17:38:00Z,NOAA-20,-3.6022,-69.3035,São Paulo de Olivença,2.46,nominal,0.34,0.56,dia,FIRMS+INPE
+2026-11-22T18:19:00Z,NOAA-21,-3.4056,-68.6718,São Paulo de Olivença,2.43,nominal,0.39,0.44,dia,FIRMS+INPE
+2026-11-22T18:19:00Z,NOAA-21,-3.3611,-68.3956,Amaturá,5.07,nominal,0.4,0.45,dia,FIRMS+INPE
+2026-11-22T18:19:00Z,NOAA-21,-3.3605,-68.3919,Amaturá,9.6,nominal,0.4,0.45,dia,FIRMS

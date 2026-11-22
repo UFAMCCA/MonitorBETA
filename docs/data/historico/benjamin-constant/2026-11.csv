@@ -556,3 +556,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-19T18:36:00Z,NOAA-20,0.6319,-69.1534,São Gabriel da Cachoeira,3.89,nominal,0.51,0.49,dia,FIRMS
 2026-11-19T19:00:00Z,GOES-19,-3.7471,-73.2759,Iquitos (Peru),,,2.2,2.2,dia,INPE
 2026-11-22T06:39:00Z,NOAA-20,-3.5591,-70.3158,Letícia (Colômbia),1.35,nominal,0.5,0.5,noite,FIRMS
+2026-11-22T13:42:00Z,TERRA,-2.2280,-68.3242,Japurá,19.05,baixa,4.25,1.91,dia,FIRMS
+2026-11-22T13:42:00Z,TERRA,-2.2113,-68.3220,Japurá,16.03,baixa,4.25,1.91,dia,FIRMS

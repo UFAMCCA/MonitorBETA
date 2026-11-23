@@ -2512,3 +2512,12 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-22T18:19:00Z,NOAA-21,-7.4895,-63.1101,Humaitá,8.21,nominal,0.39,0.6,dia,FIRMS+INPE
 2026-11-22T18:19:00Z,NOAA-21,-7.4889,-63.1066,Humaitá,9.35,nominal,0.39,0.6,dia,FIRMS
 2026-11-22T18:19:00Z,NOAA-21,-7.4361,-63.0317,Humaitá,4.67,nominal,0.4,0.6,dia,FIRMS+INPE
+2026-11-23T01:16:00Z,METOP-B,-8.8793,-64.3976,Canutama,,,1.1,1.1,noite,INPE
+2026-11-23T01:16:00Z,METOP-B,-8.7609,-64.1528,Canutama,,,1.1,1.1,noite,INPE
+2026-11-23T01:37:00Z,METOP-C,-8.8797,-64.4004,Canutama,,,1.1,1.1,noite,INPE
+2026-11-23T01:37:00Z,METOP-C,-8.8814,-64.4076,Canutama,,,1.1,1.1,noite,INPE
+2026-11-23T01:37:00Z,METOP-C,-8.7627,-64.1534,Canutama,,,1.1,1.1,noite,INPE
+2026-11-23T05:22:00Z,NOAA-21,-8.8828,-64.4036,Canutama,3.06,nominal,0.46,0.39,noite,FIRMS
+2026-11-23T05:22:00Z,NOAA-21,-8.7625,-64.1607,Canutama,1.4,nominal,0.45,0.39,noite,FIRMS
+2026-11-23T05:22:00Z,NOAA-21,-8.7589,-64.1601,Canutama,1.4,nominal,0.45,0.39,noite,FIRMS
+2026-11-23T05:22:00Z,NOAA-21,-8.1794,-63.8875,Canutama,1.52,nominal,0.44,0.39,noite,FIRMS

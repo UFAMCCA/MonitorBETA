@@ -1761,3 +1761,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-22T17:38:00Z,NOAA-20,-3.2429,-58.5161,Itacoatiara,9.92,nominal,0.42,0.38,dia,FIRMS
 2026-11-22T17:38:00Z,NOAA-20,-3.2220,-58.4254,Itacoatiara,2.8,nominal,0.43,0.38,dia,FIRMS+INPE
 2026-11-22T17:38:00Z,NOAA-20,-3.0961,-59.4313,Manaus,26.0,nominal,0.4,0.37,dia,FIRMS+INPE
+2026-11-23T00:22:00Z,TERRA,-3.1578,-58.6033,Itacoatiara,5.9,,1.0,1.0,noite,INPE
+2026-11-23T05:22:00Z,NOAA-21,-1.9844,-59.9422,Presidente Figueiredo,1.11,nominal,0.38,0.36,noite,FIRMS

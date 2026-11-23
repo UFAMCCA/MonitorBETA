@@ -564,3 +564,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-22T18:19:00Z,NOAA-21,-3.4056,-68.6718,São Paulo de Olivença,2.43,nominal,0.39,0.44,dia,FIRMS+INPE
 2026-11-22T18:19:00Z,NOAA-21,-3.3611,-68.3956,Amaturá,5.07,nominal,0.4,0.45,dia,FIRMS+INPE
 2026-11-22T18:19:00Z,NOAA-21,-3.3605,-68.3919,Amaturá,9.6,nominal,0.4,0.45,dia,FIRMS
+2026-11-22T20:50:00Z,AQUA,-7.5393,-73.0038,Mâncio Lima (AC),7.65,nominal,1.02,1.01,dia,FIRMS+INPE
+2026-11-22T20:50:00Z,AQUA,-7.5380,-72.9948,Mâncio Lima (AC),13.46,nominal,1.02,1.01,dia,FIRMS

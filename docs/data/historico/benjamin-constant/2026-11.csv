@@ -566,3 +566,12 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-22T18:19:00Z,NOAA-21,-3.3605,-68.3919,Amaturá,9.6,nominal,0.4,0.45,dia,FIRMS
 2026-11-22T20:50:00Z,AQUA,-7.5393,-73.0038,Mâncio Lima (AC),7.65,nominal,1.02,1.01,dia,FIRMS+INPE
 2026-11-22T20:50:00Z,AQUA,-7.5380,-72.9948,Mâncio Lima (AC),13.46,nominal,1.02,1.01,dia,FIRMS
+2026-11-23T18:02:00Z,NOAA-21,-6.9262,-70.0038,Eirunepé,25.57,nominal,0.41,0.37,dia,FIRMS+INPE
+2026-11-23T18:02:00Z,NOAA-21,-2.7305,-66.9123,Jutaí,12.3,baixa,0.42,0.38,dia,FIRMS
+2026-11-23T18:02:00Z,NOAA-21,-2.6158,-67.1918,Tonantins,6.52,baixa,0.41,0.37,dia,FIRMS
+2026-11-23T18:02:00Z,NOAA-21,-8.0734,-72.7619,Cruzeiro do Sul (AC),2.96,nominal,0.39,0.44,dia,FIRMS+INPE
+2026-11-23T18:02:00Z,NOAA-21,-7.9539,-72.9409,Cruzeiro do Sul (AC),22.96,nominal,0.4,0.44,dia,FIRMS+INPE
+2026-11-23T18:02:00Z,NOAA-21,-7.7570,-72.3737,Cruzeiro do Sul (AC),16.87,nominal,0.55,0.43,dia,FIRMS+INPE
+2026-11-23T18:04:00Z,NOAA-21,0.4934,-67.2989,São Gabriel da Cachoeira,9.51,nominal,0.43,0.38,dia,FIRMS+INPE
+2026-11-23T18:57:00Z,NOAA-20,-6.7778,-70.0529,Eirunepé,4.34,nominal,0.46,0.63,dia,FIRMS
+2026-11-23T19:00:00Z,NOAA-20,-4.3302,-69.9788,Benjamin Constant,8.13,nominal,0.51,0.66,dia,FIRMS

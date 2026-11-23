@@ -2521,3 +2521,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-23T05:22:00Z,NOAA-21,-8.7625,-64.1607,Canutama,1.4,nominal,0.45,0.39,noite,FIRMS
 2026-11-23T05:22:00Z,NOAA-21,-8.7589,-64.1601,Canutama,1.4,nominal,0.45,0.39,noite,FIRMS
 2026-11-23T05:22:00Z,NOAA-21,-8.1794,-63.8875,Canutama,1.52,nominal,0.44,0.39,noite,FIRMS
+2026-11-23T06:22:00Z,NOAA-20,-8.7607,-64.1617,Canutama,1.79,nominal,0.4,0.6,noite,FIRMS+INPE
+2026-11-23T06:22:00Z,NOAA-20,-8.7602,-64.1613,Canutama,2.13,nominal,0.4,0.6,noite,FIRMS
+2026-11-23T12:44:00Z,TERRA,-9.2294,-65.4513,Lábrea,7.41,nominal,1.02,1.01,dia,FIRMS

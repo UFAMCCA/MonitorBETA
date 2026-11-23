@@ -3939,3 +3939,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-23T05:25:00Z,NOAA-21,-11.9750,-65.0058,Guajará-Mirim (RO),1.75,nominal,0.45,0.39,noite,FIRMS
 2026-11-23T05:25:00Z,NOAA-21,-11.9743,-65.0099,Guajará-Mirim (RO),1.77,nominal,0.45,0.39,noite,FIRMS
 2026-11-23T05:25:00Z,NOAA-21,-11.9536,-65.0021,Guajará-Mirim (RO),1.12,nominal,0.45,0.39,noite,FIRMS
+2026-11-23T06:22:00Z,NOAA-20,-8.7607,-64.1617,Canutama,1.79,nominal,0.4,0.6,noite,FIRMS+INPE
+2026-11-23T06:22:00Z,NOAA-20,-8.7602,-64.1613,Canutama,2.13,nominal,0.4,0.6,noite,FIRMS
+2026-11-23T12:44:00Z,TERRA,-9.2294,-65.4513,Lábrea,7.41,nominal,1.02,1.01,dia,FIRMS

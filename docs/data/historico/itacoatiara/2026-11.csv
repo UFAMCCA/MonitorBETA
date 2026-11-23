@@ -5882,3 +5882,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-23T05:22:00Z,NOAA-21,-2.2195,-56.8514,Nhamundá,2.12,nominal,0.45,0.39,noite,FIRMS
 2026-11-23T06:19:00Z,NOAA-20,-2.2912,-58.8723,Itapiranga,2.03,nominal,0.7,0.8,noite,FIRMS
 2026-11-23T06:19:00Z,NOAA-20,-2.2902,-58.8791,Itapiranga,1.35,nominal,0.7,0.8,noite,FIRMS
+2026-11-23T06:20:00Z,NOAA-20,-2.2913,-58.8747,Itapiranga,2.04,nominal,0.75,0.77,noite,FIRMS+INPE
+2026-11-23T06:20:00Z,NOAA-20,-2.2904,-58.8814,Itapiranga,1.36,nominal,0.75,0.77,noite,FIRMS+INPE
+2026-11-23T15:20:00Z,GOES-19,-2.2914,-58.8700,Itapiranga,58.2,,2.2,2.2,dia,INPE

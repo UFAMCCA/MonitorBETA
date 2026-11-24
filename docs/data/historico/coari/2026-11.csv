@@ -2556,3 +2556,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-24T05:05:00Z,NOAA-21,-9.2295,-65.4533,Lábrea,2.4,nominal,0.35,0.57,noite,FIRMS
 2026-11-24T05:05:00Z,NOAA-21,-9.2254,-65.4551,Lábrea,1.03,nominal,0.35,0.57,noite,FIRMS+INPE
 2026-11-24T05:05:00Z,NOAA-21,-9.2248,-65.4583,Lábrea,1.03,nominal,0.35,0.57,noite,FIRMS
+2026-11-24T06:01:00Z,NOAA-20,-8.5431,-64.1007,Canutama,1.19,nominal,0.38,0.43,noite,FIRMS+INPE
+2026-11-24T06:03:00Z,NOAA-20,-9.2283,-65.4539,Lábrea,2.68,nominal,0.49,0.4,noite,FIRMS+INPE
+2026-11-24T06:03:00Z,NOAA-20,-9.2246,-65.4533,Lábrea,0.65,nominal,0.49,0.4,noite,FIRMS+INPE
+2026-11-24T06:03:00Z,NOAA-20,-9.2240,-65.4577,Lábrea,0.65,nominal,0.49,0.4,noite,FIRMS
+2026-11-24T13:22:00Z,TERRA,-2.8159,-65.5244,Juruá,7.76,baixa,2.86,1.61,dia,FIRMS
+2026-11-24T13:25:00Z,TERRA,-5.0114,-66.1829,Tefé,11.9,nominal,2.74,1.58,dia,FIRMS

@@ -6336,6 +6336,9 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-24T05:03:00Z,NOAA-21,-2.2156,-56.7004,Nhamundá,3.52,nominal,0.41,0.37,noite,FIRMS+INPE
 2026-11-24T05:03:00Z,NOAA-21,-2.0672,-56.7897,Nhamundá,5.68,nominal,0.41,0.37,noite,FIRMS+INPE
 2026-11-24T05:03:00Z,NOAA-21,-2.0257,-57.0330,Nhamundá,3.55,nominal,0.42,0.38,noite,FIRMS+INPE
+2026-11-24T05:59:00Z,NOAA-20,-2.4716,-56.8721,Parintins,2.16,nominal,0.48,0.65,noite,FIRMS+INPE
 2026-11-24T06:01:00Z,NOAA-20,-3.0032,-57.2349,Barreirinha,1.23,nominal,0.5,0.6,noite,FIRMS
 2026-11-24T06:01:00Z,NOAA-20,-3.0025,-57.2390,Barreirinha,1.1,nominal,0.5,0.6,noite,FIRMS
 2026-11-24T06:01:00Z,NOAA-20,-2.4713,-56.8705,Parintins,2.15,nominal,0.5,0.6,noite,FIRMS
+2026-11-24T06:01:00Z,NOAA-20,-3.0034,-57.2364,Barreirinha,1.24,nominal,0.47,0.64,noite,FIRMS+INPE
+2026-11-24T06:01:00Z,NOAA-20,-3.0028,-57.2405,Barreirinha,1.11,nominal,0.47,0.64,noite,FIRMS

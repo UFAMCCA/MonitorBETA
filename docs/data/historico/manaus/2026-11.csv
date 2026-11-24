@@ -1822,3 +1822,6 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-24T06:01:00Z,NOAA-20,-3.3907,-59.5393,Careiro da Várzea,1.88,nominal,0.3,0.6,noite,FIRMS
 2026-11-24T06:01:00Z,NOAA-20,-3.3903,-59.5422,Careiro da Várzea,2.03,nominal,0.3,0.5,noite,FIRMS
 2026-11-24T06:01:00Z,NOAA-20,-3.3898,-59.5451,Careiro da Várzea,2.03,nominal,0.3,0.5,noite,FIRMS
+2026-11-24T06:01:00Z,NOAA-20,-3.3910,-59.5403,Careiro da Várzea,1.88,nominal,0.33,0.55,noite,FIRMS+INPE
+2026-11-24T06:01:00Z,NOAA-20,-3.3906,-59.5432,Careiro da Várzea,2.04,nominal,0.33,0.55,noite,FIRMS+INPE
+2026-11-24T06:01:00Z,NOAA-20,-3.3902,-59.5461,Careiro da Várzea,2.04,nominal,0.33,0.55,noite,FIRMS

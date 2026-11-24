@@ -575,3 +575,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-23T18:04:00Z,NOAA-21,0.4934,-67.2989,São Gabriel da Cachoeira,9.51,nominal,0.43,0.38,dia,FIRMS+INPE
 2026-11-23T18:57:00Z,NOAA-20,-6.7778,-70.0529,Eirunepé,4.34,nominal,0.46,0.63,dia,FIRMS
 2026-11-23T19:00:00Z,NOAA-20,-4.3302,-69.9788,Benjamin Constant,8.13,nominal,0.51,0.66,dia,FIRMS
+2026-11-24T01:02:00Z,TERRA,-6.5695,-69.9487,Jutaí,16.7,,1.0,1.0,noite,INPE
+2026-11-24T01:40:00Z,GOES-19,-6.5606,-69.9544,Jutaí,44.8,,2.2,2.2,noite,INPE

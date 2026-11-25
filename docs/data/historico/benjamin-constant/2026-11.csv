@@ -614,3 +614,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-24T18:40:00Z,NOAA-20,-7.5982,-73.2821,Mâncio Lima (AC),3.89,nominal,0.43,0.38,dia,FIRMS
 2026-11-24T18:40:00Z,NOAA-20,-7.5199,-72.7837,Cruzeiro do Sul (AC),4.9,nominal,0.45,0.39,dia,FIRMS
 2026-11-24T18:42:00Z,NOAA-20,0.5215,-67.2661,São Gabriel da Cachoeira,3.29,nominal,0.44,0.62,dia,FIRMS
+2026-11-24T20:27:00Z,AQUA,-7.9394,-72.9145,Cruzeiro do Sul (AC),13.47,nominal,1.73,1.29,dia,FIRMS+INPE
+2026-11-24T20:29:00Z,AQUA,-4.4322,-69.8741,Benjamin Constant,4.98,nominal,1.04,1.02,dia,FIRMS+INPE
+2026-11-24T20:29:00Z,AQUA,-3.7828,-69.4694,Tabatinga,4.3,nominal,1.01,1.0,dia,FIRMS+INPE
+2026-11-24T20:29:00Z,AQUA,-3.7816,-69.4606,Tabatinga,6.76,nominal,1.01,1.0,dia,FIRMS

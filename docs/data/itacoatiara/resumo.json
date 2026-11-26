@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-24T05:50:20Z",
-    "pct": 42.4
-   },
-   {
-    "hora": "2026-11-24T08:50:20Z",
-    "pct": 49.7
-   },
-   {
-    "hora": "2026-11-24T11:50:20Z",
-    "pct": 41.1
-   },
-   {
     "hora": "2026-11-24T14:50:20Z",
     "pct": 19.2
    },
@@ -97,12 +85,24 @@
    {
     "hora": "2026-11-26T05:50:20Z",
     "pct": 93.0
+   },
+   {
+    "hora": "2026-11-26T08:50:20Z",
+    "pct": 97.5
+   },
+   {
+    "hora": "2026-11-26T11:50:20Z",
+    "pct": 89.0
+   },
+   {
+    "hora": "2026-11-26T14:50:20Z",
+    "pct": 78.1
    }
   ],
-  "media_48h": 39.8,
+  "media_48h": 47.6,
   "cego_48h_pct": 3.3,
-  "extintos": 317,
-  "extintos_incertos": 205,
+  "extintos": 431,
+  "extintos_incertos": 318,
   "camada": {
    "arquivo": "nuvens.png",
    "bbox": [
@@ -128,14 +128,14 @@
   "fonte": "API PurpleAir"
  },
  "ativos_perto_do_sensor": {
-  "25": 2,
-  "50": 10,
-  "100": 34
+  "25": 0,
+  "50": 0,
+  "100": 0
  },
- "gerado_em": "2026-11-26T08:08:49Z",
+ "gerado_em": "2026-11-26T16:06:46Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,12 +146,12 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-24T08:08:49Z",
- "eventos_ativos": 112,
- "eventos_extintos": 317,
- "eventos_total": 429,
- "deteccoes_total": 1645,
- "deteccoes_ativas": 844,
+ "janela_inicio": "2026-11-24T16:06:46Z",
+ "eventos_ativos": 0,
+ "eventos_extintos": 431,
+ "eventos_total": 431,
+ "deteccoes_total": 1640,
+ "deteccoes_ativas": 0,
  "por_municipio": {
   "Maués": 69,
   "Parintins": 63,
@@ -159,10 +159,10 @@
   "Itacoatiara": 43,
   "Barreirinha": 35,
   "Urucurituba": 29,
-  "Urucará": 24,
+  "Urucará": 25,
   "Autazes": 22,
+  "São Sebastião do Uatumã": 20,
   "Boa Vista do Ramos": 20,
-  "São Sebastião do Uatumã": 19,
   "Nova Olinda do Norte": 17,
   "Silves": 12,
   "Presidente Figueiredo": 10,
@@ -170,28 +170,12 @@
   "Itapiranga": 7,
   "Rio Preto da Eva": 6
  },
- "ativos_por_municipio": {
-  "Parintins": 29,
-  "Maués": 24,
-  "Barreirinha": 11,
-  "Nhamundá": 10,
-  "Itacoatiara": 9,
-  "São Sebastião do Uatumã": 8,
-  "Urucará": 5,
-  "Nova Olinda do Norte": 3,
-  "Autazes": 3,
-  "Itapiranga": 2,
-  "Boa Vista do Ramos": 2,
-  "Urucurituba": 2,
-  "Manaus": 2,
-  "Silves": 1,
-  "Rio Preto da Eva": 1
- },
+ "ativos_por_municipio": {},
  "por_satelite": {
-  "NOAA-21": 667,
-  "NOAA-20": 581,
+  "NOAA-21": 670,
+  "NOAA-20": 580,
   "METOP-B": 126,
-  "GOES-19": 97,
+  "GOES-19": 90,
   "AQUA": 76,
   "TERRA": 55,
   "METOP-C": 43
@@ -331,7 +315,7 @@
    "inicio": "2026-11-26T05:22:00Z",
    "fim": "2026-11-26T05:25:00Z",
    "resolucao_km": 0.375,
-   "deteccoes_na_area": 282
+   "deteccoes_na_area": 281
   },
   {
    "satelite": "NOAA-21",
@@ -339,10 +323,18 @@
    "inicio": "2026-11-26T06:05:00Z",
    "fim": "2026-11-26T06:05:00Z",
    "resolucao_km": 0.375,
+   "deteccoes_na_area": 3
+  },
+  {
+   "satelite": "TERRA",
+   "sensor": "MODIS",
+   "inicio": "2026-11-26T13:01:00Z",
+   "fim": "2026-11-26T13:01:00Z",
+   "resolucao_km": 1.0,
    "deteccoes_na_area": 0
   }
  ],
- "goes_ultima_deteccao_regional": "2026-11-26T07:40:00Z",
+ "goes_ultima_deteccao_regional": "2026-11-26T15:10:00Z",
  "satelites": {
   "NOAA-20": {
    "inpe": [
@@ -425,9 +417,9 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (2638 detecções)",
-  "FIRMS VIIRS_NOAA20_NRT": "ok (18394 detecções)",
-  "FIRMS VIIRS_NOAA21_NRT": "ok (23679 detecções)",
+  "FIRMS MODIS_NRT": "ok (2659 detecções)",
+  "FIRMS VIIRS_NOAA20_NRT": "ok (18384 detecções)",
+  "FIRMS VIIRS_NOAA21_NRT": "ok (23716 detecções)",
   "GOES-19 nuvens": "ok (66 imagens)"
  },
  "temperatura_superficie": {

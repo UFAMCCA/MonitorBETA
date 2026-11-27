@@ -31,18 +31,6 @@
   ],
   "serie": [
    {
-    "hora": "2026-11-25T05:50:20Z",
-    "pct": 97.3
-   },
-   {
-    "hora": "2026-11-25T08:50:20Z",
-    "pct": 97.1
-   },
-   {
-    "hora": "2026-11-25T11:50:20Z",
-    "pct": 81.5
-   },
-   {
     "hora": "2026-11-25T14:50:20Z",
     "pct": 70.7
    },
@@ -97,9 +85,21 @@
    {
     "hora": "2026-11-27T05:50:20Z",
     "pct": 100.0
+   },
+   {
+    "hora": "2026-11-27T08:50:20Z",
+    "pct": 97.4
+   },
+   {
+    "hora": "2026-11-27T11:50:20Z",
+    "pct": 99.4
+   },
+   {
+    "hora": "2026-11-27T14:50:20Z",
+    "pct": 85.4
    }
   ],
-  "media_48h": 89.9,
+  "media_48h": 90.3,
   "cego_48h_pct": 62.3,
   "extintos": 25,
   "extintos_incertos": 18,
@@ -132,10 +132,10 @@
   "50": 0,
   "100": 0
  },
- "gerado_em": "2026-11-27T08:08:45Z",
+ "gerado_em": "2026-11-27T16:06:42Z",
  "dados_de_teste": false,
- "atualizacao": "04h",
- "atualizacao_descricao": "Passagem noturna do VIIRS (~01h30) + GOES-19",
+ "atualizacao": "12h",
+ "atualizacao_descricao": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
  "proximas_atualizacoes": [
   "04h",
   "12h",
@@ -146,7 +146,7 @@
   "12h": "Terra manhã (~9h) e MetOp-B/C (~9h30) + GOES-19",
   "18h": "Passagem da tarde do VIIRS (~13h30) + GOES-19 + Aqua (referência INPE)"
  },
- "janela_inicio": "2026-11-25T08:08:45Z",
+ "janela_inicio": "2026-11-25T16:06:42Z",
  "eventos_ativos": 2,
  "eventos_extintos": 25,
  "eventos_total": 27,
@@ -175,14 +175,6 @@
   "NOAA-21": 17
  },
  "passagens": [
-  {
-   "satelite": "TERRA",
-   "sensor": "MODIS",
-   "inicio": "2026-11-25T13:59:00Z",
-   "fim": "2026-11-25T13:59:00Z",
-   "resolucao_km": 1.0,
-   "deteccoes_na_area": 0
-  },
   {
    "satelite": "NOAA-21",
    "sensor": "VIIRS",
@@ -355,10 +347,10 @@
  "fontes_status": {
   "INPE_10min": "ok (306 arquivos)",
   "INPE_diario": "ok (3 arquivos)",
-  "FIRMS MODIS_NRT": "ok (2222 detecções)",
+  "FIRMS MODIS_NRT": "ok (2405 detecções)",
   "FIRMS VIIRS_NOAA20_NRT": "ok (15961 detecções)",
   "FIRMS VIIRS_NOAA21_NRT": "ok (15952 detecções)",
-  "GOES-19 nuvens": "ok (60 imagens)"
+  "GOES-19 nuvens": "ok (59 imagens)"
  },
  "temperatura_superficie": {
   "produto": "Temperatura da superfície terrestre (LST) — Landsat Coleção 2 Nível 2, banda ST_B10",

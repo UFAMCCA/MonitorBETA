@@ -4344,3 +4344,5 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-26T18:02:00Z,NOAA-20,-9.8564,-63.8774,Buritis (RO),13.2,nominal,0.41,0.37,dia,FIRMS
 2026-11-26T18:02:00Z,NOAA-20,-9.0428,-63.6041,Candeias do Jamari (RO),4.59,nominal,0.42,0.38,dia,FIRMS+INPE
 2026-11-26T18:02:00Z,NOAA-20,-6.8438,-63.0620,Tapauá,3.41,nominal,0.47,0.39,dia,FIRMS+INPE
+2026-11-27T00:10:00Z,GOES-19,-6.5835,-58.8885,Apuí,59.4,,2.2,2.2,noite,INPE
+2026-11-27T00:20:00Z,GOES-19,-6.5835,-58.8885,Apuí,73.6,,2.2,2.2,noite,INPE

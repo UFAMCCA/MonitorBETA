@@ -4376,3 +4376,7 @@ hora_utc,satelite,lat,lon,municipio,frp_mw,confianca,scan_km,track_km,periodo,fo
 2026-11-27T18:25:00Z,NOAA-21,-7.7309,-61.0964,Novo Aripuanã,10.21,nominal,0.69,0.74,dia,FIRMS
 2026-11-27T18:25:00Z,NOAA-21,-9.2957,-65.4995,Lábrea,3.35,nominal,0.32,0.55,dia,FIRMS+INPE
 2026-11-27T18:25:00Z,NOAA-21,-9.0402,-65.4236,Lábrea,3.4,nominal,0.33,0.55,dia,FIRMS+INPE
+2026-11-28T01:12:00Z,METOP-B,-9.5415,-66.2817,Porto Velho (RO),,,1.1,1.1,noite,INPE
+2026-11-28T05:31:00Z,NOAA-21,-9.7253,-66.2383,Porto Velho (RO),0.83,nominal,0.46,0.39,noite,FIRMS
+2026-11-28T05:31:00Z,NOAA-21,-9.5459,-66.2751,Porto Velho (RO),0.77,nominal,0.47,0.4,noite,FIRMS
+2026-11-28T05:31:00Z,NOAA-21,-9.5423,-66.2745,Porto Velho (RO),0.7,nominal,0.47,0.4,noite,FIRMS
